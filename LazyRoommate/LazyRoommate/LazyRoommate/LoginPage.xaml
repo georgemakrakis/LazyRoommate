@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LazyRoommate.LoginPage">
+
+
+  <ContentPage.Content >
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+      <Entry x:Name="usernameEntry" Placeholder="Username" />
+      <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="true" />
+      <Button Text="Login" />
+      <Button Text="Sign up" Clicked="SignUpClick" />
+      <Label x:Name="messageLabel" />
+    </StackLayout>
+  </ContentPage.Content>
+  
+</ContentPage>
