@@ -17,7 +17,7 @@ namespace LazyRoommate
             MainPage = new LoginPage();
         }
 
-        public static MobileServiceClient client = new MobileServiceClient("http://lazyroommate.azurewebsites.net");
+        public static MobileServiceClient client = new MobileServiceClient("https://lazyroommate.azurewebsites.net");
 
         protected override void OnStart()
         {
