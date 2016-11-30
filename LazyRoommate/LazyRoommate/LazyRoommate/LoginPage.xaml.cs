@@ -10,10 +10,32 @@ namespace LazyRoommate
 {
     public partial class LoginPage : ContentPage
     {
+        // Track whether the user has authenticated.
+        private bool authenticated = false;
+
         public LoginPage()
         {
             InitializeComponent();
         }
+
+        public async void LoginClick(object sender, EventArgs e)
+        {
+            
+            if (App.Authenticator != null)
+            {
+                authenticated = await App.Authenticator.Authenticate();
+            }
+            //for testing
+            else
+            {
+                await DisplayAlert("Alert", "Authenticator X", "OK");
+            }
+            if (authenticated == true)
+            {
+                await DisplayAlert("Alert", "Authentication Successful", "OK");
+            }
+        }
+
         public async void SignUpClick(object sender, EventArgs e)
         {
 

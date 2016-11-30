@@ -16,6 +16,8 @@ namespace LazyRoommate
         }
         public async void RegisterClick (object sender,EventArgs e)
         {
+
+            //code for a VERY simple entry in mobile app's DB
             if (passwordEntry1.Text.Equals(passwordEntry2.Text))
             {
                 var table = App.client.GetTable<Models.UsersTable>();
