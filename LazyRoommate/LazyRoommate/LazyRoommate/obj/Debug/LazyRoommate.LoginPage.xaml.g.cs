@@ -23,6 +23,12 @@ namespace LazyRoommate {
         private global::Xamarin.Forms.Entry passwordEntry;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button FBButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button GoogleButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label messageLabel;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -30,6 +36,8 @@ namespace LazyRoommate {
             this.LoadFromXaml(typeof(LoginPage));
             usernameEntry = this.FindByName<global::Xamarin.Forms.Entry>("usernameEntry");
             passwordEntry = this.FindByName<global::Xamarin.Forms.Entry>("passwordEntry");
+            FBButton = this.FindByName<global::Xamarin.Forms.Button>("FBButton");
+            GoogleButton = this.FindByName<global::Xamarin.Forms.Button>("GoogleButton");
             messageLabel = this.FindByName<global::Xamarin.Forms.Label>("messageLabel");
         }
     }

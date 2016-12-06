@@ -12,7 +12,8 @@ namespace LazyRoommate
     //implementing an authentication interface
     public interface IAuthenticate
     {
-        Task<bool> Authenticate();
+        Task<bool> AuthenticateFacebook();
+        Task<bool> AuthenticateGoogle();
     }
 
     public class App : Application

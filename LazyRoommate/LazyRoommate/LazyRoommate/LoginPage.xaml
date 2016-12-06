@@ -8,7 +8,8 @@
     <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
       <Entry x:Name="usernameEntry" Placeholder="Username" />
       <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="true" />
-      <Button Text="Facebook Login" Clicked="LoginClick" /><!--used and tested only for facebook until now-->
+      <Button x:Name="FBButton" Text="Facebook Login" Clicked="LoginClick" /><!--used and tested only for facebook until now-->
+      <Button x:Name="GoogleButton" Text="Google+ Login" Clicked="LoginClick" />
       <Button Text="Sign up" Clicked="SignUpClick" />
       <Label x:Name="messageLabel" />
     </StackLayout>

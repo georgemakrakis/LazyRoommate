@@ -24,7 +24,7 @@ namespace LazyRoommate.UWP
         // Define a authenticated user.
         private MobileServiceUser user;
 
-        public async Task<bool> Authenticate()
+        public async Task<bool> AuthenticateFacebook()
         {
             var success = false;
             var message = string.Empty;
@@ -32,6 +32,31 @@ namespace LazyRoommate.UWP
             {
                 // Sign in with Facebook login using a server-managed flow.
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(MobileServiceAuthenticationProvider.Facebook);
+                if (user != null)
+                {
+                    message = string.Format("you are now signed-in as {0}.", user.UserId);
+                    success = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+            }
+
+            // Display the success or failure message.
+            MessageDialog mg = new MessageDialog(message);
+            await mg.ShowAsync();
+
+            return success;
+        }
+        public async Task<bool> AuthenticateGoogle()
+        {
+            var success = false;
+            var message = string.Empty;
+            try
+            {
+                // Sign in with Facebook login using a server-managed flow.
+                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(MobileServiceAuthenticationProvider.Google);
                 if (user != null)
                 {
                     message = string.Format("you are now signed-in as {0}.", user.UserId);

@@ -20,10 +20,18 @@ namespace LazyRoommate
 
         public async void LoginClick(object sender, EventArgs e)
         {
-            
+
+            //var button = GoogleButton;
             if (App.Authenticator != null)
             {
-                authenticated = await App.Authenticator.Authenticate();
+                if(sender.Equals(FBButton))
+                {
+                    authenticated = await App.Authenticator.AuthenticateFacebook();
+                }
+                else if(sender.Equals(GoogleButton))
+                {
+                    authenticated = await App.Authenticator.AuthenticateGoogle();
+                }                
             }
             //for testing
             else
