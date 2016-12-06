@@ -46,10 +46,8 @@ namespace LazyRoommate
 
         public async void SignUpClick(object sender, EventArgs e)
         {
-
             //this method works for android and UWP link : https://developer.xamarin.com/guides/xamarin-forms/user-interface/navigation/modal/
             await this.Navigation.PushModalAsync(new SignUpPage());
-
         }
     }
 }
