@@ -31,7 +31,11 @@ namespace LazyRoommate
                 else if(sender.Equals(GoogleButton))
                 {
                     authenticated = await App.Authenticator.AuthenticateGoogle();
-                }                
+                }
+                else if (sender.Equals(TwitterButton))
+                {
+                    authenticated = await App.Authenticator.AuthenticateTwitter();
+                }
             }
             //for testing
             else

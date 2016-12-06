@@ -9,6 +9,7 @@
       <Entry x:Name="usernameEntry" Placeholder="Username" />
       <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="true" />
       <Button x:Name="FBButton" Text="Facebook Login" Clicked="LoginClick" /><!--used and tested only for facebook until now-->
+      <Button x:Name="TwitterButton" Text="Twitter Login" Clicked="LoginClick" />
       <Button x:Name="GoogleButton" Text="Google+ Login" Clicked="LoginClick" />
       <Button Text="Sign up" Clicked="SignUpClick" />
       <Label x:Name="messageLabel" />

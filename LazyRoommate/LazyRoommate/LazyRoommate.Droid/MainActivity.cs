@@ -74,6 +74,34 @@ namespace LazyRoommate.Droid
             return success;
         }
 
+        public async Task<bool> AuthenticateTwitter()
+        {
+            var success = false;
+            var message = string.Empty;
+            try
+            {
+                // Sign in with Facebook login using a server-managed flow.
+                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(this, MobileServiceAuthenticationProvider.Twitter);
+                if (user != null)
+                {
+                    message = string.Format("you are now signed-in as {0}.", user.UserId);
+                    success = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+            }
+
+            // Display the success or failure message.
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.SetMessage(message);
+            builder.SetTitle("Sign-in result");
+            builder.Create().Show();
+
+            return success;
+        }
+
         protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;

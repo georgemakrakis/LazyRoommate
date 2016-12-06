@@ -80,3 +80,6 @@ C:\Users\George\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\
 C:\Users\George\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.SignUpPage.xaml.g.cs
 C:\Users\George\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.dll
 C:\Users\George\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.pdb
+C:\Users\George\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.csprojResolveAssemblyReference.cache
+C:\Users\George\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.dll.mdb
+C:\Users\George\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\LazyRoommate.dll.mdb
