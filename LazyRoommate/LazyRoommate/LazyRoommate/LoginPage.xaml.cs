@@ -16,6 +16,7 @@ namespace LazyRoommate
         public LoginPage()
         {
             InitializeComponent();
+
         }
 
         public async void LoginClick(object sender, EventArgs e)
