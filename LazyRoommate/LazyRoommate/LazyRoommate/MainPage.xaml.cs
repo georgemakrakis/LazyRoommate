@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Windows.UI.Core;
 using Xamarin.Forms;
 
 namespace LazyRoommate
@@ -13,7 +13,11 @@ namespace LazyRoommate
         public MainPage()
         {
             InitializeComponent();
-            NavigationPage.SetBackButtonTitle(this, "");
+
+            //making UWP back button visible
+            App.currentView = SystemNavigationManager.GetForCurrentView();
+            App.currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            
         }
     }
 }

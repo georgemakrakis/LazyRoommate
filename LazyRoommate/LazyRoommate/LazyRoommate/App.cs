@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Windows.UI.Core;
 using Xamarin.Forms;
 
 namespace LazyRoommate
@@ -21,6 +21,7 @@ namespace LazyRoommate
     {
         //initializing the interface with a platform-specific implementation
         public static IAuthenticate Authenticator { get; private set; }
+        public static SystemNavigationManager currentView=null;
 
         public static void Init(IAuthenticate authenticator)
         {
