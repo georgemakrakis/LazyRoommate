@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-12T19:41:31.976</Modified>
+      <Modified>2016-12-12T20:45:20.853</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\LazyRoommate.UWP.exe">
       <PackagePath>entrypoint\LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2016-12-12T19:41:30.539</Modified>
+      <Modified>2016-12-12T20:45:19.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ARGIRIS\.nuget\packages\Microsoft.Azure.Mobile.Client\3.0.3\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
@@ -486,15 +486,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\LazyRoommate.dll">
       <PackagePath>LazyRoommate.dll</PackagePath>
-      <Modified>2016-12-12T19:38:18.869</Modified>
+      <Modified>2016-12-12T20:45:16.639</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\lazy_login_page.jpg">
-      <PackagePath>Assets\lazy_login_page.jpg</PackagePath>
-      <Modified>2016-12-07T19:13:38.426</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\log1.jpg">
-      <PackagePath>Assets\log1.jpg</PackagePath>
-      <Modified>2016-12-12T19:31:36.658</Modified>
+    <AppxPackagedFile Include="C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\login_scrn.jpg">
+      <PackagePath>Assets\login_scrn.jpg</PackagePath>
+      <Modified>2016-12-12T20:44:09.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -553,11 +549,11 @@
     <AppxPackagedFile Include="C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-12T19:41:31.417</Modified>
+      <Modified>2016-12-12T20:45:20.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\LazyRoommate.UWP.exe">
       <PackagePath>LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2016-12-12T19:41:31.966</Modified>
+      <Modified>2016-12-12T20:45:20.849</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

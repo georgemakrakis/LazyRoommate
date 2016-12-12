@@ -2,24 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LazyRoommate.LoginPage"
-  BackgroundImage="log1.jpg">
+  BackgroundImage="login_scrn.jpg" >
 
 
   <ContentPage.Content >
 
-   <!-- <Label  FontSize = "20" Text="Lazy Roommate" VerticalOptions="End" HorizontalOptions="Center" />-->
-    
+    <!-- <Label  FontSize = "20" Text="Lazy Roommate" VerticalOptions="End" HorizontalOptions="Center" />-->
+
     <StackLayout VerticalOptions="End" HorizontalOptions="Center"  >
       <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="#4DDCDCDC"   >
-      <Entry x:Name="usernameEntry" Placeholder="Username" />
-      <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="true" />
-        </StackLayout>
-      <Button x:Name="FBButton" Text="Facebook Login" Clicked="LoginClick" BackgroundColor="#3b5998"/><!--used and tested only for facebook until now-->
+        <Entry x:Name="usernameEntry" Placeholder="Username" />
+        <Entry x:Name="passwordEntry" Placeholder="Password"  IsPassword="true" />
+      </StackLayout>
+      <Button x:Name="FBButton" Text="Facebook Login" Clicked="LoginClick" BackgroundColor="#3b5998"/>
+      <!--used and tested only for facebook until now-->
       <Button x:Name="TwitterButton" Text="Twitter Login" Clicked="LoginClick" BackgroundColor="#55acee" />
       <Button x:Name="GoogleButton" Text="Google+ Login" Clicked="LoginClick"  BackgroundColor="#dd4b39"/>
       <Button Text="Sign up" Clicked="SignUpClick" />
       <Label x:Name="messageLabel" />
     </StackLayout>
   </ContentPage.Content>
-  
+
 </ContentPage>
