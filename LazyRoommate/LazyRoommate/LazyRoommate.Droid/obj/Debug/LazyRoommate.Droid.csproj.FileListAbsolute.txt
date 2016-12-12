@@ -192,11 +192,12 @@ C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\layout\tabbar.xml
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\layout\toolbar.xml
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\values\styles.xml
+C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\login_scrn.jpg
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\R.cs.flag
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\uploadflags.txt
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.dll.mdb
-C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.dll.mdb
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Java.Interop.dll.mdb
+C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.dll.mdb
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Mono.Android.dll.mdb
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Mono.CSharp.dll.mdb
@@ -228,6 +229,5 @@ C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\login_scrn.jpg
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\LazyRoommate.Droid.dll.mdb
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.dll.mdb

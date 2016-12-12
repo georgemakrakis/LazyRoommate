@@ -80,8 +80,8 @@ C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.csproj.App.config
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.LoginPage.xaml.g.cs
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.SignUpPage.xaml.g.cs
+C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.MainPage.xaml.g.cs
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.dll
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.pdb
-C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.MainPage.xaml.g.cs
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.dll.mdb
 C:\Users\ARGIRIS\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\LazyRoommate.dll.mdb

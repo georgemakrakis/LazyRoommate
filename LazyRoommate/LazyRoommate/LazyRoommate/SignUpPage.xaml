@@ -6,6 +6,7 @@
 
 
   <ContentPage.Content >
+  
     <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  >
       <Entry x:Name="usernameEntry" Placeholder="Enter Username" />
       <Entry x:Name="passwordEntry1" Placeholder="Enter Password"  IsPassword="true" />
