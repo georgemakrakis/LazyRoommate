@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.UI.Core;
 using Xamarin.Forms;
 
@@ -18,8 +14,8 @@ namespace LazyRoommate
             InitializeComponent();
 
             //making UWP back button non-visible
-            App.currentView = SystemNavigationManager.GetForCurrentView();
-            App.currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+            //App.currentView = SystemNavigationManager.GetForCurrentView();
+            //App.currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
         }
 
         public async void LoginClick(object sender, EventArgs e)
@@ -49,7 +45,8 @@ namespace LazyRoommate
             if (authenticated == true)
             {
                 await DisplayAlert("Alert", "Authentication Successful", "OK");
-                await Navigation.PushModalAsync(new MainPage());
+                await Navigation.PushAsync(new MainPage(),true);
+                
             }
         }
     }

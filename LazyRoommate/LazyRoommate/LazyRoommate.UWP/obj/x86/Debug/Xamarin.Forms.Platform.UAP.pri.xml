@@ -9,6 +9,11 @@
 						<Base64Value>[Embedded Binary Data]</Base64Value>
 					</Candidate>
 				</NamedResource>
+				<NamedResource name="FormsCommandBarStyle.xbf" uri="ms-resource://Xamarin.Forms.Platform.UAP/Files/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="FormsTextBoxStyle.xbf" uri="ms-resource://Xamarin.Forms.Platform.UAP/Files/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf">
 					<Candidate type="EmbeddedData">
 						<Base64Value>[Embedded Binary Data]</Base64Value>

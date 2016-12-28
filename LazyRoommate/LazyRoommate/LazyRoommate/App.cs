@@ -1,10 +1,5 @@
 ﻿using Microsoft.WindowsAzure.MobileServices;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Windows.UI.Core;
 using Xamarin.Forms;
 
 namespace LazyRoommate
@@ -21,7 +16,7 @@ namespace LazyRoommate
     {
         //initializing the interface with a platform-specific implementation
         public static IAuthenticate Authenticator { get; private set; }
-        public static SystemNavigationManager currentView=null;
+        //public static SystemNavigationManager currentView=null;
 
         public static void Init(IAuthenticate authenticator)
         {
@@ -32,7 +27,7 @@ namespace LazyRoommate
         {
             // The root page of your application
 
-            MainPage = new LoginPage();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         public static MobileServiceClient client = new MobileServiceClient("https://lazyroommate.azurewebsites.net");
