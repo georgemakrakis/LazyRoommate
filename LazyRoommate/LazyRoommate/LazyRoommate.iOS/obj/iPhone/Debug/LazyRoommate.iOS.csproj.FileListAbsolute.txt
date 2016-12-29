@@ -82,7 +82,6 @@ C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\L
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.dll
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll
-C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Windows.Foundation.UniversalApiContract.winmd
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.pdb
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.xml
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.Ext.xml

@@ -1,5 +1,4 @@
 ﻿using System;
-using Windows.UI.Core;
 using Xamarin.Forms;
 
 namespace LazyRoommate
@@ -11,11 +10,7 @@ namespace LazyRoommate
 
         public LoginPage()
         {
-            InitializeComponent();
-
-            //making UWP back button non-visible
-            //App.currentView = SystemNavigationManager.GetForCurrentView();
-            //App.currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+            InitializeComponent();         
         }
 
         public async void LoginClick(object sender, EventArgs e)
