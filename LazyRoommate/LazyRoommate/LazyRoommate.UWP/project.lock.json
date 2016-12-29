@@ -1841,6 +1841,19 @@
           }
         }
       },
+      "Xam.Plugins.Forms.ImageCircle/1.8.0.5": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.3.175": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -3548,6 +3561,19 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugins.Forms.ImageCircle/1.8.0.5": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.3.175": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -5217,6 +5243,19 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.8.0.5": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
       "Xamarin.Forms/2.3.3.175": {
@@ -6932,6 +6971,19 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugins.Forms.ImageCircle/1.8.0.5": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.3.175": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -8601,6 +8653,19 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.8.0.5": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
       "Xamarin.Forms/2.3.3.175": {
@@ -10316,6 +10381,19 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugins.Forms.ImageCircle/1.8.0.5": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        }
+      },
       "Xamarin.Forms/2.3.3.175": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -11985,6 +12063,19 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/1.8.0.5": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.2.127"
+        },
+        "compile": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
+          "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
         }
       },
       "Xamarin.Forms/2.3.3.175": {
@@ -15370,6 +15461,51 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
+    "Xam.Plugins.Forms.ImageCircle/1.8.0.5": {
+      "sha512": "Wl9OR/YnS/4u0yUJiFrPD6y3ZV7n7nobfHRA/nUuOHdPdb+g5gsn3eCKHovqUrHLchoMNOn85I+v7cxalumLhQ==",
+      "type": "package",
+      "files": [
+        "Xam.Plugins.Forms.ImageCircle.1.8.0.5.nupkg.sha512",
+        "Xam.Plugins.Forms.ImageCircle.nuspec",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Android.dll",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Android.pdb",
+        "lib/MonoAndroid10/ImageCircle.Forms.Plugin.Android.xml",
+        "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll",
+        "lib/UAP10/ImageCircle.Forms.Plugin.UWP.pdb",
+        "lib/UAP10/ImageCircle.Forms.Plugin.UWP.xml",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.iOS.dll",
+        "lib/Xamarin.iOS10/ImageCircle.Forms.Plugin.iOS.xml",
+        "lib/portable-net45+wp80+win8+wpa81/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/portable-net45+wp80+win8+wpa81/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/portable-net45+wp80+win8+wpa81/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/win81/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/win81/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/win81/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/win81/ImageCircle.Forms.Plugin.WindowsStore.dll",
+        "lib/win81/ImageCircle.Forms.Plugin.WindowsStore.pdb",
+        "lib/win81/ImageCircle.Forms.Plugin.WindowsStore.xml",
+        "lib/wp8/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/wp8/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/wp8/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/wp8/ImageCircle.Forms.Plugin.WindowsPhone.dll",
+        "lib/wp8/ImageCircle.Forms.Plugin.WindowsPhone.pdb",
+        "lib/wp8/ImageCircle.Forms.Plugin.WindowsPhone.xml",
+        "lib/wpa81/ImageCircle.Forms.Plugin.Abstractions.dll",
+        "lib/wpa81/ImageCircle.Forms.Plugin.Abstractions.pdb",
+        "lib/wpa81/ImageCircle.Forms.Plugin.Abstractions.xml",
+        "lib/wpa81/ImageCircle.Forms.Plugin.WindowsPhoneRT.dll",
+        "lib/wpa81/ImageCircle.Forms.Plugin.WindowsPhoneRT.pdb",
+        "lib/wpa81/ImageCircle.Forms.Plugin.WindowsPhoneRT.xml"
+      ]
+    },
     "Xamarin.Forms/2.3.3.175": {
       "sha512": "ykrHIH6of2zy1NyZ4taaz42iyVlyw/rx6wHOm2TU3/yMEe9ptPUtfZ8kkjAyxJn1nsOjzIGsU8QufMogKLWPtg==",
       "type": "package",
@@ -15537,6 +15673,7 @@
     "": [
       "Microsoft.Azure.Mobile.Client >= 3.0.3",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
+      "Xam.Plugins.Forms.ImageCircle >= 1.8.0.5",
       "Xamarin.Forms >= 2.3.3.175"
     ],
     "UAP,Version=v10.0": []

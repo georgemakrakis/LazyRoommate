@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using Xamarin.Forms;
 
 namespace LazyRoommate
@@ -10,13 +11,11 @@ namespace LazyRoommate
 
         public LoginPage()
         {
-            InitializeComponent();         
+            InitializeComponent();
         }
 
         public async void LoginClick(object sender, EventArgs e)
         {
-
-            //var button = GoogleButton;
             if (App.Authenticator != null)
             {
                 if(sender.Equals(FBButton))
