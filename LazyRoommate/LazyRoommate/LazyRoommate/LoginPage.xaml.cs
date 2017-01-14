@@ -38,7 +38,7 @@ namespace LazyRoommate
             }
             if (authenticated == true)
             {
-                await DisplayAlert("Alert", "Authentication Successful", "OK");
+                //await DisplayAlert("Alert", "Authentication Successful", "OK");
                 await Navigation.PushAsync(new MainPage(),true);
                 
             }

@@ -26,8 +26,11 @@ namespace LazyRoommate.UWP
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
-                    message = string.Format("you are now signed-in as {0}.", userInfo.Name);
+                    message = string.Format("you are now signed-in as {0} with {1}.", userInfo.Name, userInfo.Email);
                     success = true;
+
+                    var table = LazyRoommate.App.client.GetTable<UsersTable>();
+                    await table.InsertAsync(new UsersTable { Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
                 }
             }
             catch (Exception ex)
@@ -52,8 +55,11 @@ namespace LazyRoommate.UWP
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
-                    message = string.Format("you are now signed-in as {0}.", userInfo.Name);
+                    message = string.Format("you are now signed-in as {0} with {1}.", userInfo.Name, userInfo.Email);
                     success = true;
+
+                    var table = LazyRoommate.App.client.GetTable<UsersTable>();
+                    await table.InsertAsync(new UsersTable { Email = userInfo.Email, Name = userInfo.Name, ImageUri=userInfo.ImageUri });
                 }
             }
             catch (Exception ex)
@@ -78,8 +84,12 @@ namespace LazyRoommate.UWP
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
-                    message = string.Format("you are now signed-in as {0}.", userInfo.Name);
+                    message = string.Format("you are now signed-in as {0} with {1}.", userInfo.Name, userInfo.Email);
                     success = true;
+
+                    //inserting logged in user into database
+                    var table = LazyRoommate.App.client.GetTable<UsersTable>();
+                    await table.InsertAsync(new UsersTable { Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
                 }
             }
             catch (Exception ex)
