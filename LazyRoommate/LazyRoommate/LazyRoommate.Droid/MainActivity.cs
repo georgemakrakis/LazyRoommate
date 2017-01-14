@@ -9,6 +9,8 @@ using Android.OS;
 using Microsoft.WindowsAzure.MobileServices;
 using System.Threading.Tasks;
 using LazyRoommate.Managers;
+using LazyRoommate.Models;
+using System.Net.Http;
 
 namespace LazyRoommate.Droid
 {
@@ -28,7 +30,8 @@ namespace LazyRoommate.Droid
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(this,MobileServiceAuthenticationProvider.Facebook);
                 if (user != null)
                 {
-                    message = string.Format("you are now signed-in as {0}.",user.UserId);
+                    var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+                    message = string.Format("you are now signed-in as {0}.", userInfo.Name);
                     success = true;
                 }
             }
@@ -56,7 +59,8 @@ namespace LazyRoommate.Droid
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(this, MobileServiceAuthenticationProvider.Google);
                 if (user != null)
                 {
-                    message = string.Format("you are now signed-in as {0}.", user.UserId);
+                    var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+                    message = string.Format("you are now signed-in as {0}.", userInfo.Name);
                     success = true;
                 }
             }
@@ -84,7 +88,8 @@ namespace LazyRoommate.Droid
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(this, MobileServiceAuthenticationProvider.Twitter);
                 if (user != null)
                 {
-                    message = string.Format("you are now signed-in as {0}.", user.UserId);
+                    var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+                    message = string.Format("you are now signed-in as {0}.", userInfo.Name);
                     success = true;
                 }
             }
