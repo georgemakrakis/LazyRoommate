@@ -11,7 +11,6 @@ namespace LazyRoommate
         Task<bool> AuthenticateGoogle();
         Task<bool> AuthenticateTwitter();
     }
-
     public class App : Application
     {
         //initializing the interface with a platform-specific implementation

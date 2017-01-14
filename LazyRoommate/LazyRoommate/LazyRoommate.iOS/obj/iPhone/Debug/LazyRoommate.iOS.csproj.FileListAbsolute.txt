@@ -67,8 +67,6 @@ C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\Lazy
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.csproj.LazyRoommate.iOS.exe.config
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.exe
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.pdb
-C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.exe.mdb
-C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.exe.mdb
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.exe.config
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.exe
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.pdb
@@ -140,3 +138,5 @@ C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\L
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.pdb
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.exe.mdb
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.exe.mdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.exe.mdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.exe.mdb

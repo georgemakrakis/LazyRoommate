@@ -835,3 +835,9 @@ C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\L
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Assets\social_connect-facebook.png
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Assets\social_connect-google.png
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Assets\social_connect-twitter.png
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Assets\social_connect-facebook.png
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Assets\social_connect-google.png
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Assets\social_connect-twitter.png
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\login_scrn.jpg
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Xamarin.iOS.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Xamarin.iOS.xml

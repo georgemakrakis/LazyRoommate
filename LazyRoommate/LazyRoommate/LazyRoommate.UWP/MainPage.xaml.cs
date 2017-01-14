@@ -1,7 +1,11 @@
 ﻿using LazyRoommate.Managers;
+using LazyRoommate.Models;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
+using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
+using Windows.Security.Credentials;
 using Windows.UI.Popups;
 
 namespace LazyRoommate.UWP
@@ -9,7 +13,7 @@ namespace LazyRoommate.UWP
     public sealed partial class MainPage : IAuthenticate
     {
         // Define a authenticated user.
-        private MobileServiceUser user;
+        private MobileServiceUser user { get; set; }
 
         public async Task<bool> AuthenticateFacebook()
         {
@@ -21,7 +25,8 @@ namespace LazyRoommate.UWP
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(MobileServiceAuthenticationProvider.Facebook);
                 if (user != null)
                 {
-                    message = string.Format("you are now signed-in as {0}.", user.UserId);
+                    var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+                    message = string.Format("you are now signed-in as {0}.", userInfo.Name);
                     success = true;
                 }
             }
@@ -31,7 +36,7 @@ namespace LazyRoommate.UWP
             }
 
             // Display the success or failure message.
-            Windows.UI.Popups.MessageDialog mg = new Windows.UI.Popups.MessageDialog(message);
+            MessageDialog mg = new MessageDialog(message);
             await mg.ShowAsync();
 
             return success;
@@ -42,11 +47,12 @@ namespace LazyRoommate.UWP
             var message = string.Empty;
             try
             {
-                // Sign in with Facebook login using a server-managed flow.
+                // Sign in with Google login using a server-managed flow.
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(MobileServiceAuthenticationProvider.Google);
                 if (user != null)
                 {
-                    message = string.Format("you are now signed-in as {0}.", user.UserId);
+                    var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+                    message = string.Format("you are now signed-in as {0}.", userInfo.Name);
                     success = true;
                 }
             }
@@ -67,11 +73,12 @@ namespace LazyRoommate.UWP
             var message = string.Empty;
             try
             {
-                // Sign in with Facebook login using a server-managed flow.
+                // Sign in with Twitter login using a server-managed flow.
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(MobileServiceAuthenticationProvider.Twitter);
                 if (user != null)
                 {
-                    message = string.Format("you are now signed-in as {0}.", user.UserId);
+                    var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+                    message = string.Format("you are now signed-in as {0}.", userInfo.Name);
                     success = true;
                 }
             }
@@ -86,13 +93,13 @@ namespace LazyRoommate.UWP
 
             return success;
         }
-
         public MainPage()
         {
             this.InitializeComponent();
             // Initialize the authenticator before loading the app.
             LazyRoommate.App.Init(this);
             LoadApplication(new LazyRoommate.App());
+            
         }
     }
 }

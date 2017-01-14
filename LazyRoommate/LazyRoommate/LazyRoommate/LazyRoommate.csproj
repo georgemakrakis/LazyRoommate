@@ -43,6 +43,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Managers\UsersTableManager.cs" />
+    <Compile Include="Models\UserInfo.cs" />
     <Compile Include="Models\UsersTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUpPage.xaml.cs">
