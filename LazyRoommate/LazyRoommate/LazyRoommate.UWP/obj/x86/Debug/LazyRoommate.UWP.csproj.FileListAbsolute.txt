@@ -621,10 +621,6 @@ C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\L
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\login_scrn.jpg
-C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
-C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
-C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\ImageCircle.Forms.Plugin.UWP.dll
-C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\ImageCircle.Forms.Plugin.UWP.pdb
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Assets\social_connect-facebook.png
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Assets\social_connect-google.png
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Assets\social_connect-twitter.png
@@ -841,3 +837,5 @@ C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\Lazy
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.pri.xml
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Xamarin.iOS.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Xamarin.iOS.xml
