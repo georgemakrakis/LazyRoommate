@@ -70,6 +70,7 @@ namespace LazyRoommate.Droid
                     //inserting logged in user into database
                     var table = LazyRoommate.App.client.GetTable<UsersTable>();
                     await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
+
                 }
             }
             catch (Exception ex)
