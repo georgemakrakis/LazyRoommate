@@ -5,7 +5,6 @@ using System;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Windows.Security.Credentials;
 using Windows.UI.Popups;
 
 namespace LazyRoommate.UWP
@@ -26,17 +25,31 @@ namespace LazyRoommate.UWP
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
-                    message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                    success = true;
 
-                    //inserting logged in user into database
-                    var table = LazyRoommate.App.client.GetTable<UsersTable>();
-                    await table.InsertAsync(new UsersTable { id=userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
+                    var table2 = LazyRoommate.App.client.GetTable<UsersTable>();
+                    var userItem = await table2.Where(x => (x.Email == userInfo.Email)).ToListAsync();
+                    var first = userItem.FirstOrDefault();
+
+                    if (first != null)
+                    {
+                        message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        success = true;
+                    }
+                    else
+                    {
+                        //inserting logged in user into database
+                        var table = LazyRoommate.App.client.GetTable<UsersTable>();
+                        await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
+
+                        message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        success = true;
+                    }
                 }
             }
             catch (Exception ex)
             {
                 message = ex.Message;
+                success = false;
             }
 
             // Display the success or failure message.
@@ -56,17 +69,31 @@ namespace LazyRoommate.UWP
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
-                    message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                    success = true;
 
-                    //inserting logged in user into database
-                    var table = LazyRoommate.App.client.GetTable<UsersTable>();
-                    await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
+                    var table2 = LazyRoommate.App.client.GetTable<UsersTable>();
+                    var userItem = await table2.Where(x => (x.Email == userInfo.Email)).ToListAsync();
+                    var first = userItem.FirstOrDefault();
+
+                    if (first != null)
+                    {
+                        message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        success = true;
+                    }
+                    else
+                    {
+                        //inserting logged in user into database
+                        var table = LazyRoommate.App.client.GetTable<UsersTable>();
+                        await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
+
+                        message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        success = true;
+                    }
                 }
             }
             catch (Exception ex)
             {
                 message = ex.Message;
+                success = false;
             }
 
             // Display the success or failure message.
@@ -86,17 +113,31 @@ namespace LazyRoommate.UWP
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
-                    message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                    success = true;
 
-                    //inserting logged in user into database
-                    var table = LazyRoommate.App.client.GetTable<UsersTable>();                   
-                    await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
+                    var table2 = LazyRoommate.App.client.GetTable<UsersTable>();
+                    var userItem = await table2.Where(x => (x.Email == userInfo.Email)).ToListAsync();
+                    var first = userItem.FirstOrDefault();
+
+                    if (first != null)
+                    {
+                        message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        success = true;
+                    }
+                    else
+                    {
+                        //inserting logged in user into database
+                        var table = LazyRoommate.App.client.GetTable<UsersTable>();
+                        await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
+
+                        message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        success = true;
+                    }
                 }
             }
             catch (Exception ex)
             {
                 message = ex.Message;
+                success = false;
             }
 
             // Display the success or failure message.
@@ -111,7 +152,7 @@ namespace LazyRoommate.UWP
             // Initialize the authenticator before loading the app.
             LazyRoommate.App.Init(this);
             LoadApplication(new LazyRoommate.App());
-            
+
         }
     }
 }
