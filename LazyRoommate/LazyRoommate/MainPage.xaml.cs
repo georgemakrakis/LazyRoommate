@@ -17,11 +17,7 @@ namespace LazyRoommate
 
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, true);
-
-            //Something like this makes Label click-able
-            //menu.GestureRecognizers.Add(new TapGestureRecognizer((view) => OnLabelClicked()));
-
-
+            
         }
 
         private void OnLabelClicked()

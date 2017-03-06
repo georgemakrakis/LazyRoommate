@@ -108,14 +108,13 @@
     <None Include="Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\hamburger.png" />
-    <Content Include="Assets\social_connect-facebook.png">
+    <Content Include="social_connect-facebook.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\social_connect-google.png">
+    <Content Include="social_connect-google.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\social_connect-twitter.png">
+    <Content Include="social_connect-twitter.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="login_scrn.jpg">

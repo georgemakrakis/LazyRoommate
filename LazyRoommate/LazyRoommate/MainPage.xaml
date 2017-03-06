@@ -12,7 +12,7 @@
         <ContentPage Padding="10" Title="Master">
             <ContentPage.Content>
                 <StackLayout VerticalOptions="FillAndExpand">
-                    <Button x:Name="ham" Image="Assets/hamburger.png"></Button>
+                    <Button x:Name="ham" FontFamily="Segoe MDL2 Assets" Text="&#xE700;"></Button>
                     <!--<Label x:Name="menu" FontFamily="Symbol" FontSize="Medium">&#xF0BA;</Label>-->
 
                     <Button Text="Add Task" Clicked="Button1_Clicked"></Button>

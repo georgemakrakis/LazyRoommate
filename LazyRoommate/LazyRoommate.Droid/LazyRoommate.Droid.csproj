@@ -164,13 +164,13 @@
     <AndroidResource Include="Resources\drawable\login_scrn.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\social_connect-facebook.png">
+    <Content Include="Resources\drawable\social_connect-facebook.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\social_connect-google.png">
+    <Content Include="Resources\drawable\social_connect-google.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\social_connect-twitter.png">
+    <Content Include="Resources\drawable\social_connect-twitter.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

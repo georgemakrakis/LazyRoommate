@@ -11,8 +11,16 @@ namespace LazyRoommate
 
         public LoginPage()
         {
+            Image Fb_Image = new Image { Aspect = Aspect.AspectFit };
+            Fb_Image.Source = Device.OnPlatform
+           (
+                iOS:ImageSource.FromFile("Assets/social_connect-facebook.png"),
+                Android: ImageSource.FromFile("Assets/social_connect-facebook.png"),
+                WinPhone: ImageSource.FromFile("Assets/social_connect-facebook.png")
+            );
+            //FBButton.Image;
+
             InitializeComponent();
-		
         }
 
         public async void LoginClick(object sender, EventArgs e)

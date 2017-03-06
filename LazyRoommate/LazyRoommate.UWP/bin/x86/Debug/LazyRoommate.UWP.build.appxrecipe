@@ -367,17 +367,14 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Xamarin.iOS.dll">
       <PackagePath>Xamarin.iOS.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\hamburger.png">
-      <PackagePath>Assets\hamburger.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\social_connect-facebook.png">
+      <PackagePath>social_connect-facebook.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\social_connect-facebook.png">
-      <PackagePath>Assets\social_connect-facebook.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\social_connect-google.png">
+      <PackagePath>social_connect-google.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\social_connect-google.png">
-      <PackagePath>Assets\social_connect-google.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\social_connect-twitter.png">
-      <PackagePath>Assets\social_connect-twitter.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\social_connect-twitter.png">
+      <PackagePath>social_connect-twitter.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
