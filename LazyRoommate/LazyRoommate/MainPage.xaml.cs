@@ -18,9 +18,15 @@ namespace LazyRoommate
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, true);
 
-            //hamburger.Text = "\xF0BA";
+            //Something like this makes Label click-able
+            //menu.GestureRecognizers.Add(new TapGestureRecognizer((view) => OnLabelClicked()));
 
 
+        }
+
+        private void OnLabelClicked()
+        {
+            
         }
 
         private void Button1_Clicked(object sender, System.EventArgs e)
