@@ -1,8 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LazyRoommate.MainPage"
              BackgroundImage="login_scrn.jpg">
-            
-  <Label Text="MainPage" VerticalOptions="Center" HorizontalOptions="Center" />
-</ContentPage>
+
+    <Label Text="MainPage" VerticalOptions="Center" HorizontalOptions="Center" />
+
+
+
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" Title="Master">
+            <ContentPage.Content>
+                <StackLayout>
+                    <Label Text="master item" ></Label>
+                    <Button Text="button 1" Clicked="Button1_Clicked"></Button>
+                    <Button Text="button 2" Clicked="Button2_Clicked"></Button>
+                    <Button Text="button 3"  Clicked="Button3_Clicked"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+
+    <MasterDetailPage.Detail>
+        <ContentPage Padding="10" Title="Detail">
+            <ContentPage.Content>
+                
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+    
+    
+</MasterDetailPage>
