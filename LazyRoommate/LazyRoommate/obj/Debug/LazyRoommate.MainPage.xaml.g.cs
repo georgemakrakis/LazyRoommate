@@ -17,12 +17,8 @@ namespace LazyRoommate {
     public partial class MainPage : global::Xamarin.Forms.MasterDetailPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button ham;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPage));
-            ham = this.FindByName<global::Xamarin.Forms.Button>("ham");
         }
     }
 }

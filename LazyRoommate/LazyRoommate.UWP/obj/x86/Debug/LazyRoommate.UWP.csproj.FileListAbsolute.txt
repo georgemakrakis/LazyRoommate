@@ -1266,6 +1266,9 @@ C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\L
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\social_connect-google.png
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\social_connect-twitter.png
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\login_scrn.jpg
+C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\social_connect_facebook.png
+C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\social_connect_google.png
+C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\social_connect_twitter.png
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\App.xbf
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\MainPage.xbf
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\LazyRoommate.UWP.xr.xml

@@ -2,19 +2,17 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LazyRoommate.MainPage"
-             BackgroundImage="login_scrn.jpg">
+             BackgroundImage="login_scrn.jpg"
+             MasterBehavior="Popover">
 
     <Label Text="MainPage" VerticalOptions="Center" HorizontalOptions="Center" />
 
 
 
     <MasterDetailPage.Master>
-        <ContentPage Padding="10" Title="Master">
+        <ContentPage Padding="10" Title=" ">
             <ContentPage.Content>
                 <StackLayout VerticalOptions="FillAndExpand">
-                    <Button x:Name="ham" FontFamily="Segoe MDL2 Assets" Text="&#xE700;"></Button>
-                    <!--<Label x:Name="menu" FontFamily="Symbol" FontSize="Medium">&#xF0BA;</Label>-->
-
                     <Button Text="Add Task" Clicked="Button1_Clicked"></Button>
                     <Button Text="Join Room" Clicked="Button2_Clicked"></Button>
                     <Button Text="Create Room"  Clicked="Button3_Clicked"></Button>

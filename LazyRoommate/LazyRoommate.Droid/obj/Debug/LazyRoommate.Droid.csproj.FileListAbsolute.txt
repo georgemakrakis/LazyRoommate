@@ -258,9 +258,6 @@ C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\L
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\uploadflags.txt
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\LazyRoommate.Droid.dll.mdb
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.dll.mdb
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Resources\drawable\social_connect-facebook.png
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Resources\drawable\social_connect-google.png
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Resources\drawable\social_connect-twitter.png
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.dll.config
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.dll
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.pdb
@@ -314,6 +311,9 @@ C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\Lazy
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\layout\toolbar.xml
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\values\styles.xml
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\login_scrn.jpg
+C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\social_connect_facebook.png
+C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\social_connect_google.png
+C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\social_connect_twitter.png
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\R.cs.flag
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\uploadflags.txt
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\LazyRoommate.Droid.dll.mdb
