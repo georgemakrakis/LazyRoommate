@@ -2560,7 +2560,10 @@ containing a value of this type.
         public static final int mr_ic_pause_light=0x7f02009f;
         public static final int mr_ic_play_dark=0x7f0200a0;
         public static final int mr_ic_play_light=0x7f0200a1;
-        public static final int notification_template_icon_bg=0x7f0200a2;
+        public static final int notification_template_icon_bg=0x7f0200a5;
+        public static final int social_connect_facebook=0x7f0200a2;
+        public static final int social_connect_google=0x7f0200a3;
+        public static final int social_connect_twitter=0x7f0200a4;
     }
     public static final class id {
         public static final int action0=0x7f07008b;

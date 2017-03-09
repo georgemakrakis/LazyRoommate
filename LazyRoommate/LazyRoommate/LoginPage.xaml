@@ -20,7 +20,7 @@
                 <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
 
                     <!--These have to work also on Android and iOS, so the folder may not be Assets scrictly-->
-                    <Button x:Name="FBButton" Image="social_connect-facebook.png" Clicked="LoginClick">
+                    <Button x:Name="FBButton" Image="social_connect_facebook.png" Clicked="LoginClick">
                         <Button.WidthRequest>
                             <OnPlatform x:TypeArguments="x:Double" WinPhone="281" iOS="281" Android="281"/>
                         </Button.WidthRequest>
@@ -29,7 +29,7 @@
                         </Button.HeightRequest>
                     </Button>
 
-                    <Button x:Name="TwitterButton" Image="social_connect-twitter.png" Clicked="LoginClick">
+                    <Button x:Name="TwitterButton" Image="social_connect_twitter.png" Clicked="LoginClick">
                         <Button.WidthRequest>
                             <OnPlatform x:TypeArguments="x:Double" WinPhone="282" iOS="282" Android="282"/>
                         </Button.WidthRequest>
@@ -38,7 +38,7 @@
                         </Button.HeightRequest>
                     </Button>
 
-                    <Button x:Name="GoogleButton" Image="social_connect-google.png" Clicked="LoginClick">
+                    <Button x:Name="GoogleButton" Image="social_connect_google.png" Clicked="LoginClick">
                         <Button.WidthRequest>
                             <OnPlatform x:TypeArguments="x:Double" WinPhone="281" iOS="281" Android="281"/>
                         </Button.WidthRequest>
