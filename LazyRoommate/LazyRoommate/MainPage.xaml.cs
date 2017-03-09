@@ -1,4 +1,6 @@
-﻿using Microsoft.WindowsAzure.MobileServices;
+﻿using LazyRoommate.MenuItems;
+using Microsoft.WindowsAzure.MobileServices;
+using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace LazyRoommate
@@ -6,23 +8,43 @@ namespace LazyRoommate
     public partial class MainPage : MasterDetailPage
     {
         private MobileServiceUser user { get; set; }
-       
+        
         public MainPage()
-        {
+        {            
             InitializeComponent();
-
-            //making UWP back button visible
-            //App.currentView = SystemNavigationManager.GetForCurrentView();
-            //App.currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
 
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, true);
-            
+
+            //Initializing the Hamburger menu
+
+            var masterPageItems = new List<Menu>
+            {
+                new Menu
+                {
+                    Title = "Add Task",
+                    //IconSource = ""
+                    //TargetType = typeof( )
+                },
+                new Menu
+                {
+                    Title = "Join Room",
+                    //IconSource = ""
+                    //TargetType = typeof( )
+                },
+                new Menu
+                {
+                    Title = "Create Room",
+                    //IconSource = ""
+                    //TargetType = typeof( )
+                }
+            };
+            menu.ItemsSource = masterPageItems;
         }
 
         private void OnLabelClicked()
         {
-            
+
         }
 
         private void Button1_Clicked(object sender, System.EventArgs e)

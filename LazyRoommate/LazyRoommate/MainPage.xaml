@@ -10,12 +10,20 @@
 
 
     <MasterDetailPage.Master>
-        <ContentPage Padding="10" Title=" ">
+        <ContentPage Padding="10" Title="Menu">
             <ContentPage.Content>
                 <StackLayout VerticalOptions="FillAndExpand">
-                    <Button Text="Add Task" Clicked="Button1_Clicked"></Button>
+                    <ListView x:Name="menu" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <!--<Button Text="Add Task" Clicked="Button1_Clicked"></Button>
                     <Button Text="Join Room" Clicked="Button2_Clicked"></Button>
-                    <Button Text="Create Room"  Clicked="Button3_Clicked"></Button>
+                    <Button Text="Create Room"  Clicked="Button3_Clicked"></Button>-->
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>
