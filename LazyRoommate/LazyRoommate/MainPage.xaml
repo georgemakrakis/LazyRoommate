@@ -8,7 +8,6 @@
     <Label Text="MainPage" VerticalOptions="Center" HorizontalOptions="Center" />
 
 
-
     <MasterDetailPage.Master>
         <ContentPage Padding="10" Title="Menu">
             <ContentPage.Content>
@@ -20,7 +19,7 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-
+                    <Button x:Name="profile" Text="Profile" Clicked="profile_Clicked"></Button>
                     <!--<Button Text="Add Task" Clicked="Button1_Clicked"></Button>
                     <Button Text="Join Room" Clicked="Button2_Clicked"></Button>
                     <Button Text="Create Room"  Clicked="Button3_Clicked"></Button>-->

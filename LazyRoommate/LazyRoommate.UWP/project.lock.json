@@ -16451,20 +16451,20 @@
     "UAP,Version=v10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\George Makrakis\\.nuget\\packages\\": {}
+    "C:\\Users\\georg\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\George Makrakis\\Documents\\Visual Studio 2017\\Projects\\LazyRoommate\\LazyRoommate\\LazyRoommate.UWP\\LazyRoommate.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\georg\\Documents\\Visual Studio 2017\\Projects\\LazyRoommate\\LazyRoommate\\LazyRoommate.UWP\\LazyRoommate.UWP.csproj",
       "projectName": "LazyRoommate.UWP",
-      "projectPath": "C:\\Users\\George Makrakis\\Documents\\Visual Studio 2017\\Projects\\LazyRoommate\\LazyRoommate\\LazyRoommate.UWP\\LazyRoommate.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\George Makrakis\\Documents\\Visual Studio 2017\\Projects\\LazyRoommate\\LazyRoommate\\LazyRoommate.UWP\\project.json",
+      "projectPath": "C:\\Users\\georg\\Documents\\Visual Studio 2017\\Projects\\LazyRoommate\\LazyRoommate\\LazyRoommate.UWP\\LazyRoommate.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\georg\\Documents\\Visual Studio 2017\\Projects\\LazyRoommate\\LazyRoommate\\LazyRoommate.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Users\\George Makrakis\\Documents\\Visual Studio 2017\\Projects\\LazyRoommate\\LazyRoommate\\LazyRoommate\\LazyRoommate.csproj": {
-              "projectPath": "C:\\Users\\George Makrakis\\Documents\\Visual Studio 2017\\Projects\\LazyRoommate\\LazyRoommate\\LazyRoommate\\LazyRoommate.csproj"
+            "C:\\Users\\georg\\Documents\\Visual Studio 2017\\Projects\\LazyRoommate\\LazyRoommate\\LazyRoommate\\LazyRoommate.csproj": {
+              "projectPath": "C:\\Users\\georg\\Documents\\Visual Studio 2017\\Projects\\LazyRoommate\\LazyRoommate\\LazyRoommate\\LazyRoommate.csproj"
             }
           }
         }

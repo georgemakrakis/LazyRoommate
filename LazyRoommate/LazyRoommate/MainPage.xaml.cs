@@ -62,5 +62,10 @@ namespace LazyRoommate
             Detail = new NavigationPage();
             IsPresented = false;
         }
+
+        private void profile_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new ProfilePage(), true);
+        }
     }
 }
