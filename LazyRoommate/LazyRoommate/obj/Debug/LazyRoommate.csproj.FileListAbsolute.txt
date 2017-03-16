@@ -230,3 +230,8 @@ C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\L
 C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
 C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.dll.mdb
 C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\LazyRoommate.dll.mdb
+C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.csprojResolveAssemblyReference.cache
+C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
+C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.App.xaml.g.cs
+C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.dll.mdb
+C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\LazyRoommate.dll.mdb
