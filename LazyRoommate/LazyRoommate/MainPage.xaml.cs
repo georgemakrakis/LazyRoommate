@@ -1,4 +1,5 @@
-﻿using LazyRoommate.MenuItems;
+﻿using LazyRoommate.DataFactoryModel;
+using LazyRoommate.MenuItems;
 using Microsoft.WindowsAzure.MobileServices;
 using System.Collections.Generic;
 using Xamarin.Forms;
@@ -40,6 +41,12 @@ namespace LazyRoommate
                 }
             };
             menu.ItemsSource = masterPageItems;
+
+            BindingContext = DataFactory.Classes;
+        }
+        private void timelineListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            timelineListView.SelectedItem = null;
         }
 
         private void OnLabelClicked()

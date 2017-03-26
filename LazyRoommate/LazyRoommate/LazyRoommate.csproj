@@ -38,6 +38,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converter\NotBooleanConverter.cs" />
+    <Compile Include="DataFactoryModel\DataFactory.cs" />
     <Compile Include="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -46,6 +48,7 @@
     </Compile>
     <Compile Include="Managers\UsersTableManager.cs" />
     <Compile Include="MenuItems\Menu.cs" />
+    <Compile Include="Models\ExerciseClass.cs" />
     <Compile Include="Models\UserInfo.cs" />
     <Compile Include="Models\UsersTable.cs" />
     <Compile Include="ProfilePage.xaml.cs">

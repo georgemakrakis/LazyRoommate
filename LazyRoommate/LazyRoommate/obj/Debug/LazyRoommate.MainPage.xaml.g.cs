@@ -23,10 +23,14 @@ namespace LazyRoommate {
         private global::Xamarin.Forms.Button profile;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ListView timelineListView;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPage));
             menu = this.FindByName<global::Xamarin.Forms.ListView>("menu");
             profile = this.FindByName<global::Xamarin.Forms.Button>("profile");
+            timelineListView = this.FindByName<global::Xamarin.Forms.ListView>("timelineListView");
         }
     }
 }
