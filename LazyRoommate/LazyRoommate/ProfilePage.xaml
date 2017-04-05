@@ -16,7 +16,7 @@
 			<Image Source="curved_mask.png" VerticalOptions="End" Aspect="AspectFill" Margin="0,0,0,-1"/>
 
 			<!-- profile image -->
-			<Image Source=" " Margin="0,0,0,-50" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="End"/>
+			<Image x:Name="ProfileImage" Source=" " Margin="0,0,0,-50" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="End"/>
 
 			<StackLayout Grid.Row="1" HorizontalOptions="Center" Padding="0,50,0,00">
 				<Label x:Name="ProfileName" HorizontalTextAlignment="Center" Text="Name" Style="{StaticResource ProfileNameLabel}"/>
@@ -42,7 +42,7 @@
 
 				<StackLayout Grid.Column="2">
 					<Label Text="957" Style="{StaticResource StatsNumberLabel}"/>
-					<Label Text="RoomID" Style="{StaticResource StatsCaptionLabel}"/>
+					<Label x:Name="RoomID" Text="RoomID" Style="{StaticResource StatsCaptionLabel}"/>
 				</StackLayout>
 
 				<!-- profile description -->

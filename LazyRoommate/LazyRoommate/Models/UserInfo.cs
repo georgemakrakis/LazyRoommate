@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LazyRoommate.Models
+﻿namespace LazyRoommate.Models
 {
     public class UserInfo
     {
@@ -12,5 +6,6 @@ namespace LazyRoommate.Models
         public string Email { get; set; }
         public string Name { get; set; }
         public string ImageUri { get; set; }
+        public string RoomName { get; set; }
     }
 }
