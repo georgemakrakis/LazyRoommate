@@ -3,6 +3,30 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
+      "Acr.UserDialogs/6.3.10": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -303,6 +327,14 @@
         },
         "runtime": {
           "lib/netcore45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -1854,6 +1886,30 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
+      "Acr.UserDialogs/6.3.10": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -2147,6 +2203,14 @@
         },
         "runtime": {
           "lib/netcore45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -3558,6 +3622,30 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
+      "Acr.UserDialogs/6.3.10": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -3837,6 +3925,14 @@
         },
         "runtime": {
           "lib/netcore45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -5226,6 +5322,30 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
+      "Acr.UserDialogs/6.3.10": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -5525,6 +5645,14 @@
         },
         "runtime": {
           "lib/netcore45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -6936,6 +7064,30 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
+      "Acr.UserDialogs/6.3.10": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -7215,6 +7367,14 @@
         },
         "runtime": {
           "lib/netcore45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -8604,6 +8764,30 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
+      "Acr.UserDialogs/6.3.10": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -8903,6 +9087,14 @@
         },
         "runtime": {
           "lib/netcore45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -10314,6 +10506,30 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
+      "Acr.UserDialogs/6.3.10": {
+        "dependencies": {
+          "Coding4Fun.Toolkit.Controls": "[2.1.8, 3.0.0)",
+          "Splat": "[1.6.2, 2.0.0)"
+        },
+        "compile": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Acr.UserDialogs.Interface.dll": {},
+          "lib/uap10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "Coding4Fun.Toolkit.Controls/2.1.8": {
+        "compile": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcore451/Coding4Fun.Toolkit.Controls.dll": {},
+          "lib/netcore451/Coding4Fun.Toolkit.dll": {}
+        }
+      },
       "Microsoft.Azure.Mobile.Client/3.1.0": {
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -10593,6 +10809,14 @@
         },
         "runtime": {
           "lib/netcore45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Splat/1.6.2": {
+        "compile": {
+          "lib/NetCore45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/NetCore45/Splat.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -11983,6 +12207,79 @@
     }
   },
   "libraries": {
+    "Acr.UserDialogs/6.3.10": {
+      "sha512": "KOSYVT0BFEpPbp7p3QZQgRsXZ+jSvuvSMDck8YsB31xan8GMOtU57uh2B1MFOsi3dxL0TF8A1hplhbJgdLJEkQ==",
+      "type": "package",
+      "path": "Acr.UserDialogs/6.3.10",
+      "files": [
+        "Acr.UserDialogs.6.3.10.nupkg.sha512",
+        "Acr.UserDialogs.nuspec",
+        "lib/MonoAndroid10/Acr.UserDialogs.Interface.dll",
+        "lib/MonoAndroid10/Acr.UserDialogs.Interface.pdb",
+        "lib/MonoAndroid10/Acr.UserDialogs.dll",
+        "lib/MonoAndroid10/Acr.UserDialogs.pdb",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.dll.mdb",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.Interface.pdb",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.dll",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.dll.mdb",
+        "lib/Xamarin.iOS10/Acr.UserDialogs.pdb",
+        "lib/portable-win+net45+wp8+win8+wpa81/Acr.UserDialogs.Interface.dll",
+        "lib/portable-win+net45+wp8+win8+wpa81/Acr.UserDialogs.Interface.pdb",
+        "lib/portable-win+net45+wp8+win8+wpa81/Acr.UserDialogs.dll",
+        "lib/uap10.0/Acr.UserDialogs.Interface.dll",
+        "lib/uap10.0/Acr.UserDialogs.Interface.pdb",
+        "lib/uap10.0/Acr.UserDialogs.dll",
+        "lib/uap10.0/Acr.UserDialogs.pdb",
+        "lib/uap10.0/Acr.UserDialogs.pri",
+        "lib/uap10.0/Acr.UserDialogs/Acr.UserDialogs.xr.xml",
+        "lib/uap10.0/Acr.UserDialogs/ActionSheetContentDialog.xaml",
+        "lib/uap10.0/Acr.UserDialogs/DatePickerControl.xaml",
+        "lib/uap10.0/Acr.UserDialogs/LoginContentDialog.xaml",
+        "lib/uap10.0/Acr.UserDialogs/ProgressContentDialog.xaml",
+        "lib/uap10.0/Acr.UserDialogs/Properties/Acr.UserDialogs.rd.xml",
+        "lib/uap10.0/Acr.UserDialogs/TimePickerControl.xaml"
+      ]
+    },
+    "Coding4Fun.Toolkit.Controls/2.1.8": {
+      "sha512": "PCRWgCiW9H8qzT8xYxNtpq4ZWpvh2gtrKAnWtEOXzapyXTEt8esCt0cqRwvosW+bytyfohonmB7UxB0EGXmdsQ==",
+      "type": "package",
+      "path": "Coding4Fun.Toolkit.Controls/2.1.8",
+      "files": [
+        "Coding4Fun.Toolkit.Controls.2.1.8.nupkg.sha512",
+        "Coding4Fun.Toolkit.Controls.nuspec",
+        "content/ReadMe.Coding4Fun.Toolkit.txt",
+        "content/windowsphone8/Toolkit.Content/ApplicationBar.Cancel.png",
+        "content/windowsphone8/Toolkit.Content/ApplicationBar.Check.png",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls.dll",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls.pri",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls/Coding4Fun.Toolkit.Controls.xr.xml",
+        "lib/netcore451/Coding4Fun.Toolkit.Controls/Themes/Generic.xbf",
+        "lib/netcore451/Coding4Fun.Toolkit.dll",
+        "lib/netcore451/Coding4Fun.Toolkit.pri",
+        "lib/windowsphone8/Coding4Fun.Toolkit.Controls.dll",
+        "lib/windowsphone8/Coding4Fun.Toolkit.dll",
+        "lib/windowsphone8/cs/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/da/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/de/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/es/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/fr/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/fr/hu/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/it/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/ko/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/no/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/pl/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/pt/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/ru/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/windowsphone8/sk/Coding4Fun.Toolkit.Controls.resources.dll",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls.dll",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls.pri",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls/Coding4Fun.Toolkit.Controls.xr.xml",
+        "lib/wpa81/Coding4Fun.Toolkit.Controls/Themes/Generic.xbf",
+        "lib/wpa81/Coding4Fun.Toolkit.dll",
+        "lib/wpa81/Coding4Fun.Toolkit.pri"
+      ]
+    },
     "Microsoft.Azure.Mobile.Client/3.1.0": {
       "sha512": "L/RF/9A/mMFifQsTBRmSPV3UpvG11LR+0vsm7KKkOW7pLeRmsAWFtfKRUKoEfgdi2XoOFSLkXk88w8jVXV5uJA==",
       "type": "package",
@@ -12853,6 +13150,37 @@
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "tools/install.ps1"
+      ]
+    },
+    "Splat/1.6.2": {
+      "sha512": "DeH0MxPU+D4JchkIDPYG4vUT+hsWs9S41cFle0/4K5EJMXWurx5DzAkj2366DfK14/XKNhsu6tCl4dZXJ3CD4w==",
+      "type": "package",
+      "path": "Splat/1.6.2",
+      "files": [
+        "Splat.1.6.2.nupkg.sha512",
+        "Splat.nuspec",
+        "lib/MonoMac/Splat.dll",
+        "lib/MonoMac/Splat.dll.mdb",
+        "lib/Net45/Splat.dll",
+        "lib/Net45/Splat.pdb",
+        "lib/NetCore45/Splat.dll",
+        "lib/NetCore45/Splat.pdb",
+        "lib/NetCore45/Splat.pri",
+        "lib/Portable-Win81+Wpa81/Splat.dll",
+        "lib/Portable-Win81+Wpa81/Splat.pdb",
+        "lib/Portable-Win81+Wpa81/Splat.pri",
+        "lib/Portable-net45+win+wpa81+wp80/Splat.dll",
+        "lib/Xamarin.Mac10/Splat-XamarinMac.csproj.FilesWrittenAbsolute.txt",
+        "lib/Xamarin.Mac10/Splat.dll",
+        "lib/Xamarin.Mac10/Splat.dll.mdb",
+        "lib/Xamarin.iOS10/Splat.dll",
+        "lib/Xamarin.iOS10/Splat.dll.mdb",
+        "lib/monoandroid/Splat.dll",
+        "lib/monoandroid/Splat.dll.mdb",
+        "lib/monotouch/Splat.dll",
+        "lib/monotouch/Splat.dll.mdb",
+        "lib/wp8/Splat.dll",
+        "lib/wp8/Splat.pdb"
       ]
     },
     "System.AppContext/4.0.0": {
@@ -15626,6 +15954,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Acr.UserDialogs >= 6.3.10",
       "Microsoft.Azure.Mobile.Client >= 3.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
       "Xamarin.Forms >= 2.3.3.175"

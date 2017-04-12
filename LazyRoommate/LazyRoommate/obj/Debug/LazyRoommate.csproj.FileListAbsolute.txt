@@ -235,3 +235,7 @@ C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\Lazy
 C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\LazyRoommate.dll.mdb
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.App.xaml.g.cs
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Acr.UserDialogs.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Acr.UserDialogs.Interface.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Splat.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Acr.UserDialogs.Interface.pdb

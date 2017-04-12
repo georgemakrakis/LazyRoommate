@@ -1693,3 +1693,15 @@ C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\L
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\social_connect_facebook.png
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\social_connect_google.png
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\social_connect_twitter.png
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Acr.UserDialogs.Interface.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Acr.UserDialogs.Interface.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Acr.UserDialogs.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Acr.UserDialogs.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Coding4Fun.Toolkit.Controls.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Coding4Fun.Toolkit.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Splat.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Splat.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Acr.UserDialogs.pri.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Coding4Fun.Toolkit.Controls.pri.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Coding4Fun.Toolkit.pri.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Splat.pri.xml

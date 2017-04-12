@@ -13,7 +13,7 @@
         <ContentPage Padding="10" Title="Menu">
             <ContentPage.Content>
                 <StackLayout VerticalOptions="FillAndExpand">
-                    <ListView x:Name="menu" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+                    <ListView x:Name="menu" VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemSelected="OnMenuItemSelected">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />

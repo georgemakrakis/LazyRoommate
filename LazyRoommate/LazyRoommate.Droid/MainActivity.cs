@@ -1,17 +1,14 @@
-﻿using System;
-
+﻿using Acr.UserDialogs;
 using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
-using Microsoft.WindowsAzure.MobileServices;
-using System.Threading.Tasks;
 using LazyRoommate.Managers;
 using LazyRoommate.Models;
-using System.Net.Http;
+using Microsoft.WindowsAzure.MobileServices;
+using System;
 using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace LazyRoommate.Droid
 {
@@ -191,7 +188,7 @@ namespace LazyRoommate.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-
+            UserDialogs.Init(this);
             // Initialize the authenticator before loading the app.
             App.Init((IAuthenticate)this);
             LoadApplication(new App());
