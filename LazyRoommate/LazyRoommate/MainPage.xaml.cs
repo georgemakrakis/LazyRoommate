@@ -5,6 +5,7 @@ using LazyRoommate.Models;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -17,14 +18,14 @@ namespace LazyRoommate
         public Task Dialogs { get; private set; }
         private List<Menu> masterPageItems;
         public MainPage()
-        {            
+        {
             InitializeComponent();
 
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, true);
 
 
-            
+
             //Initializing the Hamburger menu
 
             masterPageItems = new List<Menu>
@@ -60,7 +61,7 @@ namespace LazyRoommate
             var item = (Menu)e.SelectedItem;
 
             //Here we have everything that our Dialog contains            
-            var prmt = new PromptConfig();            
+            var prmt = new PromptConfig();
             prmt.OkText = "Ok";
             prmt.CancelText = "Cancel";
             prmt.IsCancellable = true;
@@ -75,23 +76,70 @@ namespace LazyRoommate
             else if (item.Title.Equals("Create Room"))
             {
                 prmt.Title = "Create Room";
-            }                        
-                       
-            var result=await UserDialogs.Instance.PromptAsync(prmt);
-            if(result.Ok)
-            {
-                try
-                {
-                    var table = App.client.GetTable<TasksTable>();
-                    await table.InsertAsync(new TasksTable { id = "1", TaskName = result.Value, RoomName = "1", Done = false, Confirmed = false });
-                }
-                catch(Exception ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex);
-                }
             }
-                       
-        }        
+
+            var result = await UserDialogs.Instance.PromptAsync(prmt);
+            if (result.Ok)
+            {
+                userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+
+                var UserTable = App.client.GetTable<UsersTable>();
+                var userItem = await UserTable.Where(x => (x.Email == userInfo.Email)).ToListAsync();
+                var user = userItem.FirstOrDefault();
+
+
+                if (item.Title.Equals("Add Task"))
+                {
+                    try
+                    {
+
+                        var TaskTable = App.client.GetTable<TasksTable>();
+                        await TaskTable.InsertAsync(new TasksTable { id = "1", TaskName = result.Value, RoomName = user.RoomName, Done = false, Confirmed = false });
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        System.Diagnostics.Debug.WriteLine(ex);
+                    }
+                }
+                else if (item.Title.Equals("Create Room"))
+                {
+                    try
+                    {
+                        //This is the way to update user's record with a new room value                                              
+                        user.RoomName = result.Value;
+
+                        await UserTable.UpdateAsync(user);
+
+                        //Also checking if the room name already exists and alert user
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        System.Diagnostics.Debug.WriteLine(ex);
+                    }
+                }
+                else if (item.Title.Equals("Join Room"))
+                {
+                    try
+                    {                        
+                        //Functios for getting id of room and alter user's no2 record
+                        //user.RoomName = result.Value;
+
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        System.Diagnostics.Debug.WriteLine(ex);
+
+                    }
+                }
+
+            }
+        }
         private void timelineListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             timelineListView.SelectedItem = null;
