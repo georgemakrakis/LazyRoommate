@@ -94,7 +94,7 @@ namespace LazyRoommate
                     {
 
                         var TaskTable = App.client.GetTable<TasksTable>();
-                        await TaskTable.InsertAsync(new TasksTable { id = "1", TaskName = result.Value, RoomName = user.RoomName, Done = false, Confirmed = false });
+                        await TaskTable.InsertAsync(new TasksTable { id = "1", TaskName = result.Value, TaskDescription="", RoomName = user.RoomName, Done = false, Confirmed = false });
 
 
                     }
@@ -165,7 +165,6 @@ namespace LazyRoommate
             Detail = new NavigationPage();
             IsPresented = false;
         }
-
         private void profile_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new ProfilePage(), true);

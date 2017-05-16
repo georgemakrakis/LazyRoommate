@@ -239,7 +239,6 @@ C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\L
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Acr.UserDialogs.Interface.dll
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Splat.dll
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Acr.UserDialogs.Interface.pdb
-C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.dll.mdb
-C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\LazyRoommate.dll.mdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.CreateTasksPage.xaml.g.cs
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.dll.mdb
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\LazyRoommate.dll.mdb

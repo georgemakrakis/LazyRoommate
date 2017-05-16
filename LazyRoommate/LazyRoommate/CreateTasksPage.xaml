@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LazyRoommate.CreateTasks"
+             Title="CreateTasks">
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="Task Name"/>
+            <Label Text="Task Description"/>
+            <TextCell x:Name="TaskName"/>
+            <TextCell x:Name="TaskDesc"/>
+            <Button Text="OK" Clicked="OkClicked"/>
+            <Button Text="Cancel" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
