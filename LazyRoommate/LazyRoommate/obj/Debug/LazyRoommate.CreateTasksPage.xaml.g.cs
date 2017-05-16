@@ -14,19 +14,19 @@ namespace LazyRoommate {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class CreateTasks : global::Xamarin.Forms.ContentPage {
+    public partial class CreateTasksPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.TextCell TaskName;
+        private global::Xamarin.Forms.Entry TaskName;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.TextCell TaskDesc;
+        private global::Xamarin.Forms.Entry TaskDesc;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(CreateTasks));
-            TaskName = this.FindByName<global::Xamarin.Forms.TextCell>("TaskName");
-            TaskDesc = this.FindByName<global::Xamarin.Forms.TextCell>("TaskDesc");
+            this.LoadFromXaml(typeof(CreateTasksPage));
+            TaskName = this.FindByName<global::Xamarin.Forms.Entry>("TaskName");
+            TaskDesc = this.FindByName<global::Xamarin.Forms.Entry>("TaskDesc");
         }
     }
 }

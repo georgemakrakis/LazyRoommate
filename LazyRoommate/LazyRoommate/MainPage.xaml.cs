@@ -67,7 +67,7 @@ namespace LazyRoommate
             prmt.IsCancellable = true;
             if (item.Title.Equals("Add Task"))
             {
-                prmt.Title = "Add Task";
+                await Navigation.PushAsync(new CreateTasksPage());
             }
             else if (item.Title.Equals("Join Room"))
             {
@@ -88,22 +88,7 @@ namespace LazyRoommate
                 var user = userItem.FirstOrDefault();
 
 
-                if (item.Title.Equals("Add Task"))
-                {
-                    try
-                    {
-
-                        var TaskTable = App.client.GetTable<TasksTable>();
-                        await TaskTable.InsertAsync(new TasksTable { id = "1", TaskName = result.Value, TaskDescription="", RoomName = user.RoomName, Done = false, Confirmed = false });
-
-
-                    }
-                    catch (Exception ex)
-                    {
-                        System.Diagnostics.Debug.WriteLine(ex);
-                    }
-                }
-                else if (item.Title.Equals("Create Room"))
+                if (item.Title.Equals("Create Room"))
                 {
                     try
                     {

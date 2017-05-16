@@ -10,9 +10,9 @@ namespace LazyRoommate
 {
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CreateTasks : ContentPage
+    public partial class CreateTasksPage : ContentPage
     {
-        public CreateTasks()
+        public CreateTasksPage()
         {
             InitializeComponent();
         }
@@ -24,8 +24,6 @@ namespace LazyRoommate
             var UserTable = App.client.GetTable<UsersTable>();
             var userItem = await UserTable.Where(x => (x.Email == userInfo.Email)).ToListAsync();
             var user = userItem.FirstOrDefault();
-
-
 
             try
             {           
