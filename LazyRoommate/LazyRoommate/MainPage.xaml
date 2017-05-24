@@ -77,20 +77,20 @@
               <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Label HorizontalOptions="Center" Style="{StaticResource ClassTimeLabel}" Text="{Binding ClassTime, StringFormat='{0:H:mm}'}" />
+            <Label HorizontalOptions="Center" Style="{StaticResource ClassTimeLabel}" Text="{Binding id}" />
 
             <Label
               Grid.Column="2"
               Margin="20,0"
               Style="{StaticResource ClassNameLabel}"
-              Text="{Binding ClassName}" />
+              Text="{Binding TaskName}" />
 
             <Label
               Grid.Row="1"
               Grid.Column="2"
               Margin="20,0"
               Style="{StaticResource ClassInstructorLabel}"
-              Text="{Binding Instructor}" />
+              Text="{Binding TaskDescription}" />
 
             <BoxView
               Grid.RowSpan="2"

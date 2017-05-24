@@ -7,7 +7,7 @@ namespace LazyRoommate.DataFactoryModel
 {
     public static class DataFactory
     {
-        public static IList<ExerciseClass> Classes { get; private set; }
+        public static IList<TasksTable> Tasks { get; private set; }
 
         private static DateTime TodayAt(int hour, int minute)
         {
@@ -20,45 +20,26 @@ namespace LazyRoommate.DataFactoryModel
         static DataFactory()
         {
 
-            Classes = new ObservableCollection<ExerciseClass>
+            Tasks = new ObservableCollection<TasksTable>
             {
-                new ExerciseClass
+                new TasksTable
                 {
-                    ClassName = "Yoga",
-                    Instructor = "Maharshi Patanjali",
-                    ClassTime = TodayAt(8,00),
+                    id=12,
+                    TaskName="name",
+                    TaskDescription="Descr",
+                    RoomName="George's",
+                    Done=true,
+                    Confirmed=true
                 },
-                 new ExerciseClass
+                new TasksTable
                 {
-                    ClassName = "ABS + Stretch",
-                    Instructor = "David Hasslehoff",
-                    ClassTime = TodayAt(9,30),
-                },
-                 //new ExerciseClass
-                //{
-                //    ClassName = "Body Sculpt",
-                //    Instructor = "Sadie Terry",
-                //    ClassTime = DateTime.Now.AddHours(3),
-                //},
-                 new ExerciseClass
-                {
-                    ClassName = "Cycle",
-                    Instructor = "Lance Armstrong",
-                    ClassTime = TodayAt(12,00),
-                },
-                 new ExerciseClass
-                {
-                    ClassName = "Aerobics",
-                    Instructor = "Jacky Chan",
-                    ClassTime = TodayAt(15,30),
-                },
-                 new ExerciseClass
-                {
-                    ClassName = "Weights",
-                    Instructor = "Arnold Schwarzenegger",
-                    ClassTime = TodayAt(18,00),
-                    IsLast = true
-                },
+                    id=13,
+                    TaskName="name2",
+                    TaskDescription="Descr2",
+                    RoomName="Argyris",
+                    Done=true,
+                    Confirmed=true
+                }
             };
         }
     }

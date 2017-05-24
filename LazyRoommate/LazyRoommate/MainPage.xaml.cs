@@ -51,10 +51,10 @@ namespace LazyRoommate
             };
             menu.ItemsSource = masterPageItems;
 
-            BindingContext = DataFactory.Classes;
+            BindingContext = DataFactory.Tasks;
 
-            /// Connecting context of this page to the our View Model class
-            BindingContext = new TasksViewModel();
+            // Connecting context of this page to the our View Model class
+            //BindingContext = new TasksViewModel();
     }
         private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
