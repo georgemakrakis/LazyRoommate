@@ -52,77 +52,91 @@ namespace LazyRoommate
             menu.ItemsSource = masterPageItems;
 
             BindingContext = DataFactory.Classes;
-        }
+
+            /// Connecting context of this page to the our View Model class
+            BindingContext = new TasksViewModel();
+    }
         private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
 
             //Getting the source of the item selected on menu, so we could use is later
             var item = (Menu)e.SelectedItem;
+            PromptConfig prmt=null;
 
-            //Here we have everything that our Dialog contains            
-            var prmt = new PromptConfig();
-            prmt.OkText = "Ok";
-            prmt.CancelText = "Cancel";
-            prmt.IsCancellable = true;
             if (item.Title.Equals("Add Task"))
             {
                 await Navigation.PushAsync(new CreateTasksPage());
             }
             else if (item.Title.Equals("Join Room"))
             {
+                //Here we have everything that our Dialog contains            
+                prmt = new PromptConfig();
+                prmt.OkText = "Ok";
+                prmt.CancelText = "Cancel";
+                prmt.IsCancellable = true;
+
                 prmt.Title = "Join Room";
             }
             else if (item.Title.Equals("Create Room"))
             {
+                //Here we have everything that our Dialog contains            
+                prmt = new PromptConfig();
+                prmt.OkText = "Ok";
+                prmt.CancelText = "Cancel";
+                prmt.IsCancellable = true;
+
                 prmt.Title = "Create Room";
             }
-
-            var result = await UserDialogs.Instance.PromptAsync(prmt);
-            if (result.Ok)
+            if (prmt != null)
             {
-                userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+                var result = await UserDialogs.Instance.PromptAsync(prmt);
 
-                var UserTable = App.client.GetTable<UsersTable>();
-                var userItem = await UserTable.Where(x => (x.Email == userInfo.Email)).ToListAsync();
-                var user = userItem.FirstOrDefault();
-
-
-                if (item.Title.Equals("Create Room"))
+                if (result.Ok)
                 {
-                    try
+                    userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+
+                    var UserTable = App.client.GetTable<UsersTable>();
+                    var userItem = await UserTable.Where(x => (x.Email == userInfo.Email)).ToListAsync();
+                    var user = userItem.FirstOrDefault();
+
+
+                    if (item.Title.Equals("Create Room"))
                     {
-                        //This is the way to update user's record with a new room value                                              
-                        user.RoomName = result.Value;
+                        try
+                        {
+                            //This is the way to update user's record with a new room value                                              
+                            user.RoomName = result.Value;
 
-                        await UserTable.UpdateAsync(user);
+                            await UserTable.UpdateAsync(user);
 
-                        //Also checking if the room name already exists and alert user
+                            //Also checking if the room name already exists and alert user
 
 
+                        }
+                        catch (Exception ex)
+                        {
+                            System.Diagnostics.Debug.WriteLine(ex);
+                        }
                     }
-                    catch (Exception ex)
+                    else if (item.Title.Equals("Join Room"))
                     {
-                        System.Diagnostics.Debug.WriteLine(ex);
+                        try
+                        {
+                            //Functios for getting id of room and alter user's no2 record
+                            //user.RoomName = result.Value;
+
+
+
+                        }
+                        catch (Exception ex)
+                        {
+                            System.Diagnostics.Debug.WriteLine(ex);
+
+                        }
                     }
+
                 }
-                else if (item.Title.Equals("Join Room"))
-                {
-                    try
-                    {                        
-                        //Functios for getting id of room and alter user's no2 record
-                        //user.RoomName = result.Value;
-
-
-
-                    }
-                    catch (Exception ex)
-                    {
-                        System.Diagnostics.Debug.WriteLine(ex);
-
-                    }
-                }
-
             }
         }
         private void timelineListView_ItemTapped(object sender, ItemTappedEventArgs e)

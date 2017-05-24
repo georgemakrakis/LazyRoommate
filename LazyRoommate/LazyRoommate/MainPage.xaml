@@ -47,8 +47,8 @@
 
     <ListView.Header>
       <StackLayout Padding="20,40,0,30">
-        <Label Style="{StaticResource PageHeaderLabel}" Text="Class Schedule" />
-        <Label Style="{StaticResource SubHeaderLabel}" Text="8 Mar 2017" />
+        <Label Style="{StaticResource PageHeaderLabel}" Text="Tasks List" />
+        <!--<Label Style="{StaticResource SubHeaderLabel}" Text="8 Mar 2017" />-->
       </StackLayout>
     </ListView.Header>
 

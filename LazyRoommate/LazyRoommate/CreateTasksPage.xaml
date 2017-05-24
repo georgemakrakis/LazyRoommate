@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LazyRoommate.CreateTasksPage"
+             BackgroundImage="login_scrn.jpg"
              Title="CreateTasksPage">
     <ScrollView>
         <StackLayout Padding="10">
@@ -9,8 +10,7 @@
             <Label Text="Task Description"/>
             <Entry x:Name="TaskName"/>
             <Entry x:Name="TaskDesc"/>
-            <Button Text="OK" Clicked="OkClicked"/>
-            <Button Text="Cancel" />
+            <Button Text="Add" Clicked="OkClicked"/>
 
         </StackLayout>
     </ScrollView>
