@@ -2,7 +2,7 @@
 {
     public class TasksTable
     {
-        public int id { get; set; }
+        public string id { get; set; }
         public string TaskName { get; set; }
         public string TaskDescription { get; set; }
         public string RoomName { get; set; }

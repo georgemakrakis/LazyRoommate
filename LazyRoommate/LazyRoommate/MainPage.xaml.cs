@@ -51,7 +51,14 @@ namespace LazyRoommate
             };
             menu.ItemsSource = masterPageItems;
 
-            BindingContext = DataFactory.Tasks;
+            //BindingContext = DataFactory.Tasks;
+
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                await DataFactory.Init();
+                timelineListView.ItemsSource = DataFactory.UserTasks;
+                
+            });
 
             // Connecting context of this page to the our View Model class
             //BindingContext = new TasksViewModel();
