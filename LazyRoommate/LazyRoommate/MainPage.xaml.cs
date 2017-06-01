@@ -56,8 +56,7 @@ namespace LazyRoommate
             Device.BeginInvokeOnMainThread(async () =>
             {
                 await DataFactory.Init();
-                timelineListView.ItemsSource = DataFactory.UserTasks;
-                
+                timelineListView.ItemsSource = DataFactory.UserTasks;                
             });
 
             // Connecting context of this page to the our View Model class
