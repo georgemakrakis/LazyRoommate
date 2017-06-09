@@ -29,6 +29,7 @@ namespace LazyRoommate
             {           
                 var TaskTable = App.client.GetTable<TasksTable>();
                 await TaskTable.InsertAsync(new TasksTable {TaskName = TaskName.Text, TaskDescription = TaskDesc.Text, RoomName = user.RoomName, Done = false, Confirmed = false });
+                await DisplayAlert("Task", "New task added!!", "Ok");
             }
             catch (Exception ex)
             {

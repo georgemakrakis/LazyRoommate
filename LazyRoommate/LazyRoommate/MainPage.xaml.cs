@@ -47,6 +47,12 @@ namespace LazyRoommate
                     Title = "Create Room",
                     //IconSource = "",
                     //TargetType = typeof( )
+                },
+                new Menu
+                {
+                    Title = "Leave Room",
+                    //IconSource = "",
+                    //TargetType = typeof( )
                 }
             };
             menu.ItemsSource = masterPageItems;
@@ -94,6 +100,20 @@ namespace LazyRoommate
 
                 prmt.Title = "Create Room";
             }
+            else if (item.Title.Equals("Leave Room"))
+            {
+                var answer = await DisplayAlert("Leave Room", "Would you like to leave this room?", "Yes", "No");                
+                if (answer.Equals("Yes"))
+                {
+                    var UserTable = App.client.GetTable<UsersTable>();
+                    var userItem = await UserTable.Where(x => (x.Email == userInfo.Email)).ToListAsync();
+                    var user = userItem.FirstOrDefault();
+                    user.RoomName = null;
+                    await UserTable.UpdateAsync(user);
+
+                    await DisplayAlert("Leave Room", "You left your room","Ok");
+                }
+            }
             if (prmt != null)
             {
                 var result = await UserDialogs.Instance.PromptAsync(prmt);
@@ -111,13 +131,21 @@ namespace LazyRoommate
                     {
                         try
                         {
-                            //This is the way to update user's record with a new room value                                              
-                            user.RoomName = result.Value;
-
-                            await UserTable.UpdateAsync(user);
-
                             //Also checking if the room name already exists and alert user
+                            var roomItem = await UserTable.Where(x => (x.RoomName == result.Value)).ToListAsync();
+                            if (roomItem != null)
+                            {
+                                //This is the way to update user's record with a new room value                                              
+                                user.RoomName = result.Value;
+                                await UserTable.UpdateAsync(user);
 
+                               await DisplayAlert("Create Room","Room created succesfuly!!","Ok");                              
+
+                            }
+                            else
+                            {
+                              await  DisplayAlert("Create Room","Room name already exists!!", "Ok");
+                            }
 
                         }
                         catch (Exception ex)
@@ -129,8 +157,25 @@ namespace LazyRoommate
                     {
                         try
                         {
-                            //Functios for getting id of room and alter user's no2 record
+                            //Function for getting id of room and alter user's no2 record
                             //user.RoomName = result.Value;
+
+                            var roomItem = await UserTable.Where(x => (x.RoomName == result.Value)).ToListAsync();
+                            if(roomItem!=null)
+                            {
+                                user.RoomName = result.Value;
+
+                                await UserTable.UpdateAsync(user);
+                                //promt message successful join
+
+                               await DisplayAlert("Join Room","Joining Room Succed!!","Ok");
+                            }
+                            else
+                            {
+                                //promt message unable to find
+                                await DisplayAlert("Join Room", "Room name does not exist, please try again!", "Ok");
+                            }
+
 
 
 
