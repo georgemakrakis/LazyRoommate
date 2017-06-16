@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>System.IO.IsolatedStorage</name>
+  </assembly>
+  <members>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageException">
+      <summary>Исключение вызывается при сбое операции в изолированном хранилище.</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> со стандартными свойствами.</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor(System.String)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> с указанным сообщением об ошибке.</summary>
+      <param name="message">Сообщение об ошибке с объяснением причин исключения. </param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor(System.String,System.Exception)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> заданным сообщением об ошибке и ссылкой на внутреннее исключение, которое стало причиной данного исключения.</summary>
+      <param name="message">Сообщение об ошибке с объяснением причин исключения. </param>
+      <param name="inner">Исключение, которое вызвало текущее исключение.Если значение параметра <paramref name="inner" /> не равно null, текущее исключение вызывается в блоке catch, обрабатывающем внутреннее исключение.</param>
+    </member>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageFile">
+      <summary>Представляет область изолированного хранения, содержащую файлы и папки. </summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String)">
+      <summary>Копирует существующий файл в новый файл.  </summary>
+      <param name="sourceFileName">Имя копируемого файла.</param>
+      <param name="destinationFileName">Имя конечного файла.Это не может быть имя каталога или имя существующего файла.</param>
+      <exception cref="T:System.ArgumentException">Параметр <paramref name="sourceFileName " />или<paramref name=" destinationFileName " />является пустой строкой, содержит только пробелы либо один или несколько недопустимых символов, определенных методом <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">Значение параметра <paramref name="sourceFileName " />или<paramref name=" destinationFileName " />— null.</exception>
+      <exception cref="T:System.InvalidOperationException">Изолированное хранилище было закрыто.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Файл <paramref name="sourceFileName " />не найден.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Файл <paramref name="sourceFileName " />не найден.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено.– или –Изолированное хранилище отключено.– или –<paramref name="destinationFileName" /> уже существует.– или –Произошла ошибка ввода-вывода.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String,System.Boolean)">
+      <summary>Копирует существующий файл в новый файл и, возможно, перезаписывает существующий файл.</summary>
+      <param name="sourceFileName">Имя копируемого файла.</param>
+      <param name="destinationFileName">Имя конечного файла.Это не может быть имя каталога.</param>
+      <param name="overwrite">true, если конечный файл можно перезаписать; в противном случае — false.</param>
+      <exception cref="T:System.ArgumentException">Параметр <paramref name="sourceFileName " />или<paramref name=" destinationFileName " />является пустой строкой, содержит только пробелы либо один или несколько недопустимых символов, определенных методом <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">Значение параметра <paramref name="sourceFileName " />или<paramref name=" destinationFileName " />— null.</exception>
+      <exception cref="T:System.InvalidOperationException">Изолированное хранилище было закрыто.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Файл <paramref name="sourceFileName " />не найден.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Файл <paramref name="sourceFileName " />не найден.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено.– или –Изолированное хранилище отключено.– или –Произошла ошибка ввода-вывода.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory(System.String)">
+      <summary>Создает в области ограниченного действия изолированного хранения папку.</summary>
+      <param name="dir">Относительный путь к папке для создания в области ограниченного действия изолированного хранения. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Текущий код не имеет достаточно разрешений для создания папки изолированного хранения. </exception>
+      <exception cref="T:System.ArgumentNullException">Путь к папке — null. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateFile(System.String)">
+      <summary>Создает файл в изолированном хранилище.</summary>
+      <returns>Новый файл в изолированном хранилище.</returns>
+      <param name="path">Относительный путь к создаваемому файлу.</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено. – или –Изолированное хранилище отключено.</exception>
+      <exception cref="T:System.ArgumentException">Неверный формат параметра <paramref name="path" />.</exception>
+      <exception cref="T:System.ArgumentNullException">Параметр <paramref name="path" /> имеет значение null.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Каталог в <paramref name="path" /> не существует.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory(System.String)">
+      <summary>Удаляет из области ограниченного действия изолированного хранилища папку.</summary>
+      <param name="dir">Относительный путь к папке для удаления из области изолированного хранения. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Невозможно удалить папку. </exception>
+      <exception cref="T:System.ArgumentNullException">Путь к папке — null. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile(System.String)">
+      <summary>Удаляет из области ограниченного действия изолированного хранилища файл.</summary>
+      <param name="file">Относительный путь к файлу для удаления из области ограниченного действия изолированного хранения. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Конечный файл открыт или путь неверен. </exception>
+      <exception cref="T:System.ArgumentNullException">Путь к файлу — null. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DirectoryExists(System.String)">
+      <summary>Определяет, указывает ли заданный путь на существующий каталог в изолированном хранилище.</summary>
+      <returns>Значение true, если параметр <paramref name="path" /> указывает на существующий каталог в изолированном хранилище и не равен null; в противном случае — значение false.</returns>
+      <param name="path">Проверяемый путь.</param>
+      <exception cref="T:System.ArgumentNullException">Параметр <paramref name="path" /> имеет значение null.</exception>
+      <exception cref="T:System.InvalidOperationException">Изолированное хранилище закрыто.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено. – или –Изолированное хранилище отключено.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.Dispose">
+      <summary>Освобождает все ресурсы, используемые объектом <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />. </summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.FileExists(System.String)">
+      <summary>Определяет, указывает ли заданный путь на существующий файл в изолированном хранилище.</summary>
+      <returns>Значение true, если параметр <paramref name="path" /> указывает на существующий файл в изолированном хранилище и не равен null; в противном случае — значение false.</returns>
+      <param name="path">Путь и имя файла для проверки.</param>
+      <exception cref="T:System.ArgumentNullException">Параметр <paramref name="path" /> имеет значение null.</exception>
+      <exception cref="T:System.InvalidOperationException">Изолированное хранилище закрыто.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено. </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetCreationTime(System.String)">
+      <summary>Возвращает дату и время создания заданного файла или каталога.</summary>
+      <returns>Дата и время создания заданного файла или каталога.Значение представляется в формате местного времени.</returns>
+      <param name="path">Путь к файлу или каталогу, для которых требуется получить сведения о дате и времени создания.</param>
+      <exception cref="T:System.ArgumentException">Параметр <paramref name="path " />является пустой строкой, содержит только пробелы либо один или несколько недопустимых символов, определенных методом <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">Значение параметра <paramref name="path " />— null.</exception>
+      <exception cref="T:System.InvalidOperationException">Изолированное хранилище было закрыто.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено.– или –Изолированное хранилище отключено.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames">
+      <summary>Перечисляет каталоги в корневой папке изолированного хранилища.</summary>
+      <returns>Массив относительных путей каталогов в корневой папке изолированного хранилища.Массив нулевой длины указывает на отсутствие каталогов в корневой папке.</returns>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.InvalidOperationException">Изолированное хранилище закрыто.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено. </exception>
+      <exception cref="T:System.UnauthorizedAccessException">Вызывающий объект не имеет разрешения на перечисление каталогов.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Один или несколько каталогов не найдены.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames(System.String)">
+      <summary>Перечисляет каталоги в области изолированного хранилища, соответствующие заданному шаблону поиска.</summary>
+      <returns>Массив относительных путей к каталогам в области изолированного хранилища, соответствующих параметру <paramref name="searchPattern" />.Массив нулевой длины указывает на отсутствие соответствующих папок.</returns>
+      <param name="searchPattern">Шаблон поиска.Поддерживаются как одиночные ("?"), так и составные ("*") подстановочные знаки.</param>
+      <exception cref="T:System.ArgumentNullException">Параметр <paramref name="searchPattern" /> имеет значение null. </exception>
+      <exception cref="T:System.InvalidOperationException">Изолированное хранилище закрыто.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.UnauthorizedAccessException">Вызывающий объект не имеет разрешения на перечисление каталогов, разрешенных из <paramref name="searchPattern" />.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Каталог или каталоги, указанные параметром <paramref name="searchPattern" />, не найдены.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames">
+      <summary>Перечисляет имена файлов в корневой папке изолированного хранилища.</summary>
+      <returns>Массив относительных путей файлов в корневой папке изолированного хранилища.  Массив нулевой длины указывает на отсутствие файлов в корневой папке.</returns>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено. </exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Пути к файлам из корня изолированного хранилища не могут быть определены.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames(System.String)">
+      <summary>Получает имена файлов, соответствующие шаблону поиска.</summary>
+      <returns>Массив относительных путей к файлам в области изолированного хранилища, соответствующим параметру <paramref name="searchPattern" />.Массив нулевой длины указывает на отсутствие соответствующих файлов.</returns>
+      <param name="searchPattern">Шаблон поиска.Поддерживаются как одиночные ("?"), так и составные ("*") подстановочные знаки.</param>
+      <exception cref="T:System.ArgumentNullException">Параметр <paramref name="searchPattern" /> имеет значение null. </exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено. </exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Не удается найти путь к файлу, заданный параметром <paramref name="searchPattern" />. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastAccessTime(System.String)">
+      <summary>Возвращает дату и время последнего обращения к указанному файлу или каталогу.</summary>
+      <returns>Дата и время последнего обращения к заданному файлу или каталогу.Значение представляется в формате местного времени.</returns>
+      <param name="path">Путь к файлу или каталогу, для которых требуется получить сведения о дате и времени последнего обращения.</param>
+      <exception cref="T:System.ArgumentException">Параметр <paramref name="path " />является пустой строкой, содержит только пробелы либо один или несколько недопустимых символов, определенных методом <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">Значение параметра <paramref name="path " />— null.</exception>
+      <exception cref="T:System.InvalidOperationException">Изолированное хранилище было закрыто.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено.– или –Изолированное хранилище отключено.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastWriteTime(System.String)">
+      <summary>Возвращает дату и время последней операции записи в указанный файл или каталог.</summary>
+      <returns>Дата и время последней операции записи в указанный файл или каталог.Значение представляется в формате местного времени.</returns>
+      <param name="path">Путь к файлу или каталогу, для которых требуется получить сведения о дате и времени последней операции записи.</param>
+      <exception cref="T:System.ArgumentException">Параметр <paramref name="path " />является пустой строкой, содержит только пробелы либо один или несколько недопустимых символов, определенных методом <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">Значение параметра <paramref name="path " />— null.</exception>
+      <exception cref="T:System.InvalidOperationException">Изолированное хранилище было закрыто.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено.– или –Изолированное хранилище отключено.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication">
+      <summary>Получает изолированное хранение с областью действия пользователя, соответствующее вызову удостоверения приложения кода.</summary>
+      <returns>Объект, соответствующий области действия изолированного хранилища на основе вызова удостоверения сборки кода.</returns>
+      <exception cref="T:System.Security.SecurityException">Недостаточно разрешений для изолированного хранения. </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Расположение изолированного хранилища не может быть инициализировано.– или –Не удается установить идентификатор приложения вызывающего объекта, поскольку свойство <see cref="P:System.AppDomain.ActivationContext" /> вернуло значение null.– или –Невозможно определить разрешения для домена приложений.</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        <IPermission class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="MemberAccess" />
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveDirectory(System.String,System.String)">
+      <summary>Перемещает указанный каталог и его содержимое в новое расположение.</summary>
+      <param name="sourceDirectoryName">Имя перемещаемого каталога.</param>
+      <param name="destinationDirectoryName">Путь к новому местоположению <paramref name="sourceDirectoryName" />.Этот путь не может указывать на существующий каталог.</param>
+      <exception cref="T:System.ArgumentException">Параметр <paramref name="sourceFileName " />или<paramref name=" destinationFileName " />является пустой строкой, содержит только пробелы либо один или несколько недопустимых символов, определенных методом <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">Значение параметра <paramref name="sourceFileName " />или<paramref name=" destinationFileName " />— null.</exception>
+      <exception cref="T:System.InvalidOperationException">Изолированное хранилище было закрыто.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="sourceDirectoryName" /> не существует.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено.– или –Изолированное хранилище отключено.– или –<paramref name="destinationDirectoryName" /> уже существует.– или –Параметры <paramref name="sourceDirectoryName" /> и <paramref name="destinationDirectoryName" /> ссылаются на один и тот же каталог.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveFile(System.String,System.String)">
+      <summary>Перемещает указанный файл в новое расположение и позволяет указать для файла новое имя.</summary>
+      <param name="sourceFileName">Имя перемещаемого файла.</param>
+      <param name="destinationFileName">Путь к новому расположению файла.Если путь включает имя файла, перемещенный файл будет иметь это имя.</param>
+      <exception cref="T:System.ArgumentException">Параметр <paramref name="sourceFileName " />или<paramref name=" destinationFileName " />является пустой строкой, содержит только пробелы либо один или несколько недопустимых символов, определенных методом <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">Значение параметра <paramref name="sourceFileName " />или<paramref name=" destinationFileName " />— null.</exception>
+      <exception cref="T:System.InvalidOperationException">Изолированное хранилище было закрыто.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Файл <paramref name="sourceFileName" /> не найден.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено.– или –Изолированное хранилище отключено.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode)">
+      <summary>Открывает файл в заданном режиме.</summary>
+      <returns>Файл, открытый в заданном режиме, с доступом для чтения и записи и без предоставления общего доступа.</returns>
+      <param name="path">Относительный путь к файлу внутри изолированного хранилища.</param>
+      <param name="mode">Одно из значений перечисления, задающее способ открытия файла. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено. – или –Изолированное хранилище отключено.</exception>
+      <exception cref="T:System.ArgumentException">Неверный формат параметра <paramref name="path" />.</exception>
+      <exception cref="T:System.ArgumentNullException">Параметр <paramref name="path" /> имеет значение null.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Каталог в <paramref name="path" /> не существует.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Файл не найден, и для параметра <paramref name="mode" /> задано значение <see cref="F:System.IO.FileMode.Open" />.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess)">
+      <summary>Открывает файл в заданном режиме с заданным доступом для чтения и записи.</summary>
+      <returns>Файл, открытый в заданном режиме, с заданным уровнем доступа и без предоставления общего доступа.</returns>
+      <param name="path">Относительный путь к файлу внутри изолированного хранилища.</param>
+      <param name="mode">Одно из значений перечисления, задающее способ открытия файла.</param>
+      <param name="access">Одно из значений перечисления, определяющее, с какими правами открывается файл: только для чтения, только для записи или для чтения и записи.</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено. – или –Изолированное хранилище отключено.</exception>
+      <exception cref="T:System.ArgumentException">Неверный формат параметра <paramref name="path" />.</exception>
+      <exception cref="T:System.ArgumentNullException">Параметр <paramref name="path" /> имеет значение null.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Каталог в <paramref name="path" /> не существует.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Файл не найден, и для параметра <paramref name="mode" /> задано значение <see cref="F:System.IO.FileMode.Open" />. </exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)">
+      <summary>Открывает файл в заданном режиме, с заданным уровнем доступа для чтения и записи и с разрешением на совместный доступ.</summary>
+      <returns>Файл, открытый в заданном режиме, с заданным уровнем доступа и с указанными параметрами общего доступа.</returns>
+      <param name="path">Относительный путь к файлу внутри изолированного хранилища.</param>
+      <param name="mode">Одно из значений перечисления, задающее способ открытия или создания файла.</param>
+      <param name="access">Одно из значений перечисления, определяющее, с какими правами открывается файл: только для чтения, только для записи или для чтения и записи.</param>
+      <param name="share">Побитовое сочетание значений перечисления, которое определяет тип доступа к файлу для других объектов <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Изолированное хранилище было удалено. – или –Изолированное хранилище отключено.</exception>
+      <exception cref="T:System.ArgumentException">Неверный формат параметра <paramref name="path" />.</exception>
+      <exception cref="T:System.ArgumentNullException">Параметр <paramref name="path" /> имеет значение null.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Каталог в <paramref name="path" /> не существует.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Файл не найден, и для параметра <paramref name="mode" /> задано значение <see cref="M:System.IO.FileInfo.Open(System.IO.FileMode)" />.</exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище было ликвидировано.</exception>
+    </member>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageFileStream">
+      <summary>Представляет файл в изолированном хранилище. </summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />, предоставляющего доступ к файлу, назначенному с помощью параметра <paramref name="path" /> в указанном <paramref name="mode" /> с заданным параметром <paramref name="access" /> файла, используя режим общего доступа к файлу, заданный с помощью параметра <paramref name="share" />, а также в контексте класса <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />, заданного с помощью параметра <paramref name="isf" />.</summary>
+      <param name="path">Относительный путь файла в изолированном хранилище. </param>
+      <param name="mode">Одно из значений <see cref="T:System.IO.FileMode" />. </param>
+      <param name="access">Поразрядное сочетание значений <see cref="T:System.IO.FileAccess" />. </param>
+      <param name="share">Поразрядное сочетание значений <see cref="T:System.IO.FileShare" />. </param>
+      <param name="isf">Объект <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />, в котором необходимо открыть <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </param>
+      <exception cref="T:System.ArgumentException">Параметр <paramref name="path" /> неправильно сформирован. </exception>
+      <exception cref="T:System.ArgumentNullException">Значение параметра <paramref name="path" /> — null. </exception>
+      <exception cref="T:System.IO.FileNotFoundException">Файл не найден, и для параметра <paramref name="mode" /> задано значение <see cref="F:System.IO.FileMode.Open" />. </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Параметр <paramref name="isf" /> не имеет квоты. </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />, предоставляющего доступ к файлу, назначенному с помощью параметра <paramref name="path" /> в указанном <paramref name="mode" /> с заданным параметром <paramref name="access" /> файла, а также в контексте класса <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />, заданного с помощью параметра <paramref name="isf" />.</summary>
+      <param name="path">Относительный путь файла в изолированном хранилище. </param>
+      <param name="mode">Одно из значений <see cref="T:System.IO.FileMode" />. </param>
+      <param name="access">Поразрядное сочетание значений <see cref="T:System.IO.FileAccess" />. </param>
+      <param name="isf">Объект <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />, в котором необходимо открыть <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </param>
+      <exception cref="T:System.ArgumentException">Параметр <paramref name="path" /> неправильно сформирован. </exception>
+      <exception cref="T:System.ArgumentNullException">Значение параметра <paramref name="path" /> — null. </exception>
+      <exception cref="T:System.ObjectDisposedException">Изолированное хранилище закрыто.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Файл не найден, и для параметра <paramref name="mode" /> задано значение <see cref="F:System.IO.FileMode.Open" />. </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Параметр <paramref name="isf" /> не имеет квоты. </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>Инициализирует новый экземпляр класса <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />, предоставляющего доступ к файлу, назначенному с помощью параметра <paramref name="path" /> в указанном <paramref name="mode" />, а также в контексте класса <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />, заданного с помощью <paramref name="isf" />.</summary>
+      <param name="path">Относительный путь файла в изолированном хранилище. </param>
+      <param name="mode">Одно из значений <see cref="T:System.IO.FileMode" />. </param>
+      <param name="isf">Объект <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />, в котором необходимо открыть <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </param>
+      <exception cref="T:System.ArgumentException">Параметр <paramref name="path" /> неправильно сформирован. </exception>
+      <exception cref="T:System.ArgumentNullException">Значение параметра <paramref name="path" /> — null. </exception>
+      <exception cref="T:System.IO.FileNotFoundException">Файл не найден, и для параметра <paramref name="mode" /> задано значение <see cref="F:System.IO.FileMode.Open" />. </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Параметр <paramref name="isf" /> не имеет квоты. </exception>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanRead">
+      <summary>Возвращает логическое значение, показывающее возможность чтения файла.</summary>
+      <returns>Значение true, если возможно чтение объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanSeek">
+      <summary>Возвращает логическое значение, указывающее, поддерживаются ли операции поиска.</summary>
+      <returns>Значение true, если объект <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> поддерживает операции поиска; в противном случае — значение false.</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanWrite">
+      <summary>Возвращает логическое значение, указывающее, возможна ли запись в файл.</summary>
+      <returns>Значение true, если возможна запись в объекте <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />; в противном случае — значение false.</returns>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose(System.Boolean)">
+      <summary>Освобождает неуправляемые ресурсы, используемые объектом <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />, а при необходимости освобождает также и управляемые ресурсы.</summary>
+      <param name="disposing">Значение true для освобождения как управляемых, так и неуправляемых ресурсов; значение false для освобождения только неуправляемых ресурсов. </param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Flush">
+      <summary>Очищает буферы для этого потока и вызывает запись всех буферизованных данных в файл.</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.FlushAsync(System.Threading.CancellationToken)"></member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.Length">
+      <summary>Возвращает длину объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</summary>
+      <returns>Длина объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> в байтах.</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.Position">
+      <summary>Возвращает или задает текущую позицию текущего объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</summary>
+      <returns>Текущее положение объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">Для положения не может быть задано отрицательное число. </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Read(System.Byte[],System.Int32,System.Int32)">
+      <summary>Копирует байты из текущего буферизованного объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> в массив.</summary>
+      <returns>Общее число байтов, считанных в <paramref name="buffer" />.Это число может быть меньше запрошенного числа байтов, если многие байты недоступны в данный момент, или равно нулю, если достигнут конец потока.</returns>
+      <param name="buffer">Буфер, который требуется прочитать. </param>
+      <param name="offset">Смещение в буфере, с которого начинается запись. </param>
+      <param name="count">Максимальное число байтов, предназначенных для чтения. </param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)"></member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.ReadByte">
+      <summary>Считывает один байт из объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> в изолированном хранилище.</summary>
+      <returns>8-разрядное целое значение без знака, считанное из файла изолированного хранилища.</returns>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Seek(System.Int64,System.IO.SeekOrigin)">
+      <summary>Задает указанное значение для текущего положения данного объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</summary>
+      <returns>Новое положение объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</returns>
+      <param name="offset">Новое положение объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </param>
+      <param name="origin">Одно из значений <see cref="T:System.IO.SeekOrigin" />. </param>
+      <exception cref="T:System.ArgumentException">Значение параметра <paramref name="origin" /> должно быть одним из значений <see cref="T:System.IO.SeekOrigin" />. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.SetLength(System.Int64)">
+      <summary>Задает в качестве длины этого объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> указанное значение <paramref name="value" />.</summary>
+      <param name="value">Новая длина объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </param>
+      <exception cref="T:System.ArgumentOutOfRangeException">Значение параметра <paramref name="value" /> является отрицательным числом.</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Write(System.Byte[],System.Int32,System.Int32)">
+      <summary>Записывает в объект <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> блок байтов, используя данные, считанные из массива байтов.</summary>
+      <param name="buffer">Буфер для записи. </param>
+      <param name="offset">Смещение байтов в буфере, с которого начинается запись или чтение. </param>
+      <param name="count">Максимальное число байтов для записи. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Попытка записи выходит за пределы квоты для объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)"></member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.WriteByte(System.Byte)">
+      <summary>Записывает в объект <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> один байт.</summary>
+      <param name="value">Значение в байтах, записываемое в файл изолированного хранилища. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Попытка записи выходит за пределы квоты для объекта <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+  </members>
+</doc>

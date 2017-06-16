@@ -17,6 +17,16 @@ namespace LazyRoommate
         private MobileServiceUser user { get; set; }
         public Task Dialogs { get; private set; }
         private List<Menu> masterPageItems;
+        public async void OnRefresh(object sender, EventArgs e)
+        {
+            var list = (ListView)sender;
+            //refreshing logic here
+            await DataFactory.Init();
+            timelineListView.ItemsSource = DataFactory.UserTasks;
+            //make sure to end the refresh state
+            list.IsRefreshing = false;
+        }
+
         public MainPage()
         {
             InitializeComponent();
@@ -63,7 +73,7 @@ namespace LazyRoommate
             {
                 await DataFactory.Init();
                 timelineListView.ItemsSource = DataFactory.UserTasks;                
-            });
+            });            
 
             // Connecting context of this page to the our View Model class
             //BindingContext = new TasksViewModel();

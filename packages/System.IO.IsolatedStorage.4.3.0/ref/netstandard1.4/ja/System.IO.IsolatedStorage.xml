@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>System.IO.IsolatedStorage</name>
+  </assembly>
+  <members>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageException">
+      <summary>分離ストレージの操作で障害が発生するとスローされる例外。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> クラスの新しいインスタンスを既定のプロパティを使用して初期化します。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor(System.String)">
+      <summary>指定したエラー メッセージを使用して、<see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> クラスの新しいインスタンスを初期化します。</summary>
+      <param name="message">例外の原因を説明するエラー メッセージ。</param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor(System.String,System.Exception)">
+      <summary>指定したエラー メッセージと、この例外の原因である内部例外への参照を使用して、<see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> クラスの新しいインスタンスを初期化します。</summary>
+      <param name="message">例外の原因を説明するエラー メッセージ。</param>
+      <param name="inner">現在の例外の原因である例外。<paramref name="inner" /> パラメーターが null ではない場合、現在の例外は内部例外を処理する catch ブロックで発生します。</param>
+    </member>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageFile">
+      <summary>ファイルとディレクトリを格納している分離ストレージ領域を表します。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String)">
+      <summary>既存のファイルを新しいファイルにコピーします。</summary>
+      <param name="sourceFileName">コピーするファイルの名前。</param>
+      <param name="destinationFileName">コピー先ファイルの名前。ディレクトリや既存のファイルは使用できません。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />または<paramref name=" destinationFileName " />が、長さが 0 の文字列であるか、空白しか含んでいないか、<see cref="M:System.IO.Path.GetInvalidPathChars" /> メソッドで定義されている無効な文字を 1 つ以上含んでいます。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />または<paramref name=" destinationFileName " />が null です。</exception>
+      <exception cref="T:System.InvalidOperationException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="sourceFileName " />は見つかりませんでした。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="sourceFileName " />は見つかりませんでした。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。または<paramref name="destinationFileName" /> は存在します。またはI/O エラーが発生しました。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String,System.Boolean)">
+      <summary>既存のファイルに新しいファイルをコピーし、オプションで既存のファイルを上書きします。</summary>
+      <param name="sourceFileName">コピーするファイルの名前。</param>
+      <param name="destinationFileName">コピー先ファイルの名前。このパラメーターには、ディレクトリは指定できません。</param>
+      <param name="overwrite">コピー先ファイルが上書きできる場合は true。それ以外の場合は false。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />または<paramref name=" destinationFileName " />が、長さが 0 の文字列であるか、空白しか含んでいないか、<see cref="M:System.IO.Path.GetInvalidPathChars" /> メソッドで定義されている無効な文字を 1 つ以上含んでいます。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />または<paramref name=" destinationFileName " />が null です。</exception>
+      <exception cref="T:System.InvalidOperationException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="sourceFileName " />は見つかりませんでした。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="sourceFileName " />は見つかりませんでした。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。またはI/O エラーが発生しました。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory(System.String)">
+      <summary>分離ストレージのスコープ内にディレクトリを作成します。</summary>
+      <param name="dir">分離ストレージのスコープ内に作成するディレクトリの相対パス。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">現在のコードには、分離ストレージ ディレクトリを作成するためのアクセス許可が不足しています。</exception>
+      <exception cref="T:System.ArgumentNullException">ディレクトリのパスが null です。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateFile(System.String)">
+      <summary>分離ストア内にファイルを作成します。</summary>
+      <returns>新しい分離ストレージ ファイル。</returns>
+      <param name="path">作成するファイルの相対パス。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> の形式が正しくありません。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> は null なので、</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" /> 内にディレクトリが存在しません。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory(System.String)">
+      <summary>分離ストレージのスコープ内にあるディレクトリを削除します。</summary>
+      <param name="dir">分離ストレージ スコープ内で削除するディレクトリの相対パス。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">ディレクトリを削除できませんでした。</exception>
+      <exception cref="T:System.ArgumentNullException">ディレクトリのパスが null です。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile(System.String)">
+      <summary>分離ストレージのスコープ内にあるファイルを削除します。</summary>
+      <param name="file">分離ストレージ スコープ内で削除するファイルの相対パス。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">目的のファイルが開かれているか、パスが正しくありません。</exception>
+      <exception cref="T:System.ArgumentNullException">ファイルのパスが null です。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DirectoryExists(System.String)">
+      <summary>指定したパスが分離ストア内の既存のディレクトリを参照しているかどうかを確認します。</summary>
+      <returns>
+        <paramref name="path" /> が分離ストア内の既存のディレクトリを参照していて、null でない場合は true。それ以外の場合は false。</returns>
+      <param name="path">テストするパス。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> は null なので、</exception>
+      <exception cref="T:System.InvalidOperationException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.Dispose">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> によって使用されているすべてのリソースを解放します。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.FileExists(System.String)">
+      <summary>指定したパスが分離ストア内の既存のファイルを参照しているかどうかを確認します。</summary>
+      <returns>
+        <paramref name="path" /> が分離ストア内の既存のファイルを参照していて、null でない場合は true。それ以外の場合は false。</returns>
+      <param name="path">テストするパスとファイル名。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> は null なので、</exception>
+      <exception cref="T:System.InvalidOperationException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetCreationTime(System.String)">
+      <summary>指定したファイルまたはディレクトリの作成日時を返します。</summary>
+      <returns>指定したファイルまたはディレクトリの作成日時。この値は現地時刻で表示されます。</returns>
+      <param name="path">作成日時情報を取得する対象のファイルまたはディレクトリへのパス。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />が、長さが 0 の文字列であるか、空白しか含んでいないか、<see cref="M:System.IO.Path.GetInvalidPathChars" /> メソッドで定義されている無効な文字を 1 つ以上含んでいます。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />が null です。</exception>
+      <exception cref="T:System.InvalidOperationException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames">
+      <summary>分離ストアのルートにあるディレクトリを列挙します。</summary>
+      <returns>分離ストアのルートにあるディレクトリの相対パスの配列。ルート内にディレクトリが存在しない場合は、長さ 0 の配列が返されます。</returns>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.InvalidOperationException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。</exception>
+      <exception cref="T:System.UnauthorizedAccessException">呼び出し元には、ディレクトリを列挙するためのアクセス許可がありません。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">1 つ以上のディレクトリが見つかりません。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames(System.String)">
+      <summary>分離ストレージのスコープ内にあり、指定した検索パターンと一致するディレクトリを列挙します。</summary>
+      <returns>分離ストレージのスコープ内にあり、<paramref name="searchPattern" /> と一致するディレクトリの相対パスの配列。長さ 0 の配列が返された場合は、一致するディレクトリは存在しません。</returns>
+      <param name="searchPattern">検索パターン。単一の文字を表すワイルドカード ("?") と複数の文字を表すワイルドカード ("*") の両方がサポートされています。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="searchPattern" /> は null なので、</exception>
+      <exception cref="T:System.InvalidOperationException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.UnauthorizedAccessException">呼び出し元には、<paramref name="searchPattern" /> から解決されるディレクトリを列挙するためのアクセス許可がありません。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="searchPattern" /> によって指定されたディレクトリが見つかりませんでした。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames">
+      <summary>分離ストアのルートにあるファイルの名前を列挙します。</summary>
+      <returns>分離ストアのルートにあるファイルの相対パスの配列。ルートにファイルが存在しない場合は、長さ 0 の配列が返されます。</returns>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">分離ストアのルートからのファイル パスを決定できません。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames(System.String)">
+      <summary>検索パターンと一致するファイル名を取得します。</summary>
+      <returns>分離ストレージのスコープ内にあり、<paramref name="searchPattern" /> と一致するファイルの相対パスの配列。長さ 0 の配列が返された場合は、一致するファイルは存在しません。</returns>
+      <param name="searchPattern">検索パターン。単一の文字を表すワイルドカード ("?") と複数の文字を表すワイルドカード ("*") の両方がサポートされています。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="searchPattern" /> は null なので、</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="searchPattern" /> で指定されたファイル パスが見つかりません。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastAccessTime(System.String)">
+      <summary>指定したファイルまたはディレクトリに最後にアクセスした日付と時刻を返します。</summary>
+      <returns>指定したファイルまたはディレクトリに最後にアクセスした日付と時刻。この値は現地時刻で表示されます。</returns>
+      <param name="path">最後にアクセスした日時の情報を取得する対象のファイルまたはディレクトリへのパス。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />が、長さが 0 の文字列であるか、空白しか含んでいないか、<see cref="M:System.IO.Path.GetInvalidPathChars" /> メソッドで定義されている無効な文字を 1 つ以上含んでいます。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />が null です。</exception>
+      <exception cref="T:System.InvalidOperationException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastWriteTime(System.String)">
+      <summary>指定したファイルまたはディレクトリに最後に書き込んだ日付と時刻を返します。</summary>
+      <returns>指定したファイルまたはディレクトリに最後に書き込んだ日付と時刻。この値は現地時刻で表示されます。</returns>
+      <param name="path">最後に書き込んだ日時の情報を取得する対象のファイルまたはディレクトリへのパス。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />が、長さが 0 の文字列であるか、空白しか含んでいないか、<see cref="M:System.IO.Path.GetInvalidPathChars" /> メソッドで定義されている無効な文字を 1 つ以上含んでいます。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />が null です。</exception>
+      <exception cref="T:System.InvalidOperationException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication">
+      <summary>呼び出し元のコードのアプリケーション ID に対応するユーザー スコープの分離ストレージを取得します。</summary>
+      <returns>呼び出し元のコードのアセンブリ ID に基づく分離ストレージ スコープに対応するオブジェクト。</returns>
+      <exception cref="T:System.Security.SecurityException">分離ストレージに対して必要なアクセス許可が与えられていません。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストレージの場所を初期化できません。または<see cref="P:System.AppDomain.ActivationContext" /> プロパティが null を返したため、呼び出し元のアプリケーション ID を特定できません。またはアプリケーション ドメインのアクセス許可を特定できません。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        <IPermission class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="MemberAccess" />
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveDirectory(System.String,System.String)">
+      <summary>指定されたディレクトリとその内容を新しい場所に移動します。</summary>
+      <param name="sourceDirectoryName">移動するディレクトリの名前。</param>
+      <param name="destinationDirectoryName">
+        <paramref name="sourceDirectoryName" /> の新しい位置へのパス。既存のディレクトリのパスを指定することはできません。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />または<paramref name=" destinationFileName " />が、長さが 0 の文字列であるか、空白しか含んでいないか、<see cref="M:System.IO.Path.GetInvalidPathChars" /> メソッドで定義されている無効な文字を 1 つ以上含んでいます。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />または<paramref name=" destinationFileName " />が null です。</exception>
+      <exception cref="T:System.InvalidOperationException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="sourceDirectoryName" /> が存在していません。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。または<paramref name="destinationDirectoryName" /> は既に存在します。または<paramref name="sourceDirectoryName" /> と <paramref name="destinationDirectoryName" /> が、同じディレクトリを参照しています。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveFile(System.String,System.String)">
+      <summary>指定したファイルを新しい場所に移動します。オプションで新しいファイル名を指定することもできます。</summary>
+      <param name="sourceFileName">移動するファイルの名前。</param>
+      <param name="destinationFileName">ファイルの新しい場所へのパス。ファイル名まで含めて指定した場合は、移動したファイルにその名前が付けられます。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />または<paramref name=" destinationFileName " />が、長さが 0 の文字列であるか、空白しか含んでいないか、<see cref="M:System.IO.Path.GetInvalidPathChars" /> メソッドで定義されている無効な文字を 1 つ以上含んでいます。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />または<paramref name=" destinationFileName " />が null です。</exception>
+      <exception cref="T:System.InvalidOperationException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="sourceFileName" /> は見つかりませんでした。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode)">
+      <summary>指定したモードでファイルを開きます。</summary>
+      <returns>読み書き可能、共有不可の権限を適用し、指定したモードで開くファイル。</returns>
+      <param name="path">分離ストア内でのファイルの相対パス。</param>
+      <param name="mode">ファイルを開く方法を指定する列挙値の 1 つ。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> の形式が正しくありません。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> は null なので、</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" /> 内にディレクトリが存在しません。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="mode" /> に <see cref="F:System.IO.FileMode.Open" /> が設定されていますが、ファイルが見つかりません。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess)">
+      <summary>読み取り/書き込みのアクセス権を指定し、指定したモードでファイルを開きます。</summary>
+      <returns>指定したアクセス権と共有不可の権限を適用し、指定したモードで開くファイル。</returns>
+      <param name="path">分離ストア内でのファイルの相対パス。</param>
+      <param name="mode">ファイルを開く方法を指定する列挙値の 1 つ。</param>
+      <param name="access">ファイルを読み取りアクセスで開くか、書き込みアクセスで開くか、読み取り/書き込みアクセスで開くかを指定する列挙値の 1 つ。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> の形式が正しくありません。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> は null なので、</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" /> 内にディレクトリが存在しません。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="mode" /> に <see cref="F:System.IO.FileMode.Open" /> が設定されていますが、ファイルが見つかりません。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)">
+      <summary>読み取り/書き込みアクセス権と共有アクセス許可を指定し、指定したモードでファイルを開きます。</summary>
+      <returns>指定したアクセス権と共有オプションを使用し、指定したモードで開くファイル。</returns>
+      <param name="path">分離ストア内でのファイルの相対パス。</param>
+      <param name="mode">ファイルを開く方法または作成する方法を指定する列挙値の 1 つ。</param>
+      <param name="access">ファイルを読み取りアクセスで開くか、書き込みアクセスで開くか、読み取り/書き込みアクセスで開くかを指定する列挙値の 1 つ。</param>
+      <param name="share">他の <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトがこのファイルに対して持つアクセス権の種類を指定する列挙値のビットごとの組み合わせ。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">分離ストアは削除されています。または分離ストレージは無効になっています。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> の形式が正しくありません。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> は null なので、</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" /> 内にディレクトリが存在しません。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="mode" /> に <see cref="M:System.IO.FileInfo.Open(System.IO.FileMode)" /> が設定されていますが、ファイルが見つかりません。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは破棄されています。</exception>
+    </member>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageFileStream">
+      <summary>分離ストレージ内のファイルを公開します。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>
+        <paramref name="mode" /> で指定したモード、<paramref name="share" /> で指定したファイル共有モード、<paramref name="isf" /> で指定した <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> のコンテキストを使用して、<paramref name="path" /> で指定したファイルへの、<paramref name="access" /> で指定した種類のアクセスを提供する <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> クラスの新しいインスタンスを初期化します。</summary>
+      <param name="path">分離ストレージ内でのファイルの相対パス。</param>
+      <param name="mode">
+        <see cref="T:System.IO.FileMode" /> の値の 1 つ。</param>
+      <param name="access">
+        <see cref="T:System.IO.FileAccess" /> 値のビットごとの組み合わせ。</param>
+      <param name="share">
+        <see cref="T:System.IO.FileShare" /> 値のビットごとの組み合わせ。</param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> を開くために使用する <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> の形式が正しくありません。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> が null です。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="mode" /> に <see cref="F:System.IO.FileMode.Open" /> が設定されていますが、ファイルが見つかりません。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" /> はクォータを持っていません。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>
+        <paramref name="mode" /> で指定したモード、<paramref name="isf" /> で指定した <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> のコンテキストを使用して、<paramref name="path" /> で指定したファイルへの、<paramref name="access" /> で指定した種類のアクセスを提供する <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> クラスの新しいインスタンスを初期化します。</summary>
+      <param name="path">分離ストレージ内でのファイルの相対パス。</param>
+      <param name="mode">
+        <see cref="T:System.IO.FileMode" /> の値の 1 つ。</param>
+      <param name="access">
+        <see cref="T:System.IO.FileAccess" /> 値のビットごとの組み合わせ。</param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> を開くために使用する <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> の形式が正しくありません。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> が null です。</exception>
+      <exception cref="T:System.ObjectDisposedException">分離ストアは閉じられています。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="mode" /> に <see cref="F:System.IO.FileMode.Open" /> が設定されていますが、ファイルが見つかりません。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" /> はクォータを持っていません。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>
+        <paramref name="mode" /> で指定したモード、<paramref name="isf" /> で指定した <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> のコンテキストを使用して、<paramref name="path" /> で指定したファイルへのアクセスを提供する <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> クラスの新しいインスタンスを初期化します。</summary>
+      <param name="path">分離ストレージ内でのファイルの相対パス。</param>
+      <param name="mode">
+        <see cref="T:System.IO.FileMode" /> の値の 1 つ。</param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> を開くために使用する <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> の形式が正しくありません。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> が null です。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="mode" /> に <see cref="F:System.IO.FileMode.Open" /> が設定されていますが、ファイルが見つかりません。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" /> はクォータを持っていません。</exception>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanRead">
+      <summary>ファイルを読み取ることができるかどうかを示すブール値を取得します。</summary>
+      <returns>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトを読み取ることができる場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanSeek">
+      <summary>シーク操作をサポートしているかどうかを示す ブール値を取得します。</summary>
+      <returns>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトがシーク操作をサポートしている場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanWrite">
+      <summary>ファイルに書き込むことができるかどうかを示す ブール値を取得します。</summary>
+      <returns>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトに書き込むことができる場合は true。それ以外の場合は false。</returns>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose(System.Boolean)">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> で使用されているアンマネージ リソースを解放し、オプションでマネージ リソースを解放します。</summary>
+      <param name="disposing">マネージ リソースとアンマネージ リソースの両方を解放する場合は true。アンマネージ リソースだけを解放する場合は false。 </param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Flush">
+      <summary>このストリームのバッファーをクリアして、バッファー内のデータがファイルに書き込まれるようにします。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.FlushAsync(System.Threading.CancellationToken)"></member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.Length">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトの長さを取得します。</summary>
+      <returns>バイト単位の <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトの長さ。</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.Position">
+      <summary>現在の <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトの現在位置を取得または設定します。</summary>
+      <returns>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトの現在位置。</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">負数を使用して位置を設定することはできません。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Read(System.Byte[],System.Int32,System.Int32)">
+      <summary>現在のバッファー内の <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトから配列にバイトをコピーします。</summary>
+      <returns>
+        <paramref name="buffer" /> に読み取る合計バイト数。要求しただけのバイト数を読み取ることができなかった場合、この値は要求したバイト数より小さくなります。ストリームの末尾に到達した場合は 0 になることがあります。</returns>
+      <param name="buffer">読み取るバッファー。</param>
+      <param name="offset">書き込みの開始位置を示すバッファー内のオフセット。</param>
+      <param name="count">読み取る最大バイト数。</param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)"></member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.ReadByte">
+      <summary>分離ストレージで <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトから 1 バイトを読み取ります。</summary>
+      <returns>分離ストレージ ファイルから読み取られた 8 ビット符号なし整数値。</returns>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Seek(System.Int64,System.IO.SeekOrigin)">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトの現在位置を特定の値に設定します。</summary>
+      <returns>新しい <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトの位置。</returns>
+      <param name="offset">新しい <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトの位置。</param>
+      <param name="origin">
+        <see cref="T:System.IO.SeekOrigin" /> 値の 1 つ。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="origin" /> は、<see cref="T:System.IO.SeekOrigin" /> 値の 1 つである必要があります。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.SetLength(System.Int64)">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトの長さを指定した <paramref name="value" /> に設定します。</summary>
+      <param name="value">新しい <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトの長さ。</param>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="value" /> は負の値です。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Write(System.Byte[],System.Int32,System.Int32)">
+      <summary>バイト配列から読み取ったデータを使用して、<see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトにバイトのブロックを書き込みます。</summary>
+      <param name="buffer">書き込むバッファー。</param>
+      <param name="offset">開始位置を示すバッファー内のバイト オフセット。</param>
+      <param name="count">書き込む最大バイト数。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトのクォータを超えて書き込もうとしました。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)"></member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.WriteByte(System.Byte)">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトに 1 バイトを書き込みます。</summary>
+      <param name="value">分離ストレージ ファイルに書き込むバイト値。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> オブジェクトのクォータを超えて書き込もうとしました。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+  </members>
+</doc>

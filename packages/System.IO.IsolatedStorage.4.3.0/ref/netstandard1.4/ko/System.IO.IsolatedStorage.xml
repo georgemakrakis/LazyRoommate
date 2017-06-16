@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>System.IO.IsolatedStorage</name>
+  </assembly>
+  <members>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageException">
+      <summary>격리된 저장소에서 작업이 실패하면 throw되는 예외입니다.</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor">
+      <summary>기본 속성을 사용하여 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> 클래스의 새 인스턴스를 초기화합니다.</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor(System.String)">
+      <summary>지정된 오류 메시지를 사용하여 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> 클래스의 새 인스턴스를 초기화합니다.</summary>
+      <param name="message">예외에 대한 이유를 설명하는 오류 메시지입니다. </param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor(System.String,System.Exception)">
+      <summary>지정된 오류 메시지와 해당 예외의 근본 원인인 내부 예외에 대한 참조를 사용하여 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> 클래스의 새 인스턴스를 초기화합니다.</summary>
+      <param name="message">예외에 대한 이유를 설명하는 오류 메시지입니다. </param>
+      <param name="inner">현재 예외의 원인이 되는 예외입니다.<paramref name="inner" /> 매개 변수가 null이 아니면 현재 예외는 내부 예외를 처리하는 catch 블록에서 발생합니다.</param>
+    </member>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageFile">
+      <summary>격리된 저장소 영역을 나타내며 파일 및 디렉터리가 들어 있습니다. </summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String)">
+      <summary>새 파일에 기존 파일을 복사합니다.  </summary>
+      <param name="sourceFileName">복사할 파일의 이름입니다.</param>
+      <param name="destinationFileName">대상 파일 이름입니다.이것은 디렉터리나 기존 파일일 수 없습니다.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />또는 <paramref name=" destinationFileName " />이 길이가 0인 문자열이거나, 공백만 포함하거나, <see cref="M:System.IO.Path.GetInvalidPathChars" /> 메서드에 정의된 하나 이상의 잘못된 문자를 포함하는 경우</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />또는 <paramref name=" destinationFileName " />이 null인 경우</exception>
+      <exception cref="T:System.InvalidOperationException">격리된 저장소가 닫힌 경우</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="sourceFileName " />을 찾을 수 없는 경우</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="sourceFileName " />을 찾을 수 없는 경우</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우또는격리된 저장소를 사용하지 않도록 설정된 경우또는<paramref name="destinationFileName" />이(가) 있습니다.또는I/O 오류가 발생한 경우</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String,System.Boolean)">
+      <summary>새 파일에 기존 파일을 복사하고 선택적으로 기존 파일을 덮어씁니다.</summary>
+      <param name="sourceFileName">복사할 파일의 이름입니다.</param>
+      <param name="destinationFileName">대상 파일 이름입니다.대상 파일 이름은 디렉터리가 될 수 없습니다.</param>
+      <param name="overwrite">대상 파일을 덮어쓸 수 있으면 true이고, 그렇지 않으면 false입니다.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />또는 <paramref name=" destinationFileName " />이 길이가 0인 문자열이거나, 공백만 포함하거나, <see cref="M:System.IO.Path.GetInvalidPathChars" /> 메서드에 정의된 하나 이상의 잘못된 문자를 포함하는 경우</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />또는 <paramref name=" destinationFileName " />이 null인 경우</exception>
+      <exception cref="T:System.InvalidOperationException">격리된 저장소가 닫힌 경우</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="sourceFileName " />을 찾을 수 없는 경우</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="sourceFileName " />을 찾을 수 없는 경우</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우또는격리된 저장소를 사용하지 않도록 설정된 경우또는I/O 오류가 발생한 경우</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory(System.String)">
+      <summary>격리된 저장소 범위 내에 디렉터리를 만듭니다.</summary>
+      <param name="dir">격리된 저장소 범위 내에 만들 디렉터리에 대한 상대 경로입니다. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">현재 코드에 격리된 저장소 디렉터리를 만들 권한이 없는 경우 </exception>
+      <exception cref="T:System.ArgumentNullException">디렉터리 경로가 null인 경우 </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateFile(System.String)">
+      <summary>격리된 저장소에 파일을 만듭니다.</summary>
+      <returns>새 격리된 저장소 파일입니다.</returns>
+      <param name="path">만들려는 파일의 상대 경로입니다.</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우 또는격리된 저장소를 사용하지 않도록 설정된 경우</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" />의 형식이 잘못된 경우</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" />가 null입니다.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" />에 디렉터리가 없는 경우</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory(System.String)">
+      <summary>격리된 저장소 범위 내에 있는 디렉터리를 삭제합니다.</summary>
+      <param name="dir">격리된 저장소 범위 내에서 삭제할 디렉터리에 대한 상대 경로입니다. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">디렉터리를 삭제할 수 없는 경우 </exception>
+      <exception cref="T:System.ArgumentNullException">디렉터리 경로가 null인 경우 </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile(System.String)">
+      <summary>격리된 저장소 범위 내에 있는 파일을 삭제합니다.</summary>
+      <param name="file">격리된 저장소 범위 내에서 삭제할 파일에 대한 상대 경로입니다. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">대상 파일이 열려 있거나 경로가 잘못된 경우 </exception>
+      <exception cref="T:System.ArgumentNullException">파일 경로가 null인 경우 </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DirectoryExists(System.String)">
+      <summary>지정한 경로가 격리된 저장소의 기존 디렉터리를 참조하는지 여부를 확인합니다.</summary>
+      <returns>
+        <paramref name="path" />가 격리된 저장소의 기존 디렉터리를 참조하고 null이 아니면 true이고, 그렇지 않으면 false입니다.</returns>
+      <param name="path">테스트할 경로입니다.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" />가 null입니다.</exception>
+      <exception cref="T:System.InvalidOperationException">격리된 저장소가 닫힙니다.</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우 또는격리된 저장소를 사용하지 않도록 설정된 경우</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.Dispose">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />에서 사용하는 모든 리소스를 해제합니다. </summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.FileExists(System.String)">
+      <summary>지정한 경로가 격리된 저장소의 기존 파일을 참조하는지 여부를 확인합니다.</summary>
+      <returns>
+        <paramref name="path" />가 격리된 저장소의 기존 파일을 참조하고 null이 아니면 true이고, 그렇지 않으면 false입니다.</returns>
+      <param name="path">테스트할 경로와 파일 이름입니다.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" />가 null입니다.</exception>
+      <exception cref="T:System.InvalidOperationException">격리된 저장소가 닫힙니다.</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우 </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetCreationTime(System.String)">
+      <summary>지정된 파일 또는 디렉터리의 만든 날짜와 시간을 반환합니다.</summary>
+      <returns>지정된 파일 또는 디렉터리에 대한 만든 날짜와 시간입니다.이 값은 현지 시간으로 표현됩니다.</returns>
+      <param name="path">만든 날짜와 시간 정보를 가져올 파일 또는 디렉터리의 경로입니다.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />가 길이가 0인 문자열이거나, 공백만 포함하거나, <see cref="M:System.IO.Path.GetInvalidPathChars" /> 메서드에 정의된 하나 이상의 잘못된 문자를 포함하는 경우</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />가 null인 경우</exception>
+      <exception cref="T:System.InvalidOperationException">격리된 저장소가 닫힌 경우</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우또는격리된 저장소를 사용하지 않도록 설정된 경우</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames">
+      <summary>격리된 저장소의 루트에 있는 디렉터리를 열거합니다.</summary>
+      <returns>격리된 저장소의 루트에 있는 디렉터리의 상대 경로가 들어 있는 배열입니다.길이가 0인 배열은 루트에 디렉터리가 없음을 나타냅니다.</returns>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.InvalidOperationException">격리된 저장소가 닫힙니다.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우 </exception>
+      <exception cref="T:System.UnauthorizedAccessException">호출자에게 디렉터리를 열거할 수 있는 권한이 없습니다.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">하나 이상의 디렉터리가 발견되지 않았습니다.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames(System.String)">
+      <summary>격리된 저장소 범위 내의 디렉터리 중 지정된 검색 패턴과 일치하는 디렉터리를 나열합니다.</summary>
+      <returns>격리된 저장소 범위 내의 디렉터리 중 <paramref name="searchPattern" />과 일치하는 디렉터리의 상대 경로 배열입니다.길이가 0인 배열은 일치하는 디렉터리가 없음을 나타냅니다.</returns>
+      <param name="searchPattern">.검색 패턴입니다.단일 문자("?") 및 다중 문자("*") 와일드카드를 모두 사용할 수 있습니다.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="searchPattern" />가 null입니다. </exception>
+      <exception cref="T:System.InvalidOperationException">격리된 저장소가 닫힙니다.</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.UnauthorizedAccessException">호출자에게 <paramref name="searchPattern" />에서 확인된 디렉터리를 열거할 수 있는 권한이 없습니다.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="searchPattern" />에서 지정한 디렉터리를 찾을 수 없습니다.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우 </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames">
+      <summary>격리된 저장소의 루트에 있는 파일 이름을 열거합니다.</summary>
+      <returns>격리된 저장소의 루트에 있는 파일의 상대 경로가 들어 있는 배열입니다.  길이가 0인 배열은 루트에 파일이 없음을 나타냅니다.</returns>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우 </exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">격리된 저장소 루트의 파일 경로를 확인할 수 없습니다.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames(System.String)">
+      <summary>검색 패턴과 일치하는 파일 이름을 가져옵니다.</summary>
+      <returns>격리된 저장소 범위 내의 파일 중 <paramref name="searchPattern" />과 일치하는 파일의 상대 경로 배열입니다.길이가 0인 배열은 일치하는 파일이 없음을 나타냅니다.</returns>
+      <param name="searchPattern">.검색 패턴입니다.단일 문자("?") 및 다중 문자("*") 와일드카드를 모두 사용할 수 있습니다.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="searchPattern" />가 null입니다. </exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우 </exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="searchPattern" />에서 지정한 파일 경로가 없는 경우 </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastAccessTime(System.String)">
+      <summary>지정된 파일 또는 디렉터리를 마지막으로 액세스한 날짜와 시간을 반환합니다.</summary>
+      <returns>지정된 파일 또는 디렉터리를 마지막으로 액세스한 날짜와 시간입니다.이 값은 현지 시간으로 표현됩니다.</returns>
+      <param name="path">마지막으로 액세스한 날짜와 시간 정보를 가져올 파일 또는 디렉터리의 경로입니다.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />가 길이가 0인 문자열이거나, 공백만 포함하거나, <see cref="M:System.IO.Path.GetInvalidPathChars" /> 메서드에 정의된 하나 이상의 잘못된 문자를 포함하는 경우</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />가 null인 경우</exception>
+      <exception cref="T:System.InvalidOperationException">격리된 저장소가 닫힌 경우</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우또는격리된 저장소를 사용하지 않도록 설정된 경우</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastWriteTime(System.String)">
+      <summary>지정된 파일 또는 디렉터리를 마지막으로 쓴 날짜와 시간을 반환합니다.</summary>
+      <returns>지정된 파일 또는 디렉터리를 마지막으로 쓴 날짜와 시간입니다.이 값은 현지 시간으로 표현됩니다.</returns>
+      <param name="path">마지막으로 쓴 날짜와 시간 정보를 가져올 파일 또는 디렉터리의 경로입니다.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />가 길이가 0인 문자열이거나, 공백만 포함하거나, <see cref="M:System.IO.Path.GetInvalidPathChars" /> 메서드에 정의된 하나 이상의 잘못된 문자를 포함하는 경우</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />가 null인 경우</exception>
+      <exception cref="T:System.InvalidOperationException">격리된 저장소가 닫힌 경우</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우또는격리된 저장소를 사용하지 않도록 설정된 경우</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication">
+      <summary>호출 코드의 응용 프로그램 ID에 해당하는 사용자 범위의 격리된 저장소를 가져옵니다.</summary>
+      <returns>호출 코드의 어셈블리 ID에 기반한 격리된 저장소 범위에 해당하는 개체입니다.</returns>
+      <exception cref="T:System.Security.SecurityException">격리된 저장소 권한이 충분히 부여되지 않은 경우 </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소 위치를 초기화할 수 없습니다.또는<see cref="P:System.AppDomain.ActivationContext" /> 속성이 null을 반환했기 때문에 호출자의 응용 프로그램 ID를 확인할 수 없습니다.또는응용 프로그램 도메인에 대한 사용 권한을 확인할 수 없습니다.</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        <IPermission class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="MemberAccess" />
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveDirectory(System.String,System.String)">
+      <summary>지정된 디렉터리와 그 내용을 새 위치로 이동합니다.</summary>
+      <param name="sourceDirectoryName">이동할 디렉터리의 이름입니다.</param>
+      <param name="destinationDirectoryName">
+        <paramref name="sourceDirectoryName" />의 새 위치에 대한 경로입니다.기존 디렉터리의 경로는 사용할 수 없습니다.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />또는 <paramref name=" destinationFileName " />이 길이가 0인 문자열이거나, 공백만 포함하거나, <see cref="M:System.IO.Path.GetInvalidPathChars" /> 메서드에 정의된 하나 이상의 잘못된 문자를 포함하는 경우</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />또는 <paramref name=" destinationFileName " />이 null인 경우</exception>
+      <exception cref="T:System.InvalidOperationException">격리된 저장소가 닫힌 경우</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="sourceDirectoryName" />이(가) 없습니다.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우또는격리된 저장소를 사용하지 않도록 설정된 경우또는<paramref name="destinationDirectoryName" />이(가) 이미 있습니다.또는<paramref name="sourceDirectoryName" /> 및 <paramref name="destinationDirectoryName" />이 같은 디렉터리를 참조하는 경우</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveFile(System.String,System.String)">
+      <summary>지정된 파일을 새 위치로 이동하고 선택적으로 새 파일의 이름을 지정할 수 있습니다.</summary>
+      <param name="sourceFileName">이동할 파일의 이름입니다.</param>
+      <param name="destinationFileName">파일의 새 위치에 대한 경로입니다.파일 이름을 포함하면 이동한 파일에 해당 이름이 지정됩니다.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />또는 <paramref name=" destinationFileName " />이 길이가 0인 문자열이거나, 공백만 포함하거나, <see cref="M:System.IO.Path.GetInvalidPathChars" /> 메서드에 정의된 하나 이상의 잘못된 문자를 포함하는 경우</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />또는 <paramref name=" destinationFileName " />이 null인 경우</exception>
+      <exception cref="T:System.InvalidOperationException">격리된 저장소가 닫힌 경우</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="sourceFileName" />을(를) 찾을 수 없습니다.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우또는격리된 저장소를 사용하지 않도록 설정된 경우</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode)">
+      <summary>지정된 모드로 파일을 엽니다.</summary>
+      <returns>공유 권한 없이 읽기/쓰기 액세스 권한을 사용하여 지정된 모드로 연 파일입니다.</returns>
+      <param name="path">격리된 저장소 안에 있는 파일의 상대 경로입니다.</param>
+      <param name="mode">파일을 여는 방법을 지정하는 열거형 값 중 하나입니다. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우 또는격리된 저장소를 사용하지 않도록 설정된 경우</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" />의 형식이 잘못된 경우</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" />가 null입니다.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" />에 디렉터리가 없는 경우</exception>
+      <exception cref="T:System.IO.FileNotFoundException">파일을 찾을 수 없고 <paramref name="mode" />가 <see cref="F:System.IO.FileMode.Open" />으로 설정되어 있는 경우</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess)">
+      <summary>지정된 읽기/쓰기 권한을 사용하여 지정된 모드로 파일을 엽니다.</summary>
+      <returns>공유 권한 없이 지정된 모드와 액세스 권한을 사용하여 연 파일입니다.</returns>
+      <param name="path">격리된 저장소 안에 있는 파일의 상대 경로입니다.</param>
+      <param name="mode">파일을 여는 방법을 지정하는 열거형 값 중 하나입니다.</param>
+      <param name="access">읽기, 쓰기 또는 읽기/쓰기 권한으로 파일을 열 것인지를 지정하는 열거형 값 중 하나입니다.</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우 또는격리된 저장소를 사용하지 않도록 설정된 경우</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" />의 형식이 잘못된 경우</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" />가 null입니다.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" />에 디렉터리가 없는 경우</exception>
+      <exception cref="T:System.IO.FileNotFoundException">파일을 찾을 수 없고 <paramref name="mode" />가 <see cref="F:System.IO.FileMode.Open" />으로 설정되어 있는 경우 </exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)">
+      <summary>지정된 읽기/쓰기 권한과 공유 권한을 사용하여 지정된 모드로 파일을 엽니다.</summary>
+      <returns>지정된 공유 옵션을 사용하여 지정된 모드와 액세스 권한으로 연 파일입니다.</returns>
+      <param name="path">격리된 저장소 안에 있는 파일의 상대 경로입니다.</param>
+      <param name="mode">파일을 열거나 만드는 방법을 지정하는 열거형 값 중 하나입니다.</param>
+      <param name="access">읽기, 쓰기 또는 읽기/쓰기 권한으로 파일을 열 것인지를 지정하는 열거형 값 중 하나입니다.</param>
+      <param name="share">이 파일에 대한 다른 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체의 액세스 유형을 지정하는 열거형 값의 비트 조합입니다.</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">격리된 저장소가 제거된 경우 또는격리된 저장소를 사용하지 않도록 설정된 경우</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" />의 형식이 잘못된 경우</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" />가 null입니다.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" />에 디렉터리가 없는 경우</exception>
+      <exception cref="T:System.IO.FileNotFoundException">파일을 찾을 수 없고 <paramref name="mode" />가 <see cref="M:System.IO.FileInfo.Open(System.IO.FileMode)" />으로 설정되어 있는 경우</exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 삭제된 경우</exception>
+    </member>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageFileStream">
+      <summary>격리된 저장소 내 파일을 노출합니다. </summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 클래스의 새 인스턴스를 초기화하여 지정된 <paramref name="mode" />, 지정된 파일 <paramref name="access" /> 및 <paramref name="share" />에 지정된 파일 공유 모드로 <paramref name="isf" />에 지정된 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> 컨텍스트에서 <paramref name="path" />에 지정된 파일에 액세스할 수 있도록 합니다.</summary>
+      <param name="path">격리된 저장소 내 파일의 상대 경로입니다. </param>
+      <param name="mode">
+        <see cref="T:System.IO.FileMode" /> 값 중 하나입니다. </param>
+      <param name="access">
+        <see cref="T:System.IO.FileAccess" /> 값의 비트 조합입니다. </param>
+      <param name="share">
+        <see cref="T:System.IO.FileShare" /> 값의 비트 조합입니다. </param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />을 열 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />입니다. </param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" />의 형식이 잘못된 경우 </exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" />이 null인 경우 </exception>
+      <exception cref="T:System.IO.FileNotFoundException">파일을 찾을 수 없고 <paramref name="mode" />가 <see cref="F:System.IO.FileMode.Open" />으로 설정되어 있는 경우 </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" />에 할당량이 없는 경우 </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 클래스의 새 인스턴스를 초기화하여 지정된 <paramref name="mode" /> 및 지정된 파일 <paramref name="access" />로 <paramref name="isf" />에 지정된 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> 컨텍스트에서 <paramref name="path" />에 지정된 파일에 액세스할 수 있도록 합니다.</summary>
+      <param name="path">격리된 저장소 내 파일의 상대 경로입니다. </param>
+      <param name="mode">
+        <see cref="T:System.IO.FileMode" /> 값 중 하나입니다. </param>
+      <param name="access">
+        <see cref="T:System.IO.FileAccess" /> 값의 비트 조합입니다. </param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />을 열 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />입니다. </param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" />의 형식이 잘못된 경우 </exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" />이 null인 경우 </exception>
+      <exception cref="T:System.ObjectDisposedException">격리된 저장소가 닫힙니다.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">파일을 찾을 수 없고 <paramref name="mode" />가 <see cref="F:System.IO.FileMode.Open" />으로 설정되어 있는 경우 </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" />에 할당량이 없는 경우 </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 클래스의 새 인스턴스를 초기화하여 지정된 <paramref name="path" />에서, <paramref name="mode" />로 지정된 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> 컨텍스트를 사용하여 <paramref name="isf" />로 지정된 파일에 액세스할 수 있도록 합니다.</summary>
+      <param name="path">격리된 저장소 내 파일의 상대 경로입니다. </param>
+      <param name="mode">
+        <see cref="T:System.IO.FileMode" /> 값 중 하나입니다. </param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />을 열 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />입니다. </param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" />의 형식이 잘못된 경우 </exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" />이 null인 경우 </exception>
+      <exception cref="T:System.IO.FileNotFoundException">파일을 찾을 수 없고 <paramref name="mode" />가 <see cref="F:System.IO.FileMode.Open" />으로 설정되어 있는 경우 </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" />에 할당량이 없는 경우 </exception>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanRead">
+      <summary>파일을 읽을 수 있는지 여부를 나타내는 부울 값을 가져옵니다.</summary>
+      <returns>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체를 읽을 수 있으면 true이고, 읽을 수 없으면 false입니다.</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanSeek">
+      <summary>검색 작업이 지원되는지 여부를 나타내는 부울 값을 가져옵니다.</summary>
+      <returns>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체에서 검색 작업을 지원하면 true이고, 지원하지 않으면 false입니다.</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanWrite">
+      <summary>파일에 쓸 수 있는지 여부를 나타내는 부울 값을 가져옵니다.</summary>
+      <returns>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체에 쓸 수 있으면 true이고, 쓸 수 없으면 false입니다.</returns>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose(System.Boolean)">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />에서 사용하는 관리되지 않는 리소스를 해제하고, 관리되는 리소스를 선택적으로 해제할 수 있습니다.</summary>
+      <param name="disposing">관리되는 리소스와 관리되지 않는 리소스를 모두 해제하려면 true로 설정하고, 관리되지 않는 리소스만 해제하려면 false로 설정합니다. </param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Flush">
+      <summary>이 스트림의 버퍼를 지우고 버퍼링된 모든 데이터가 파일에 쓰여지도록 합니다.</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.FlushAsync(System.Threading.CancellationToken)"></member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.Length">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체의 길이를 가져옵니다.</summary>
+      <returns>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체의 길이(바이트)입니다.</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.Position">
+      <summary>현재 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체의 현재 위치를 가져오거나 설정합니다.</summary>
+      <returns>이 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체의 현재 위치입니다.</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">위치를 음수로 설정한 경우 </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Read(System.Byte[],System.Int32,System.Int32)">
+      <summary>현재 버퍼링된 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체의 바이트를 배열에 복사합니다.</summary>
+      <returns>
+        <paramref name="buffer" />로 읽어온 총 바이트 수입니다.이 바이트 수는 현재 사용 가능한 바이트가 충분하지 않은 경우 요청된 바이트 수보다 작을 수 있으며 스트림의 끝에 도달하면 0이 됩니다.</returns>
+      <param name="buffer">읽을 버퍼입니다. </param>
+      <param name="offset">쓰기를 시작할 버퍼의 오프셋입니다. </param>
+      <param name="count">읽을 최대 바이트 수입니다. </param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)"></member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.ReadByte">
+      <summary>격리된 저장소의 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체에서 싱글바이트를 읽습니다.</summary>
+      <returns>격리된 저장소 파일에서 읽은 부호 없는 8비트 정수 값입니다.</returns>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Seek(System.Int64,System.IO.SeekOrigin)">
+      <summary>이 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체의 현재 위치를 지정된 값으로 설정합니다.</summary>
+      <returns>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체의 새 위치입니다.</returns>
+      <param name="offset">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체의 새 위치입니다. </param>
+      <param name="origin">
+        <see cref="T:System.IO.SeekOrigin" /> 값 중 하나입니다. </param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="origin" />이 <see cref="T:System.IO.SeekOrigin" /> 값 중 하나가 아닌 경우 </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.SetLength(System.Int64)">
+      <summary>이 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체의 길이를 지정된 <paramref name="value" />로 설정합니다.</summary>
+      <param name="value">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체의 새 길이입니다. </param>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="value" />가 음수인 경우</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Write(System.Byte[],System.Int32,System.Int32)">
+      <summary>바이트 배열에서 읽은 데이터를 사용하여 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체에 바이트 블록을 씁니다.</summary>
+      <param name="buffer">쓸 버퍼입니다. </param>
+      <param name="offset">쓰기를 시작할 버퍼의 바이트 오프셋입니다. </param>
+      <param name="count">쓸 최대 바이트 수입니다. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">쓰기 시도가 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체에 대한 할당량을 초과한 경우 </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)"></member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.WriteByte(System.Byte)">
+      <summary>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체에 싱글바이트를 씁니다.</summary>
+      <param name="value">격리된 저장소 파일에 쓸 바이트 값입니다. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">쓰기 시도가 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 개체에 대한 할당량을 초과한 경우 </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>System.IO.IsolatedStorage</name>
+  </assembly>
+  <members>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageException">
+      <summary>隔離儲存區 (Isolated Storage) 中的作業失敗時所擲回的例外狀況。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor">
+      <summary>使用預設屬性來初始化 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> 類別的新執行個體。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor(System.String)">
+      <summary>使用指定的錯誤訊息，初始化 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> 類別的新執行個體。</summary>
+      <param name="message">解釋例外狀況原因的錯誤訊息。</param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor(System.String,System.Exception)">
+      <summary>使用指定的錯誤訊息和造成這個例外狀況的內部例外參考，初始化 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> 類別的新執行個體。</summary>
+      <param name="message">解釋例外狀況原因的錯誤訊息。</param>
+      <param name="inner">導致目前例外狀況的例外。如果 <paramref name="inner" /> 參數不是 null，則目前的例外狀況會在處理內部例外的 catch 區塊中引發。</param>
+    </member>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageFile">
+      <summary>表示含有檔案和目錄的隔離儲存區 (Isolated Storage)。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String)">
+      <summary>複製現有的檔案到新的檔案。</summary>
+      <param name="sourceFileName">要複製的檔案名稱。</param>
+      <param name="destinationFileName">檔案的名稱。這不可以是目錄或現有檔案。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />或<paramref name=" destinationFileName " />是長度為零的字串、只包含空白字元，或包含 <see cref="M:System.IO.Path.GetInvalidPathChars" /> 方法所定義的一個或多個無效字元。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />或<paramref name=" destinationFileName " />是 null。</exception>
+      <exception cref="T:System.InvalidOperationException">已關閉隔離儲存區。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">找不到 <paramref name="sourceFileName " />。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">找不到 <paramref name="sourceFileName " />。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。-或-<paramref name="destinationFileName" /> 存在。-或-發生 I/O 錯誤。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String,System.Boolean)">
+      <summary>複製現有的檔案到新檔案，並選擇性地覆寫現有的檔案。</summary>
+      <param name="sourceFileName">要複製的檔案名稱。</param>
+      <param name="destinationFileName">檔案的名稱。這不可以是目錄。</param>
+      <param name="overwrite">如果可以覆寫目的檔案，則為 true，否則為 false。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />或<paramref name=" destinationFileName " />是長度為零的字串、只包含空白字元，或包含 <see cref="M:System.IO.Path.GetInvalidPathChars" /> 方法所定義的一個或多個無效字元。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />或<paramref name=" destinationFileName " />是 null。</exception>
+      <exception cref="T:System.InvalidOperationException">已關閉隔離儲存區。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">找不到 <paramref name="sourceFileName " />。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">找不到 <paramref name="sourceFileName " />。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。-或-發生 I/O 錯誤。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory(System.String)">
+      <summary>在隔離儲存區範圍內建立目錄。</summary>
+      <param name="dir">要在隔離儲存區範圍內建立的目錄相對路徑。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">目前的程式碼沒有足夠的使用權限建立隔離儲存區目錄。</exception>
+      <exception cref="T:System.ArgumentNullException">目錄路徑為 null。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateFile(System.String)">
+      <summary>在隔離儲存區中建立檔案。</summary>
+      <returns>新的隔離儲存區檔案。</returns>
+      <param name="path">要建立之檔案的相對路徑。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> 的格式不正確。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> 為 null。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" /> 中的目錄不存在。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory(System.String)">
+      <summary>刪除隔離儲存區範圍內的目錄。</summary>
+      <param name="dir">要在隔離儲存區範圍內刪除的目錄相對路徑。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">目錄無法刪除。</exception>
+      <exception cref="T:System.ArgumentNullException">目錄路徑為 null。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile(System.String)">
+      <summary>刪除隔離儲存區範圍內的檔案。</summary>
+      <param name="file">要在隔離儲存區範圍內刪除的檔案相對路徑。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">目標檔案已開啟或路徑不正確。</exception>
+      <exception cref="T:System.ArgumentNullException">檔案路徑為 null。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DirectoryExists(System.String)">
+      <summary>判斷指定路徑是否參考隔離儲存區中的現有目錄。</summary>
+      <returns>如果 <paramref name="path" /> 參考隔離儲存區中的現有目錄而且不是 null，則為 true，否則為 false。</returns>
+      <param name="path">要測試的路徑。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> 為 null。</exception>
+      <exception cref="T:System.InvalidOperationException">隔離存放區已關閉。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.Dispose">
+      <summary>釋放 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> 所使用的所有資源。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.FileExists(System.String)">
+      <summary>判斷指定路徑是否參考隔離儲存區中的現有檔案。</summary>
+      <returns>如果 <paramref name="path" /> 參考隔離儲存區中的現有檔案而且不是 null，則為 true，否則為 false。</returns>
+      <param name="path">要測試的路徑和檔案名稱。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> 為 null。</exception>
+      <exception cref="T:System.InvalidOperationException">隔離存放區已關閉。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetCreationTime(System.String)">
+      <summary>傳回指定之檔案或目錄的建立日期和時間。</summary>
+      <returns>指定之檔案或目錄建立的日期和時間。這個值是以本地時間表示。</returns>
+      <param name="path">要取得其建立日期和時間資訊的檔案或目錄之路徑。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />是長度為零的字串、只包含空白字元，或包含 <see cref="M:System.IO.Path.GetInvalidPathChars" /> 方法所定義的一個或多個無效字元。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />為 null。</exception>
+      <exception cref="T:System.InvalidOperationException">已關閉隔離儲存區。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames">
+      <summary>列舉位於隔離儲存區根目錄的目錄。</summary>
+      <returns>隔離儲存區根目錄中的目錄的相對路徑陣列。長度為零的陣列指定根目錄中沒有目錄。</returns>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.InvalidOperationException">隔離存放區已關閉。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。</exception>
+      <exception cref="T:System.UnauthorizedAccessException">呼叫端沒有列舉目錄的權限。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">找不到一個或多個目錄。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames(System.String)">
+      <summary>列舉隔離儲存區範圍中符合指定之搜尋模式的目錄。</summary>
+      <returns>目錄相對路徑的陣列，這些隔離儲存區範圍中的目錄與 <paramref name="searchPattern" /> 相符。長度為零的陣列指定沒有符合的目錄。</returns>
+      <param name="searchPattern">搜尋模式。支援單一字元 ("?") 和多字元 ("*") 的萬用字元。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="searchPattern" /> 為 null。</exception>
+      <exception cref="T:System.InvalidOperationException">隔離存放區已關閉。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.UnauthorizedAccessException">呼叫端沒有列舉從 <paramref name="searchPattern" /> 解析之目錄的權限。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">沒有找到由 <paramref name="searchPattern" /> 指定的一個或多個目錄。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames">
+      <summary>列舉位於隔離儲存區根目錄的檔名。</summary>
+      <returns>隔離儲存區根目錄中的檔案的相對路徑陣列。長度為零的陣列指定根目錄中沒有檔案。</returns>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">無法判斷隔離存放區根目錄中的檔案路徑。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames(System.String)">
+      <summary>取得符合搜尋模式的檔名。</summary>
+      <returns>檔案相對路徑的陣列，這些隔離儲存區範圍中的檔案與 <paramref name="searchPattern" /> 相符。長度為零的陣列指定沒有符合的檔案。</returns>
+      <param name="searchPattern">搜尋模式。支援單一字元 ("?") 和多字元 ("*") 的萬用字元。</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="searchPattern" /> 為 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">找不到由 <paramref name="searchPattern" /> 指定的檔案路徑。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastAccessTime(System.String)">
+      <summary>傳回指定之檔案或目錄上次被存取的日期和時間。</summary>
+      <returns>指定之檔案或目錄上次被存取的日期和時間。這個值是以本地時間表示。</returns>
+      <param name="path">要取得其上次存取日期和時間資訊的檔案或目錄之路徑。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />是長度為零的字串、只包含空白字元，或包含 <see cref="M:System.IO.Path.GetInvalidPathChars" /> 方法所定義的一個或多個無效字元。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />為 null。</exception>
+      <exception cref="T:System.InvalidOperationException">已關閉隔離儲存區。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastWriteTime(System.String)">
+      <summary>傳回指定之檔案或目錄上次被寫入的日期和時間。</summary>
+      <returns>指定之檔案或目錄上次被寫入的日期和時間。這個值是以本地時間表示。</returns>
+      <param name="path">要取得其上次寫入日期和時間資訊的檔案或目錄之路徑。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />是長度為零的字串、只包含空白字元，或包含 <see cref="M:System.IO.Path.GetInvalidPathChars" /> 方法所定義的一個或多個無效字元。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />為 null。</exception>
+      <exception cref="T:System.InvalidOperationException">已關閉隔離儲存區。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication">
+      <summary>取得對應於呼叫程式碼的應用程式識別之使用者範圍隔離儲存區。</summary>
+      <returns>物件，該物件對應至以呼叫程式碼的組件識別為基礎的隔離儲存區範圍。</returns>
+      <exception cref="T:System.Security.SecurityException">尚未授與足夠的隔離儲存區使用權限。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">無法初始化隔離的儲存區位置。-或-無法判斷呼叫端的應用程式識別，因為 <see cref="P:System.AppDomain.ActivationContext" /> 屬性傳回 null。-或-無法判斷應用程式定義域的使用權限。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        <IPermission class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="MemberAccess" />
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveDirectory(System.String,System.String)">
+      <summary>移動指定的目錄和其內容到新位置。</summary>
+      <param name="sourceDirectoryName">要移動的目錄名稱。</param>
+      <param name="destinationDirectoryName">
+        <paramref name="sourceDirectoryName" /> 的新位置的路徑。這不可以是現有目錄的路徑。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />或<paramref name=" destinationFileName " />是長度為零的字串、只包含空白字元，或包含 <see cref="M:System.IO.Path.GetInvalidPathChars" /> 方法所定義的一個或多個無效字元。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />或<paramref name=" destinationFileName " />是 null。</exception>
+      <exception cref="T:System.InvalidOperationException">已關閉隔離儲存區。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="sourceDirectoryName" /> 不存在。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。-或-<paramref name="destinationDirectoryName" /> 已存在。-或-<paramref name="sourceDirectoryName" /> 和 <paramref name="destinationDirectoryName" /> 參考相同的目錄。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveFile(System.String,System.String)">
+      <summary>移動指定的檔案至新的位置，並選擇性地讓您指定新檔名。</summary>
+      <param name="sourceFileName">要移動的檔案名稱。</param>
+      <param name="destinationFileName">檔案的新位置的路徑。如果包含檔名，已移動的檔案會具有該名稱。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " />或<paramref name=" destinationFileName " />是長度為零的字串、只包含空白字元，或包含 <see cref="M:System.IO.Path.GetInvalidPathChars" /> 方法所定義的一個或多個無效字元。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />或<paramref name=" destinationFileName " />是 null。</exception>
+      <exception cref="T:System.InvalidOperationException">已關閉隔離儲存區。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="sourceFileName" />。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode)">
+      <summary>使用指定模式來開啟檔案。</summary>
+      <returns>以指定模式開啟的檔案，其使用讀取/寫入存取且為不共用。</returns>
+      <param name="path">隔離儲存區中的檔案的相對路徑。</param>
+      <param name="mode">其中一個列舉值，指定開啟檔案的方式。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> 的格式不正確。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> 為 null。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" /> 中的目錄不存在。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">沒有找到檔案，並將 <paramref name="mode" /> 設定為 <see cref="F:System.IO.FileMode.Open" />。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess)">
+      <summary>使用指定的讀取/寫入存取，並以指定模式來開啟檔案。</summary>
+      <returns>以指定模式和存取所開啟且不共用的檔案。</returns>
+      <param name="path">隔離儲存區中的檔案的相對路徑。</param>
+      <param name="mode">其中一個列舉值，指定開啟檔案的方式。</param>
+      <param name="access">其中一個列舉值，指定以讀取、寫入或讀取/寫入存取權來開啟檔案。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> 的格式不正確。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> 為 null。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" /> 中的目錄不存在。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">沒有找到檔案，並將 <paramref name="mode" /> 設定為 <see cref="F:System.IO.FileMode.Open" />。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)">
+      <summary>使用指定的讀取/寫入存取和共用使用權限，並以指定模式來開啟檔案。</summary>
+      <returns>以指定的模式、存取和共用選項開啟的檔案。</returns>
+      <param name="path">隔離儲存區中的檔案的相對路徑。</param>
+      <param name="mode">其中一個列舉值，指定開啟或建立檔案的方式。</param>
+      <param name="access">其中一個列舉值，指定以讀取、寫入或讀取/寫入存取權來開啟檔案。</param>
+      <param name="share">列舉值的位元組合，指定其他 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件對此檔案所擁有的存取類型。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">已移除隔離儲存區。-或-隔離儲存區已停用。</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> 的格式不正確。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> 為 null。</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="path" /> 中的目錄不存在。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">沒有找到檔案，將 <paramref name="mode" /> 設定為 <see cref="M:System.IO.FileInfo.Open(System.IO.FileMode)" />。</exception>
+      <exception cref="T:System.ObjectDisposedException">已處置隔離儲存區。</exception>
+    </member>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageFileStream">
+      <summary>公開隔離儲存區內的檔案。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>初始化 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 類別的新執行個體，這個執行個體可以在 <paramref name="isf" /> 所指定之 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> 的內容中，用指定的 <paramref name="mode" />，存取以 <paramref name="path" /> 所指定的檔案，方式則是使用指定的檔案 <paramref name="access" />，以及使用 <paramref name="share" /> 所指定的檔案共用模式。</summary>
+      <param name="path">隔離儲存區中的檔案的相對路徑。</param>
+      <param name="mode">其中一個 <see cref="T:System.IO.FileMode" /> 值。</param>
+      <param name="access">
+        <see cref="T:System.IO.FileAccess" /> 值的位元組合。</param>
+      <param name="share">
+        <see cref="T:System.IO.FileShare" /> 值的位元組合。</param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />，要在其中開啟 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> 的格式錯誤。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> 為 null。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">沒有找到檔案，並將 <paramref name="mode" /> 設定為 <see cref="F:System.IO.FileMode.Open" />。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" /> 沒有配額。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>在 <paramref name="isf" /> 所指定的 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> 之內容中初始化 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 類別的新執行個體，這個執行個體可以用指定的 <paramref name="mode" />，使用指定的檔案 <paramref name="access" /> 存取以 <paramref name="path" /> 所指定的檔案。</summary>
+      <param name="path">隔離儲存區中的檔案的相對路徑。</param>
+      <param name="mode">其中一個 <see cref="T:System.IO.FileMode" /> 值。</param>
+      <param name="access">
+        <see cref="T:System.IO.FileAccess" /> 值的位元組合。</param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />，要在其中開啟 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> 的格式錯誤。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> 為 null。</exception>
+      <exception cref="T:System.ObjectDisposedException">隔離存放區已關閉。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">沒有找到檔案，並將 <paramref name="mode" /> 設定為 <see cref="F:System.IO.FileMode.Open" />。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" /> 沒有配額。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>初始化 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 類別的新執行個體，這個執行個體可以在 <paramref name="isf" /> 所指定之 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> 的內容中，用指定的 <paramref name="mode" />，存取 <paramref name="path" /> 所指定的檔案。</summary>
+      <param name="path">隔離儲存區中的檔案的相對路徑。</param>
+      <param name="mode">其中一個 <see cref="T:System.IO.FileMode" /> 值。</param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />，要在其中開啟 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> 的格式錯誤。</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> 為 null。</exception>
+      <exception cref="T:System.IO.FileNotFoundException">沒有找到檔案，並將 <paramref name="mode" /> 設定為 <see cref="F:System.IO.FileMode.Open" />。</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" /> 沒有配額。</exception>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanRead">
+      <summary>取得布林值，指出是否可讀取檔案。</summary>
+      <returns>如果可讀取 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件，則為 true；否則為 false。</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanSeek">
+      <summary>取得布林值，指出是否支援搜尋作業。</summary>
+      <returns>如果 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件支援搜尋作業，則為 true；否則為 false。</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanWrite">
+      <summary>取得布林值，指出您是否可以寫入檔案。</summary>
+      <returns>如果可以寫入 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件，則為 true；否則為 false。</returns>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose(System.Boolean)">
+      <summary>釋放 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 所使用的 Unmanaged 資源，並選擇性釋放 Managed 資源。</summary>
+      <param name="disposing">true 表示釋放 Managed 和 Unmanaged 資源；false 則表示只釋放 Unmanaged 資源 </param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Flush">
+      <summary>清除這個資料流的緩衝區，讓所有緩衝資料全部寫入檔案。</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.FlushAsync(System.Threading.CancellationToken)"></member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.Length">
+      <summary>取得 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件的長度。</summary>
+      <returns>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件的長度，以位元組為單位。</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.Position">
+      <summary>取得或設定目前 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件目前的位置。</summary>
+      <returns>這個 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件的目前位置。</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">位置不能設定為負數。</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Read(System.Byte[],System.Int32,System.Int32)">
+      <summary>將位元組從目前緩衝的 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件複製到陣列。</summary>
+      <returns>讀取到 <paramref name="buffer" /> 中的位元組總數。如果目前無法提供那麼多的位元組數目，則這個數目可能小於所要求的位元組數，或如果已經到達資料流結尾，則為零。</returns>
+      <param name="buffer">要讀取的緩衝區。</param>
+      <param name="offset">開始寫入緩衝區的位移。</param>
+      <param name="count">要讀取的最大位元組數。</param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)"></member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.ReadByte">
+      <summary>從隔離儲存區中 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件讀取一個位元組。</summary>
+      <returns>從隔離儲存區檔案讀取的 8 位元不帶正負號的整數值。</returns>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Seek(System.Int64,System.IO.SeekOrigin)">
+      <summary>將這個 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件的目前位置設定為指定的值。</summary>
+      <returns>
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件中的新位置。</returns>
+      <param name="offset">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件的新位置。</param>
+      <param name="origin">其中一個 <see cref="T:System.IO.SeekOrigin" /> 值。</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="origin" /> 必須是其中一個 <see cref="T:System.IO.SeekOrigin" /> 值。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.SetLength(System.Int64)">
+      <summary>將這個 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件的長度設定為指定的 <paramref name="value" />。</summary>
+      <param name="value">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件的新長度。</param>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="value" /> 為負數。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Write(System.Byte[],System.Int32,System.Int32)">
+      <summary>使用讀取自位元組陣列的資料，將位元組區塊寫入 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件。</summary>
+      <param name="buffer">要寫入的緩衝區。</param>
+      <param name="offset">要從其起始的緩衝區位元組位移。</param>
+      <param name="count">寫入的最大位元組數。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">寫入的嘗試超出 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件的配額。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)"></member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.WriteByte(System.Byte)">
+      <summary>將單一位元組寫入 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件。</summary>
+      <param name="value">要寫入隔離儲存區檔案的位元組值。</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">寫入的嘗試超出 <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> 物件的配額。</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>System.IO.IsolatedStorage</name>
+  </assembly>
+  <members>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageException">
+      <summary>Exception levée lorsqu'une opération échoue dans le stockage isolé.</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor">
+      <summary>Initialise une nouvelle instance de la classe <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> avec des propriétés par défaut.</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor(System.String)">
+      <summary>Initialise une nouvelle instance de la classe <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> avec un message d'erreur spécifié.</summary>
+      <param name="message">Message d'erreur indiquant la raison de l'exception. </param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageException.#ctor(System.String,System.Exception)">
+      <summary>Initialise une nouvelle instance de la classe <see cref="T:System.IO.IsolatedStorage.IsolatedStorageException" /> avec un message d'erreur spécifié et une référence à l'exception interne ayant provoqué cette exception.</summary>
+      <param name="message">Message d'erreur indiquant la raison de l'exception. </param>
+      <param name="inner">Exception qui constitue la cause de l'exception actuelle.Si le paramètre <paramref name="inner" /> n'est pas null, l'exception en cours est levée dans un bloc catch qui gère l'exception interne.</param>
+    </member>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageFile">
+      <summary>Représente une zone de stockage isolé contenant des fichiers et des répertoires. </summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String)">
+      <summary>Copie un fichier existant vers un nouveau fichier.  </summary>
+      <param name="sourceFileName">Nom du fichier à copier.</param>
+      <param name="destinationFileName">Nom du fichier de destination.Celui-ci ne peut pas être un répertoire ou un fichier existant.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " /> ou <paramref name=" destinationFileName " /> est une chaîne de longueur nulle, ne contient que des espaces blancs ou contient un ou plusieurs caractères non valides tels que définis par la méthode <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />ou<paramref name=" destinationFileName " />est null.</exception>
+      <exception cref="T:System.InvalidOperationException">Le magasin isolé a été fermé.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="sourceFileName " />est introuvable.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="sourceFileName " />est introuvable.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé.ouLe stockage isolé est désactivé.ou<paramref name="destinationFileName" /> existe.ouUne erreur d'E/S s'est produite.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CopyFile(System.String,System.String,System.Boolean)">
+      <summary>Copie un fichier existant vers un nouveau fichier, et éventuellement remplace un fichier existant.</summary>
+      <param name="sourceFileName">Nom du fichier à copier.</param>
+      <param name="destinationFileName">Nom du fichier de destination.Il ne peut pas s'agir d'un répertoire.</param>
+      <param name="overwrite">true si le fichier de destination peut être substitué ; sinon, false.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " /> ou <paramref name=" destinationFileName " /> est une chaîne de longueur nulle, ne contient que des espaces blancs ou contient un ou plusieurs caractères non valides tels que définis par la méthode <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />ou<paramref name=" destinationFileName " />est null.</exception>
+      <exception cref="T:System.InvalidOperationException">Le magasin isolé a été fermé.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">
+        <paramref name="sourceFileName " />est introuvable.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="sourceFileName " />est introuvable.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé.ouLe stockage isolé est désactivé.ouUne erreur d'E/S s'est produite.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory(System.String)">
+      <summary>Crée un répertoire dans la portée de stockage isolé.</summary>
+      <param name="dir">Chemin d'accès relatif du répertoire à créer au sein de la portée de stockage isolé. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le code actuel ne dispose pas d'autorisations suffisantes pour créer un répertoire de stockage isolé. </exception>
+      <exception cref="T:System.ArgumentNullException">Le chemin d'accès du répertoire est null. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.CreateFile(System.String)">
+      <summary>Crée un fichier dans le magasin isolé.</summary>
+      <returns>Nouveau fichier de stockage isolé.</returns>
+      <param name="path">Chemin d'accès relatif du fichier à créer.</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé. ouLe stockage isolé est désactivé.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> est formé de manière incorrecte.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> a la valeur null.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Le répertoire de <paramref name="path" /> n'existe pas.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory(System.String)">
+      <summary>Supprime un répertoire dans la portée de stockage isolé.</summary>
+      <param name="dir">Chemin d'accès relatif du répertoire à supprimer au sein de la portée de stockage isolé. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Impossible de supprimer le répertoire. </exception>
+      <exception cref="T:System.ArgumentNullException">Le chemin d'accès du répertoire était null. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile(System.String)">
+      <summary>Supprime un fichier dans la portée de stockage isolé.</summary>
+      <param name="file">Chemin d'accès relatif du fichier à supprimer au sein de la portée de stockage isolé. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le fichier cible est ouvert ou le chemin d'accès est incorrect. </exception>
+      <exception cref="T:System.ArgumentNullException">Le chemin d'accès du fichier est null. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.DirectoryExists(System.String)">
+      <summary>Détermine si le chemin d'accès spécifié fait référence à un répertoire existant du magasin isolé.</summary>
+      <returns>true si <paramref name="path" /> fait référence à un répertoire existant du magasin isolé et n'est pas null ; sinon, false.</returns>
+      <param name="path">Chemin d'accès à tester.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> a la valeur null.</exception>
+      <exception cref="T:System.InvalidOperationException">Le magasin isolé est fermé.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé. ouLe stockage isolé est désactivé.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.Dispose">
+      <summary>Libère toutes les ressources utilisées par <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" />. </summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.FileExists(System.String)">
+      <summary>Détermine si le chemin d'accès spécifié fait référence à un fichier existant du magasin isolé.</summary>
+      <returns>true si <paramref name="path" /> fait référence à un fichier existant du magasin isolé et n'est pas null ; sinon, false.</returns>
+      <param name="path">Chemin d'accès et nom du fichier à tester.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> a la valeur null.</exception>
+      <exception cref="T:System.InvalidOperationException">Le magasin isolé est fermé.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé. </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetCreationTime(System.String)">
+      <summary>Retourne la date et l'heure de création d'un fichier ou répertoire spécifié.</summary>
+      <returns>Date et heure de création pour le fichier ou le répertoire spécifié.Cette valeur est exprimée en heure locale.</returns>
+      <param name="path">Chemin d'accès du fichier ou répertoire pour lequel sont obtenues les informations relatives à la date et à l'heure de création.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />est une chaîne de longueur nulle, ne contient que des espaces blancs ou contient un ou plusieurs caractères non valides tels que définis par la méthode <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />est null.</exception>
+      <exception cref="T:System.InvalidOperationException">Le magasin isolé a été fermé.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé.ouLe stockage isolé est désactivé.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames">
+      <summary>Énumère les répertoires à la racine d'un magasin isolé.</summary>
+      <returns>Tableau des chemins d'accès relatifs des répertoires à la racine du magasin isolé.Un tableau de longueur zéro indique qu'il n'existe aucun répertoire à la racine.</returns>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.InvalidOperationException">Le magasin isolé est fermé.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé. </exception>
+      <exception cref="T:System.UnauthorizedAccessException">L'appelant n'a pas l'autorisation d'énumérer des répertoires.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Un ou plusieurs répertoires sont introuvables.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames(System.String)">
+      <summary>Énumère les répertoires d'une portée de stockage isolé correspondant à un modèle de recherche donné.</summary>
+      <returns>Tableau des chemins d'accès relatifs des répertoires dans la portée de stockage isolé qui correspondent à <paramref name="searchPattern" />.Un tableau de longueur zéro spécifie qu'il n'existe aucun répertoire correspondant.</returns>
+      <param name="searchPattern">Modèle de recherche.Les caractères génériques à un seul caractère ("?") et à plusieurs caractères ("*") sont pris en charge.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="searchPattern" /> a la valeur null. </exception>
+      <exception cref="T:System.InvalidOperationException">Le magasin isolé est fermé.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.UnauthorizedAccessException">L'appelant n'a pas l'autorisation d'énumérer des répertoires résolus depuis <paramref name="searchPattern" />.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Le ou les répertoires spécifiés par <paramref name="searchPattern" /> sont introuvables.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames">
+      <summary>Énumère les noms de fichiers à la racine d'un magasin isolé.</summary>
+      <returns>Tableau des chemins d'accès relatifs des fichiers à la racine du magasin isolé.  Un tableau de longueur zéro indique qu'il n'existe aucun fichier à la racine.</returns>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé. </exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Les chemins d'accès de fichier de la racine de magasin isolée ne peuvent pas être déterminés.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames(System.String)">
+      <summary>Obtient les noms de fichiers qui correspondent à un modèle de recherche.</summary>
+      <returns>Tableau des chemins d'accès relatifs des fichiers dans la portée de stockage isolé qui correspondent à <paramref name="searchPattern" />.Un tableau de longueur zéro spécifie qu'il n'existe aucun fichier correspondant.</returns>
+      <param name="searchPattern">Modèle de recherche.Les caractères génériques à un seul caractère ("?") et à plusieurs caractères ("*") sont pris en charge.</param>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="searchPattern" /> a la valeur null. </exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé. </exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Le chemin d'accès au fichier spécifié par <paramref name="searchPattern" /> est introuvable. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastAccessTime(System.String)">
+      <summary>Retourne la date et l'heure du dernier accès à un fichier ou répertoire spécifié.</summary>
+      <returns>Date et heure du dernier accès au fichier ou au répertoire spécifié.Cette valeur est exprimée en heure locale.</returns>
+      <param name="path">Chemin d'accès du fichier ou répertoire pour lequel sont obtenues les informations relatives à la date et à l'heure du dernier accès.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />est une chaîne de longueur nulle, ne contient que des espaces blancs ou contient un ou plusieurs caractères non valides tels que définis par la méthode <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />est null.</exception>
+      <exception cref="T:System.InvalidOperationException">Le magasin isolé a été fermé.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé.ouLe stockage isolé est désactivé.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetLastWriteTime(System.String)">
+      <summary>Retourne la date et l'heure du dernier accès en écriture à un fichier ou répertoire spécifié.</summary>
+      <returns>Date et heure du dernier accès en écriture au fichier ou au répertoire spécifié.Cette valeur est exprimée en heure locale.</returns>
+      <param name="path">Chemin d'accès du fichier ou répertoire pour lequel sont obtenues les informations relatives à la date et à l'heure du dernier accès en écriture.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path " />est une chaîne de longueur nulle, ne contient que des espaces blancs ou contient un ou plusieurs caractères non valides tels que définis par la méthode <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path " />est null.</exception>
+      <exception cref="T:System.InvalidOperationException">Le magasin isolé a été fermé.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé.ouLe stockage isolé est désactivé.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication">
+      <summary>Obtient le stockage isolé à portée d'utilisateur correspondant à l'identité de l'application du code appelant.</summary>
+      <returns>Objet correspondant à la portée de stockage isolé basé sur l'identité de l'assembly du code appelant.</returns>
+      <exception cref="T:System.Security.SecurityException">Des autorisations de stockage isolé suffisantes n'ont pas été accordées. </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Un emplacement de stockage isolé ne peut pas être initialisé.ouL'identité de l'application de l'appelant ne peut pas être déterminée, parce que la propriété <see cref="P:System.AppDomain.ActivationContext" /> a retourné null.ouLes autorisations du domaine d'application ne peuvent pas être déterminées.</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        <IPermission class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="MemberAccess" />
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveDirectory(System.String,System.String)">
+      <summary>Déplace un répertoire spécifié et son contenu vers un nouvel emplacement.</summary>
+      <param name="sourceDirectoryName">Nom du répertoire à déplacer.</param>
+      <param name="destinationDirectoryName">Chemin d'accès vers le nouvel emplacement pour <paramref name="sourceDirectoryName" />.Il ne peut pas s'agir du chemin d'accès à un répertoire existant.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " /> ou <paramref name=" destinationFileName " /> est une chaîne de longueur nulle, ne contient que des espaces blancs ou contient un ou plusieurs caractères non valides tels que définis par la méthode <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />ou<paramref name=" destinationFileName " />est null.</exception>
+      <exception cref="T:System.InvalidOperationException">Le magasin isolé a été fermé.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">
+        <paramref name="sourceDirectoryName" /> n'existe pas.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé.ouLe stockage isolé est désactivé.ou<paramref name="destinationDirectoryName" /> existe déjà.ou<paramref name="sourceDirectoryName" /> et <paramref name="destinationDirectoryName" /> font référence au même répertoire.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.MoveFile(System.String,System.String)">
+      <summary>Affecte un nouvel emplacement à un fichier spécifié, et éventuellement vous laisse définir un nouveau nom de fichier.</summary>
+      <param name="sourceFileName">Nom du fichier à déplacer.</param>
+      <param name="destinationFileName">Chemin d'accès vers le nouvel emplacement pour le fichier.Si un nom de fichier est inclus, le fichier déplacé portera ce nom.</param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="sourceFileName " /> ou <paramref name=" destinationFileName " /> est une chaîne de longueur nulle, ne contient que des espaces blancs ou contient un ou plusieurs caractères non valides tels que définis par la méthode <see cref="M:System.IO.Path.GetInvalidPathChars" />.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="sourceFileName " />ou<paramref name=" destinationFileName " />est null.</exception>
+      <exception cref="T:System.InvalidOperationException">Le magasin isolé a été fermé.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Impossible de trouver <paramref name="sourceFileName" />.</exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé.ouLe stockage isolé est désactivé.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode)">
+      <summary>Ouvre un fichier dans le mode spécifié.</summary>
+      <returns>Fichier ouvert dans le mode spécifié, avec accès en lecture/écriture, et non partagé.</returns>
+      <param name="path">Chemin d'accès relatif du fichier au sein du magasin isolé.</param>
+      <param name="mode">Une des valeurs de l'énumération qui spécifie la manière dont le fichier est ouvert. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé. ouLe stockage isolé est désactivé.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> est formé de manière incorrecte.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> a la valeur null.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Le répertoire de <paramref name="path" /> n'existe pas.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Aucun fichier n'a été trouvé et <paramref name="mode" /> a la valeur <see cref="F:System.IO.FileMode.Open" />.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess)">
+      <summary>Ouvre un fichier dans le mode spécifié, avec accès en lecture/écriture spécifié.</summary>
+      <returns>Fichier ouvert dans le mode et l'accès spécifiés et non partagé.</returns>
+      <param name="path">Chemin d'accès relatif du fichier au sein du magasin isolé.</param>
+      <param name="mode">Une des valeurs de l'énumération qui spécifie la manière dont le fichier est ouvert.</param>
+      <param name="access">Une des valeurs de l'énumération qui spécifie si le fichier sera ouvert en lecture, en écriture ou en lecture/écriture.</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé. ouLe stockage isolé est désactivé.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> est formé de manière incorrecte.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> a la valeur null.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Le répertoire de <paramref name="path" /> n'existe pas.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Aucun fichier n'a été trouvé et <paramref name="mode" /> a la valeur <see cref="F:System.IO.FileMode.Open" />. </exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)">
+      <summary>Ouvre un fichier dans le mode spécifié, avec accès en lecture/écriture et autorisation de partage spécifiés.</summary>
+      <returns>Fichier ouvert dans le mode et l'accès spécifié et avec les options de partage définies.</returns>
+      <param name="path">Chemin d'accès relatif du fichier au sein du magasin isolé.</param>
+      <param name="mode">Une des valeurs de l'énumération qui spécifie la manière dont le fichier est ouvert ou créé.</param>
+      <param name="access">Une des valeurs de l'énumération qui spécifie si le fichier sera ouvert en lecture, en écriture ou en lecture/écriture.</param>
+      <param name="share">Combinaison d'opérations de bits des valeurs d'énumération qui spécifient le type d'accès à ce fichier octroyé aux autres objets <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">Le magasin isolé a été supprimé. ouLe stockage isolé est désactivé.</exception>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> est formé de manière incorrecte.</exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> a la valeur null.</exception>
+      <exception cref="T:System.IO.DirectoryNotFoundException">Le répertoire de <paramref name="path" /> n'existe pas.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Aucun fichier n'a été trouvé et <paramref name="mode" /> a la valeur <see cref="M:System.IO.FileInfo.Open(System.IO.FileMode)" />.</exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé a été supprimé.</exception>
+    </member>
+    <member name="T:System.IO.IsolatedStorage.IsolatedStorageFileStream">
+      <summary>Expose un fichier au sein d'un stockage isolé. </summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>Initialise une nouvelle instance de la classe <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> donnant accès au fichier désigné par <paramref name="path" /> dans le <paramref name="mode" /> spécifié, avec la valeur <paramref name="access" /> de fichier spécifiée, à l'aide du mode de partage de fichier spécifié par <paramref name="share" /> et dans le contexte de l'élément <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> spécifié par <paramref name="isf" />.</summary>
+      <param name="path">Chemin d'accès relatif du fichier au sein du stockage isolé. </param>
+      <param name="mode">Une des valeurs de <see cref="T:System.IO.FileMode" />. </param>
+      <param name="access">Combinaison d'opérations de bits des valeurs <see cref="T:System.IO.FileAccess" />. </param>
+      <param name="share">Combinaison d'opérations de bits des valeurs <see cref="T:System.IO.FileShare" />. </param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> dans lequel ouvrir l'élément <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> est incorrect. </exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> a la valeur null. </exception>
+      <exception cref="T:System.IO.FileNotFoundException">Aucun fichier n'a été trouvé et <paramref name="mode" /> a la valeur <see cref="F:System.IO.FileMode.Open" />. </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" /> n'a pas de quota. </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>Initialise une nouvelle instance de la classe <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> donnant accès au fichier désigné par <paramref name="path" /> dans le <paramref name="mode" /> spécifié, avec la valeur <paramref name="access" /> de fichier spécifiée et dans le contexte de l'élément <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> spécifié par <paramref name="isf" />.</summary>
+      <param name="path">Chemin d'accès relatif du fichier au sein du stockage isolé. </param>
+      <param name="mode">Une des valeurs de <see cref="T:System.IO.FileMode" />. </param>
+      <param name="access">Combinaison d'opérations de bits des valeurs <see cref="T:System.IO.FileAccess" />. </param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> dans lequel ouvrir l'élément <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> est incorrect. </exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> a la valeur null. </exception>
+      <exception cref="T:System.ObjectDisposedException">Le magasin isolé est fermé.</exception>
+      <exception cref="T:System.IO.FileNotFoundException">Aucun fichier n'a été trouvé et <paramref name="mode" /> a la valeur <see cref="F:System.IO.FileMode.Open" />. </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" /> n'a pas de quota. </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.#ctor(System.String,System.IO.FileMode,System.IO.IsolatedStorage.IsolatedStorageFile)">
+      <summary>Initialise une nouvelle instance de la classe <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> donnant accès au fichier désigné par <paramref name="path" /> dans le <paramref name="mode" /> spécifié et dans le contexte de l'élément <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> spécifié par <paramref name="isf" />.</summary>
+      <param name="path">Chemin d'accès relatif du fichier au sein du stockage isolé. </param>
+      <param name="mode">Une des valeurs de <see cref="T:System.IO.FileMode" />. </param>
+      <param name="isf">
+        <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFile" /> dans lequel ouvrir l'élément <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="path" /> est incorrect. </exception>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="path" /> a la valeur null. </exception>
+      <exception cref="T:System.IO.FileNotFoundException">Aucun fichier n'a été trouvé et <paramref name="mode" /> a la valeur <see cref="F:System.IO.FileMode.Open" />. </exception>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">
+        <paramref name="isf" /> n'a pas de quota. </exception>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanRead">
+      <summary>Obtient une valeur booléenne indiquant si le fichier peut être lu.</summary>
+      <returns>true si un objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> peut être lu ; sinon, false.</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanSeek">
+      <summary>Obtient une valeur booléenne indiquant si les opérations de recherche sont prises en charge.</summary>
+      <returns>true si un objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> prend en charge les opérations de recherche ; sinon, false.</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.CanWrite">
+      <summary>Obtient une valeur booléenne indiquant si vous pouvez écrire dans le fichier.</summary>
+      <returns>true si un objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> est accessible en écriture ; sinon, false.</returns>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose(System.Boolean)">
+      <summary>Libère les ressources non managées utilisées par l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> et libère éventuellement les ressources managées.</summary>
+      <param name="disposing">true pour libérer les ressources managées et non managées ; false pour ne libérer que les ressources non managées. </param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Flush">
+      <summary>Efface les mémoires tampons pour ce flux et provoque l'écriture dans le fichier des données mises en mémoire tampon.</summary>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.FlushAsync(System.Threading.CancellationToken)"></member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.Length">
+      <summary>Obtient la longueur de l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</summary>
+      <returns>Longueur de l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />, en octets.</returns>
+    </member>
+    <member name="P:System.IO.IsolatedStorage.IsolatedStorageFileStream.Position">
+      <summary>Obtient ou définit la position actuelle de l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> actuel.</summary>
+      <returns>Position actuelle de cet objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</returns>
+      <exception cref="T:System.ArgumentOutOfRangeException">La position ne peut pas avoir pour valeur un nombre négatif. </exception>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Read(System.Byte[],System.Int32,System.Int32)">
+      <summary>Copie les octets de l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> actuel mis en mémoire tampon vers un tableau.</summary>
+      <returns>Nombre total d'octets lus dans l'élément <paramref name="buffer" />.Ce nombre peut être inférieur au nombre d'octets demandé si un tel nombre d'octets n'est pas actuellement disponible, ou il peut être égal à zéro si la fin du flux est atteinte.</returns>
+      <param name="buffer">Mémoire tampon à lire. </param>
+      <param name="offset">Dans la mémoire tampon, décalage auquel commencer l'écriture. </param>
+      <param name="count">Nombre maximal d'octets à lire. </param>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)"></member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.ReadByte">
+      <summary>Lit un seul octet à partir de l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> en stockage isolé.</summary>
+      <returns>Valeur de l'entier non signé 8 bits lue dans le fichier de stockage isolé.</returns>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Seek(System.Int64,System.IO.SeekOrigin)">
+      <summary>Définit la valeur spécifiée comme position actuelle de cet objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</summary>
+      <returns>Nouvelle position dans l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</returns>
+      <param name="offset">Nouvelle position de l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </param>
+      <param name="origin">Une des valeurs de <see cref="T:System.IO.SeekOrigin" />. </param>
+      <exception cref="T:System.ArgumentException">
+        <paramref name="origin" /> doit être l'une des valeurs de <see cref="T:System.IO.SeekOrigin" />. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.SetLength(System.Int64)">
+      <summary>Définit le <paramref name="value" /> spécifié comme longueur de cet objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</summary>
+      <param name="value">Nouvelle longueur de l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </param>
+      <exception cref="T:System.ArgumentOutOfRangeException">
+        <paramref name="value" /> est un nombre négatif.</exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Write(System.Byte[],System.Int32,System.Int32)">
+      <summary>Écrit un bloc d'octets dans l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" /> à l'aide de données lues à partir d'un tableau d'octets.</summary>
+      <param name="buffer">Mémoire tampon à écrire. </param>
+      <param name="offset">Dans la mémoire tampon, décalage d'octet à partir duquel commencer. </param>
+      <param name="count">Nombre maximal d'octets à écrire. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">La tentative d'écriture dépasse le quota de l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)"></member>
+    <member name="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.WriteByte(System.Byte)">
+      <summary>Écrit un seul octet dans l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />.</summary>
+      <param name="value">Valeur d'octet à écrire dans le fichier de stockage isolé. </param>
+      <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">La tentative d'écriture dépasse le quota de l'objet <see cref="T:System.IO.IsolatedStorage.IsolatedStorageFileStream" />. </exception>
+      <PermissionSet>
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode" />
+      </PermissionSet>
+    </member>
+  </members>
+</doc>

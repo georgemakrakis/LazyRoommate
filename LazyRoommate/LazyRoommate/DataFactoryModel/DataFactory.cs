@@ -19,8 +19,7 @@ namespace LazyRoommate.DataFactoryModel
                 DateTime.Now.Month,
                 DateTime.Now.Day,
                 hour, minute, 0);
-        }
-
+        }        
         static DataFactory()
         {
 
