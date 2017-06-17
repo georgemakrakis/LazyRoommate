@@ -108,10 +108,18 @@
     <None Include="Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="add_32.png" />
+    <Content Include="add_task.png" />
+    <Content Include="create_room_32.png" />
     <Content Include="curved_mask.png" />
+    <Content Include="dot.png" />
+    <Content Include="help_32.png" />
+    <Content Include="join_room_32.png" />
+    <Content Include="leave_room_32.png" />
     <Content Include="login_scrn.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="logout_32.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -120,6 +128,7 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="settings_32.png" />
     <Content Include="social_connect_facebook.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -129,6 +138,7 @@
     <Content Include="social_connect_twitter.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="user_profile_32.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

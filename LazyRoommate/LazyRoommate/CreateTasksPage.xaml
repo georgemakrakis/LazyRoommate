@@ -6,9 +6,9 @@
              Title="CreateTasksPage">
     <ScrollView>
         <StackLayout Padding="10">
-            <Label Text="Task Name"/>
-            <Label Text="Task Description"/>
+            <Label Text="Task Name" TextColor="White"/>
             <Entry x:Name="TaskName"/>
+            <Label Text="Task Description" TextColor="White"/>
             <Entry x:Name="TaskDesc"/>
             <Button Text="Add" Clicked="OkClicked"/>
 

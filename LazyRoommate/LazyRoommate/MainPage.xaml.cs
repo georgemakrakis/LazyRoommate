@@ -33,35 +33,35 @@ namespace LazyRoommate
 
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, true);
-
+         
 
 
             //Initializing the Hamburger menu
 
             masterPageItems = new List<Menu>
             {
-                new Menu
+               new Menu
                 {
                     Title = "Add Task",
-                    //IconSource = "",
+                    Icon="add_task.png",                                       
                     //TargetType = typeof(UserDialogs)
                 },
                 new Menu
                 {
                     Title = "Join Room",
-                    //IconSource = "",
+                    Icon = "join_room_32.png"
                     //TargetType = typeof( )
                 },
                 new Menu
                 {
                     Title = "Create Room",
-                    //IconSource = "",
+                      Icon = "create_room_32.png"                   
                     //TargetType = typeof( )
                 },
                 new Menu
                 {
                     Title = "Leave Room",
-                    //IconSource = "",
+                   Icon = "leave_room_32.png"                   
                     //TargetType = typeof( )
                 }
             };

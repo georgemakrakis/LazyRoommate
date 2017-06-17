@@ -16,14 +16,14 @@
                     <ListView x:Name="menu" VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemSelected="OnMenuItemSelected">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
+                                <ImageCell Text="{Binding Title}" ImageSource="{Binding Icon}" />
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <Button x:Name="profile" Text="Profile" Clicked="profile_Clicked"></Button>
-                    <!--<Button Text="Add Task" Clicked="Button1_Clicked"></Button>
-                    <Button Text="Join Room" Clicked="Button2_Clicked"></Button>
-                    <Button Text="Create Room"  Clicked="Button3_Clicked"></Button>-->
+                    <Button x:Name="profile" Text="Profile" Clicked="profile_Clicked" Image="user_profile_32.png"></Button>
+                    <Button  x:Name="Logout" Text="Logout" Image="logout_32.png"></Button>
+                    <Button  x:Name="settings" Text="Settings" Image="settings_32.png"></Button>
+                    <Button  x:Name="Help" Text="Help"  Image="help_32.png"></Button>
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>
@@ -102,7 +102,8 @@
               VerticalOptions="Fill"
               WidthRequest="3" />
 
-            <Image Grid.Column="1" Source="Bullet.png" />
+            <Image Grid.Column="1" Source="dot.png" />
+              <!--me thn eikona xanoume kapoia Task Name -->
 
           </Grid>
         </ViewCell>

@@ -2,10 +2,10 @@
 <Sdk>
   <AndroidApiLevel>25</AndroidApiLevel>
   <AndroidApiLevelName>25</AndroidApiLevelName>
-  <AndroidNdkPath>C:\Program Files\Android\ndk\android-ndk-r11c</AndroidNdkPath>
-  <AndroidSdkBuildToolsPath>C:\Android\sdk\build-tools\23.0.0</AndroidSdkBuildToolsPath>
-  <AndroidSdkBuildToolsBinPath>C:\Android\sdk\build-tools\23.0.0</AndroidSdkBuildToolsBinPath>
-  <AndroidSdkPath>C:\Android\sdk</AndroidSdkPath>
+  <AndroidNdkPath>C:\ProgramData\Microsoft\AndroidNDK\android-ndk-r10e\</AndroidNdkPath>
+  <AndroidSdkBuildToolsPath>C:\Users\Argiris Mouratidis\AppData\Local\Android\android-sdk\build-tools\25.0.2</AndroidSdkBuildToolsPath>
+  <AndroidSdkBuildToolsBinPath>C:\Users\Argiris Mouratidis\AppData\Local\Android\android-sdk\build-tools\25.0.2</AndroidSdkBuildToolsBinPath>
+  <AndroidSdkPath>C:\Users\Argiris Mouratidis\AppData\Local\Android\android-sdk</AndroidSdkPath>
   <JavaSdkPath>C:\Program Files\Java\jdk1.8.0_121</JavaSdkPath>
   <MonoAndroidBinPath>C:\Program Files (x86)\MSBuild\Xamarin\Android</MonoAndroidBinPath>
   <MonoAndroidToolsPath>C:\Program Files (x86)\MSBuild\Xamarin\Android</MonoAndroidToolsPath>
@@ -13,7 +13,7 @@
     <ReferenceAssemblyPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\</ReferenceAssemblyPath>
   </ReferenceAssemblyPaths>
   <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
-  <ZipAlignPath>C:\Android\sdk\build-tools\23.0.0</ZipAlignPath>
+  <ZipAlignPath>C:\Users\Argiris Mouratidis\AppData\Local\Android\android-sdk\build-tools\25.0.2</ZipAlignPath>
   <MonoAndroidIncludePath />
   <SupportedApiLevel>25</SupportedApiLevel>
   <AndroidSequencePointsMode>None</AndroidSequencePointsMode>

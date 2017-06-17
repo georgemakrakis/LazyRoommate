@@ -17,7 +17,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
@@ -207,7 +207,17 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\add_task.png" />
+    <AndroidResource Include="Resources\drawable\create_room_32.png" />
+    <AndroidResource Include="Resources\drawable\add_32.png" />
     <Content Include="Resources\drawable\curved_mask.png" />
+    <AndroidResource Include="Resources\drawable\leave_room_32.png" />
+    <AndroidResource Include="Resources\drawable\join_room_32.png" />
+    <AndroidResource Include="Resources\drawable\settings_32.png" />
+    <AndroidResource Include="Resources\drawable\help_32.png" />
+    <AndroidResource Include="Resources\drawable\logout_32.png" />
+    <AndroidResource Include="Resources\drawable\user_profile_32.png" />
+    <AndroidResource Include="Resources\drawable\dot.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

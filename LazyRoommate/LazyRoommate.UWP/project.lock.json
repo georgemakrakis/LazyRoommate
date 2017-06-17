@@ -1,5 +1,4 @@
 {
-  "locked": false,
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
@@ -15960,5 +15959,8 @@
       "Xamarin.Forms >= 2.3.3.175"
     ],
     "UAP,Version=v10.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\Argiris Mouratidis\\.nuget\\packages\\": {}
   }
 }
