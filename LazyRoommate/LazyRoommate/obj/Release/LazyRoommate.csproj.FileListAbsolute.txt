@@ -1,56 +1,35 @@
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\LazyRoommate.dll.config
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\LazyRoommate.dll
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\LazyRoommate.pdb
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Microsoft.WindowsAzure.Mobile.dll
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Newtonsoft.Json.dll
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.dll
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Extensions.dll
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Primitives.dll
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Windows.Foundation.UniversalApiContract.winmd
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Core.dll
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Platform.dll
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Xaml.dll
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Microsoft.WindowsAzure.Mobile.xml
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Newtonsoft.Json.xml
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.xml
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Extensions.xml
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Primitives.xml
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Core.pdb
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Core.xml
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Platform.pdb
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Xaml.pdb
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Xaml.xml
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.csproj.App.config
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.LoginPage.xaml.g.cs
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.MainPage.xaml.g.cs
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.dll
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.pdb
-C:\Users\George Makrakis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.csprojResolveAssemblyReference.cache
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.csproj.App.config
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.csprojResolveAssemblyReference.cache
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.LoginPage.xaml.g.cs
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.MainPage.xaml.g.cs
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.dll
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.pdb
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\LazyRoommate.dll.config
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\LazyRoommate.dll
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\LazyRoommate.pdb
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Microsoft.WindowsAzure.Mobile.dll
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Newtonsoft.Json.dll
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.dll
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Extensions.dll
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Primitives.dll
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Windows.Foundation.UniversalApiContract.winmd
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Core.dll
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Platform.dll
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Xaml.dll
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Microsoft.WindowsAzure.Mobile.xml
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Newtonsoft.Json.xml
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.xml
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Extensions.xml
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Primitives.xml
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Core.pdb
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Core.xml
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Platform.pdb
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Xaml.pdb
-C:\Users\georg\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Xaml.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\LazyRoommate.dll.config
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\LazyRoommate.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\LazyRoommate.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Acr.UserDialogs.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Acr.UserDialogs.Interface.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Microsoft.WindowsAzure.Mobile.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Newtonsoft.Json.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Splat.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Extensions.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Primitives.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Core.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Platform.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Xaml.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Acr.UserDialogs.Interface.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Microsoft.WindowsAzure.Mobile.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Newtonsoft.Json.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Extensions.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\System.Net.Http.Primitives.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Core.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Core.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Platform.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Xaml.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Release\Xamarin.Forms.Xaml.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.csproj.App.config
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.LoginPage.xaml.g.cs
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.MainPage.xaml.g.cs
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.ProfilePage.xaml.g.cs
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.App.xaml.g.cs
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.CreateTasksPage.xaml.g.cs
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Release\LazyRoommate.csprojResolveAssemblyReference.cache

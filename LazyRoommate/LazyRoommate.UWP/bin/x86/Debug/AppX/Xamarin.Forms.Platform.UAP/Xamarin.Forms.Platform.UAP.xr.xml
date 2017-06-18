@@ -107,6 +107,7 @@
       <RootProperty Name="Padding" />
       <RootProperty Name="IsTabStop" />
       <RootProperty Name="ZoomMode" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Content" />
       <RootProperty Name="BringIntoViewOnFocusChange" />
       <RootProperty Name="HorizontalSnapPointsAlignment" />
@@ -269,7 +270,6 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="FontWeight" />
-      <RootProperty Name="Padding" />
       <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Visibility" />

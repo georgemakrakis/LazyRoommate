@@ -7,7 +7,11 @@ rhbind.exe      : 1.4.24211.0 built by: PROJECTNGDR2
 sg.exe          : 1.0.24211.00 built by: PROJECTNGDR2
 
 Framework:
+Acr.UserDialogs.dll                                    : 1.0.0.0
+Acr.UserDialogs.Interface.dll                          : 1.0.0.0
 ClrCompression.dll                                     : 1.0.23123.00 built by: PROJECTKREL
+Coding4Fun.Toolkit.Controls.dll                        : 2.1.7
+Coding4Fun.Toolkit.dll                                 : 2.0.8
 LazyRoommate.dll                                       : 1.0.0.0
 Microsoft.CSharp.dll                                   : 4.6.23123.00
 Microsoft.VisualBasic.dll                              : 4.6.23123.00 built by: PROJECTKREL
@@ -16,6 +20,7 @@ Microsoft.WindowsAzure.Mobile.dll                      : 3.1.50105.0
 Microsoft.WindowsAzure.Mobile.Ext.dll                  : 3.1.50105.0
 mscorlib.dll                                           : 4.6.23123.0
 Newtonsoft.Json.dll                                    : 6.0.4.17603
+Splat.dll                                              : 1.6.2
 System.AppContext.dll                                  : 4.6.23123.00 built by: PROJECTKREL
 System.Collections.Concurrent.dll                      : 4.6.23123.00
 System.Collections.dll                                 : 4.6.23123.00 built by: PROJECTKREL

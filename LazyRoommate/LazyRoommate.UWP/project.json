@@ -3,7 +3,7 @@
     "Acr.UserDialogs": "6.3.10",
     "Microsoft.Azure.Mobile.Client": "3.1.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Xamarin.Forms": "2.3.3.175"
+    "Xamarin.Forms": "2.3.4.247"
   },
   "frameworks": {
     "uap10.0": {}

@@ -2103,17 +2103,18 @@
             </summary>
             <param name="table">The instance of table to execute pull on.</param>
             <param name="queryId">
-            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter enables incremental sync whenever the same key is used again. Must be 25 characters or less and contain only alphanumeric characters, dash, and underscore.
+            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this
+            parameter enables incremental sync whenever the same key is used again. Must be 50 characters or less and
+            contain only alphanumeric characters, dash, and underscore.
             </param>
             <param name="query">
-            An OData query that determines which items to 
-            pull from the remote table.
+            An OData query that determines which items to pull from the remote table.
             </param>
             <returns>
             A task that completes when pull operation has finished.
             </returns>
             <exception cref="T:System.ArgumentException">
-            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,24}</value>.
+            Thrown when <paramref name="queryId"/>does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,49}</value>.
             </exception>
         </member>
         <member name="M:Microsoft.WindowsAzure.MobileServices.MobileServiceSyncTableExtensions.PullAsync(Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable,System.String,System.String,Microsoft.WindowsAzure.MobileServices.Sync.PullOptions)">
@@ -2122,11 +2123,12 @@
             </summary>
             <param name="table">The instance of table to execute pull on.</param>
             <param name="queryId">
-            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter enables incremental sync whenever the same key is used again. Must be 25 characters or less and contain only alphanumeric characters, dash, and underscore.
+            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter
+            enables incremental sync whenever the same key is used again. Must be 50 characters or less and contain only
+            alphanumeric characters, dash, and underscore.
             </param>
             <param name="query">
-            An OData query that determines which items to 
-            pull from the remote table.
+            An OData query that determines which items to pull from the remote table.
             </param>
             <param name="pullOptions">
             PullOptions that determine how to pull data from the remote table
@@ -2135,7 +2137,7 @@
             A task that completes when pull operation has finished.
             </returns>
             <exception cref="T:System.ArgumentException">
-            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,24}</value>.
+            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,49}</value>.
             </exception>
         </member>
         <member name="M:Microsoft.WindowsAzure.MobileServices.MobileServiceSyncTableExtensions.PullAsync(Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">
@@ -2144,23 +2146,23 @@
             </summary>
             <param name="table">The instance of table to execute pull on.</param>
             <param name="queryId">
-            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter enables incremental sync whenever the same key is used again. Must be 25 characters or less and contain only alphanumeric characters, dash, and underscore.
+            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this
+            parameter enables incremental sync whenever the same key is used again. Must be 50 characters or less and
+            contain only alphanumeric characters, dash, and underscore.
             </param>
             <param name="query">
-            An OData query that determines which items to 
-            pull from the remote table.
+            An OData query that determines which items to pull from the remote table.
             </param>
             <param name="parameters">
-            A dictionary of user-defined parameters and values to include in 
+            A dictionary of user-defined parameters and values to include in
             the request URI query string.
             </param>
-            <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken"/> token to observe
-            </param>
+            <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken"/>token to observe</param>
             <returns>
             A task that completes when pull operation has finished.
             </returns>
             <exception cref="T:System.ArgumentException">
-            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,24}</value>.
+            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,49}</value>.
             </exception>
         </member>
         <member name="M:Microsoft.WindowsAzure.MobileServices.MobileServiceSyncTableExtensions.PullAsync(Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken,Microsoft.WindowsAzure.MobileServices.Sync.PullOptions)">
@@ -2169,18 +2171,17 @@
             </summary>
             <param name="table">The instance of table to execute pull on.</param>
             <param name="queryId">
-            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter enables incremental sync whenever the same key is used again. Must be 25 characters or less and contain only alphanumeric characters, dash, and underscore.
+            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter
+            enables incremental sync whenever the same key is used again. Must be 50 characters or less and contain only
+            alphanumeric characters, dash, and underscore.
             </param>
             <param name="query">
-            An OData query that determines which items to 
-            pull from the remote table.
+            An OData query that determines which items to pull from the remote table.
             </param>
             <param name="parameters">
-            A dictionary of user-defined parameters and values to include in 
-            the request URI query string.
+            A dictionary of user-defined parameters and values to include in the request URI query string.
             </param>
-            <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken"/> token to observe
-            </param>
+            <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken"/>token to observe</param>
             <param name="pullOptions">
             PullOptions that determine how to pull data from the remote table
             </param>
@@ -2188,7 +2189,7 @@
             A task that completes when pull operation has finished.
             </returns>
             <exception cref="T:System.ArgumentException">
-            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,24}</value>.
+            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,49}</value>.
             </exception>
         </member>
         <member name="M:Microsoft.WindowsAzure.MobileServices.MobileServiceSyncTableExtensions.PullAsync(Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean,System.Threading.CancellationToken)">
@@ -2196,14 +2197,15 @@
             Pulls all items that match the given query from the associated remote table. Supports incremental sync.
             </summary>
             <param name="queryId">
-            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter enables incremental sync whenever the same key is used again.
+            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter
+            enables incremental sync whenever the same key is used again. Must be 50 characters or less and contain only
+            alphanumeric characters, dash, and underscore
             </param>
             <param name="query">
-            An OData query that determines which items to 
-            pull from the remote table.
+            An OData query that determines which items to pull from the remote table.
             </param>
             <param name="parameters">
-            A dictionary of user-defined parameters and values to include in 
+            A dictionary of user-defined parameters and values to include in
             the request URI query string.
             </param>
             <param name="pushOtherTables">
@@ -2214,6 +2216,9 @@
             <returns>
             A task that completes when pull operation has finished.
             </returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,49}</value>.
+            </exception>
         </member>
         <member name="M:Microsoft.WindowsAzure.MobileServices.MobileServiceSyncTableExtensions.PullAsync``2(Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable{``0},System.String,Microsoft.WindowsAzure.MobileServices.IMobileServiceTableQuery{``1},System.Threading.CancellationToken)">
             <summary>
@@ -2221,10 +2226,12 @@
             </summary>
             <param name="table">The instance of table to execute pull on.</param>
             <param name="queryId">
-            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter enables incremental sync whenever the same key is used again. Must be 25 characters or less and contain only alphanumeric characters, dash, and underscore.
+            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter
+            enables incremental sync whenever the same key is used again. Must be 50 characters or less and contain only
+            alphanumeric characters, dash, and underscore
             </param>
             <param name="query">
-            An OData query that determines which items to 
+            An OData query that determines which items to
             pull from the remote table.
             </param>
             <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken"/> token to observe
@@ -2233,7 +2240,7 @@
             A task that completes when pull operation has finished.
             </returns>
             <exception cref="T:System.ArgumentException">
-            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,24}</value>.
+            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,49}</value>.
             </exception>
         </member>
         <member name="M:Microsoft.WindowsAzure.MobileServices.MobileServiceSyncTableExtensions.PullAsync``2(Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable{``0},System.String,Microsoft.WindowsAzure.MobileServices.IMobileServiceTableQuery{``1},System.Threading.CancellationToken,Microsoft.WindowsAzure.MobileServices.Sync.PullOptions)">
@@ -2242,10 +2249,12 @@
             </summary>
             <param name="table">The instance of table to execute pull on.</param>
             <param name="queryId">
-            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter enables incremental sync whenever the same key is used again. Must be 25 characters or less and contain only alphanumeric characters, dash, and underscore.
+            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter
+            enables incremental sync whenever the same key is used again. Must be 50 characters or less and contain only
+            alphanumeric characters, dash, and underscore
             </param>
             <param name="query">
-            An OData query that determines which items to 
+            An OData query that determines which items to
             pull from the remote table.
             </param>
             <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken"/> token to observe
@@ -2257,7 +2266,7 @@
             A task that completes when pull operation has finished.
             </returns>
             <exception cref="T:System.ArgumentException">
-            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,24}</value>.
+            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,49}</value>.
             </exception>
         </member>
         <member name="M:Microsoft.WindowsAzure.MobileServices.MobileServiceSyncTableExtensions.PullAsync``2(Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable{``0},System.String,Microsoft.WindowsAzure.MobileServices.IMobileServiceTableQuery{``1})">
@@ -2267,17 +2276,19 @@
             </summary>
             <param name="table">The instance of table to execute pull on.</param>
             <param name="queryId">
-            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter enables incremental sync whenever the same key is used again. Must be 25 characters or less and contain only alphanumeric characters, dash, and underscore.
+            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter
+            enables incremental sync whenever the same key is used again. Must be 50 characters or less and contain only
+            alphanumeric characters, dash, and underscore
             </param>
             <param name="query">
-            An OData query that determines which items to 
+            An OData query that determines which items to
             pull from the remote table.
             </param>
             <returns>
             A task that completes when pull operation has finished.
             </returns>
             <exception cref="T:System.ArgumentException">
-            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,24}</value>.
+            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,49}</value>.
             </exception>
         </member>
         <member name="M:Microsoft.WindowsAzure.MobileServices.MobileServiceSyncTableExtensions.PullAsync``2(Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable{``0},System.String,Microsoft.WindowsAzure.MobileServices.IMobileServiceTableQuery{``1},Microsoft.WindowsAzure.MobileServices.Sync.PullOptions)">
@@ -2287,10 +2298,12 @@
             </summary>
             <param name="table">The instance of table to execute pull on.</param>
             <param name="queryId">
-            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter enables incremental sync whenever the same key is used again. Must be 25 characters or less and contain only alphanumeric characters, dash, and underscore.
+            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter
+            enables incremental sync whenever the same key is used again. Must be 50 characters or less and contain only
+            alphanumeric characters, dash, and underscore
             </param>
             <param name="query">
-            An OData query that determines which items to 
+            An OData query that determines which items to
             pull from the remote table.
             </param>
             <param name="pullOptions">
@@ -2300,7 +2313,7 @@
             A task that completes when pull operation has finished.
             </returns>
             <exception cref="T:System.ArgumentException">
-            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,24}</value>.
+            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,49}</value>.
             </exception>
         </member>
         <member name="M:Microsoft.WindowsAzure.MobileServices.MobileServiceSyncTableExtensions.PullAsync``2(Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable{``0},System.String,Microsoft.WindowsAzure.MobileServices.IMobileServiceTableQuery{``1},System.Boolean,System.Threading.CancellationToken)">
@@ -2308,10 +2321,12 @@
             Pulls all items that match the given query from the associated remote table.
             </summary>
             <param name="queryId">
-            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter enables incremental sync whenever the same key is used again.
+            A string that uniquely identifies this query and is used to keep track of its sync state. Supplying this parameter
+            enables incremental sync whenever the same key is used again. Must be 50 characters or less and contain only
+            alphanumeric characters, dash, and underscore
             </param>
             <param name="query">
-            An OData query that determines which items to 
+            An OData query that determines which items to
             pull from the remote table.
             </param>
             <param name="pushOtherTables">
@@ -2322,6 +2337,9 @@
             <returns>
             A task that completes when pull operation has finished.
             </returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="queryId"/> does not match the regular expression <value>[a-zA-Z][a-zA-Z0-9_-]{0,49}</value>.
+            </exception>
         </member>
         <member name="M:Microsoft.WindowsAzure.MobileServices.MobileServiceSyncTableExtensions.PurgeAsync(Microsoft.WindowsAzure.MobileServices.Sync.IMobileServiceSyncTable)">
             <summary>
