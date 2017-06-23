@@ -3,14 +3,13 @@ using LazyRoommate.Models;
 using System;
 using System.Linq;
 using System.Net.Http;
-using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace LazyRoommate
 {
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CreateTasksPage : ContentPage
+    public partial class CreateTasksPage
     {
         public CreateTasksPage()
         {
@@ -25,18 +24,27 @@ namespace LazyRoommate
             var userItem = await UserTable.Where(x => (x.Email == userInfo.Email)).ToListAsync();
             var user = userItem.FirstOrDefault();
 
-            try
-            {           
-                var TaskTable = App.client.GetTable<TasksTable>();
-                await TaskTable.InsertAsync(new TasksTable {TaskName = TaskName.Text, TaskDescription = TaskDesc.Text, RoomName = user.RoomName, Done = false, Confirmed = false });
-                await DisplayAlert("Task", "New task added!!", "Ok");               
-                await Navigation.PushAsync(new MainPage());             
-               
-            }
-            catch (Exception ex)
+            if (user.RoomName == null)
             {
-                System.Diagnostics.Debug.WriteLine(ex);
+                await DisplayAlert("Task", "You have to belong in a room to create task.", "Ok");
             }
+            else
+            {
+                try
+                {           
+                    var TaskTable = App.client.GetTable<TasksTable>();
+                    await TaskTable.InsertAsync(new TasksTable {TaskName = TaskName.Text, TaskDescription = TaskDesc.Text, RoomName = user.RoomName, Done = false, Confirmed = false });
+                    await DisplayAlert("Task", "New task added!!!", "Ok");               
+                    await Navigation.PushAsync(new MainPage());             
+               
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine(ex);
+                }
+            }
+
+            
 
         }
     }

@@ -32,3 +32,38 @@ C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\Lazy
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.CreateTasksPage.xaml.g.cs
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.dll
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\LazyRoommate.dll.config
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\LazyRoommate.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\LazyRoommate.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Acr.UserDialogs.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Acr.UserDialogs.Interface.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Newtonsoft.Json.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Splat.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\System.Net.Http.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Acr.UserDialogs.Interface.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Microsoft.WindowsAzure.Mobile.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Newtonsoft.Json.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\System.Net.Http.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.csproj.App.config
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.csprojResolveAssemblyReference.cache
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.LoginPage.xaml.g.cs
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.MainPage.xaml.g.cs
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.App.xaml.g.cs
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.CreateTasksPage.xaml.g.cs
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\obj\Debug\LazyRoommate.pdb

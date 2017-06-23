@@ -5,6 +5,7 @@ using LazyRoommate.Models;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -112,13 +113,16 @@ namespace LazyRoommate
             }
             else if (item.Title.Equals("Leave Room"))
             {
-                var answer = await DisplayAlert("Leave Room", "Would you like to leave this room?", "Yes", "No");                
-                if (answer.Equals("Yes"))
+                var answer = await DisplayAlert("Leave Room", "Would you like to leave this room?", "Yes", "No");
+                Debug.WriteLine("Answer: " + answer);
+                if (answer)
                 {
                     var UserTable = App.client.GetTable<UsersTable>();
                     var userItem = await UserTable.Where(x => (x.Email == userInfo.Email)).ToListAsync();
                     var user = userItem.FirstOrDefault();
+
                     user.RoomName = null;
+
                     await UserTable.UpdateAsync(user);
 
                     await DisplayAlert("Leave Room", "You left your room","Ok");
