@@ -123,6 +123,18 @@
   <data name="ADP_ConnectionStringSyntax" xml:space="preserve">
     <value>Format of the initialization string does not conform to specification starting at index {0}.</value>
   </data>
+  <data name="SQL_InvalidBufferSizeOrIndex" xml:space="preserve">
+    <value>Buffer offset '{1}' plus the bytes available '{0}' is greater than the length of the passed in buffer.</value>
+  </data>
+  <data name="ADP_InvalidSourceBufferIndex" xml:space="preserve">
+    <value>Invalid source buffer (size of {0}) offset: {1}</value>
+  </data>
+  <data name="ADP_InvalidDestinationBufferIndex" xml:space="preserve">
+    <value>Invalid destination buffer (size of {0}) offset: {1}</value>
+  </data>
+  <data name="SQL_InvalidDataLength" xml:space="preserve">
+    <value>Data length '{0}' is less than 0.</value>
+  </data>
   <data name="ADP_EmptyString" xml:space="preserve">
     <value>Expecting non-empty string for '{0}' parameter.</value>
   </data>

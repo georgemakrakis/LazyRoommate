@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="NotWriteableStream" xml:space="preserve">
-    <value>The base stream is not writeable.</value>
+  <data name="FileNameContainsInvalidCharacters" xml:space="preserve">
+    <value>An entry in the ZipArchive has a path that contains invalid characters.</value>
   </data>
   <data name="ReadingNotSupported" xml:space="preserve">
     <value>This stream from ZipArchiveEntry does not support reading.</value>
@@ -146,6 +146,9 @@
   </data>
   <data name="HiddenStreamName" xml:space="preserve">
     <value>A stream from ZipArchiveEntry has been disposed.</value>
+  </data>
+  <data name="NotSupported_UnwritableStream" xml:space="preserve">
+    <value>Stream does not support writing.</value>
   </data>
   <data name="UnexpectedEndOfStream" xml:space="preserve">
     <value>Zip file corrupt: unexpected end of stream reached.</value>
@@ -208,7 +211,7 @@
     <value>Decoder is in some unknown state. This might be caused by corrupted data.</value>
   </data>
   <data name="CreateModeCapabilities" xml:space="preserve">
-    <value>Cannot use create mode on a non-writeable stream.</value>
+    <value>Cannot use create mode on a non-writable stream.</value>
   </data>
   <data name="LengthAfterWrite" xml:space="preserve">
     <value>Length properties are unavailable once an entry has been opened for writing.</value>
@@ -236,6 +239,9 @@
   </data>
   <data name="FieldTooBigNumEntries" xml:space="preserve">
     <value>Number of Entries cannot be held in an Int64.</value>
+  </data>
+  <data name="UnsupportedCompressionMethod" xml:space="preserve">
+    <value>The archive entry was compressed using {0} and is not supported.</value>
   </data>
   <data name="ZLibErrorIncorrectInitParameters" xml:space="preserve">
     <value>The underlying compression routine received incorrect initialization parameters.</value>
@@ -273,6 +279,9 @@
   <data name="FieldTooBigCompressedSize" xml:space="preserve">
     <value>Compressed Size cannot be held in an Int64.</value>
   </data>
+  <data name="NotSupported_UnreadableStream" xml:space="preserve">
+    <value>Stream does not support reading.</value>
+  </data>
   <data name="SetLengthRequiresSeekingAndWriting" xml:space="preserve">
     <value>SetLength requires a stream that supports seeking and writing.</value>
   </data>
@@ -288,6 +297,9 @@
   <data name="CannotBeEmpty" xml:space="preserve">
     <value>String cannot be empty.</value>
   </data>
+  <data name="Argument_InvalidPathChars" xml:space="preserve">
+    <value>Illegal characters in path.</value>
+  </data>
   <data name="CentralDirectoryInvalid" xml:space="preserve">
     <value>Central Directory is invalid.</value>
   </data>
@@ -297,11 +309,11 @@
   <data name="InvalidArgumentOffsetCount" xml:space="preserve">
     <value>Offset plus count is larger than the length of target array.</value>
   </data>
-  <data name="NotReadableStream" xml:space="preserve">
-    <value>The base stream is not readable.</value>
-  </data>
   <data name="UnknownBlockType" xml:space="preserve">
     <value>Unknown block type. Stream might be corrupted.</value>
+  </data>
+  <data name="ArgumentOutOfRange_NeedPosNum" xml:space="preserve">
+    <value>Positive number required.</value>
   </data>
   <data name="UnknownCompressionMode" xml:space="preserve">
     <value>The compression mode specified in GZip header is unknown.</value>

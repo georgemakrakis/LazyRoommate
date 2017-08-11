@@ -151,15 +151,15 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LazyRoommate\LazyRoommate.csproj">
-      <Project>{dcd08c1b-ad17-42b3-af5f-04d2daa9a612}</Project>
-      <Name>LazyRoommate</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="Xamarin.iOS">
       <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Xamarin.iOS.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LazyRoommateLibrary\LazyRoommate.csproj">
+      <Project>{5AEB955F-DB73-4D18-956B-77B8C7F98CAB}</Project>
+      <Name>LazyRoommate</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

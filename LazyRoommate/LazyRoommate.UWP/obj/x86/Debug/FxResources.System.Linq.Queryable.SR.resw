@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="UnhandledBindingType" xml:space="preserve">
-    <value>Unhandled Binding Type: {0}</value>
-  </data>
   <data name="ArgumentNotValid" xml:space="preserve">
     <value>Argument {0} is not valid</value>
   </data>
@@ -129,10 +126,10 @@
   <data name="NoMethodOnType" xml:space="preserve">
     <value>There is no method '{0}' on type '{1}'</value>
   </data>
-  <data name="UnhandledExpressionType" xml:space="preserve">
-    <value>Unhandled Expression Type: {0}</value>
-  </data>
   <data name="ArgumentNotIEnumerableGeneric" xml:space="preserve">
     <value>{0} is not IEnumerable&lt;&gt;</value>
+  </data>
+  <data name="EnumeratingNullEnumerableExpression" xml:space="preserve">
+    <value>Cannot enumerate a query created from a null IEnumerable&lt;&gt;</value>
   </data>
 </root>

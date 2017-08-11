@@ -633,6 +633,9 @@
   <data name="XmlSequenceInconsistent" xml:space="preserve">
     <value>Inconsistent sequencing: if used on one of the class's members, the '{0}' property is required on all particle-like members, please explicitly set '{0}' using XmlElement, XmlAnyElement or XmlArray custom attribute on class member '{1}'.</value>
   </data>
+  <data name="Arg_RemoveArgNotFound" xml:space="preserve">
+    <value>Cannot remove the specified item because it was not found in the specified Collection.</value>
+  </data>
   <data name="XmlAnonymousInclude" xml:space="preserve">
     <value>Cannot include anonymous type '{0}'.</value>
   </data>

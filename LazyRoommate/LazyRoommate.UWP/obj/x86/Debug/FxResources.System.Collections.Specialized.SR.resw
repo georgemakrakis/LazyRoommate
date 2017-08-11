@@ -120,20 +120,14 @@
   <data name="Argument_InvalidValue" xml:space="preserve">
     <value>Argument {0} should be larger than {1}.</value>
   </data>
-  <data name="ArgumentNull_Key" xml:space="preserve">
-    <value>Key cannot be null.</value>
+  <data name="Arg_NonZeroLowerBound" xml:space="preserve">
+    <value>The lower bound of target array must be zero.</value>
   </data>
   <data name="Argument_AddingDuplicate" xml:space="preserve">
-    <value>An entry with the same key already exists.</value>
+    <value>An item with the same key has already been added. Key: {0}</value>
   </data>
   <data name="InvalidOperation_EnumFailedVersion" xml:space="preserve">
     <value>Collection was modified after the enumerator was instantiated.</value>
-  </data>
-  <data name="Arg_ArrayPlusOffTooSmall" xml:space="preserve">
-    <value>Destination array is not long enough to copy all the items in the collection. Check array index and length.</value>
-  </data>
-  <data name="IndexOutOfRange" xml:space="preserve">
-    <value>Index {0} is out of range.</value>
   </data>
   <data name="CollectionReadOnly" xml:space="preserve">
     <value>Collection is read-only.</value>
@@ -141,20 +135,11 @@
   <data name="Arg_MultiRank" xml:space="preserve">
     <value>Multi dimension array is not supported on this operation.</value>
   </data>
-  <data name="NotSupported_ValueCollectionSet" xml:space="preserve">
-    <value>Mutating a value collection derived from a dictionary is not allowed.</value>
-  </data>
   <data name="ArgumentOutOfRange_NeedNonNegNum" xml:space="preserve">
     <value>Index is less than zero.</value>
   </data>
   <data name="OrderedDictionary_ReadOnly" xml:space="preserve">
     <value>The OrderedDictionary is read-only and cannot be modified.</value>
-  </data>
-  <data name="NotSupported_KeyCollectionSet" xml:space="preserve">
-    <value>Mutating a key collection derived from a dictionary is not allowed.</value>
-  </data>
-  <data name="ArgumentNull_Array" xml:space="preserve">
-    <value>Array cannot be null.</value>
   </data>
   <data name="BitVectorFull" xml:space="preserve">
     <value>Bit vector is full.</value>

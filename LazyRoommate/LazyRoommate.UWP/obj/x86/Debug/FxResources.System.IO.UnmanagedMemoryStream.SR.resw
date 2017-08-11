@@ -153,6 +153,9 @@
   <data name="ArgumentOutOfRange_StreamLength" xml:space="preserve">
     <value>Stream length must be non-negative and less than 2^31 - 1 - origin.</value>
   </data>
+  <data name="Arg_BadDecimal" xml:space="preserve">
+    <value>Read an invalid decimal value from the buffer.</value>
+  </data>
   <data name="Arg_BufferTooSmall" xml:space="preserve">
     <value>Not enough space available in the buffer.</value>
   </data>
@@ -188,6 +191,9 @@
   </data>
   <data name="ArgumentNull_Buffer" xml:space="preserve">
     <value>Buffer cannot be null.</value>
+  </data>
+  <data name="ArgumentOutOfRange_NeedPosNum" xml:space="preserve">
+    <value>Positive number required.</value>
   </data>
   <data name="Argument_UnmanagedMemAccessorWrapAround" xml:space="preserve">
     <value>The UnmanagedMemoryAccessor capacity and offset would wrap around the high end of the address space.</value>

@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="WaitHandleCannotBeOpenedException_InvalidHandle" xml:space="preserve">
-    <value>A WaitHandle with system-wide name '{0}' cannot be created. A WaitHandle of a different type might have the same name.</value>
-  </data>
   <data name="CountdownEvent_Increment_AlreadyZero" xml:space="preserve">
     <value>The event is already signaled and cannot be incremented.</value>
   </data>
@@ -147,9 +144,6 @@
   <data name="BarrierPostPhaseException" xml:space="preserve">
     <value>The postPhaseAction failed with an exception.</value>
   </data>
-  <data name="Argument_SemaphoreInitialMaximum" xml:space="preserve">
-    <value>The initial count for the semaphore must be greater than or equal to zero and less than the maximum count.</value>
-  </data>
   <data name="Barrier_RemoveParticipants_NonPositive_ArgumentOutOfRange" xml:space="preserve">
     <value>The participantCount argument must be a positive value.</value>
   </data>
@@ -168,9 +162,6 @@
   <data name="Common_OperationCanceled" xml:space="preserve">
     <value>The operation was canceled.</value>
   </data>
-  <data name="InvalidNullEmptyArgument" xml:space="preserve">
-    <value>Argument {0} cannot be null or zero-length.</value>
-  </data>
   <data name="LockRecursionException_RecursiveUpgradeNotAllowed" xml:space="preserve">
     <value>Recursive upgradeable lock acquisitions not allowed in this mode.</value>
   </data>
@@ -182,9 +173,6 @@
   </data>
   <data name="CountdownEvent_Increment_AlreadyMax" xml:space="preserve">
     <value>The increment operation would cause the CurrentCount to overflow.</value>
-  </data>
-  <data name="Argument_WaitHandleNameTooLong" xml:space="preserve">
-    <value>The name can be no more than 260 characters in length.</value>
   </data>
   <data name="Barrier_InvalidOperation_CalledFromPHA" xml:space="preserve">
     <value>This method may not be called from within the postPhaseAction.</value>
@@ -209,14 +197,5 @@
   </data>
   <data name="SynchronizationLockException_MisMatchedRead" xml:space="preserve">
     <value>The read lock is being released without being held.</value>
-  </data>
-  <data name="UnknownError_Num" xml:space="preserve">
-    <value>Unknown error '{0}'.</value>
-  </data>
-  <data name="ArgumentOutOfRange_NeedPosNum" xml:space="preserve">
-    <value>Positive number required.</value>
-  </data>
-  <data name="ArgumentOutOfRange_NeedNonNegNumRequired" xml:space="preserve">
-    <value>Non-negative number required.</value>
   </data>
 </root>
