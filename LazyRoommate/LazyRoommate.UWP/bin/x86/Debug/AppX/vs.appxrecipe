@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>369A9AE90845FC1DF00A5825D22F39ABDC55F95F0C70D9ECFAA08D88D99BEA77</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>2725A8DAB1624579F6CD7E9B9DBFBC75BD476C2F91064D7692478266EF47C7E8</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>8f02052b-4750-4004-8b84-676dad6d2131_1.0.0.0_x86__ddrh046yrsgze</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>8f02052b-4750-4004-8b84-676dad6d2131_ddrh046yrsgze!App</RegisteredUserModeAppID>
     <RegisteredPackageID>8f02052b-4750-4004-8b84-676dad6d2131</RegisteredPackageID>
@@ -28,21 +28,21 @@
     <AppXManifest Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-11T10:15:00.164</Modified>
+      <Modified>2017-08-12T10:45:32.652</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\LazyRoommate.UWP.exe">
       <PackagePath>entrypoint\LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2017-08-11T10:14:53.563</Modified>
+      <Modified>2017-08-12T10:45:30.439</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs.Interface.dll">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs.Interface.dll">
       <PackagePath>Acr.UserDialogs.Interface.dll</PackagePath>
-      <Modified>2017-05-30T05:31:30.000</Modified>
+      <Modified>2017-03-13T08:24:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs.dll">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs.dll">
       <PackagePath>Acr.UserDialogs.dll</PackagePath>
-      <Modified>2017-05-30T05:31:30.000</Modified>
+      <Modified>2017-03-13T08:24:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Coding4Fun.Toolkit.Controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.Controls.dll">
       <PackagePath>Coding4Fun.Toolkit.Controls.dll</PackagePath>
@@ -224,9 +224,9 @@
       <PackagePath>System.Private.Uri.dll</PackagePath>
       <Modified>2016-11-05T02:56:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Splat\2.0.0\lib\Portable-Win81+Wpa81\Splat.dll">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Splat\1.6.2\lib\NetCore45\Splat.dll">
       <PackagePath>Splat.dll</PackagePath>
-      <Modified>2016-11-05T17:29:32.000</Modified>
+      <Modified>2015-03-21T19:07:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\System.AppContext\4.3.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -558,7 +558,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.dll">
       <PackagePath>LazyRoommate.dll</PackagePath>
-      <Modified>2017-08-11T10:10:40.026</Modified>
+      <Modified>2017-08-12T10:32:05.325</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Xamarin.iOS.dll">
       <PackagePath>Xamarin.iOS.dll</PackagePath>
@@ -674,29 +674,29 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-04-02T17:00:54.157</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\Acr.UserDialogs.xr.xml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\Acr.UserDialogs.xr.xml">
       <PackagePath>Acr.UserDialogs\Acr.UserDialogs.xr.xml</PackagePath>
-      <Modified>2017-05-30T05:31:30.000</Modified>
+      <Modified>2017-03-13T08:24:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\ActionSheetContentDialog.xaml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\ActionSheetContentDialog.xaml">
       <PackagePath>Acr.UserDialogs\ActionSheetContentDialog.xaml</PackagePath>
-      <Modified>2017-05-30T05:31:30.000</Modified>
+      <Modified>2017-03-13T08:24:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\DatePickerControl.xaml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\DatePickerControl.xaml">
       <PackagePath>Acr.UserDialogs\DatePickerControl.xaml</PackagePath>
-      <Modified>2017-05-30T05:31:30.000</Modified>
+      <Modified>2017-03-13T08:24:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\LoginContentDialog.xaml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\LoginContentDialog.xaml">
       <PackagePath>Acr.UserDialogs\LoginContentDialog.xaml</PackagePath>
-      <Modified>2017-05-30T05:31:30.000</Modified>
+      <Modified>2017-03-13T08:24:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\ProgressContentDialog.xaml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\ProgressContentDialog.xaml">
       <PackagePath>Acr.UserDialogs\ProgressContentDialog.xaml</PackagePath>
-      <Modified>2017-05-30T05:31:30.000</Modified>
+      <Modified>2017-03-13T08:24:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\TimePickerControl.xaml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\TimePickerControl.xaml">
       <PackagePath>Acr.UserDialogs\TimePickerControl.xaml</PackagePath>
-      <Modified>2017-05-30T05:31:30.000</Modified>
+      <Modified>2017-03-13T08:24:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Coding4Fun.Toolkit.Controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml">
       <PackagePath>Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml</PackagePath>
@@ -717,11 +717,11 @@
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-11T10:14:59.200</Modified>
+      <Modified>2017-08-12T10:45:31.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\LazyRoommate.UWP.exe">
       <PackagePath>LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2017-08-11T10:15:00.145</Modified>
+      <Modified>2017-08-12T10:45:32.638</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

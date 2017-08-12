@@ -25,10 +25,10 @@
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\LazyRoommate.UWP.exe">
       <PackagePath>entrypoint\LazyRoommate.UWP.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs.Interface.dll">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs.Interface.dll">
       <PackagePath>Acr.UserDialogs.Interface.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs.dll">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs.dll">
       <PackagePath>Acr.UserDialogs.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Coding4Fun.Toolkit.Controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.Controls.dll">
@@ -166,7 +166,7 @@
     <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\runtime.win7.System.Private.Uri\4.3.0\runtimes\win\lib\netcore50\System.Private.Uri.dll">
       <PackagePath>System.Private.Uri.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Splat\2.0.0\lib\Portable-Win81+Wpa81\Splat.dll">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Splat\1.6.2\lib\NetCore45\Splat.dll">
       <PackagePath>Splat.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\System.AppContext\4.3.0\lib\netcore50\System.AppContext.dll">
@@ -505,22 +505,22 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\Acr.UserDialogs.xr.xml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\Acr.UserDialogs.xr.xml">
       <PackagePath>Acr.UserDialogs\Acr.UserDialogs.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\ActionSheetContentDialog.xaml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\ActionSheetContentDialog.xaml">
       <PackagePath>Acr.UserDialogs\ActionSheetContentDialog.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\DatePickerControl.xaml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\DatePickerControl.xaml">
       <PackagePath>Acr.UserDialogs\DatePickerControl.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\LoginContentDialog.xaml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\LoginContentDialog.xaml">
       <PackagePath>Acr.UserDialogs\LoginContentDialog.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\ProgressContentDialog.xaml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\ProgressContentDialog.xaml">
       <PackagePath>Acr.UserDialogs\ProgressContentDialog.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.5.1\lib\uap10.0\Acr.UserDialogs\TimePickerControl.xaml">
+    <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs\TimePickerControl.xaml">
       <PackagePath>Acr.UserDialogs\TimePickerControl.xaml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Coding4Fun.Toolkit.Controls\2.1.8\lib\netcore451\Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml">
