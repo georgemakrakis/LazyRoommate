@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LazyRoommate.Managers;
+using Microsoft.WindowsAzure.MobileServices;
+using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
@@ -92,6 +94,18 @@ namespace LazyRoommate.UWP
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity
             deferral.Complete();
+        }
+
+        protected override void OnActivated(IActivatedEventArgs args)
+        {
+            base.OnActivated(args);
+
+            if (args.Kind == ActivationKind.Protocol)
+            {
+                ProtocolActivatedEventArgs protocolArgs = args as ProtocolActivatedEventArgs;
+                UsersTableManager.DefaultManager.CurrentClient.ResumeWithURL(protocolArgs.Uri);
+            }
+
         }
     }
 }

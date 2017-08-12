@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-12T10:45:32.652</Modified>
+      <Modified>2017-08-12T14:25:21.452</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\LazyRoommate.UWP.exe">
       <PackagePath>entrypoint\LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2017-08-12T10:45:30.439</Modified>
+      <Modified>2017-08-12T14:25:20.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs.Interface.dll">
       <PackagePath>Acr.UserDialogs.Interface.dll</PackagePath>
@@ -721,7 +721,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\LazyRoommate.UWP.exe">
       <PackagePath>LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2017-08-12T10:45:32.638</Modified>
+      <Modified>2017-08-12T14:25:21.446</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
