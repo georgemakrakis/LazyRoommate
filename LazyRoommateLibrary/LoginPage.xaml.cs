@@ -1,9 +1,9 @@
-﻿
-using System;
+﻿using System;
 using Xamarin.Forms;
 
 namespace LazyRoommate
 {
+
     public partial class LoginPage : ContentPage
     {
         // Track whether the user has authenticated.
@@ -11,18 +11,27 @@ namespace LazyRoommate
 
         public LoginPage()
         {
+            MoveToMainPage();
             InitializeComponent();
         }
 
+        public async void MoveToMainPage()
+        {
+            string un = App.UserName;
+            if (App.UserName != string.Empty)
+            {
+                await Navigation.PushAsync(new MainPage());
+            }
+        }
         public async void LoginClick(object sender, EventArgs e)
         {
             if (App.Authenticator != null)
             {
-                if(sender.Equals(FBButton))
+                if (sender.Equals(FBButton))
                 {
-                    authenticated = await App.Authenticator.AuthenticateFacebook();
+                    authenticated = await App.Authenticator.AuthenticateFacebook();                    
                 }
-                else if(sender.Equals(GoogleButton))
+                else if (sender.Equals(GoogleButton))
                 {
                     authenticated = await App.Authenticator.AuthenticateGoogle();
                 }
@@ -40,9 +49,14 @@ namespace LazyRoommate
             {
                 //await DisplayAlert("Alert", "Authentication Successful", "OK");
                 await Navigation.PushAsync(new MainPage());
-                
-                
+
+
             }
         }
+
+
+
     }
+
+
 }

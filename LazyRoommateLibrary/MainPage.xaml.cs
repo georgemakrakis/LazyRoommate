@@ -32,8 +32,8 @@ namespace LazyRoommate
         {
             InitializeComponent();
 
-            NavigationPage.SetHasNavigationBar(this, true);
-            NavigationPage.SetHasBackButton(this, true);
+            //NavigationPage.SetHasNavigationBar(this, true);
+            //NavigationPage.SetHasBackButton(this, true);
          
 
 
@@ -214,24 +214,15 @@ namespace LazyRoommate
 
         }
 
-        private void Button1_Clicked(object sender, System.EventArgs e)
-        {
-            Detail = new NavigationPage();
-            IsPresented = false;
-        }
-        private void Button2_Clicked(object sender, System.EventArgs e)
-        {
-            Detail = new NavigationPage();
-            IsPresented = false;
-        }
-        private void Button3_Clicked(object sender, System.EventArgs e)
-        {
-            Detail = new NavigationPage();
-            IsPresented = false;
-        }
         private void profile_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new ProfilePage(), true);
+        }
+
+        private async void Logout_Clicked(object sender, EventArgs e)
+        {
+            App.UserName = string.Empty;
+            await Navigation.PushAsync(new LoginPage(), true);
         }
     }
 }

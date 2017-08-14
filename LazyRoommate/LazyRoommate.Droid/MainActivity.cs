@@ -37,6 +37,7 @@ namespace LazyRoommate.Droid
                     if (first != null)
                     {
                         message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        App.UserName = userInfo.Email;
                         success = true;
                     }
                     else
@@ -46,6 +47,7 @@ namespace LazyRoommate.Droid
                         await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
 
                         message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        App.UserName = userInfo.Email;
                         success = true;
                     }
                 }
@@ -91,6 +93,7 @@ namespace LazyRoommate.Droid
                     if (first != null)
                     {
                         message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        App.UserName = userInfo.Email;
                         success = true;
                     }
                     else
@@ -100,6 +103,7 @@ namespace LazyRoommate.Droid
                         await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
 
                         message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        App.UserName = userInfo.Email;
                         success = true;
                     }
                 }
@@ -145,6 +149,7 @@ namespace LazyRoommate.Droid
                     if (first != null)
                     {
                         message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        App.UserName = userInfo.Email;
                         success = true;
                     }
                     else
@@ -154,6 +159,7 @@ namespace LazyRoommate.Droid
                         await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
 
                         message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+                        App.UserName = userInfo.Email;
                         success = true;
                     }
                 }

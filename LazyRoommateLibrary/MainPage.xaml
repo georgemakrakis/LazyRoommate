@@ -21,7 +21,7 @@
                         </ListView.ItemTemplate>
                     </ListView>
                     <Button x:Name="profile" Text="Profile" Clicked="profile_Clicked" Image="user_profile_32.png"></Button>
-                    <Button  x:Name="Logout" Text="Logout" Image="logout_32.png"></Button>
+                    <Button  x:Name="Logout" Text="Logout" Clicked="Logout_Clicked" Image="logout_32.png"></Button>
                     <Button  x:Name="settings" Text="Settings" Image="settings_32.png"></Button>
                     <Button  x:Name="Help" Text="Help"  Image="help_32.png"></Button>
                 </StackLayout>

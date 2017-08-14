@@ -703,3 +703,8 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Xamarin.
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Splat.pdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Splat.pri.xml
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.Abstractions.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.Abstractions.pdb
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.pdb
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Plugin.Settings.pri.xml

@@ -1,6 +1,9 @@
 ﻿using Microsoft.WindowsAzure.MobileServices;
+using Plugin.Settings;
+using Plugin.Settings.Abstractions;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+
 
 namespace LazyRoommate
 {
@@ -14,8 +17,17 @@ namespace LazyRoommate
     public partial class App : Application
     {
         //initializing the interface with a platform-specific implementation
-        public static IAuthenticate Authenticator { get; private set; }
+        public static IAuthenticate Authenticator { get; private set; }     
         //public static SystemNavigationManager currentView=null;
+        private static ISettings AppSettings =>
+            CrossSettings.Current;
+
+        //UserName will be the email for us
+        public static string UserName
+        {
+            get { return AppSettings.GetValueOrDefault(nameof(UserName), string.Empty); }
+            set { AppSettings.AddOrUpdateValue(nameof(UserName), value); }
+        }
 
         public static void Init(IAuthenticate authenticator)
         {           
