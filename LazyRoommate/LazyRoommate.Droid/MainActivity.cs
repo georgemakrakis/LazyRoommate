@@ -66,15 +66,9 @@ namespace LazyRoommate.Droid
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.SetMessage(message);
             builder.SetTitle("Sign-in result");
-            builder.SetPositiveButton("Ok", (senderAlert, args) =>
-            {
-
-            });
-            RunOnUiThread(() =>
-            {
-                builder.Create().Show();
-            });
-
+            builder.SetPositiveButton("Ok", (senderAlert, args) =>{});
+            builder.Create().Show();
+           
             return success;
         }
 
@@ -126,14 +120,8 @@ namespace LazyRoommate.Droid
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.SetMessage(message);
             builder.SetTitle("Sign-in result");
-            builder.SetPositiveButton("Ok", (senderAlert, args) => 
-            {
-                
-            });
-            RunOnUiThread(() =>
-            {
-                builder.Create().Show();
-            });
+            builder.SetPositiveButton("Ok", (senderAlert, args) => { });
+            builder.Create().Show();
 
             return success;
         }
@@ -183,17 +171,12 @@ namespace LazyRoommate.Droid
             }
 
             // Display the success or failure message.
+            // Display the success or failure message.
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.SetMessage(message);
             builder.SetTitle("Sign-in result");
-            builder.SetPositiveButton("Ok", (senderAlert, args) =>
-            {
-
-            });
-            RunOnUiThread(() =>
-            {
-                builder.Create().Show();
-            });
+            builder.SetPositiveButton("Ok", (senderAlert, args) => { });
+            builder.Create().Show();
 
             return success;
         }

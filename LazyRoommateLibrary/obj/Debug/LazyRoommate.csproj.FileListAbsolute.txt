@@ -17,3 +17,4 @@ C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainPage.
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.dll
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.pdb
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.csprojResolveAssemblyReference.cache
