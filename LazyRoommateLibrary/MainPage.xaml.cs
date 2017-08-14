@@ -215,7 +215,9 @@ namespace LazyRoommate
 
         private async void Logout_Clicked(object sender, EventArgs e)
         {
-            App.Email = string.Empty;           
+            App.Email = string.Empty;
+            App.ProfileImage = string.Empty;
+            App.ProfileName = string.Empty;          
             await Navigation.PushAsync(new LoginPage(), true);
 
             //This just came up just for security-reverse engineering reasons i think...
