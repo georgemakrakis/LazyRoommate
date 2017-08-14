@@ -7,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -32,8 +31,8 @@ namespace LazyRoommate
         {
             InitializeComponent();
 
-            //NavigationPage.SetHasNavigationBar(this, true);
-            //NavigationPage.SetHasBackButton(this, true);
+            NavigationPage.SetHasNavigationBar(this, true);
+            NavigationPage.SetHasBackButton(this, false);
          
 
 
@@ -81,7 +80,7 @@ namespace LazyRoommate
     }
         private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+            //var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
 
             //Getting the source of the item selected on menu, so we could use is later
             var item = (Menu)e.SelectedItem;
@@ -118,7 +117,7 @@ namespace LazyRoommate
                 if (answer)
                 {
                     var UserTable = App.client.GetTable<UsersTable>();
-                    var userItem = await UserTable.Where(x => (x.Email == userInfo.Email)).ToListAsync();
+                    var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
                     var user = userItem.FirstOrDefault();
 
                     user.RoomName = null;
@@ -134,10 +133,10 @@ namespace LazyRoommate
 
                 if (result.Ok)
                 {
-                    userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+                    //userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
 
                     var UserTable = App.client.GetTable<UsersTable>();
-                    var userItem = await UserTable.Where(x => (x.Email == userInfo.Email)).ToListAsync();
+                    var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
                     var user = userItem.FirstOrDefault();
 
 
@@ -209,11 +208,6 @@ namespace LazyRoommate
             timelineListView.SelectedItem = null;
         }
 
-        private void OnLabelClicked()
-        {
-
-        }
-
         private void profile_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new ProfilePage(), true);
@@ -221,8 +215,11 @@ namespace LazyRoommate
 
         private async void Logout_Clicked(object sender, EventArgs e)
         {
-            App.UserName = string.Empty;
+            App.Email = string.Empty;           
             await Navigation.PushAsync(new LoginPage(), true);
+
+            //This just came up just for security-reverse engineering reasons i think...
+            Navigation.RemovePage(this);
         }
     }
 }

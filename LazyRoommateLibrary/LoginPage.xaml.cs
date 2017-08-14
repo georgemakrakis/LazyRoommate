@@ -13,12 +13,15 @@ namespace LazyRoommate
         {
             MoveToMainPage();
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, true);
+            NavigationPage.SetHasBackButton(this, false);
+
         }
 
         public async void MoveToMainPage()
         {
-            string un = App.UserName;
-            if (App.UserName != string.Empty)
+            if (App.Email != string.Empty)
             {
                 await Navigation.PushAsync(new MainPage());
             }

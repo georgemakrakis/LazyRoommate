@@ -449,19 +449,6 @@ C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\L
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Splat.pri.xml
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\LazyRoommate.UWP.csprojResolveAssemblyReference.cache
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\App.g.i.cs
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\App.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\MainPage.g.i.cs
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\MainPage.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\XamlTypeInfo.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\App.xaml
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\MainPage.xaml
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\App.xbf
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\MainPage.xbf
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\XamlSaveStateFile.xml
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\LazyRoommate.UWP.exe
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\LazyRoommate.UWP.pdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\login_scrn.jpg
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\social_connect_facebook.png
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\social_connect_google.png
@@ -526,6 +513,7 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\clrjit.d
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\clrcompression.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Private.Uri.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Splat.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Splat.pdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.AppContext.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Buffers.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Collections.Concurrent.dll
@@ -604,6 +592,10 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.X
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Xml.XmlSerializer.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.Abstractions.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.Abstractions.pdb
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.pdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Xamarin.Forms.Core.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Xamarin.Forms.Platform.UAP.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Xamarin.Forms.Platform.dll
@@ -614,6 +606,19 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Mono.Sec
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\LazyRoommate.pdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Xamarin.iOS.xml
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Mono.Security.pdb
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\LazyRoommate.UWP.csprojResolveAssemblyReference.cache
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\App.g.i.cs
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\App.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\MainPage.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\App.xaml
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\MainPage.xaml
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\App.xbf
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\MainPage.xbf
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\XamlSaveStateFile.xml
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\LazyRoommate.UWP.exe
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\LazyRoommate.UWP.pdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\ResourceHandlingTask.state
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.Microsoft.CSharp.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.Microsoft.VisualBasic.SR.resw
@@ -699,12 +704,7 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Acr.User
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Coding4Fun.Toolkit.Controls.pri.xml
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Coding4Fun.Toolkit.pri.xml
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Microsoft.Azure.Mobile.Client.pri.xml
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Splat.pri.xml
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Plugin.Settings.pri.xml
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Splat.pdb
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Splat.pri.xml
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.Abstractions.dll
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.Abstractions.pdb
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.dll
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Plugin.Settings.pdb
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Plugin.Settings.pri.xml

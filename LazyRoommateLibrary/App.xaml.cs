@@ -22,11 +22,20 @@ namespace LazyRoommate
         private static ISettings AppSettings =>
             CrossSettings.Current;
 
-        //UserName will be the email for us
-        public static string UserName
+        public static string Email
         {
-            get { return AppSettings.GetValueOrDefault(nameof(UserName), string.Empty); }
-            set { AppSettings.AddOrUpdateValue(nameof(UserName), value); }
+            get { return AppSettings.GetValueOrDefault(nameof(Email), string.Empty); }
+            set { AppSettings.AddOrUpdateValue(nameof(Email), value); }
+        }
+        public static string ProfileName
+        {
+            get { return AppSettings.GetValueOrDefault(nameof(ProfileName), string.Empty); }
+            set { AppSettings.AddOrUpdateValue(nameof(ProfileName), value); }
+        }
+        public static string ProfileImage
+        {
+            get { return AppSettings.GetValueOrDefault(nameof(ProfileImage), string.Empty); }
+            set { AppSettings.AddOrUpdateValue(nameof(ProfileImage), value); }
         }
 
         public static void Init(IAuthenticate authenticator)

@@ -33,7 +33,9 @@ namespace LazyRoommate.UWP
                     if (first != null)
                     {
                         message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.UserName=userInfo.Email;
+                        LazyRoommate.App.Email = userInfo.Email;
+                        LazyRoommate.App.ProfileName = userInfo.Name;
+                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
                         success = true;
                     }
                     else
@@ -43,7 +45,9 @@ namespace LazyRoommate.UWP
                         await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
 
                         message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.UserName = userInfo.Email;
+                        LazyRoommate.App.Email = userInfo.Email;
+                        LazyRoommate.App.ProfileName = userInfo.Name;
+                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
                         success = true;
                     }
                 }
@@ -79,7 +83,9 @@ namespace LazyRoommate.UWP
                     if (first != null)
                     {
                         message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.UserName = userInfo.Email;
+                        LazyRoommate.App.Email = userInfo.Email;
+                        LazyRoommate.App.ProfileName = userInfo.Name;
+                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
                         success = true;
                     }
                     else
@@ -89,7 +95,9 @@ namespace LazyRoommate.UWP
                         await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
 
                         message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.UserName = userInfo.Email;
+                        LazyRoommate.App.Email = userInfo.Email;
+                        LazyRoommate.App.ProfileName = userInfo.Name;
+                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
                         success = true;
                     }
                 }
@@ -125,7 +133,9 @@ namespace LazyRoommate.UWP
                     if (first != null)
                     {
                         message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.UserName = userInfo.Email;
+                        LazyRoommate.App.Email = userInfo.Email;
+                        LazyRoommate.App.ProfileName = userInfo.Name;
+                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
                         success = true;
                     }
                     else
@@ -135,7 +145,9 @@ namespace LazyRoommate.UWP
                         await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
 
                         message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.UserName = userInfo.Email;
+                        LazyRoommate.App.Email = userInfo.Email;
+                        LazyRoommate.App.ProfileName = userInfo.Name;
+                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
                         success = true;
                     }
                 }

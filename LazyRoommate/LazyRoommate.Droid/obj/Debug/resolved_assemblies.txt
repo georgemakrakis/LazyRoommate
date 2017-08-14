@@ -11,6 +11,8 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\as
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\PInvoke.Kernel32.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\PInvoke.NCrypt.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\PInvoke.Windows.Core.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Plugin.Settings.Abstractions.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Plugin.Settings.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Splat.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Validation.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll

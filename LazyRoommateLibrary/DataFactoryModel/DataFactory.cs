@@ -51,7 +51,7 @@ namespace LazyRoommate.DataFactoryModel
 
             //userinfo request is for Federetion Login
             var UserTable = App.client.GetTable<UsersTable>();
-            var userItem = await UserTable.Where(x => (x.Email == App.UserName)).ToListAsync();
+            var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
             var user = userItem.FirstOrDefault();
 
             var TaskTable = App.client.GetTable<TasksTable>();

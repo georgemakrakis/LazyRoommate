@@ -2,7 +2,6 @@
 using LazyRoommate.Models;
 using System;
 using System.Linq;
-using System.Net.Http;
 using Xamarin.Forms.Xaml;
 
 namespace LazyRoommate
@@ -18,10 +17,10 @@ namespace LazyRoommate
 
         private async void OkClicked(object sender, System.EventArgs e)
         {
-            var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+            //var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
 
             var UserTable = App.client.GetTable<UsersTable>();
-            var userItem = await UserTable.Where(x => (x.Email == userInfo.Email)).ToListAsync();
+            var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
             var user = userItem.FirstOrDefault();
 
             if (user.RoomName == null)
