@@ -40,12 +40,7 @@
             
             <ContentPage.Content>
                 <StackLayout BackgroundColor="Transparent">
-                    <ActivityIndicator x:Name="ActivityIndicator" Color="White" VerticalOptions="Center" IsRunning="True">
-                        <OnPlatform x:TypeArguments="Color">
-                            <On Platform="Android" Value="Blue"/>
-                            <On Platform="WinPhone" Value="White"/>
-                        </OnPlatform>
-                    </ActivityIndicator>
+                    <ActivityIndicator x:Name="ActivityIndicator" Color="#E4B6C3" VerticalOptions="Center" IsRunning="True"/>
                     <ListView
     x:Name="timelineListView"
     ItemTapped="timelineListView_ItemTapped"
