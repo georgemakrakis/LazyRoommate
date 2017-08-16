@@ -52,8 +52,10 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\PInvoke.NC
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\PInvoke.Windows.Core.xml
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Plugin.Settings.pdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Plugin.Settings.xml
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Plugin.Settings.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Plugin.Settings.Abstractions.pdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Plugin.Settings.Abstractions.xml
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Plugin.Settings.Abstractions.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Splat.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Validation.xml
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Xamarin.Forms.Core.pdb
@@ -92,8 +94,6 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawab
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\R.cs.flag
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\uploadflags.txt
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.dll.mdb
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Plugin.Settings.dll.mdb
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Plugin.Settings.Abstractions.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Acr.Support.Android.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Acr.UserDialogs.dll.mdb

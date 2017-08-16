@@ -27,6 +27,8 @@ namespace LazyRoommate
             list.IsRefreshing = false;
         }
 
+
+
         public MainPage()
         {
             InitializeComponent();
@@ -68,16 +70,22 @@ namespace LazyRoommate
             menu.ItemsSource = masterPageItems;
 
             //BindingContext = DataFactory.Tasks;
-
+                    
             Device.BeginInvokeOnMainThread(async () =>
             {
                 await DataFactory.Init();
-                timelineListView.ItemsSource = DataFactory.UserTasks;                
-            });            
+                ActivityIndicator.IsRunning = false;
+                ActivityIndicator.IsVisible = false;
+                timelineListView.ItemsSource = DataFactory.UserTasks;
+                                     
+            });
+
+           
 
             // Connecting context of this page to the our View Model class
             //BindingContext = new TasksViewModel();
-    }
+        }        
+
         private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             //var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
@@ -222,6 +230,11 @@ namespace LazyRoommate
 
             //This just came up just for security-reverse engineering reasons i think...
             Navigation.RemovePage(this);
+        }
+
+        private void LoadingList(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+
         }
     }
 }

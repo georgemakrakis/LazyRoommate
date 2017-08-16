@@ -37,63 +37,73 @@
                     <local:NotBooleanConverter x:Key="NotBooleanConverter" />
                 </ResourceDictionary>
             </ContentPage.Resources>
+            
             <ContentPage.Content>
-                <ListView
+                <StackLayout BackgroundColor="Transparent">
+                    <ActivityIndicator x:Name="ActivityIndicator" Color="White" VerticalOptions="Center" IsRunning="True">
+                        <OnPlatform x:TypeArguments="Color">
+                            <On Platform="Android" Value="Blue"/>
+                            <On Platform="WinPhone" Value="White"/>
+                        </OnPlatform>
+                    </ActivityIndicator>
+                    <ListView
     x:Name="timelineListView"
     ItemTapped="timelineListView_ItemTapped"
     ItemsSource="{Binding .}"
     RowHeight="75"
     SeparatorVisibility="None"    
     IsPullToRefreshEnabled="true" Refreshing="OnRefresh">
+                    
+                    <ListView.Header>
+                        <StackLayout Padding="20,40,0,30">
+                            <Label Style="{StaticResource PageHeaderLabel}" Text="Tasks List" />
+                            <!--<Label Style="{StaticResource SubHeaderLabel}" Text="8 Mar 2017" />-->
+                        </StackLayout>
+                    </ListView.Header>
 
-    <ListView.Header>
-      <StackLayout Padding="20,40,0,30">
-        <Label Style="{StaticResource PageHeaderLabel}" Text="Tasks List" />
-        <!--<Label Style="{StaticResource SubHeaderLabel}" Text="8 Mar 2017" />-->
-      </StackLayout>
-    </ListView.Header>
+                    <ListView.Footer>
+                        <Grid RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="64" />
+                                <RowDefinition Height="100" />
+                            </Grid.RowDefinitions>
+                            <Image Grid.RowSpan="2" Aspect="AspectFill" HorizontalOptions="Fill" VerticalOptions="Start" Source="YogaImage.png" />
+                            <Image Aspect="Fill" Grid.RowSpan="2" HorizontalOptions="Fill" Source="FadeToWhite.png" />
+                        </Grid>
+                    </ListView.Footer>
 
-    <ListView.Footer>
-      <Grid RowSpacing="0">
-        <Grid.RowDefinitions>
-          <RowDefinition Height="64" />
-          <RowDefinition Height="100" />
-        </Grid.RowDefinitions>
-        <Image Grid.RowSpan="2" Aspect="AspectFill" HorizontalOptions="Fill" VerticalOptions="Start" Source="YogaImage.png" />
-        <Image Aspect="Fill" Grid.RowSpan="2" HorizontalOptions="Fill" Source="FadeToWhite.png" />
-      </Grid>
-    </ListView.Footer>
+                    <ListView.ItemTemplate>
+                        
+                        <DataTemplate>
+                            
+                            <ViewCell>
+                                <Grid ColumnSpacing="0" RowSpacing="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="30" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
 
-    <ListView.ItemTemplate>
-      <DataTemplate>
-        <ViewCell>
-          <Grid ColumnSpacing="0" RowSpacing="0">
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="100" />
-              <ColumnDefinition Width="30" />
-              <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-              <RowDefinition Height="Auto" />
-              <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
+                                    <Label HorizontalOptions="Center" Style="{StaticResource ClassTimeLabel}" Text="{Binding id}" />
 
-            <Label HorizontalOptions="Center" Style="{StaticResource ClassTimeLabel}" Text="{Binding id}" />
-
-            <Label
+                                    <Label
               Grid.Column="2"
               Margin="20,0"
               Style="{StaticResource ClassNameLabel}"
               Text="{Binding TaskName}" />
 
-            <Label
+                                    <Label
               Grid.Row="1"
               Grid.Column="2"
               Margin="20,0"
               Style="{StaticResource ClassInstructorLabel}"
               Text="{Binding TaskDescription}" />
 
-            <BoxView
+                                    <BoxView
               Grid.RowSpan="2"
               Grid.Column="1"
               BackgroundColor="{StaticResource TimelineColor}"
@@ -102,15 +112,17 @@
               VerticalOptions="Fill"
               WidthRequest="3" />
 
-            <Image Grid.Column="1" Source="dot.png" />
-              <!--me thn eikona xanoume kapoia Task Name -->
+                                    <Image Grid.Column="1" Source="dot.png" />
+                                    <!--me thn eikona xanoume kapoia Task Name -->
 
-          </Grid>
-        </ViewCell>
-      </DataTemplate>
-    </ListView.ItemTemplate>
-  </ListView>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                </StackLayout>
             </ContentPage.Content>
+            
         </ContentPage>
     </MasterDetailPage.Detail>
 
