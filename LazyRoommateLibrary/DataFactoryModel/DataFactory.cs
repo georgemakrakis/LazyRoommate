@@ -1,9 +1,11 @@
-﻿using LazyRoommate.Models;
+﻿using Acr.UserDialogs;
+using LazyRoommate.Models;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace LazyRoommate.DataFactoryModel
@@ -50,12 +52,47 @@ namespace LazyRoommate.DataFactoryModel
             //var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
 
             //userinfo request is for Federetion Login
-            var UserTable = App.client.GetTable<UsersTable>();
-            var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
-            var user = userItem.FirstOrDefault();
+            try
+            {
+                var UserTable = App.client.GetTable<UsersTable>();
+                var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
+                var user = userItem.FirstOrDefault();
 
-            var TaskTable = App.client.GetTable<TasksTable>();
-            UserTasks = await TaskTable.Where(x => (x.RoomName == user.RoomName)).ToCollectionAsync();
+                var TaskTable = App.client.GetTable<TasksTable>();
+                UserTasks = await TaskTable.Where(x => (x.RoomName == user.RoomName)).ToCollectionAsync();
+            }
+            catch (HttpRequestException ex)
+            {
+                AlertConfig t_config = new AlertConfig();                
+                t_config.SetOkText("OK");
+                t_config.SetMessage("An Network error occured. Please check network connectivity.");
+                t_config.SetTitle("Error");
+                await UserDialogs.Instance.AlertAsync(t_config);
+                
+                await Init();                
+            }
+            catch (MobileServiceInvalidOperationException ex)
+            {
+                AlertConfig t_config = new AlertConfig();
+                t_config.SetOkText("OK");
+                t_config.SetMessage("A service related issue occured. Please contact admin.");
+                t_config.SetTitle("Error");
+                await UserDialogs.Instance.AlertAsync(t_config);
+
+                await Init();                
+
+            }
+            catch (Exception ex)
+            {
+                AlertConfig t_config = new AlertConfig();
+                t_config.SetOkText("OK");
+                t_config.SetMessage(ex.ToString());
+                t_config.SetTitle("Error");
+                await UserDialogs.Instance.AlertAsync(t_config);
+
+                await Init();
+
+            }
             //Everything that contains at least the current date and all that are un-done(un-confirmed)
             //var task = TaskItem;
 
