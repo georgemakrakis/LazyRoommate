@@ -1,5 +1,4 @@
 {
-  "locked": false,
   "version": 2,
   "targets": {
     ".NETStandard,Version=v1.4": {
@@ -5200,5 +5199,8 @@
     ".NETStandard,Version=v1.4": []
   },
   "tools": {},
-  "projectFileToolGroups": {}
+  "projectFileToolGroups": {},
+  "packageFolders": {
+    "C:\\Users\\georg\\.nuget\\packages\\": {}
+  }
 }
