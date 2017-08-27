@@ -10,7 +10,7 @@
             <Entry x:Name="TaskName"/>
             <Label Text="Task Description" TextColor="White"/>
             <Entry x:Name="TaskDesc"/>
-            <Button Text="Add" Clicked="OkClicked"/>
+            <Button x:Name="AddBtn" Text="Add" IsEnabled="False" Clicked="OkClicked"/>
 
         </StackLayout>
     </ScrollView>

@@ -5,6 +5,7 @@ using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Linq;
 using System.Net.Http;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace LazyRoommate
@@ -16,6 +17,13 @@ namespace LazyRoommate
         public CreateTasksPage()
         {
             InitializeComponent();
+            //Enabling button only after entry
+            TaskName.TextChanged += EnableSaveItemButton;
+        }
+
+        private void EnableSaveItemButton(object sender, TextChangedEventArgs e)
+        {
+            AddBtn.IsEnabled = true;
         }
 
         private async void OkClicked(object sender, System.EventArgs e)
