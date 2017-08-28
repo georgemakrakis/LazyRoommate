@@ -10,7 +10,6 @@ public class MainActivity
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onBackPressed:()V:GetOnBackPressedHandler\n" +
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
 		mono.android.Runtime.register ("LazyRoommate.Droid.MainActivity, LazyRoommate.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MainActivity.class, __md_methods);
@@ -23,14 +22,6 @@ public class MainActivity
 		if (getClass () == MainActivity.class)
 			mono.android.TypeManager.Activate ("LazyRoommate.Droid.MainActivity, LazyRoommate.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
-
-
-	public void onBackPressed ()
-	{
-		n_onBackPressed ();
-	}
-
-	private native void n_onBackPressed ();
 
 
 	public void onCreate (android.os.Bundle p0)

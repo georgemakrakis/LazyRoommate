@@ -47,8 +47,17 @@ namespace LazyRoommate
         {
             // The root page of your application
             InitializeComponent();
-            MainPage = new NavigationPage(new LoginPage());
+            if (App.Email != string.Empty)
+            {
+                MainPage = new NavigationPage(new MainPage());
+            }
+            else
+            {               
+                MainPage = new NavigationPage(new LoginPage());               
+            }
+          
         }
+       
 
         public static MobileServiceClient client = new MobileServiceClient("https://lazyroommate.azurewebsites.net");
 

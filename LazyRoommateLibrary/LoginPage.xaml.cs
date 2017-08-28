@@ -11,21 +11,13 @@ namespace LazyRoommate
 
         public LoginPage()
         {
-            MoveToMainPage();
             InitializeComponent();
 
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
 
-        }
-
-        public async void MoveToMainPage()
-        {
-            if (App.Email != string.Empty)
-            {
-                await Navigation.PushAsync(new MainPage());
-            }
-        }
+        }    
+       
         public async void LoginClick(object sender, EventArgs e)
         {
             if (App.Authenticator != null)
