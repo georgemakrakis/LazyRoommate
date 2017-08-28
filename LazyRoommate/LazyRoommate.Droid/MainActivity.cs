@@ -181,6 +181,15 @@ namespace LazyRoommate.Droid
             return success;
         }
 
+
+        public override void OnBackPressed()
+        {
+            Finish();
+            Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
+        }
+
+
+
         protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;

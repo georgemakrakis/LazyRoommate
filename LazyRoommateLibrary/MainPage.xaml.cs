@@ -27,7 +27,7 @@ namespace LazyRoommate
             list.IsRefreshing = false;
         }
 
-
+        
 
         public MainPage()
         {
