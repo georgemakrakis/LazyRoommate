@@ -16,7 +16,17 @@
                     <ListView x:Name="menu" VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemSelected="OnMenuItemSelected">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <ImageCell Text="{Binding Title}" ImageSource="{Binding Icon}" />
+                                <ViewCell>
+                                    <Grid Padding="5,10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="30"/>
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image Source="{Binding Icon}" />
+                                        <Label Grid.Column="1" Text="{Binding Title}" VerticalOptions="FillAndExpand" />
+                                        </Grid>
+                                    </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
