@@ -51,6 +51,21 @@
             <ContentPage.Content>
                 <StackLayout BackgroundColor="Transparent">
                     <ActivityIndicator x:Name="ActivityIndicator" Color="#E4B6C3" VerticalOptions="Center" IsRunning="True"/>
+                    <ScrollView BackgroundColor="Transparent" Orientation="Horizontal" Padding="10">
+                        <StackLayout Orientation="Horizontal" Spacing="3"
+                                     Padding="0"                                     
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="CenterAndExpand"
+                                     BackgroundColor="Transparent">
+                            <Label x:Name="Day1" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
+                            <Label x:Name="Day2" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
+                            <Label x:Name="Day3" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
+                            <Label x:Name="Day4" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
+                            <Label x:Name="Day5" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
+                            <Label x:Name="Day6" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
+                            <Label x:Name="Day7" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
+                            </StackLayout>                                     
+                    </ScrollView>
                     <ListView
     x:Name="timelineListView"
     ItemTapped="timelineListView_ItemTapped"

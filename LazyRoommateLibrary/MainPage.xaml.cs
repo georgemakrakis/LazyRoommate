@@ -33,6 +33,17 @@ namespace LazyRoommate
         {
             InitializeComponent();
 
+
+            var date = DateTime.UtcNow;
+            Day1.Text = date.Day + " " + date.DayOfWeek;
+            date=date.AddDays(1);
+            Day2.Text = date.Day+ " " + (date.DayOfWeek);
+            Day3.Text = date.Day + 2 + " " + (date.DayOfWeek + 2);
+            Day4.Text = date.Day + 3 + " " + (date.DayOfWeek + 3);
+            Day5.Text = date.Day + 4 + " " + (date.DayOfWeek + 4);
+            Day6.Text = date.Day + 5 + " " + (date.DayOfWeek + 5);
+            Day7.Text = date.Day + 6 + " " + (date.DayOfWeek + 6);
+
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
          
@@ -57,13 +68,13 @@ namespace LazyRoommate
                 new Menu
                 {
                     Title = "Create Room",
-                      Icon = "create_room_32.png"                   
+                    Icon = "create_room_32.png"                   
                     //TargetType = typeof( )
                 },
                 new Menu
                 {
                     Title = "Leave Room",
-                   Icon = "leave_room_32.png"                   
+                    Icon = "leave_room_32.png"                   
                     //TargetType = typeof( )
                 }
             };
