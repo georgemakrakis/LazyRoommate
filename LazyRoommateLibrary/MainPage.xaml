@@ -57,13 +57,13 @@
                                      HorizontalOptions="Center"
                                      VerticalOptions="CenterAndExpand"
                                      BackgroundColor="Transparent">
-                            <Label x:Name="Day1" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
-                            <Label x:Name="Day2" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
-                            <Label x:Name="Day3" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
-                            <Label x:Name="Day4" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
-                            <Label x:Name="Day5" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
-                            <Label x:Name="Day6" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
-                            <Label x:Name="Day7" Style="{StaticResource ClassNameLabel}" HorizontalOptions="Center"/>
+                            <Button x:Name="Day1" Style="{StaticResource ClassNameButton}" HorizontalOptions="Center"/>
+                            <Button x:Name="Day2" Style="{StaticResource ClassNameButton}" HorizontalOptions="Center"/>
+                            <Button x:Name="Day3" Style="{StaticResource ClassNameButton}" HorizontalOptions="Center"/>
+                            <Button x:Name="Day4" Style="{StaticResource ClassNameButton}" HorizontalOptions="Center"/>
+                            <Button x:Name="Day5" Style="{StaticResource ClassNameButton}" HorizontalOptions="Center"/>
+                            <Button x:Name="Day6" Style="{StaticResource ClassNameButton}" HorizontalOptions="Center"/>
+                            <Button x:Name="Day7" Style="{StaticResource ClassNameButton}" HorizontalOptions="Center"/>
                             </StackLayout>                                     
                     </ScrollView>
                     <ListView

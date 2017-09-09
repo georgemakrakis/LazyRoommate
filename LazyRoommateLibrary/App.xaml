@@ -47,6 +47,11 @@
                 <Setter Property="Font" Value="{StaticResource TitleFont}" />
             </Style>
 
+            <Style x:Key="ClassNameButton" TargetType="Button">
+                <Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+                <Setter Property="Font" Value="{StaticResource TitleFont}" />
+            </Style>
+
             <Style x:Key="ClassInstructorLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
                 <Setter Property="Font" Value="{StaticResource BodyFont}" />
