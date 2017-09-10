@@ -90,7 +90,7 @@ namespace LazyRoommate.DataFactoryModel
                 t_config.SetTitle("Error");
                 await UserDialogs.Instance.AlertAsync(t_config);
 
-                await Init();
+                //await Init();
 
             }
             //Everything that contains at least the current date and all that are un-done(un-confirmed)

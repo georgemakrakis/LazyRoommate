@@ -57,6 +57,7 @@
     <Compile Include="Managers\UsersTableManager.cs" />
     <Compile Include="MenuItems\Menu.cs" />
     <Compile Include="Models\ExerciseClass.cs" />
+    <Compile Include="Models\RoomsAdmins.cs" />
     <Compile Include="Models\TasksTable.cs" />
     <Compile Include="Models\UserInfo.cs" />
     <Compile Include="Models\UsersTable.cs" />

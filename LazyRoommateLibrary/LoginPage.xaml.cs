@@ -43,11 +43,13 @@ namespace LazyRoommate
             if (authenticated)
             {
                 //await DisplayAlert("Alert", "Authentication Successful", "OK");
-                await Navigation.PushAsync(new MainPage());
-
-
+                await Navigation.PushAsync(new MainPage(), true);
+                
+                
             }
         }
+
+      
 
 
 

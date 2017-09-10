@@ -12,7 +12,7 @@ namespace LazyRoommate
 {
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CreateTasksPage
+    public partial class CreateTasksPage 
     {
         public CreateTasksPage()
         {

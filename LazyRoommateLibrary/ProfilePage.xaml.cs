@@ -9,7 +9,7 @@ namespace LazyRoommate
         public ProfilePage()
         {
             InitializeComponent();
-
+           
             LoadInfo();
 
             //ProfileName.Text = App.client.CurrentUser;           
