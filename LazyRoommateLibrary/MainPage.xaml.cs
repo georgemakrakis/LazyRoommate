@@ -89,7 +89,7 @@ namespace LazyRoommate
                     //TargetType = typeof( )
                 }
             };
-            menu.ItemsSource = masterPageItems;
+            menu.ItemsSource = masterPageItems;            
 
             //BindingContext = DataFactory.Tasks;
                     
@@ -108,12 +108,12 @@ namespace LazyRoommate
             //BindingContext = new TasksViewModel();
         }        
 
-        private async void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void OnMenuItemSelected(object sender, ItemTappedEventArgs  e)
         {
             //var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
 
             //Getting the source of the item selected on menu, so we could use is later
-            var item = (Menu)e.SelectedItem;
+            var item = (Menu)e.Item;           
             PromptConfig prmt=null;
 
             if (item.Title.Equals("Add Task"))
@@ -217,7 +217,7 @@ namespace LazyRoommate
 
 
                     if (item.Title.Equals("Create Room"))
-                    {
+                    {                        
                         try
                         {
                             var roomsAdmins = App.client.GetTable<RoomsAdmins>();
@@ -227,8 +227,9 @@ namespace LazyRoommate
                                 var admin = roomsAdminsItem.FirstOrDefault();
 
                                 if (admin.Room != null)
-                                {
+                                {                                    
                                     await DisplayAlert("Create Room", "Cannot create room because you already own a room /n Leave your room and then create another one", "Ok");
+                                    
                                 }
                             }                           
                             else if(roomsAdminsItem.Count==0)
@@ -349,6 +350,7 @@ namespace LazyRoommate
 
                 }
             }
+            
         }
         private void timelineListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
