@@ -85,8 +85,28 @@ namespace LazyRoommate
                 new Menu
                 {
                     Title = "Remove Roommate",
-                    Icon = "leave_room_32.png"                   
+                    Icon = "remove_roommate.png"                   
                     //TargetType = typeof( )
+                },
+                new Menu
+                {
+                    Title = "Profile",
+                    Icon = "user_profile_32.png"
+                },
+                new Menu
+                {
+                    Title = "Logout",
+                    Icon = "logout_32.png"
+                },
+                new Menu
+                {
+                    Title = "Settings",
+                    Icon = "settings_32.png"
+                },
+                new Menu
+                {
+                    Title = "Help",
+                    Icon = "help_32.png"
                 }
             };
             menu.ItemsSource = masterPageItems;            
@@ -202,6 +222,28 @@ namespace LazyRoommate
                 prmt.IsCancellable = true;
 
                 prmt.Title = "Enter the email of the user you want to remove:";
+            }
+            else if (item.Title.Equals("Profile"))
+            {
+                await Navigation.PushAsync(new ProfilePage(), true);
+            }
+            else if (item.Title.Equals("Logout"))
+            {
+                App.Email = string.Empty;
+                App.ProfileImage = string.Empty;
+                App.ProfileName = string.Empty;
+                await Navigation.PushAsync(new LoginPage(), true);
+
+                //This just came up just for security-reverse engineering reasons i think...
+                //Navigation.RemovePage(this);
+            }
+            else if (item.Title.Equals("Settings"))
+            {
+                await Navigation.PushAsync(new SettingsPage(), true);
+            }
+            else if (item.Title.Equals("Help"))
+            {
+
             }
             if (prmt != null)
             {
@@ -354,7 +396,16 @@ namespace LazyRoommate
         }
         private void timelineListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            timelineListView.SelectedItem = null;
+            //timelineListView.SelectedItem = null;
+
+            PromptConfig prmt = null;
+            prmt = new PromptConfig();
+            prmt.OkText = "Ok";
+            prmt.CancelText = "Cancel";
+            prmt.IsCancellable = true;
+
+            prmt.Title = "Enter the email of the user you want to remove:";
+
         }
 
         private void profile_Clicked(object sender, System.EventArgs e)

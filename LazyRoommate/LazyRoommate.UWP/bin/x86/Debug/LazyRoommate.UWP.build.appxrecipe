@@ -484,6 +484,9 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\remove_roommate.png">
+      <PackagePath>remove_roommate.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\settings_32.png">
       <PackagePath>settings_32.png</PackagePath>
     </AppxPackagedFile>

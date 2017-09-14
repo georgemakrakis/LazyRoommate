@@ -32,8 +32,8 @@ namespace LazyRoommate.DataFactoryModel
                     TaskName="name",
                     TaskDescription="Descr",
                     RoomName="George's",
-                    Done=true,
-                    Confirmed=true
+                    Done="",
+                    Confirmed=""
                 },
                 new TasksTable
                 {
@@ -41,8 +41,8 @@ namespace LazyRoommate.DataFactoryModel
                     TaskName="name2",
                     TaskDescription="Descr2",
                     RoomName="Argyris",
-                    Done=true,
-                    Confirmed=true
+                    Done="",
+                    Confirmed=""
                 }
             };
         }
@@ -69,7 +69,7 @@ namespace LazyRoommate.DataFactoryModel
                 t_config.SetTitle("Error");
                 await UserDialogs.Instance.AlertAsync(t_config);
                 
-                await Init();                
+                //await Init();                
             }
             catch (MobileServiceInvalidOperationException ex)
             {
@@ -79,7 +79,7 @@ namespace LazyRoommate.DataFactoryModel
                 t_config.SetTitle("Error");
                 await UserDialogs.Instance.AlertAsync(t_config);
 
-                await Init();                
+                //await Init();                
 
             }
             catch (Exception ex)
