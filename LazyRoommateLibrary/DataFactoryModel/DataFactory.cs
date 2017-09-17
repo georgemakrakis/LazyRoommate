@@ -60,6 +60,17 @@ namespace LazyRoommate.DataFactoryModel
 
                 var TaskTable = App.client.GetTable<TasksTable>();
                 UserTasks = await TaskTable.Where(x => (x.RoomName == user.RoomName)).ToCollectionAsync();
+
+               //foreach (var task in UserTasks)
+               //{
+               //    if (task.Done.Equals(App.Email))
+               //    {
+               //        if ()
+               //        {
+                           
+               //        }
+               //    }
+               //}
             }
             catch (HttpRequestException ex)
             {

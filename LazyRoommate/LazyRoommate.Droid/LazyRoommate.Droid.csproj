@@ -241,7 +241,7 @@
     <AndroidResource Include="Resources\drawable\logout_32.png" />
     <AndroidResource Include="Resources\drawable\user_profile_32.png" />
     <AndroidResource Include="Resources\drawable\dot.png" />
-    <Content Include="Resources\drawable\remove_roommate.png" />
+    <AndroidResource Include="Resources\drawable\remove_roommate.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\LazyRoommateLibrary\LazyRoommate.csproj">

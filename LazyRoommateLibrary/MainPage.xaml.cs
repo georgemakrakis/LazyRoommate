@@ -115,10 +115,14 @@ namespace LazyRoommate
                     
             Device.BeginInvokeOnMainThread(async () =>
             {
+                //var list = timelineListView.ItemTemplate;
+                //list.Values.
                 await DataFactory.Init();
                 ActivityIndicator.IsRunning = false;
                 ActivityIndicator.IsVisible = false;
                 timelineListView.ItemsSource = DataFactory.UserTasks;
+
+
                                      
             });
 
@@ -394,18 +398,12 @@ namespace LazyRoommate
             }
             
         }
-        private void timelineListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void timelineListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             //timelineListView.SelectedItem = null;
-
-            PromptConfig prmt = null;
-            prmt = new PromptConfig();
-            prmt.OkText = "Ok";
-            prmt.CancelText = "Cancel";
-            prmt.IsCancellable = true;
-
-            prmt.Title = "Enter the email of the user you want to remove:";
-
+            var item = (TasksTable)e.Item;
+            await DisplayAlert(item.TaskName,item.TaskDescription,"Ok");
+            ((ListView) sender).SelectedItem = null;
         }
 
         private void profile_Clicked(object sender, System.EventArgs e)
@@ -432,6 +430,58 @@ namespace LazyRoommate
         private void Settings_OnClicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new SettingsPage(),true);
+        }
+
+        private async void DoneConfirm_OnToggled(object sender, ToggledEventArgs e)
+        {
+            //toogle.ClassId is used to specify the task naem of every list item
+            var toogle = (Switch) sender;
+            
+            //Debug.WriteLine(toogle.ClassId);
+            var TaskTable = App.client.GetTable<TasksTable>();
+            var taskItem = await TaskTable.Where(x => (x.TaskName == toogle.ClassId)).ToListAsync();
+            var task = taskItem.FirstOrDefault();
+            
+            if (toogle.IsToggled)
+            {                
+                if (task.Done.Equals(App.Email))
+                {
+                    await DisplayAlert("Error", "You cannot confirm you own task", "Ok");
+
+                    toogle.IsToggled = false;
+                }
+                else if (task.Done.Equals(string.Empty))
+                {
+                    task.Done = App.Email;
+
+                    await TaskTable.UpdateAsync(task);
+                }
+                else if (!task.Done.Equals(App.Email))
+                {
+                    task.Confirmed = App.Email;
+
+                    await TaskTable.UpdateAsync(task);
+                }
+            }
+            else
+            {
+                if (task.Done.Equals(App.Email))
+                {
+                    task.Done = string.Empty;
+
+                    await TaskTable.UpdateAsync(task);
+                }
+                else if (task.Done.Equals(string.Empty))
+                {
+                    //do nothing cause task is empty
+                }
+                else if (!task.Done.Equals(App.Email))
+                {
+                    task.Confirmed = string.Empty;
+
+                    await TaskTable.UpdateAsync(task);
+                }
+            }
         }
     }
 }
