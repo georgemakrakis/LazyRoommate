@@ -33,7 +33,7 @@
 				</Grid.ColumnDefinitions>
 				<StackLayout>
 					<Label Text="33" Style="{StaticResource StatsNumberLabel}"/>
-					<Label x:Name="TasksDone" Text="TasksDone" Style="{StaticResource StatsCaptionLabel}"/>
+					<Label x:Name="TasksCompleted" Text="TasksDone" Style="{StaticResource StatsCaptionLabel}"/>
 				</StackLayout>
 
 				<StackLayout Grid.Column="1">

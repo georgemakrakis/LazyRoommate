@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-09-17T22:00:17.236</Modified>
+      <Modified>2017-09-19T15:55:32.939</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\LazyRoommate.UWP.exe">
       <PackagePath>entrypoint\LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2017-09-17T22:00:16.220</Modified>
+      <Modified>2017-09-19T15:55:31.135</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs.Interface.dll">
       <PackagePath>Acr.UserDialogs.Interface.dll</PackagePath>
@@ -566,7 +566,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.dll">
       <PackagePath>LazyRoommate.dll</PackagePath>
-      <Modified>2017-09-17T22:00:14.552</Modified>
+      <Modified>2017-09-19T15:52:14.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Xamarin.iOS.dll">
       <PackagePath>Xamarin.iOS.dll</PackagePath>
@@ -733,7 +733,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\LazyRoommate.UWP.exe">
       <PackagePath>LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2017-09-17T22:00:17.231</Modified>
+      <Modified>2017-09-19T15:55:32.927</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -32,8 +32,10 @@ namespace LazyRoommate.DataFactoryModel
                     TaskName="name",
                     TaskDescription="Descr",
                     RoomName="George's",
-                    Done="",
-                    Confirmed=""
+                    DoneBy="",
+                    ConfirmedBy="",
+                    Done=false,
+                    Confirmed=false
                 },
                 new TasksTable
                 {
@@ -41,8 +43,10 @@ namespace LazyRoommate.DataFactoryModel
                     TaskName="name2",
                     TaskDescription="Descr2",
                     RoomName="Argyris",
-                    Done="",
-                    Confirmed=""
+                    DoneBy="",
+                    ConfirmedBy="",
+                    Done=false,
+                    Confirmed=false
                 }
             };
         }

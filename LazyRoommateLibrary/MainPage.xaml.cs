@@ -402,7 +402,34 @@ namespace LazyRoommate
         {
             //timelineListView.SelectedItem = null;
             var item = (TasksTable)e.Item;
-            await DisplayAlert(item.TaskName,item.TaskDescription,"Ok");
+            var answer = await DisplayAlert(item.TaskName,item.TaskDescription+"\n Done by: "+item.DoneBy+"\n Confirmed by:"+item.ConfirmedBy,"Done/Confirm","Cancel");
+
+            var TaskTable = App.client.GetTable<TasksTable>();
+            var taskItem = await TaskTable.Where(x => (x.TaskName == item.TaskName)).ToListAsync();
+            var task = taskItem.FirstOrDefault();
+
+            if (answer)
+            {
+                if (task.DoneBy.Equals(App.Email))
+                {
+                    //await DisplayAlert("Error", "You cannot confirm you own task", "Ok");
+                    task.DoneBy = string.Empty;
+
+                    await TaskTable.UpdateAsync(task);
+                }
+                else if (task.DoneBy.Equals(string.Empty))
+                {
+                    task.DoneBy = App.Email;
+
+                    await TaskTable.UpdateAsync(task);
+                }
+                else if (!task.DoneBy.Equals(App.Email))
+                {
+                    task.ConfirmedBy = App.Email;
+
+                    await TaskTable.UpdateAsync(task);
+                }
+            }
             ((ListView) sender).SelectedItem = null;
         }
 
@@ -432,56 +459,35 @@ namespace LazyRoommate
             Navigation.PushAsync(new SettingsPage(),true);
         }
 
-        private async void DoneConfirm_OnToggled(object sender, ToggledEventArgs e)
-        {
-            //toogle.ClassId is used to specify the task naem of every list item
-            var toogle = (Switch) sender;
+        //private async void DoneConfirm_OnToggled(object sender, ToggledEventArgs e)
+        //{
+        //    //toogle.ClassId is used to specify the task naem of every list item
+        //    var toogle = (Switch) sender;
             
-            //Debug.WriteLine(toogle.ClassId);
-            var TaskTable = App.client.GetTable<TasksTable>();
-            var taskItem = await TaskTable.Where(x => (x.TaskName == toogle.ClassId)).ToListAsync();
-            var task = taskItem.FirstOrDefault();
+        //    //Debug.WriteLine(toogle.ClassId);
+           
             
-            if (toogle.IsToggled)
-            {                
-                if (task.Done.Equals(App.Email))
-                {
-                    await DisplayAlert("Error", "You cannot confirm you own task", "Ok");
+        //    if (toogle.IsToggled)
+        //    {                
+                
+        //    }
+        //    else
+        //    {
+        //        if (task.Done.Equals(App.Email))
+        //        {
+                    
+        //        }
+        //        else if (task.Done.Equals(string.Empty))
+        //        {
+        //            //do nothing cause task is empty
+        //        }
+        //        else if (!task.Done.Equals(App.Email))
+        //        {
+        //            task.Confirmed = string.Empty;
 
-                    toogle.IsToggled = false;
-                }
-                else if (task.Done.Equals(string.Empty))
-                {
-                    task.Done = App.Email;
-
-                    await TaskTable.UpdateAsync(task);
-                }
-                else if (!task.Done.Equals(App.Email))
-                {
-                    task.Confirmed = App.Email;
-
-                    await TaskTable.UpdateAsync(task);
-                }
-            }
-            else
-            {
-                if (task.Done.Equals(App.Email))
-                {
-                    task.Done = string.Empty;
-
-                    await TaskTable.UpdateAsync(task);
-                }
-                else if (task.Done.Equals(string.Empty))
-                {
-                    //do nothing cause task is empty
-                }
-                else if (!task.Done.Equals(App.Email))
-                {
-                    task.Confirmed = string.Empty;
-
-                    await TaskTable.UpdateAsync(task);
-                }
-            }
-        }
+        //            await TaskTable.UpdateAsync(task);
+        //        }
+        //    }
+        //}
     }
 }

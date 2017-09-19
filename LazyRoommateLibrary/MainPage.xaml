@@ -108,7 +108,7 @@
                                         <RowDefinition Height="Auto" />
                                         <RowDefinition Height="*" />
                                     </Grid.RowDefinitions>
-                                        <Switch x:Name="DoneConfirm" ClassId="{Binding TaskName}" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="End" Toggled="DoneConfirm_OnToggled"></Switch>
+                                        <!--<Switch x:Name="DoneConfirm" ClassId="{Binding TaskName}" Grid.Column="3" IsToggled="{Binding Done}" VerticalOptions="Center" HorizontalOptions="End" Toggled="DoneConfirm_OnToggled"></Switch>-->
                                     <Label x:Name="TaskName" HorizontalOptions="Center" Style="{StaticResource ClassTimeLabel}" Text="{Binding id}" />
 
                                     <Label

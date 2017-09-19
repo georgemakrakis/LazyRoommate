@@ -2685,14 +2685,15 @@ containing a value of this type.
         public static int mr_ic_pause_light=0x7f0200aa;
         public static int mr_ic_play_dark=0x7f0200ab;
         public static int mr_ic_play_light=0x7f0200ac;
-        public static int notification_template_icon_bg=0x7f0200b4;
-        public static int roundedbg=0x7f0200ad;
-        public static int roundedbgdark=0x7f0200ae;
-        public static int settings_32=0x7f0200af;
-        public static int social_connect_facebook=0x7f0200b0;
-        public static int social_connect_google=0x7f0200b1;
-        public static int social_connect_twitter=0x7f0200b2;
-        public static int user_profile_32=0x7f0200b3;
+        public static int notification_template_icon_bg=0x7f0200b5;
+        public static int remove_roommate=0x7f0200ad;
+        public static int roundedbg=0x7f0200ae;
+        public static int roundedbgdark=0x7f0200af;
+        public static int settings_32=0x7f0200b0;
+        public static int social_connect_facebook=0x7f0200b1;
+        public static int social_connect_google=0x7f0200b2;
+        public static int social_connect_twitter=0x7f0200b3;
+        public static int user_profile_32=0x7f0200b4;
     }
     public static final class id {
         public static int action0=0x7f070090;
