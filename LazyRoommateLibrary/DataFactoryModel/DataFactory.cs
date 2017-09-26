@@ -50,7 +50,7 @@ namespace LazyRoommate.DataFactoryModel
                 }
             };
         }
-        public static async Task Init()
+        public static async Task Init() 
         {
 
             //var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
@@ -65,45 +65,47 @@ namespace LazyRoommate.DataFactoryModel
                 var TaskTable = App.client.GetTable<TasksTable>();
                 UserTasks = await TaskTable.Where(x => (x.RoomName == user.RoomName)).ToCollectionAsync();
 
-               //foreach (var task in UserTasks)
-               //{
-               //    if (task.Done.Equals(App.Email))
-               //    {
-               //        if ()
-               //        {
-                           
-               //        }
-               //    }
-               //}
+                //foreach (var task in UserTasks)
+                //{
+                //    if (task.Done.Equals(App.Email))
+                //    {
+                //        if ()
+                //        {
+
+                //        }
+                //    }
+                //}
             }
             catch (HttpRequestException ex)
             {
-                AlertConfig t_config = new AlertConfig();                
-                t_config.SetOkText("OK");
-                t_config.SetMessage("An Network error occured. Please check network connectivity.");
-                t_config.SetTitle("Error");
-                await UserDialogs.Instance.AlertAsync(t_config);
-                
-                //await Init();                
+                //AlertConfig t_config = new AlertConfig();
+                //t_config.SetOkText("OK");
+                //t_config.SetMessage("An Network error occured. Please check network connectivity.");
+                //t_config.SetTitle("Error");
+                //await UserDialogs.Instance.AlertAsync(t_config);
+
+                //await Init();    
+                throw ex;
             }
             catch (MobileServiceInvalidOperationException ex)
             {
-                AlertConfig t_config = new AlertConfig();
-                t_config.SetOkText("OK");
-                t_config.SetMessage("A service related issue occured. Please contact admin.");
-                t_config.SetTitle("Error");
-                await UserDialogs.Instance.AlertAsync(t_config);
+                //AlertConfig t_config = new AlertConfig();
+                //t_config.SetOkText("OK");
+                //t_config.SetMessage("A service related issue occured. Please contact admin.");
+                //t_config.SetTitle("Error");
+                //await UserDialogs.Instance.AlertAsync(t_config);
 
                 //await Init();                
-
+                throw ex;
             }
             catch (Exception ex)
             {
-                AlertConfig t_config = new AlertConfig();
-                t_config.SetOkText("OK");
-                t_config.SetMessage(ex.ToString());
-                t_config.SetTitle("Error");
-                await UserDialogs.Instance.AlertAsync(t_config);
+                //AlertConfig t_config = new AlertConfig();
+                //t_config.SetOkText("OK");
+                //t_config.SetMessage(ex.ToString());
+                //t_config.SetTitle("Error");
+                //await UserDialogs.Instance.AlertAsync(t_config);
+                throw ex;
 
                 //await Init();
 

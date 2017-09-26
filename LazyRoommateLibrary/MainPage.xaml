@@ -49,7 +49,7 @@
             </ContentPage.Resources>
             
             <ContentPage.Content>
-                <StackLayout BackgroundColor="Transparent">
+                <StackLayout BackgroundColor="Transparent" >
                     <ActivityIndicator x:Name="ActivityIndicator" Color="#E4B6C3" VerticalOptions="Center" IsRunning="True"/>
                     <ScrollView BackgroundColor="Transparent" Orientation="Horizontal" Padding="10">
                         <StackLayout Orientation="Horizontal" Spacing="3"
@@ -66,6 +66,7 @@
                             <Button x:Name="Day7" Style="{StaticResource ClassNameButton}" HorizontalOptions="Center"/>
                             </StackLayout>                                     
                     </ScrollView>
+                   
                     <ListView
     x:Name="timelineListView"
     ItemTapped="timelineListView_ItemTapped"
@@ -149,6 +150,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                    <Label x:Name="retry" Style="{StaticResource MainBodyLabel }" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" IsVisible="False"></Label>
                 </StackLayout>
             </ContentPage.Content>
             
