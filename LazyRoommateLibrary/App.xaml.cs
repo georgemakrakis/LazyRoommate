@@ -37,6 +37,11 @@ namespace LazyRoommate
             get { return AppSettings.GetValueOrDefault(nameof(ProfileImage), string.Empty); }
             set { AppSettings.AddOrUpdateValue(nameof(ProfileImage), value); }
         }
+        public static string RoomName
+        {
+            get { return AppSettings.GetValueOrDefault(nameof(RoomName), string.Empty); }
+            set { AppSettings.AddOrUpdateValue(nameof(RoomName), value); }
+        }
 
         public static void Init(IAuthenticate authenticator)
         {           

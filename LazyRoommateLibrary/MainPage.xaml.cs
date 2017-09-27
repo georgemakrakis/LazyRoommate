@@ -312,6 +312,7 @@ namespace LazyRoommate
                 App.Email = string.Empty;
                 App.ProfileImage = string.Empty;
                 App.ProfileName = string.Empty;
+                App.RoomName = string.Empty;
                 await Navigation.PushAsync(new LoginPage(), true);
 
                 //This just came up just for security-reverse engineering reasons i think...
@@ -558,6 +559,7 @@ namespace LazyRoommate
             App.Email = string.Empty;
             App.ProfileImage = string.Empty;
             App.ProfileName = string.Empty;
+            App.RoomName = string.Empty;
             await Navigation.PushAsync(new LoginPage(), true);
 
             //This just came up just for security-reverse engineering reasons i think...

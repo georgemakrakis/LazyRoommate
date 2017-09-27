@@ -40,6 +40,7 @@ namespace LazyRoommate.Droid
                         App.Email = userInfo.Email;
                         App.ProfileName = userInfo.Name;
                         App.ProfileImage = userInfo.ImageUri;
+                        App.RoomName = first.RoomName;
                         success = true;
                     }
                     else
@@ -52,6 +53,7 @@ namespace LazyRoommate.Droid
                         App.Email = userInfo.Email;
                         App.ProfileName = userInfo.Name;
                         App.ProfileImage = userInfo.ImageUri;
+                        //LazyRoommate.App.RoomName = first.RoomName;
                         success = true;
                     }
                 }
@@ -94,6 +96,7 @@ namespace LazyRoommate.Droid
                         App.Email = userInfo.Email;
                         App.ProfileName = userInfo.Name;
                         App.ProfileImage = userInfo.ImageUri;
+                        App.RoomName = first.RoomName;
                         success = true;
                     }
                     else
@@ -106,6 +109,7 @@ namespace LazyRoommate.Droid
                         App.Email = userInfo.Email;
                         App.ProfileName = userInfo.Name;
                         App.ProfileImage = userInfo.ImageUri;
+                        //LazyRoommate.App.RoomName = first.RoomName;
                         success = true;
                     }
                 }
@@ -148,6 +152,7 @@ namespace LazyRoommate.Droid
                         App.Email = userInfo.Email;
                         App.ProfileName = userInfo.Name;
                         App.ProfileImage = userInfo.ImageUri;
+                        App.RoomName = first.RoomName;
                         success = true;
                     }
                     else
@@ -160,6 +165,7 @@ namespace LazyRoommate.Droid
                         App.Email = userInfo.Email;
                         App.ProfileName = userInfo.Name;
                         App.ProfileImage = userInfo.ImageUri;
+                        //LazyRoommate.App.RoomName = first.RoomName;
                         success = true;
                     }
                 }

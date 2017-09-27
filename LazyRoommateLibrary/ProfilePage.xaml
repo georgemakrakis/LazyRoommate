@@ -32,23 +32,23 @@
 					<ColumnDefinition Width="*" />
 				</Grid.ColumnDefinitions>
 				<StackLayout>
-					<Label Text="33" Style="{StaticResource StatsNumberLabel}"/>
-					<Label x:Name="TasksCompleted" Text="TasksDone" Style="{StaticResource StatsCaptionLabel}"/>
+					<Label x:Name="TasksCompleted" Style="{StaticResource StatsNumberLabel}"/>
+					<Label  Text="Tasks Completed" Style="{StaticResource StatsCaptionLabel}"/>
 				</StackLayout>
 
 				<StackLayout Grid.Column="1">
-					<Label Text="94" Style="{StaticResource StatsNumberLabel}"/>
-					<Label x:Name="AllTasks" Text="AllTasks" Style="{StaticResource StatsCaptionLabel}"/>
+					<Label x:Name="AllTasks" Style="{StaticResource StatsNumberLabel}"/>
+					<Label  Text="All Tasks" Style="{StaticResource StatsCaptionLabel}"/>
 				</StackLayout>
 
 				<StackLayout Grid.Column="2">
-					<Label Text="957" Style="{StaticResource StatsNumberLabel}"/>
-					<Label x:Name="RoomID" Text="RoomID" Style="{StaticResource StatsCaptionLabel}"/>
+					<Label x:Name="RoomName" Style="{StaticResource StatsNumberLabel}"/>
+                    <Label  Text="Room Name" Style="{StaticResource StatsCaptionLabel}"/>
 				</StackLayout>
 
 				<!-- profile description -->
 				<ScrollView Grid.Row="3">
-					<Label x:Name="Roomates" Margin="20,0" Text="Roommates" HorizontalTextAlignment="Center" Style="{StaticResource MainBodyLabel}"  />
+					<Label x:Name="Roomates" Margin="20,0" Text="Roommates:" HorizontalTextAlignment="Center" Style="{StaticResource MainBodyLabel}"  />
 				</ScrollView>
 			</Grid>
 		</Grid>
