@@ -18,10 +18,9 @@ namespace LazyRoommate
         private MobileServiceUser user { get; set; }
         public Task Dialogs { get; private set; }
         private List<Menu> masterPageItems;
-        public async void OnRefresh(object sender, EventArgs e)
+
+        public async void LoadList()
         {
-            var list = (ListView)sender;
-            //refreshing logic here
             try
             {
                 await DataFactory.Init();
@@ -52,6 +51,12 @@ namespace LazyRoommate
                 ActivityIndicator.IsRunning = false;
                 ActivityIndicator.IsVisible = false;
             }
+        }
+        public async void OnRefresh(object sender, EventArgs e)
+        {
+            var list = (ListView)sender;
+            //refreshing logic here
+            LoadList();
             //make sure to end the refresh state
             list.IsRefreshing = false;
         }
@@ -80,6 +85,23 @@ namespace LazyRoommate
 
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
+
+            //Lack of having an PullToRefresh Action in windows made use use the toolbar to refresh the list
+            switch (Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                    
+                    break;
+                case Device.Android:
+                    
+                    break;
+                case Device.Windows:
+                    ToolbarItems.Add(new ToolbarItem("Refresh", "refresh.png", () =>
+                    {
+                        LoadList();
+                    }));
+                    break;
+            }
 
 
 
@@ -469,22 +491,22 @@ namespace LazyRoommate
                 if (task.DoneBy.Equals(App.Email) && !task.ConfirmedBy.Equals(App.Email))
                 {
                     role = 2;
-                    answer = await DisplayAlert(item.TaskName, item.TaskDescription + "\n Done by: " + task.DoneBy + "\n Confirmed by:" + task.ConfirmedBy, "Undone", "Cancel");
+                    answer = await DisplayAlert(item.TaskName, item.TaskDescription + "\n\nDone by: " + task.DoneBy + "\nConfirmed by:" + task.ConfirmedBy, "Undone", "Cancel");
                 }
                 else if (task.ConfirmedBy.Equals(App.Email))
                 {
                     role = 4;
-                    answer = await DisplayAlert(item.TaskName, item.TaskDescription + "\n Done by: " + task.DoneBy + "\n Confirmed by:" + task.ConfirmedBy, "UnConfirm", "Cancel");
+                    answer = await DisplayAlert(item.TaskName, item.TaskDescription + "\n\nDone by: " + task.DoneBy + "\nConfirmed by:" + task.ConfirmedBy, "UnConfirm", "Cancel");
                 }
                 else if (task.DoneBy.Equals(string.Empty))
                 {
                     role = 1;
-                    answer = await DisplayAlert(item.TaskName, item.TaskDescription + "\n Done by: " + task.DoneBy + "\n Confirmed by:" + task.ConfirmedBy, "Done", "Cancel");
+                    answer = await DisplayAlert(item.TaskName, item.TaskDescription + "\n\nDone by: " + task.DoneBy + "\nConfirmed by:" + task.ConfirmedBy, "Done", "Cancel");
                 }
                 else if (task.ConfirmedBy.Equals(string.Empty) && !task.DoneBy.Equals(App.Email) && !task.DoneBy.Equals(string.Empty))
                 {
                     role = 3;
-                    answer = await DisplayAlert(item.TaskName, item.TaskDescription + "\n Done by: " + task.DoneBy + "\n Confirmed by:" + task.ConfirmedBy, "Confirm", "Cancel");
+                    answer = await DisplayAlert(item.TaskName, item.TaskDescription + "\n\nDone by: " + task.DoneBy + "\nConfirmed by:" + task.ConfirmedBy, "Confirm", "Cancel");
                 }
 
                 // action button 
