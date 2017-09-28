@@ -124,16 +124,8 @@
               Margin="20,0"
               Style="{StaticResource ClassInstructorLabel}"
               Text="{Binding TaskDescription}" />
-                                    <Label x:Name="Done By" Grid.Row="0"
-                                           Grid.Column="3" 
-                                           Style="{StaticResource ClassInstructorLabel}"
-                                           Text="Done by:"></Label>
-                                        <Label x:Name="Done_Name" Grid.Row="1"
-                                               Grid.Column="3" 
-                                               Style="{StaticResource ClassInstructorLabel}"
-                                               Text="{Binding Done}"></Label>
 
-                                    <BoxView
+                                        <BoxView
               Grid.RowSpan="2"
               Grid.Column="1"
               BackgroundColor="{StaticResource TimelineColor}"

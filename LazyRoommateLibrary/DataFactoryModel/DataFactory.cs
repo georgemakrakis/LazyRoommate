@@ -26,28 +26,26 @@ namespace LazyRoommate.DataFactoryModel
 
             Tasks = new ObservableCollection<TasksTable>
             {
-                new TasksTable
-                {
-                    id="12",
-                    TaskName="name",
-                    TaskDescription="Descr",
-                    RoomName="George's",
-                    DoneBy="",
-                    ConfirmedBy="",
-                    Done=false,
-                    Confirmed=false
-                },
-                new TasksTable
-                {
-                    id="13",
-                    TaskName="name2",
-                    TaskDescription="Descr2",
-                    RoomName="Argyris",
-                    DoneBy="",
-                    ConfirmedBy="",
-                    Done=false,
-                    Confirmed=false
-                }
+                //new TasksTable
+                //{
+                //    id="12",
+                //    TaskName="name",
+                //    TaskDescription="Descr",
+                //    RoomName="George's",
+                //    DoneBy="",
+                //    ConfirmedBy="",
+                    
+                //},
+                //new TasksTable
+                //{
+                //    id="13",
+                //    TaskName="name2",
+                //    TaskDescription="Descr2",
+                //    RoomName="Argyris",
+                //    DoneBy="",
+                //    ConfirmedBy="",
+                   
+                //}
             };
         }
         public static async Task Init() 
