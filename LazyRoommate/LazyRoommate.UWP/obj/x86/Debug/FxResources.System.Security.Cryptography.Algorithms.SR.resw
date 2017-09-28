@@ -126,6 +126,9 @@
   <data name="Cryptography_CurveNotSupported" xml:space="preserve">
     <value>The specified curve '{0}' or its parameters are not valid for this platform.</value>
   </data>
+  <data name="Cryptography_Unmapped_System_Typed_Error" xml:space="preserve">
+    <value>The system cryptographic library returned error '{0}' of type '{1}'</value>
+  </data>
   <data name="Argument_InvalidValue" xml:space="preserve">
     <value>Value was invalid.</value>
   </data>
@@ -140,6 +143,9 @@
   </data>
   <data name="Cryptography_CSP_NoPrivateKey" xml:space="preserve">
     <value>Object contains only the public half of a key pair. A private key must also be provided.</value>
+  </data>
+  <data name="Cryptography_CipherModeNotSupported" xml:space="preserve">
+    <value>The specified CipherMode '{0}' is not supported.</value>
   </data>
   <data name="Cryptography_PasswordDerivedBytes_InvalidIV" xml:space="preserve">
     <value>The Initialization vector should have the same length as the algorithm block size in bytes.</value>

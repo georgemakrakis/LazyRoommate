@@ -52,7 +52,7 @@ namespace LazyRoommate
                             DoneBy = "",
                             ConfirmedBy = "",
                             StartDate= StartDate.Date,
-                            EndDate= EndDate.Date,
+                            EndDate = EndDate.Date
                         });
                         await DisplayAlert("Task", "New task added!!!", "Ok");               
                         await Navigation.PushAsync(new MainPage());             

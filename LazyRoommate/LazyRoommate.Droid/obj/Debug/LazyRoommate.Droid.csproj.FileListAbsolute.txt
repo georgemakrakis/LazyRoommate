@@ -311,3 +311,5 @@ C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\L
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\remove_roommate.png
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\refresh.png
