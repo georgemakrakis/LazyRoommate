@@ -492,7 +492,6 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.T
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Threading.Tasks.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Threading.Timer.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Microsoft.Win32.Primitives.dll
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Console.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Diagnostics.Debug.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.IO.FileSystem.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Net.Primitives.dll
@@ -512,8 +511,6 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.C
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.ComponentModel.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.ComponentModel.Annotations.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.ComponentModel.EventBasedAsync.dll
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.ComponentModel.Primitives.dll
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.ComponentModel.TypeConverter.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Data.Common.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Diagnostics.Contracts.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -549,10 +546,8 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.R
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Reflection.Emit.Lightweight.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Reflection.Metadata.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Reflection.TypeExtensions.dll
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Runtime.InteropServices.WindowsRuntime.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Runtime.Numerics.dll
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Runtime.Serialization.Formatters.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Runtime.Serialization.Json.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Runtime.Serialization.Primitives.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Runtime.Serialization.Xml.dll
@@ -614,7 +609,6 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResour
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Collections.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.IO.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Runtime.InteropServices.SR.resw
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Console.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Diagnostics.Debug.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.IO.FileSystem.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Net.Primitives.SR.resw
@@ -628,8 +622,6 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResour
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Collections.Specialized.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.ComponentModel.Annotations.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.ComponentModel.EventBasedAsync.SR.resw
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.ComponentModel.Primitives.SR.resw
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.ComponentModel.TypeConverter.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Data.Common.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Dynamic.Runtime.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Globalization.Extensions.SR.resw
@@ -654,9 +646,7 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResour
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Private.ServiceModel.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Reflection.DispatchProxy.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Reflection.Metadata.SR.resw
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Runtime.Numerics.SR.resw
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Runtime.Serialization.Formatters.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Runtime.Serialization.Primitives.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.SR.resw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Runtime.WindowsRuntime.UI.Xaml.SR.resw

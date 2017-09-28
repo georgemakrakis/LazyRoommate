@@ -40,3 +40,4 @@ C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\L
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.dll
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.pdb
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.csprojResolveAssemblyReference.cache
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.csprojResolveAssemblyReference.cache

@@ -49,7 +49,7 @@ namespace LazyRoommate.UWP
                         LazyRoommate.App.Email = userInfo.Email;
                         LazyRoommate.App.ProfileName = userInfo.Name;
                         LazyRoommate.App.ProfileImage = userInfo.ImageUri;
-                        //LazyRoommate.App.RoomName = first.RoomName;
+                        LazyRoommate.App.RoomName = string.Empty;
                         success = true;
                     }
                 }
@@ -101,7 +101,7 @@ namespace LazyRoommate.UWP
                         LazyRoommate.App.Email = userInfo.Email;
                         LazyRoommate.App.ProfileName = userInfo.Name;
                         LazyRoommate.App.ProfileImage = userInfo.ImageUri;
-                        //LazyRoommate.App.RoomName = first.RoomName;
+                        LazyRoommate.App.RoomName = string.Empty;
                         success = true;
                     }
                 }
@@ -153,7 +153,7 @@ namespace LazyRoommate.UWP
                         LazyRoommate.App.Email = userInfo.Email;
                         LazyRoommate.App.ProfileName = userInfo.Name;
                         LazyRoommate.App.ProfileImage = userInfo.ImageUri;
-                        //LazyRoommate.App.RoomName = first.RoomName;
+                        LazyRoommate.App.RoomName = string.Empty;
                         success = true;
                     }
                 }

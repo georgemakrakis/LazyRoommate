@@ -46,11 +46,12 @@
                     <Label  Text="Room Name" Style="{StaticResource StatsCaptionLabel}"/>
 				</StackLayout>
 
-				<!-- profile description -->
-				<ScrollView Grid.Row="3">
-					<Label x:Name="Roomates" Margin="20,0" Text="Roommates:" HorizontalTextAlignment="Center" Style="{StaticResource MainBodyLabel}"  />
-				</ScrollView>
+				
 			</Grid>
-		</Grid>
+		    <!-- profile description -->
+		    <ScrollView Grid.Row="3">
+		        <Label x:Name="Roomates" Margin="20,0" Text="Roommates:" HorizontalTextAlignment="Center" Style="{StaticResource MainBodyLabel}"  />
+		    </ScrollView>
+        </Grid>
 	</ScrollView>
 </ContentPage>

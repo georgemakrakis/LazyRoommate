@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using LazyRoommate.Models;
+using Microsoft.WindowsAzure.MobileServices;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -24,6 +25,7 @@ namespace LazyRoommate
             var UserTable = App.client.GetTable<UsersTable>();
             var TasksTable = App.client.GetTable<TasksTable>();
             var roomateItem = await UserTable.Where(x => (x.RoomName == App.RoomName)&&(x.Email!=App.Email)).ToListAsync();
+            
 
             var allTasks =await TasksTable.Where(x => (x.RoomName == App.RoomName)).ToListAsync();//This might change to:( x.DoneBy==App.Email)
             var completedTasks =await TasksTable.Where(x => (x.DoneBy==App.Email) && (x.ConfirmedBy!=string.Empty) ).ToListAsync();
@@ -35,17 +37,19 @@ namespace LazyRoommate
             AllTasks.Text = allTasks.Count.ToString();
             TasksCompleted.Text = completedTasks.Count.ToString();
 
+
+
             roomateItem.ForEach(x =>
             {
-                if(x.Email!=App.Email)
-                Roomates.Text += "\n" + "Name: " + x.Name + "\nEmail: " + x.Email+"\n";
+                if (x.Email != App.Email)
+                    Roomates.Text += "\n" + "Name: " + x.Name + "\nEmail: " + x.Email + "\n";
             });
             //These will be added later
 
             /*TasksDone.Text = null;
             AllTasks.Text = null;
             RoomID.Text = userInfo.RoomName;
-            Roomates.Text = null;*/          
+            Roomates.Text = null;*/
         }
     }
 }

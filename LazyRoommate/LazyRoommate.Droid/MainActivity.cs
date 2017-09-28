@@ -53,7 +53,7 @@ namespace LazyRoommate.Droid
                         App.Email = userInfo.Email;
                         App.ProfileName = userInfo.Name;
                         App.ProfileImage = userInfo.ImageUri;
-                        //LazyRoommate.App.RoomName = first.RoomName;
+                        LazyRoommate.App.RoomName = string.Empty;
                         success = true;
                     }
                 }
@@ -109,7 +109,7 @@ namespace LazyRoommate.Droid
                         App.Email = userInfo.Email;
                         App.ProfileName = userInfo.Name;
                         App.ProfileImage = userInfo.ImageUri;
-                        //LazyRoommate.App.RoomName = first.RoomName;
+                        LazyRoommate.App.RoomName = string.Empty;
                         success = true;
                     }
                 }
@@ -165,7 +165,7 @@ namespace LazyRoommate.Droid
                         App.Email = userInfo.Email;
                         App.ProfileName = userInfo.Name;
                         App.ProfileImage = userInfo.ImageUri;
-                        //LazyRoommate.App.RoomName = first.RoomName;
+                        LazyRoommate.App.RoomName = string.Empty;
                         success = true;
                     }
                 }
