@@ -18,7 +18,7 @@
             <!--  fonts  -->
             <Font x:Key="HeaderFont" FontFamily="{StaticResource MediumFontFamily}" FontSize="30" />
             <Font x:Key="SubHeaderFont" FontFamily="{StaticResource MediumFontFamily}" FontSize="18" />                
-            <Font x:Key="TitleFont" FontSize="19" FontFamily="{StaticResource MediumFontFamily}" />
+            <Font x:Key="TitleFont" FontSize="20" FontFamily="{StaticResource MediumFontFamily}" />
             <Font x:Key="BodyFont" FontSize="18" FontFamily="{StaticResource RegularFontFamily}" />
             <Font x:Key="TagTextFont" FontSize="18" FontFamily="{StaticResource RegularFontFamily}" />
             <Font x:Key="StatsNumberFont" FontSize="20" FontFamily="{StaticResource LightFontFamily}" />

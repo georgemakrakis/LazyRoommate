@@ -102,7 +102,7 @@
                             <ViewCell>
                                 <Grid ColumnSpacing="0" RowSpacing="0">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="110" />
                                         <ColumnDefinition Width="30" />
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
@@ -112,7 +112,7 @@
                                         <RowDefinition Height="*" />
                                     </Grid.RowDefinitions>
                                         <!--<Switch x:Name="DoneConfirm" ClassId="{Binding TaskName}" Grid.Column="3" IsToggled="{Binding Done}" VerticalOptions="Center" HorizontalOptions="End" Toggled="DoneConfirm_OnToggled"></Switch>-->
-                                    <Label x:Name="TaskName" HorizontalOptions="Center" Style="{StaticResource ClassTimeLabel}" Text="{Binding StartDate}" />
+                                        <Label x:Name="TaskName" HorizontalOptions="Center" Style="{StaticResource ClassTimeLabel}" Text="{Binding StartDate}" Grid.Column="0" />
 
                                     <Label
               Grid.Column="2"
