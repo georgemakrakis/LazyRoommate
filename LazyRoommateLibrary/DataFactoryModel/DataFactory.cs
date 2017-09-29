@@ -4,6 +4,7 @@ using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -13,7 +14,8 @@ namespace LazyRoommate.DataFactoryModel
     public static class DataFactory
     {
         public static IList<TasksTable> Tasks { get; private set; }
-        public static MobileServiceCollection<TasksTable, TasksTable> UserTasks { get; set; }
+        public static ICollection<TasksTable> UserTasks = new ObservableCollection<TasksTable>();
+
         private static DateTime TodayAt(int hour, int minute)
         {
             return new DateTime(DateTime.Now.Year,
@@ -48,7 +50,7 @@ namespace LazyRoommate.DataFactoryModel
                 //}
             };
         }
-        public static async Task Init() 
+        public static async Task Init(string date) 
         {
 
             //var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
@@ -61,8 +63,20 @@ namespace LazyRoommate.DataFactoryModel
                 var user = userItem.FirstOrDefault();
 
                 var TaskTable = App.client.GetTable<TasksTable>();
-                UserTasks = await TaskTable.Where(x => (x.RoomName == user.RoomName)).ToCollectionAsync();
+                var TempTasks = await TaskTable.Where(x => (x.RoomName == user.RoomName)).ToCollectionAsync();
+                foreach (var x in TempTasks)
+                {
+                    if ((x.StartDate.Month.ToString() == date.Substring(0, 1) || (x.StartDate.Month.ToString()== date.Substring(0,2))) &&                    
+                        (x.StartDate.Day.ToString() == date.Substring(2, 2) || x.StartDate.Day.ToString() == date.Substring(3, 1)) &&
+                        x.StartDate.Year.ToString() == date.Substring(5, 4))
+                    {
+                      Debug.WriteLine(x.StartDate.Year.ToString());
+                      Debug.WriteLine(date.Substring(5, 4));
+                       UserTasks.Add(x);
+                    }
 
+                }
+                
                 //foreach (var task in UserTasks)
                 //{
                 //    if (task.Done.Equals(App.Email))
@@ -73,6 +87,7 @@ namespace LazyRoommate.DataFactoryModel
                 //        }
                 //    }
                 //}
+               
             }
             catch (HttpRequestException ex)
             {

@@ -19,11 +19,11 @@ namespace LazyRoommate
         public Task Dialogs { get; private set; }
         private List<Menu> masterPageItems;
 
-        public async void LoadList()
+        public async void LoadList(string date)
         {
             try
             {
-                await DataFactory.Init();
+                await DataFactory.Init(date);
                 ActivityIndicator.IsRunning = false;
                 ActivityIndicator.IsVisible = false;
                 timelineListView.ItemsSource = DataFactory.UserTasks;
@@ -56,9 +56,18 @@ namespace LazyRoommate
         {
             var list = (ListView)sender;
             //refreshing logic here
-            LoadList();
+            LoadList(Day1.ClassId);
             //make sure to end the refresh state
             list.IsRefreshing = false;
+        }
+
+        public void Day_OnCLicked(object sender, EventArgs e)
+        {
+            var Button = (Button) sender;
+            var date = Button.ClassId;
+
+            LoadList(date);
+            
         }
 
 
@@ -70,18 +79,25 @@ namespace LazyRoommate
 
             var date = DateTime.UtcNow;
             Day1.Text = date.Day + " " + date.DayOfWeek;
+            Day1.ClassId = date.ToString();
             date = date.AddDays(1);
             Day2.Text = date.Day + " " + (date.DayOfWeek);
+            Day2.ClassId = date.ToString();
             date = date.AddDays(1);
             Day3.Text = date.Day + " " + (date.DayOfWeek);
+            Day3.ClassId = date.ToString();
             date = date.AddDays(1);
             Day4.Text = date.Day + " " + (date.DayOfWeek);
+            Day4.ClassId = date.ToString();
             date = date.AddDays(1);
             Day5.Text = date.Day + " " + (date.DayOfWeek);
+            Day5.ClassId = date.ToString();
             date = date.AddDays(1);
             Day6.Text = date.Day + " " + (date.DayOfWeek);
+            Day6.ClassId = date.ToString();
             date = date.AddDays(1);
             Day7.Text = date.Day + " " + (date.DayOfWeek);
+            Day7.ClassId = date.ToString();
 
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
@@ -98,7 +114,7 @@ namespace LazyRoommate
                 case Device.Windows:
                     ToolbarItems.Add(new ToolbarItem("Refresh", "refresh.png", () =>
                     {
-                        LoadList();
+                        LoadList(Day1.Text);
                     }));
                     break;
             }
@@ -170,7 +186,7 @@ namespace LazyRoommate
                 //list.Values.
                 try
                 {
-                    await DataFactory.Init();
+                    await DataFactory.Init(Day1.ClassId);
                     ActivityIndicator.IsRunning = false;
                     ActivityIndicator.IsVisible = false;
                     timelineListView.ItemsSource = DataFactory.UserTasks;
@@ -535,7 +551,7 @@ namespace LazyRoommate
 
                     }
                     // refres list with updated tasks 
-                    await DataFactory.Init();
+                    await DataFactory.Init(Day1.ClassId);
                     timelineListView.ItemsSource = DataFactory.UserTasks;
                     retry.IsVisible = false;
 
