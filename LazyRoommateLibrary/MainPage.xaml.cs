@@ -79,25 +79,25 @@ namespace LazyRoommate
 
             var date = DateTime.UtcNow;
             Day1.Text = date.Day + " " + date.DayOfWeek;
-            Day1.ClassId = date.ToString("d");
+            Day1.ClassId = date.ToString("dd/MM/yyyy");
             date = date.AddDays(1);
             Day2.Text = date.Day + " " + (date.DayOfWeek);
-            Day2.ClassId = date.ToString("d");
+            Day2.ClassId = date.ToString("dd/MM/yyyy");
             date = date.AddDays(1);
             Day3.Text = date.Day + " " + (date.DayOfWeek);
-            Day3.ClassId = date.ToString("d");
+            Day3.ClassId = date.ToString("dd/MM/yyyy");
             date = date.AddDays(1);
             Day4.Text = date.Day + " " + (date.DayOfWeek);
-            Day4.ClassId = date.ToString("d");
+            Day4.ClassId = date.ToString("dd/MM/yyyy");
             date = date.AddDays(1);
             Day5.Text = date.Day + " " + (date.DayOfWeek);
-            Day5.ClassId = date.ToString("d");
+            Day5.ClassId = date.ToString("dd/MM/yyyy");
             date = date.AddDays(1);
             Day6.Text = date.Day + " " + (date.DayOfWeek);
-            Day6.ClassId = date.ToString("d");
+            Day6.ClassId = date.ToString("dd/MM/yyyy");
             date = date.AddDays(1);
             Day7.Text = date.Day + " " + (date.DayOfWeek);
-            Day7.ClassId = date.ToString("d");
+            Day7.ClassId = date.ToString("dd/MM/yyyy");
 
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
