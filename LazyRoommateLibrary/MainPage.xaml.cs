@@ -65,7 +65,7 @@ namespace LazyRoommate
         {
             var Button = (Button) sender;
             var date = Button.ClassId;
-
+            Header.Text = "Tasks for " + date;
             LoadList(date);
             
         }
@@ -114,7 +114,7 @@ namespace LazyRoommate
                 case Device.Windows:
                     ToolbarItems.Add(new ToolbarItem("Refresh", "refresh.png", () =>
                     {
-                        LoadList(Day1.Text);
+                        LoadList(Day1.ClassId);
                     }));
                     break;
             }
@@ -190,6 +190,7 @@ namespace LazyRoommate
                     ActivityIndicator.IsRunning = false;
                     ActivityIndicator.IsVisible = false;
                     timelineListView.ItemsSource = DataFactory.UserTasks;
+                    Header.Text = "Tasks for " +Day1.ClassId;
                     retry.IsVisible = false;
                 }
                 catch (HttpRequestException ex)
