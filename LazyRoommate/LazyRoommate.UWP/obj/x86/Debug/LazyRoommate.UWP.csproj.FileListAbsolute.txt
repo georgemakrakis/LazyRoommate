@@ -990,3 +990,13 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Splat.pr
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Plugin.Settings.pri.xml
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Console.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.ComponentModel.Primitives.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Console.SR.resw
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.ComponentModel.Primitives.SR.resw
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.ComponentModel.TypeConverter.SR.resw
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Runtime.InteropServices.RuntimeInformation.SR.resw
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\FxResources.System.Runtime.Serialization.Formatters.SR.resw

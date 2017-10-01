@@ -49,8 +49,8 @@ namespace LazyRoommate
                             TaskName = TaskName.Text,
                             TaskDescription = TaskDesc.Text,
                             RoomName = user.RoomName,
-                            DoneBy = "",
-                            ConfirmedBy = "",
+                            DoneBy = string.Empty,
+                            ConfirmedBy = string.Empty,
                             StartDate= StartDate.Date.ToString("dd/MM/yyyy"),
                             EndDate = EndDate.Date.ToString("dd/MM/yyyy")
                         });
