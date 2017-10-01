@@ -1292,9 +1292,6 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.dll": {},
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll": {},
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll": {}
-        },
-        "build": {
-          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       }
     }
@@ -5205,33 +5202,9 @@
     ],
     ".NETStandard,Version=v1.4": []
   },
+  "tools": {},
+  "projectFileToolGroups": {},
   "packageFolders": {
-    "C:\\Users\\georg\\.nuget\\packages\\": {}
-  },
-  "project": {
-    "restore": {
-      "projectUniqueName": "C:\\Users\\georg\\LazyRoommate\\LazyRoommateLibrary",
-      "projectName": "LazyRoommateLibrary",
-      "projectPath": "C:\\Users\\georg\\LazyRoommate\\LazyRoommateLibrary",
-      "projectJsonPath": "C:\\Users\\georg\\LazyRoommate\\LazyRoommateLibrary\\project.json",
-      "projectStyle": "ProjectJson"
-    },
-    "dependencies": {
-      "Acr.UserDialogs": "6.3.10",
-      "Microsoft.Azure.Mobile.Client": "4.0.1",
-      "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
-      "NETStandard.Library": "1.6.1",
-      "Newtonsoft.Json": "10.0.3",
-      "Splat": "1.6.2",
-      "Xam.Plugins.Settings": "3.0.1",
-      "Xamarin.Forms": "2.3.4.247"
-    },
-    "frameworks": {
-      "netstandard1.4": {
-        "imports": [
-          "portable-net45+win8+wp8+wpa81"
-        ]
-      }
-    }
+    "C:\\Users\\Argiris Mouratidis\\.nuget\\packages\\": {}
   }
 }
