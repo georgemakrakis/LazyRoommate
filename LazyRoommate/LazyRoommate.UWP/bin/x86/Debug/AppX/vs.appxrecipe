@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-01T14:45:49.725</Modified>
+      <Modified>2017-10-01T15:11:29.754</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\LazyRoommate.UWP.exe">
       <PackagePath>entrypoint\LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2017-10-01T14:45:47.821</Modified>
+      <Modified>2017-10-01T15:11:27.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs.Interface.dll">
       <PackagePath>Acr.UserDialogs.Interface.dll</PackagePath>
@@ -566,7 +566,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.dll">
       <PackagePath>LazyRoommate.dll</PackagePath>
-      <Modified>2017-10-01T14:47:40.181</Modified>
+      <Modified>2017-10-01T14:52:51.789</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Xamarin.iOS.dll">
       <PackagePath>Xamarin.iOS.dll</PackagePath>
@@ -641,6 +641,10 @@
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\leave_room_32.png">
       <PackagePath>leave_room_32.png</PackagePath>
       <Modified>2017-09-26T09:42:25.461</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\login_logo.png">
+      <PackagePath>login_logo.png</PackagePath>
+      <Modified>2017-10-01T15:11:18.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\logout_32.png">
       <PackagePath>logout_32.png</PackagePath>
@@ -733,11 +737,11 @@
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-01T13:23:36.426</Modified>
+      <Modified>2017-10-01T15:11:28.829</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\LazyRoommate.UWP.exe">
       <PackagePath>LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2017-10-01T14:45:49.710</Modified>
+      <Modified>2017-10-01T15:11:29.747</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

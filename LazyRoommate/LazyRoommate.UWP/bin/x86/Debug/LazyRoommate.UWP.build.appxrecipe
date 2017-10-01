@@ -481,6 +481,9 @@
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\leave_room_32.png">
       <PackagePath>leave_room_32.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\login_logo.png">
+      <PackagePath>login_logo.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\logout_32.png">
       <PackagePath>logout_32.png</PackagePath>
     </AppxPackagedFile>
