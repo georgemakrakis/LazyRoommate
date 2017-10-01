@@ -3,6 +3,7 @@ using Acr.UserDialogs;
 using LazyRoommate.Models;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using Xamarin.Forms;
@@ -51,8 +52,8 @@ namespace LazyRoommate
                             RoomName = user.RoomName,
                             DoneBy = string.Empty,
                             ConfirmedBy = string.Empty,
-                            StartDate= StartDate.Date.ToString("dd/MM/yyyy"),
-                            EndDate = EndDate.Date.ToString("dd/MM/yyyy")
+                            StartDate= StartDate.Date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
+                            EndDate = EndDate.Date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
                         });
                         await DisplayAlert("Task", "New task added!!!", "Ok");               
                         await Navigation.PushAsync(new MainPage());             

@@ -6,6 +6,7 @@ using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -79,25 +80,26 @@ namespace LazyRoommate
 
             var date = DateTime.UtcNow;
             Day1.Text = date.Day + " " + date.DayOfWeek;
-            Day1.ClassId = date.ToString("dd/MM/yyyy");
+            Day1.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             date = date.AddDays(1);
             Day2.Text = date.Day + " " + (date.DayOfWeek);
-            Day2.ClassId = date.ToString("dd/MM/yyyy");
+            Day2.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             date = date.AddDays(1);
             Day3.Text = date.Day + " " + (date.DayOfWeek);
-            Day3.ClassId = date.ToString("dd/MM/yyyy");
+            Day3.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             date = date.AddDays(1);
             Day4.Text = date.Day + " " + (date.DayOfWeek);
-            Day4.ClassId = date.ToString("dd/MM/yyyy");
+            Day4.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             date = date.AddDays(1);
             Day5.Text = date.Day + " " + (date.DayOfWeek);
-            Day5.ClassId = date.ToString("dd/MM/yyyy");
+            Day5.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             date = date.AddDays(1);
             Day6.Text = date.Day + " " + (date.DayOfWeek);
-            Day6.ClassId = date.ToString("dd/MM/yyyy");
+            Day6.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             date = date.AddDays(1);
             Day7.Text = date.Day + " " + (date.DayOfWeek);
-            Day7.ClassId = date.ToString("dd/MM/yyyy");
+            Day7.ClassId = date.ToString("dd/MM/yyyy",CultureInfo.InvariantCulture);
+
 
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
