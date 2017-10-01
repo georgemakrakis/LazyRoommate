@@ -13,6 +13,7 @@
             <StackLayout  VerticalOptions="Center" HorizontalOptions="Center" >
                 <!--Here goes the logo of the app-->
                 <Label Text="Welcome to LazyRoommate"  TextColor="White" FontSize="20" HorizontalOptions="Center"/>
+                <Image Source="login_logo.png" HorizontalOptions="Center" />
                 <!--   TextColor="#77d065" FontSize = "20" Text="This is a label." -->
             </StackLayout>
 

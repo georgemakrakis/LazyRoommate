@@ -123,6 +123,7 @@
     <Content Include="help_32.png" />
     <Content Include="join_room_32.png" />
     <Content Include="leave_room_32.png" />
+    <AndroidResource Include="login_logo.png" />
     <Content Include="login_scrn.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
