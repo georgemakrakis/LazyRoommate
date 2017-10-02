@@ -641,15 +641,10 @@ namespace LazyRoommate
             //Navigation.RemovePage(this);
         }
 
-        private void LoadingList(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
+        //private void LoadingList(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        //{
 
-        }
-
-        private void Settings_OnClicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new SettingsPage(), true);
-        }
+        //}
 
         //private async void DoneConfirm_OnToggled(object sender, ToggledEventArgs e)
         //{
