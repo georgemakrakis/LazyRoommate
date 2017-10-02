@@ -116,7 +116,8 @@ namespace LazyRoommate
                 case Device.Windows:
                     ToolbarItems.Add(new ToolbarItem("Refresh", "refresh.png", () =>
                     {
-                        LoadList(Day1.ClassId);
+                        LoadList(Day1.ClassId);                       
+                        Header.Text= "Tasks for " + Day1.ClassId;
                     }));
                     break;
             }
@@ -169,7 +170,7 @@ namespace LazyRoommate
                 },
                 new Menu
                 {
-                    Title = "Settings",
+                    Title = "Delete Account",
                     Icon = "settings_32.png"
                 },
                 new Menu
@@ -337,9 +338,64 @@ namespace LazyRoommate
                 //This just came up just for security-reverse engineering reasons i think...
                 //Navigation.RemovePage(this);
             }
-            else if (item.Title.Equals("Settings"))
+            else if (item.Title.Equals("Delete Account"))
             {
-                await Navigation.PushAsync(new SettingsPage(), true);
+                var conf = await DisplayAlert("Delete Account", "Are you sure you want to delete your account? If you proceed all data you have will be deleted!", "Yes","No");
+                if (conf)
+                {
+                    
+                    var UserTable = App.client.GetTable<UsersTable>();
+                    var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
+                    var user = userItem.FirstOrDefault();
+
+                    var roomsAdmins = App.client.GetTable<RoomsAdmins>();
+                    var roomsAdminsItem = await roomsAdmins.Where(x => (x.Admin == user.Email)).ToListAsync();
+                    var admin = roomsAdminsItem.FirstOrDefault();
+
+                    //These are for regular users   
+                    if (admin == null)
+                    {
+                        user.RoomName = null;
+
+                        await UserTable.DeleteAsync(user);
+
+                        await DisplayAlert("User Deleted", "User " + App.Email + " has been deleted from app", "Ok");
+                    }
+                    //These are for admins
+                    else
+                    {
+                        //First we remove all references from user table that points to the specific room
+                        var roomRemoveItem = await UserTable.Where(x => (x.RoomName == admin.Room)).ToListAsync();
+                        roomRemoveItem.ForEach(async x =>
+                        {
+                            x.RoomName = null;
+                            await UserTable.UpdateAsync(x);
+                        });
+
+                        //We delete all tasks related to the room
+                        var TaskTable = App.client.GetTable<TasksTable>();
+                        var tasksItem = await TaskTable.Where(x => (x.RoomName == admin.Room)).ToListAsync();
+                        tasksItem.ForEach(async x =>
+                        {
+                            var taskRemove = tasksItem.FirstOrDefault();
+                            await TaskTable.DeleteAsync(taskRemove);
+                        });
+
+                        //At the end we remove user from admins table and users table
+                        await roomsAdmins.DeleteAsync(admin);
+                        await UserTable.DeleteAsync(user);
+
+                        await DisplayAlert("User Deleted", "User " + App.Email + " has been deleted from app", "Ok");
+                    }
+                                    
+                    App.Email = string.Empty;
+                    App.ProfileImage = string.Empty;
+                    App.ProfileName = string.Empty;
+                    await Navigation.PushAsync(new LoginPage(), true);
+
+                    //This just came up just for security-reverse engineering reasons i think...
+                    Navigation.RemovePage(this);
+                }
             }
             else if (item.Title.Equals("Help"))
             {
