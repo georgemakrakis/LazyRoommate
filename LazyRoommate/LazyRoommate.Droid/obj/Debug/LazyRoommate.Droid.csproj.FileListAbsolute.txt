@@ -330,3 +330,6 @@ C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\L
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\login_logo.png
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\login_logo.png
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\delete_account.png
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable\curvedmask.png

@@ -7,6 +7,7 @@
     "NETStandard.Library": "1.6.1",
     "Newtonsoft.Json": "10.0.3",
     "Splat": "1.6.2",
+    "System.Net.Http": "4.3.3",
     "Xam.Plugins.Settings": "3.0.1",
     "Xamarin.Forms": "2.3.4.247"
   },

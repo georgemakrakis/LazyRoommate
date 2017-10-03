@@ -233,7 +233,6 @@
     <AndroidResource Include="Resources\drawable\add_task.png" />
     <AndroidResource Include="Resources\drawable\create_room_32.png" />
     <AndroidResource Include="Resources\drawable\add_32.png" />
-    <Content Include="Resources\drawable\curved_mask.png" />
     <AndroidResource Include="Resources\drawable\leave_room_32.png" />
     <AndroidResource Include="Resources\drawable\join_room_32.png" />
     <AndroidResource Include="Resources\drawable\settings_32.png" />
@@ -244,12 +243,16 @@
     <AndroidResource Include="Resources\drawable\remove_roommate.png" />
     <AndroidResource Include="Resources\drawable\refresh.png" />
     <AndroidResource Include="Resources\drawable\login_logo.png" />
+    <AndroidResource Include="Resources\drawable\delete_account.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\LazyRoommateLibrary\LazyRoommate.csproj">
       <Project>{5AEB955F-DB73-4D18-956B-77B8C7F98CAB}</Project>
       <Name>LazyRoommate</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\CurvedMask.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

@@ -6,18 +6,18 @@
         <!-- Application resource dictionary -->
         <ResourceDictionary>
             <!-- Clolor -->
-            <Color x:Key="TimelineColor">#E4B6C3</Color>                     
+            <Color x:Key="TimelineColor">#E4B6C3</Color>
             <Color x:Key="TimeColor">#A64C79</Color>
             <Color x:Key="HeaderTextColor">#585858</Color>
             <Color x:Key="BodyTextColor">#C3C3C3</Color>
             <Color x:Key="ButtonBackgroundColor">#5992FF</Color>
             <!-- font families -->
-                <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String" iOS="HelveticaNeue" Android="sans-serif" />
-                           <OnPlatform x:Key="LightFontFamily" x:TypeArguments="x:String" iOS="HelveticaNeue-Light" Android="sans-serif-light" />
-                           <OnPlatform x:Key="MediumFontFamily" x:TypeArguments="x:String" iOS="HelveticaNeue-Medium" Android="sans-serif-medium" />
+            <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String" iOS="HelveticaNeue" Android="sans-serif" />
+            <OnPlatform x:Key="LightFontFamily" x:TypeArguments="x:String" iOS="HelveticaNeue-Light" Android="sans-serif-light" />
+            <OnPlatform x:Key="MediumFontFamily" x:TypeArguments="x:String" iOS="HelveticaNeue-Medium" Android="sans-serif-medium" />
             <!--  fonts  -->
             <Font x:Key="HeaderFont" FontFamily="{StaticResource MediumFontFamily}" FontSize="30" />
-            <Font x:Key="SubHeaderFont" FontFamily="{StaticResource MediumFontFamily}" FontSize="18" />                
+            <Font x:Key="SubHeaderFont" FontFamily="{StaticResource MediumFontFamily}" FontSize="18" />
             <Font x:Key="TitleFont" FontSize="20" FontFamily="{StaticResource MediumFontFamily}" />
             <Font x:Key="BodyFont" FontSize="18" FontFamily="{StaticResource RegularFontFamily}" />
             <Font x:Key="TagTextFont" FontSize="18" FontFamily="{StaticResource RegularFontFamily}" />
@@ -62,8 +62,8 @@
                 <Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
                 <Setter Property="Font" Value="{StaticResource BodyFont}" />
             </Style>
-            
-               <!-- styles -->
+
+            <!-- styles -->
             <Style x:Key="ProfileNameLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
                 <Setter Property="Font" Value="{StaticResource TitleFont}" />
@@ -100,7 +100,7 @@
                 <Setter Property="BorderRadius" Value="20"/>
                 <Setter Property="Font" Value="{StaticResource ButtonFont}"/>
             </Style>
-          
+
 
 
         </ResourceDictionary>

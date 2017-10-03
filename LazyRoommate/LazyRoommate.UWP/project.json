@@ -4,6 +4,7 @@
     "Microsoft.Azure.Mobile.Client": "4.0.1",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
     "Splat": "1.6.2",
+    "System.Net.Http": "4.3.3",
     "Xam.Plugins.Settings": "3.0.1",
     "Xamarin.Forms": "2.3.4.247"
   },

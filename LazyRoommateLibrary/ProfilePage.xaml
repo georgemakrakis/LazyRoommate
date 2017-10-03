@@ -2,56 +2,56 @@
 <ContentPage   xmlns="http://xamarin.com/schemas/2014/forms"
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 			 x:Class="LazyRoommate.ProfilePage">
-               
+
     <ScrollView>
-		<Grid ColumnSpacing="0" RowSpacing="0">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="Auto"/>
-				<RowDefinition Height="Auto"/>
-			</Grid.RowDefinitions>
-			<!-- header background -->
-			<Image Source="login_scrn.jpg" Aspect="AspectFill"/>
-			<Image Source="curved_mask.png" VerticalOptions="End" Aspect="AspectFill" Margin="0,0,0,-1"/>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <!-- header background -->
+            <Image Source="login_scrn.jpg" Aspect="AspectFill"/>
+            <Image Aspect="Fill" Margin="0,-1,0,-1" Source="CurvedMask.png" VerticalOptions="End" />
 
-			<!-- profile image -->
-			<Image x:Name="ProfileImage" Source=" " Margin="0,0,0,-50" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="End"/>
+            <!-- profile image -->
+            <Image x:Name="ProfileImage" Source=" " Margin="0,0,0,-50" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="End"/>
 
-			<StackLayout Grid.Row="1" HorizontalOptions="Center" Padding="0,50,0,00">
-				<Label x:Name="ProfileName" HorizontalTextAlignment="Center" Text="Name" Style="{StaticResource ProfileNameLabel}"/>
-				<Label x:Name="Email" HorizontalTextAlignment="Center" Text="Email" Margin="0,-5" Style="{StaticResource ProfileTagLabel}"/>
-			</StackLayout>
+            <StackLayout Grid.Row="1" HorizontalOptions="Center" Padding="0,50,0,00">
+                <Label x:Name="ProfileName" HorizontalTextAlignment="Center" Text="Name" Style="{StaticResource ProfileNameLabel}"/>
+                <Label x:Name="Email" HorizontalTextAlignment="Center" Text="Email" Margin="0,-5" Style="{StaticResource ProfileTagLabel}"/>
+            </StackLayout>
 
-			<!-- Tasks Section-->
-			<Grid Grid.Row="2" ColumnSpacing="0" RowSpacing="0" Margin="0,30">
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="*" />
-					<ColumnDefinition Width="*" />
-					<ColumnDefinition Width="*" />
-				</Grid.ColumnDefinitions>
-				<StackLayout>
-					<Label x:Name="TasksCompleted" Style="{StaticResource StatsNumberLabel}"/>
-					<Label  Text="Tasks Completed" Style="{StaticResource StatsCaptionLabel}"/>
-				</StackLayout>
+            <!-- Tasks Section-->
+            <Grid Grid.Row="2" ColumnSpacing="0" RowSpacing="0" Margin="0,30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout>
+                    <Label x:Name="TasksCompleted" Style="{StaticResource StatsNumberLabel}"/>
+                    <Label  Text="Tasks Completed" Style="{StaticResource StatsCaptionLabel}"/>
+                </StackLayout>
 
-				<StackLayout Grid.Column="1">
-					<Label x:Name="AllTasks" Style="{StaticResource StatsNumberLabel}"/>
-					<Label  Text="All Tasks" Style="{StaticResource StatsCaptionLabel}"/>
-				</StackLayout>
+                <StackLayout Grid.Column="1">
+                    <Label x:Name="AllTasks" Style="{StaticResource StatsNumberLabel}"/>
+                    <Label  Text="All Tasks" Style="{StaticResource StatsCaptionLabel}"/>
+                </StackLayout>
 
-				<StackLayout Grid.Column="2">
-					<Label x:Name="RoomName" Style="{StaticResource StatsNumberLabel}"/>
+                <StackLayout Grid.Column="2">
+                    <Label x:Name="RoomName" Style="{StaticResource StatsNumberLabel}"/>
                     <Label  Text="Room Name" Style="{StaticResource StatsCaptionLabel}"/>
-				</StackLayout>
+                </StackLayout>
 
-				
-			</Grid>
-		    <!-- profile description -->
-		    <ScrollView Grid.Row="3">
-		        <Label x:Name="Roomates" Margin="20,0" Text="Roommates:" HorizontalTextAlignment="Center" Style="{StaticResource MainBodyLabel}"  />
-		    </ScrollView>
+
+            </Grid>
+            <!-- profile description -->
+            <ScrollView Grid.Row="3">
+                <Label x:Name="Roomates" Margin="20,0" Text="Roommates:" HorizontalTextAlignment="Center" Style="{StaticResource MainBodyLabel}"  />
+            </ScrollView>
         </Grid>
-	</ScrollView>
+    </ScrollView>
 </ContentPage>

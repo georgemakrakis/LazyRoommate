@@ -120,6 +120,9 @@
   <data name="net_http_content_no_concurrent_reads" xml:space="preserve">
     <value>The stream does not support concurrent read operations.</value>
   </data>
+  <data name="net_http_handler_nocontentlength" xml:space="preserve">
+    <value>The content length of the request content can't be determined. Either set TransferEncodingChunked to true, load content into buffer, or set AllowRequestContentBuffering to true.</value>
+  </data>
   <data name="net_http_unix_invalid_credential" xml:space="preserve">
     <value>The libcurl library in use ({0}) does not support different credentials for different authentication schemes.</value>
   </data>
@@ -140,6 +143,9 @@
   </data>
   <data name="net_http_content_buffersize_exceeded" xml:space="preserve">
     <value>Cannot write more bytes to the buffer than the configured maximum buffer size: {0}.</value>
+  </data>
+  <data name="net_http_libcurl_clientcerts_notsupported" xml:space="preserve">
+    <value>The handler does not support client authentication certificates with this combination of libcurl ({0}) and its SSL backend ("{1}").</value>
   </data>
   <data name="net_http_headers_single_value_header" xml:space="preserve">
     <value>Cannot add value because header '{0}' does not support multiple values.</value>
@@ -191,6 +197,9 @@
   </data>
   <data name="net_http_headers_not_allowed_header_name" xml:space="preserve">
     <value>Misused header name. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects.</value>
+  </data>
+  <data name="net_http_libcurl_callback_notsupported" xml:space="preserve">
+    <value>The handler does not support custom handling of certificates with this combination of libcurl ({0}) and its SSL backend ("{1}").</value>
   </data>
   <data name="net_http_client_send_error" xml:space="preserve">
     <value>An error occurred while sending {0}. {1}</value>
@@ -275,6 +284,9 @@
   </data>
   <data name="net_http_response_headers_exceeded_length" xml:space="preserve">
     <value>The HTTP response headers length exceeded the set limit of {0} bytes.</value>
+  </data>
+  <data name="net_http_libcurl_revocation_notsupported" xml:space="preserve">
+    <value>The handler does not support changing revocation settings with this combination of libcurl ({0}) and its SSL backend ("{1}").</value>
   </data>
   <data name="net_http_value_not_supported" xml:space="preserve">
     <value>The value '{0}' is not supported for property '{1}'.</value>

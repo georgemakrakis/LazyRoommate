@@ -118,7 +118,8 @@
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="create_room_32.png" />
-    <Content Include="curved_mask.png" />
+    <Content Include="CurvedMask.png" />
+    <Content Include="delete_account.png" />
     <Content Include="dot.png" />
     <Content Include="help_32.png" />
     <Content Include="join_room_32.png" />

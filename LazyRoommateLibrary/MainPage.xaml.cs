@@ -20,6 +20,8 @@ namespace LazyRoommate
         public Task Dialogs { get; private set; }
         private List<Menu> masterPageItems;
 
+        private static string day_selected;
+
         public async void LoadList(string date)
         {
             try
@@ -65,9 +67,9 @@ namespace LazyRoommate
         public void Day_OnCLicked(object sender, EventArgs e)
         {
             var Button = (Button) sender;
-            var date = Button.ClassId;
-            Header.Text = "Tasks for " + date;
-            LoadList(date);
+            day_selected = Button.ClassId;
+            Header.Text = "Tasks for " + day_selected;
+            LoadList(day_selected);
             
         }
 
@@ -116,8 +118,8 @@ namespace LazyRoommate
                 case Device.Windows:
                     ToolbarItems.Add(new ToolbarItem("Refresh", "refresh.png", () =>
                     {
-                        LoadList(Day1.ClassId);                       
-                        Header.Text= "Tasks for " + Day1.ClassId;
+                        LoadList(day_selected);                       
+                        Header.Text= "Tasks for " + day_selected;
                     }));
                     break;
             }
@@ -171,7 +173,7 @@ namespace LazyRoommate
                 new Menu
                 {
                     Title = "Delete Account",
-                    Icon = "settings_32.png"
+                    Icon = "delete_account.png"
                 },
                 new Menu
                 {
