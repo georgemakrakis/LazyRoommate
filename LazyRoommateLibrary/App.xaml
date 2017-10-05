@@ -8,8 +8,8 @@
             <!-- Clolor -->
             <Color x:Key="TimelineColor">#E4B6C3</Color>
             <Color x:Key="TimeColor">#A64C79</Color>
-            <Color x:Key="HeaderTextColor">#585858</Color>
-            <Color x:Key="BodyTextColor">#C3C3C3</Color>
+            <Color x:Key="HeaderTextColor">#353333</Color>
+            <Color x:Key="BodyTextColor">#4f4c4c</Color>
             <Color x:Key="ButtonBackgroundColor">#5992FF</Color>
             <!-- font families -->
             <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String" iOS="HelveticaNeue" Android="sans-serif" />

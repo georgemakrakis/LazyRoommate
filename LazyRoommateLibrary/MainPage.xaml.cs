@@ -68,7 +68,7 @@ namespace LazyRoommate
         {
             var Button = (Button) sender;
             day_selected = Button.ClassId;
-            Header.Text = "Tasks for " + day_selected;
+            SubHeader.Text = day_selected;
             LoadList(day_selected);
             
         }
@@ -118,8 +118,8 @@ namespace LazyRoommate
                 case Device.Windows:
                     ToolbarItems.Add(new ToolbarItem("Refresh", "refresh.png", () =>
                     {
-                        LoadList(day_selected);                       
-                        Header.Text= "Tasks for " + day_selected;
+                        LoadList(day_selected);
+                        SubHeader.Text = day_selected;
                     }));
                     break;
             }
@@ -195,13 +195,14 @@ namespace LazyRoommate
                     ActivityIndicator.IsRunning = false;
                     ActivityIndicator.IsVisible = false;
                     timelineListView.ItemsSource = DataFactory.UserTasks;
-                    Header.Text = "Tasks for " +Day1.ClassId;
+                    SubHeader.Text = Day1.ClassId;
                     retry.IsVisible = false;
                 }
                 catch (HttpRequestException ex)
                 {
                     retry.IsVisible = true;
                     retry.Text = "An Network error occured.\nPlease check network connectivity.";
+                    SubHeader.Text = day_selected;
                     ActivityIndicator.IsRunning = false;
                     ActivityIndicator.IsVisible = false;
                 }
@@ -209,6 +210,7 @@ namespace LazyRoommate
                 {
                     retry.IsVisible = true;
                     retry.Text = "A service related issue occured. Please contact admin.";
+                    SubHeader.Text = day_selected;
                     ActivityIndicator.IsRunning = false;
                     ActivityIndicator.IsVisible = false;
                 }
