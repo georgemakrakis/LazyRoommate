@@ -54,7 +54,11 @@ namespace LazyRoommate
             InitializeComponent();
             if (App.Email != string.Empty)
             {
-                MainPage = new NavigationPage(new MainPage());
+                MainPage = new NavigationPage(new MainPage())
+                {
+                    BarBackgroundColor = Color.FromHex("#0097A7"),
+                    BarTextColor = Color.White
+                };
             }
             else
             {               

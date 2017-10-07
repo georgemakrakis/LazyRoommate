@@ -41,15 +41,14 @@
 
 
     <MasterDetailPage.Detail>
-        <ContentPage Padding="10" Title="Detail" BackgroundImage="login_scrn.jpg">
+        <ContentPage Padding="10" Title="Detail" BackgroundColor="#00BCD4">
             <ContentPage.Resources>
                 <ResourceDictionary>
                     <local:NotBooleanConverter x:Key="NotBooleanConverter" />
                 </ResourceDictionary>
             </ContentPage.Resources>
-
             <ContentPage.Content>
-                <StackLayout BackgroundColor="Transparent" >
+                <StackLayout BackgroundColor="LightYellow" >
                     <ActivityIndicator x:Name="ActivityIndicator" Color="#E4B6C3" VerticalOptions="Center" IsRunning="True"/>
                     <ScrollView BackgroundColor="Transparent" Orientation="Horizontal" Padding="10">
                         <StackLayout Orientation="Horizontal" Spacing="3"
