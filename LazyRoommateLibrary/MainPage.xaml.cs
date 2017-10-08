@@ -11,6 +11,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using XamForms.Controls;
 
 namespace LazyRoommate
 {
@@ -58,8 +59,9 @@ namespace LazyRoommate
         public async void OnRefresh(object sender, EventArgs e)
         {
             var list = (ListView)sender;
+            var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             //refreshing logic here
-            LoadList(Day1.ClassId);
+            LoadList(date);
             //make sure to end the refresh state
             list.IsRefreshing = false;
         }
@@ -79,28 +81,28 @@ namespace LazyRoommate
         {
             InitializeComponent();
 
-
-            var date = DateTime.UtcNow;
-            Day1.Text = date.Day + " " + date.DayOfWeek;
-            Day1.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            date = date.AddDays(1);
-            Day2.Text = date.Day + " " + (date.DayOfWeek);
-            Day2.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            date = date.AddDays(1);
-            Day3.Text = date.Day + " " + (date.DayOfWeek);
-            Day3.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            date = date.AddDays(1);
-            Day4.Text = date.Day + " " + (date.DayOfWeek);
-            Day4.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            date = date.AddDays(1);
-            Day5.Text = date.Day + " " + (date.DayOfWeek);
-            Day5.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            date = date.AddDays(1);
-            Day6.Text = date.Day + " " + (date.DayOfWeek);
-            Day6.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            date = date.AddDays(1);
-            Day7.Text = date.Day + " " + (date.DayOfWeek);
-            Day7.ClassId = date.ToString("dd/MM/yyyy",CultureInfo.InvariantCulture);
+           
+            //var date = DateTime.UtcNow;
+            //Day1.Text = date.Day + " " + date.DayOfWeek;
+            //Day1.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+            //date = date.AddDays(1);
+            //Day2.Text = date.Day + " " + (date.DayOfWeek);
+            //Day2.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+            //date = date.AddDays(1);
+            //Day3.Text = date.Day + " " + (date.DayOfWeek);
+            //Day3.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+            //date = date.AddDays(1);
+            //Day4.Text = date.Day + " " + (date.DayOfWeek);
+            //Day4.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+            //date = date.AddDays(1);
+            //Day5.Text = date.Day + " " + (date.DayOfWeek);
+            //Day5.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+            //date = date.AddDays(1);
+            //Day6.Text = date.Day + " " + (date.DayOfWeek);
+            //Day6.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+            //date = date.AddDays(1);
+            //Day7.Text = date.Day + " " + (date.DayOfWeek);
+            //Day7.ClassId = date.ToString("dd/MM/yyyy",CultureInfo.InvariantCulture);
 
 
             NavigationPage.SetHasNavigationBar(this, true);
@@ -118,8 +120,9 @@ namespace LazyRoommate
                 case Device.Windows:
                     ToolbarItems.Add(new ToolbarItem("Refresh", "refresh.png", () =>
                     {
-                        LoadList(day_selected);
-                        SubHeader.Text = day_selected;
+                        var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+                        LoadList(date);
+                        //SubHeader.Text = day_selected;
                     }));
                     break;
             }
@@ -191,11 +194,14 @@ namespace LazyRoommate
                 //list.Values.
                 try
                 {
-                    await DataFactory.Init(Day1.ClassId);
+                    Calendar.SelectedDate = DateTime.UtcNow;
+                    var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+
+                    await DataFactory.Init(date);
                     ActivityIndicator.IsRunning = false;
                     ActivityIndicator.IsVisible = false;
                     timelineListView.ItemsSource = DataFactory.UserTasks;
-                    SubHeader.Text = Day1.ClassId;
+                    //SubHeader.Text = date;
                     retry.IsVisible = false;
                 }
                 catch (HttpRequestException ex)
@@ -614,7 +620,8 @@ namespace LazyRoommate
 
                     }
                     // refres list with updated tasks 
-                    await DataFactory.Init(Day1.ClassId);
+                    var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    await DataFactory.Init(date);
                     timelineListView.ItemsSource = DataFactory.UserTasks;
                     retry.IsVisible = false;
 
@@ -680,5 +687,11 @@ namespace LazyRoommate
         //        }
         //    }
         //}
+        private void Calendar_OnDateClicked(object sender, DateTimeEventArgs e)
+        {
+            //Get the slected value from calendar
+            var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+            LoadList(date);              
+        }
     }
 }

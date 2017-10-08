@@ -574,7 +574,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.dll">
       <PackagePath>LazyRoommate.dll</PackagePath>
-      <Modified>2017-10-08T19:26:05.985</Modified>
+      <Modified>2017-10-08T21:41:51.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Xamarin.iOS.dll">
       <PackagePath>Xamarin.iOS.dll</PackagePath>
