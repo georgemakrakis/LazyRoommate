@@ -176,6 +176,7 @@ namespace LazyRoommate.UWP
             this.InitializeComponent();
             // Initialize the authenticator before loading the app.
             LazyRoommate.App.Init(this);
+            XamForms.Controls.Windows.Calendar.Init();
             LoadApplication(new LazyRoommate.App());
 
         }

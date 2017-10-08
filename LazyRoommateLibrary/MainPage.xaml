@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LazyRoommate.MainPage"              
              xmlns:local="clr-namespace:LazyRoommate.Converter"
+             xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
              MasterBehavior="Popover">
 
     <Label Text="MainPage" VerticalOptions="Center" HorizontalOptions="Center" />
@@ -62,6 +63,10 @@
                             <Button x:Name="Day5" Style="{StaticResource ClassNameButton2}" HorizontalOptions="Center" Clicked="Day_OnCLicked"/>
                             <Button x:Name="Day6" Style="{StaticResource ClassNameButton2}" HorizontalOptions="Center" Clicked="Day_OnCLicked"/>
                             <Button x:Name="Day7" Style="{StaticResource ClassNameButton2}" HorizontalOptions="Center" Clicked="Day_OnCLicked"/>
+                            
+                        </StackLayout>
+                        <StackLayout>
+                            <controls:Calendar Padding="10,0,10,0" StartDay="Monday" SelectedBorderWidth="4" DisabledBorderColor="Black" />
                         </StackLayout>
                     </ScrollView>
 

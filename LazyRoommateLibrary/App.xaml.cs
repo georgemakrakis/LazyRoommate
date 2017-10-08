@@ -62,7 +62,11 @@ namespace LazyRoommate
             }
             else
             {               
-                MainPage = new NavigationPage(new LoginPage());               
+                MainPage = new NavigationPage(new LoginPage())
+                {
+                    BarBackgroundColor = Color.FromHex("#FFA000"),
+                    BarTextColor = Color.White
+                };               
             }
           
         }

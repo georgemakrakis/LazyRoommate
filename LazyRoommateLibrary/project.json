@@ -9,7 +9,8 @@
     "Splat": "1.6.2",
     "System.Net.Http": "4.3.3",
     "Xam.Plugins.Settings": "3.0.1",
-    "Xamarin.Forms": "2.3.4.247"
+    "Xamarin.Forms": "2.3.4.247",
+    "XamForms.Controls.Calendar": "1.1.1"
   },
   "frameworks": {
     "netstandard1.4": {

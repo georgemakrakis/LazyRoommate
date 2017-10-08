@@ -204,6 +204,7 @@ namespace LazyRoommate.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            XamForms.Controls.Droid.Calendar.Init();
             UserDialogs.Init(this);
             // Initialize the authenticator before loading the app.
             App.Init((IAuthenticate)this);
