@@ -123,6 +123,7 @@
     <Content Include="dot.png" />
     <Content Include="help_32.png" />
     <Content Include="join_room_32.png" />
+    <Content Include="lazyroomatelogotransparent.png" />
     <Content Include="leave_room_32.png" />
     <Content Include="login_logo.png" />
     <Content Include="login_scrn.jpg">

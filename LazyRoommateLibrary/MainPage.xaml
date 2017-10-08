@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LazyRoommate.MainPage"
-             BackgroundImage="login_scrn.jpg"
+             x:Class="LazyRoommate.MainPage"              
              xmlns:local="clr-namespace:LazyRoommate.Converter"
              MasterBehavior="Popover">
 
@@ -41,14 +40,14 @@
 
 
     <MasterDetailPage.Detail>
-        <ContentPage Padding="10" Title="Detail" BackgroundColor="#00BCD4">
+        <ContentPage Padding="10" Title="Detail"  >
             <ContentPage.Resources>
                 <ResourceDictionary>
                     <local:NotBooleanConverter x:Key="NotBooleanConverter" />
                 </ResourceDictionary>
             </ContentPage.Resources>
             <ContentPage.Content>
-                <StackLayout BackgroundColor="LightYellow" >
+                <StackLayout>
                     <ActivityIndicator x:Name="ActivityIndicator" Color="#E4B6C3" VerticalOptions="Center" IsRunning="True"/>
                     <ScrollView BackgroundColor="Transparent" Orientation="Horizontal" Padding="10">
                         <StackLayout Orientation="Horizontal" Spacing="3"

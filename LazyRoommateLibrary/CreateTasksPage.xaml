@@ -5,14 +5,22 @@
              x:Class="LazyRoommate.CreateTasksPage"
              BackgroundImage="login_scrn.jpg"
              Title="CreateTasksPage">
-    <ScrollView>
-        <StackLayout Padding="10">
-            <Label Text="Task Name" TextColor="White"/>
-            <Entry x:Name="TaskName"/>
-            <Label Text="Task Description" TextColor="White"/>
-            <Entry x:Name="TaskDesc"/>
+    <!--<ScrollView>-->
+    <Grid>
+        <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+        <!--left, top, right, and bottom-->
+        <Label Grid.Row="0" Text="Create Task" TextColor="White" FontSize="50" Margin="0,40,0,40" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+        <StackLayout  Grid.Row="1" Margin="30,10,30,10">
+            <Entry x:Name="TaskName" Placeholder="Task Name" PlaceholderColor="White"/>
+            <Entry x:Name="TaskDesc" Placeholder="Task Description" PlaceholderColor="White"/>
+
+            <!--<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">-->
+            <StackLayout HorizontalOptions="FillAndExpand">
                 <Label Text="Start Date" TextColor="White"/>
                 <DatePicker x:Name="StartDate" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.UtcNow}">
                     <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
@@ -31,8 +39,8 @@
                         </sys:DateTime>
                     </DatePicker.MaximumDate>
                 </DatePicker>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+            <!--</StackLayout>-->
+            <!--<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">-->
                 <Label Text="End Date" TextColor="White"/>
                 <DatePicker x:Name="EndDate" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.UtcNow}">
                     <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
@@ -52,7 +60,8 @@
                     </DatePicker.MaximumDate>
                 </DatePicker>
             </StackLayout>
-        <Button x:Name="AddBtn" Text="Add" IsEnabled="False" Clicked="OkClicked"/>
         </StackLayout>
-    </ScrollView>
+        <Button x:Name="AddBtn"  Grid.Row="2"  Text="Create" IsEnabled="False" Clicked="OkClicked" Margin="0,40,0,40" FontSize="20" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+    </Grid>
+    <!--</ScrollView>-->
 </ContentPage>

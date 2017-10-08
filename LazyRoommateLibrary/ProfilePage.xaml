@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage   xmlns="http://xamarin.com/schemas/2014/forms"
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-			 x:Class="LazyRoommate.ProfilePage">
+			 x:Class="LazyRoommate.ProfilePage"
+               >
 
     <ScrollView>
         <Grid ColumnSpacing="0" RowSpacing="0">
@@ -14,6 +15,7 @@
             </Grid.RowDefinitions>
             <!-- header background -->
             <Image Source="login_scrn.jpg" Aspect="AspectFill"/>
+            <Image Source="lazyroomatelogotransparent.png" HorizontalOptions="Center" Margin="0, 20, 15, 10"/>
             <Image Aspect="Fill" Margin="0,-1,0,-1" Source="CurvedMask.png" VerticalOptions="End" />
 
             <!-- profile image -->

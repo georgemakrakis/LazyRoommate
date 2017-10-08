@@ -16,6 +16,10 @@ namespace LazyRoommate
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
 
+            // custom color for semitransparent text 
+           // FBButton.TextColor = new Color(0, 0, 0, 0.5);
+           // TwitterButton.TextColor = new Color(0, 0, 0, 0.5);
+           // GoogleButton.TextColor = new Color(0, 0, 0, 0.5);
         }    
        
         public async void LoginClick(object sender, EventArgs e)
