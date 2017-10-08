@@ -12,16 +12,16 @@ namespace LazyRoommate
         public LoginPage()
         {
             InitializeComponent();
-
+            SizeChanged += ChangeLogo;
             NavigationPage.SetHasNavigationBar(this, true);
-            NavigationPage.SetHasBackButton(this, false);
+            NavigationPage.SetHasBackButton(this, false);        
+        }
 
-            // custom color for semitransparent text 
-           // FBButton.TextColor = new Color(0, 0, 0, 0.5);
-           // TwitterButton.TextColor = new Color(0, 0, 0, 0.5);
-           // GoogleButton.TextColor = new Color(0, 0, 0, 0.5);
-        }    
-       
+        void ChangeLogo(object sender, EventArgs e)
+        {
+            logo.WidthRequest = Math.Min(this.Width, 400);
+        }
+
         public async void LoginClick(object sender, EventArgs e)
         {
             if (App.Authenticator != null)

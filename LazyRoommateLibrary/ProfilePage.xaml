@@ -15,7 +15,7 @@
             </Grid.RowDefinitions>
             <!-- header background -->
             <Image Source="login_scrn.jpg" Aspect="AspectFill"/>
-            <Image Source="lazyroomatelogotransparent.png" HorizontalOptions="Center" Margin="0, 20, 15, 10"/>
+            <!--<Image Source="lazyroomatelogotransparent.png" HorizontalOptions="Center" Margin="0, 20, 15, 10"/>-->
             <Image Aspect="Fill" Margin="0,-1,0,-1" Source="CurvedMask.png" VerticalOptions="End" />
 
             <!-- profile image -->

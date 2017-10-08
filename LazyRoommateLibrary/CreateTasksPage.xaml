@@ -5,8 +5,8 @@
              x:Class="LazyRoommate.CreateTasksPage"
              BackgroundImage="login_scrn.jpg"
              Title="CreateTasksPage">
-    <!--<ScrollView>-->
-    <Grid>
+    <ScrollView>
+        <Grid>
         <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
@@ -63,5 +63,5 @@
         </StackLayout>
         <Button x:Name="AddBtn"  Grid.Row="2"  Text="Create" IsEnabled="False" Clicked="OkClicked" Margin="0,40,0,40" FontSize="20" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
     </Grid>
-    <!--</ScrollView>-->
+    </ScrollView>
 </ContentPage>

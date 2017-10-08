@@ -56,8 +56,8 @@ namespace LazyRoommate
             {
                 MainPage = new NavigationPage(new MainPage())
                 {
-                    BarBackgroundColor = Color.FromHex("#0097A7"),
-                    BarTextColor = Color.White
+                    BarBackgroundColor = Color.FromHex("#FFA000"),
+                    BarTextColor = Color.White   
                 };
             }
             else

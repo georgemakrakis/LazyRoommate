@@ -16,8 +16,12 @@ namespace LazyRoommate
            
             LoadInfo();
 
+            
+
             //ProfileName.Text = App.client.CurrentUser;           
         }
+
+
         public async void LoadInfo()
         {
             //Taking the already logged-in user info and putting them into the proper xaml elements
