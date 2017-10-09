@@ -992,3 +992,5 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\Xamarin.
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\XamForms.Controls.Calendar.UWP.dll
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\XamForms.Controls.Calendar.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\XamForms.Controls.Calendar.UWP.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\XamForms.Controls.Calendar.dll
