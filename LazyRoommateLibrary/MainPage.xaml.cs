@@ -70,7 +70,7 @@ namespace LazyRoommate
         {
             var Button = (Button) sender;
             day_selected = Button.ClassId;
-            SubHeader.Text = day_selected;
+            //SubHeader.Text = day_selected;
             LoadList(day_selected);
             
         }
@@ -81,30 +81,7 @@ namespace LazyRoommate
         {
             InitializeComponent();
             SizeChanged += ChangeCalendarSize;
-
-            //var date = DateTime.UtcNow;
-            //Day1.Text = date.Day + " " + date.DayOfWeek;
-            //Day1.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            //date = date.AddDays(1);
-            //Day2.Text = date.Day + " " + (date.DayOfWeek);
-            //Day2.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            //date = date.AddDays(1);
-            //Day3.Text = date.Day + " " + (date.DayOfWeek);
-            //Day3.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            //date = date.AddDays(1);
-            //Day4.Text = date.Day + " " + (date.DayOfWeek);
-            //Day4.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            //date = date.AddDays(1);
-            //Day5.Text = date.Day + " " + (date.DayOfWeek);
-            //Day5.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            //date = date.AddDays(1);
-            //Day6.Text = date.Day + " " + (date.DayOfWeek);
-            //Day6.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            //date = date.AddDays(1);
-            //Day7.Text = date.Day + " " + (date.DayOfWeek);
-            //Day7.ClassId = date.ToString("dd/MM/yyyy",CultureInfo.InvariantCulture);
-
-
+                    
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
 
@@ -208,7 +185,7 @@ namespace LazyRoommate
                 {
                     retry.IsVisible = true;
                     retry.Text = "An Network error occured.\nPlease check network connectivity.";
-                    SubHeader.Text = day_selected;
+                    //SubHeader.Text = day_selected;
                     ActivityIndicator.IsRunning = false;
                     ActivityIndicator.IsVisible = false;
                 }
@@ -216,7 +193,7 @@ namespace LazyRoommate
                 {
                     retry.IsVisible = true;
                     retry.Text = "A service related issue occured. Please contact admin.";
-                    SubHeader.Text = day_selected;
+                    //SubHeader.Text = day_selected;
                     ActivityIndicator.IsRunning = false;
                     ActivityIndicator.IsVisible = false;
                 }
@@ -240,9 +217,14 @@ namespace LazyRoommate
 
         private void ChangeCalendarSize(object sender, EventArgs e)
         {
-            CalStack.WidthRequest = Math.Min(this.Width, 400);
-            CalStack.HeightRequest = Math.Min(this.Height, 400);
+            //Calendar.WidthRequest = Math.Max(Width, 400);
+            //Calendar.HeightRequest = Math.Max(Height, 100);
+
+            Calendar.WidthRequest = Math.Max(Width, 300);
+            CalStack.HeightRequest = Math.Min(Height, 400);
+
         }
+
 
         private async void OnMenuItemSelected(object sender, ItemTappedEventArgs e)
         {

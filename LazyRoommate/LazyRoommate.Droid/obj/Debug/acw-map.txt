@@ -714,3 +714,11 @@ Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1, Xamarin.Fo
 Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null;md5270abb39e60627f0f200893b490a1ade.FormsFragmentPagerAdapter_1
 Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1;md5270abb39e60627f0f200893b490a1ade.FormsFragmentPagerAdapter_1
 xamarin.forms.platform.android.appcompat.FormsFragmentPagerAdapter_1;md5270abb39e60627f0f200893b490a1ade.FormsFragmentPagerAdapter_1
+XamForms.Controls.Droid.CalendarButtonRenderer, XamForms.Controls.Calendar.Droid;md5592c9703a29f34e0b28640ada7c4ff83.CalendarButtonRenderer
+XamForms.Controls.Droid.CalendarButtonRenderer, XamForms.Controls.Calendar.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5592c9703a29f34e0b28640ada7c4ff83.CalendarButtonRenderer
+XamForms.Controls.Droid.CalendarButtonRenderer;md5592c9703a29f34e0b28640ada7c4ff83.CalendarButtonRenderer
+xamforms.controls.droid.CalendarButtonRenderer;md5592c9703a29f34e0b28640ada7c4ff83.CalendarButtonRenderer
+XamForms.Controls.Droid.TextDrawable, XamForms.Controls.Calendar.Droid;md5592c9703a29f34e0b28640ada7c4ff83.TextDrawable
+XamForms.Controls.Droid.TextDrawable, XamForms.Controls.Calendar.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5592c9703a29f34e0b28640ada7c4ff83.TextDrawable
+XamForms.Controls.Droid.TextDrawable;md5592c9703a29f34e0b28640ada7c4ff83.TextDrawable
+xamforms.controls.droid.TextDrawable;md5592c9703a29f34e0b28640ada7c4ff83.TextDrawable

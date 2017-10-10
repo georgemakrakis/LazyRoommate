@@ -48,42 +48,23 @@
                 </ResourceDictionary>
             </ContentPage.Resources>
             <ContentPage.Content>
-                <StackLayout x:Name="CalStack">
+                <StackLayout>
                     <ActivityIndicator x:Name="ActivityIndicator" Color="#db95a9" VerticalOptions="Center" IsRunning="True"/>
-                    <!--<ScrollView BackgroundColor="Transparent" Orientation="Horizontal" Padding="10">
-                        <StackLayout Orientation="Horizontal" Spacing="3"
-                                     Padding="0"                                     
-                                     HorizontalOptions="Center"
-                                     VerticalOptions="CenterAndExpand"
-                                     BackgroundColor="Transparent">
-                            <Button x:Name="Day1" Style="{StaticResource ClassNameButton2}" HorizontalOptions="Center" Clicked="Day_OnCLicked"/>
-                            <Button x:Name="Day2" Style="{StaticResource ClassNameButton2}" HorizontalOptions="Center" Clicked="Day_OnCLicked"/>
-                            <Button x:Name="Day3" Style="{StaticResource ClassNameButton2}" HorizontalOptions="Center" Clicked="Day_OnCLicked"/>
-                            <Button x:Name="Day4" Style="{StaticResource ClassNameButton2}" HorizontalOptions="Center" Clicked="Day_OnCLicked"/>
-                            <Button x:Name="Day5" Style="{StaticResource ClassNameButton2}" HorizontalOptions="Center" Clicked="Day_OnCLicked"/>
-                            <Button x:Name="Day6" Style="{StaticResource ClassNameButton2}" HorizontalOptions="Center" Clicked="Day_OnCLicked"/>
-                            <Button x:Name="Day7" Style="{StaticResource ClassNameButton2}" HorizontalOptions="Center" Clicked="Day_OnCLicked"/>
-                            
-                        </StackLayout>-->
-                        <StackLayout >
-                        <controls:Calendar x:Name="Calendar" BorderColor="Transparent" SelectedBorderColor="#db95a9" Padding="10,0,10,0" StartDay="Monday" SelectedBorderWidth="4" DisabledBorderColor="Black" />
-                        </StackLayout>
-                    <!--</ScrollView>-->
-
-
-
+                    <StackLayout x:Name="CalStack">
+                        <controls:Calendar x:Name="Calendar" DateClicked="Calendar_OnDateClicked" BorderColor="Transparent" SelectedBorderColor="#db95a9" Padding="10,0,10,0" StartDay="Monday" SelectedBorderWidth="4" DisabledBorderColor="Black" />
+                    </StackLayout>
                     <ListView
-    x:Name="timelineListView"
-    ItemTapped="timelineListView_ItemTapped"
-    ItemsSource="{Binding .}"
-    RowHeight="75"
-    SeparatorVisibility="None"    
-    IsPullToRefreshEnabled="true" Refreshing="OnRefresh">
+                    x:Name="timelineListView"
+                    ItemTapped="timelineListView_ItemTapped"
+                    ItemsSource="{Binding .}"
+                    RowHeight="75"
+                    SeparatorVisibility="None"    
+                    IsPullToRefreshEnabled="true" Refreshing="OnRefresh">   
 
                         <ListView.Header>
                             <StackLayout Padding="20,10,0,30">
                                 <Label x:Name="Header" Style="{StaticResource PageHeaderLabel}" Text="Tasks"/>
-                                <Label x:Name="SubHeader" Style="{StaticResource SubHeaderLabel}" />
+                                <!--<Label x:Name="SubHeader" Style="{StaticResource SubHeaderLabel}" />-->
                             </StackLayout>
                         </ListView.Header>
 
