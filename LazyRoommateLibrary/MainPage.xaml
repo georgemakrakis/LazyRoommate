@@ -48,8 +48,8 @@
                 </ResourceDictionary>
             </ContentPage.Resources>
             <ContentPage.Content>
-                <StackLayout>
-                    <ActivityIndicator x:Name="ActivityIndicator" Color="#E4B6C3" VerticalOptions="Center" IsRunning="True"/>
+                <StackLayout x:Name="CalStack">
+                    <ActivityIndicator x:Name="ActivityIndicator" Color="#db95a9" VerticalOptions="Center" IsRunning="True"/>
                     <!--<ScrollView BackgroundColor="Transparent" Orientation="Horizontal" Padding="10">
                         <StackLayout Orientation="Horizontal" Spacing="3"
                                      Padding="0"                                     
@@ -65,8 +65,8 @@
                             <Button x:Name="Day7" Style="{StaticResource ClassNameButton2}" HorizontalOptions="Center" Clicked="Day_OnCLicked"/>
                             
                         </StackLayout>-->
-                        <StackLayout>
-                            <controls:Calendar x:Name="Calendar" DateClicked="Calendar_OnDateClicked"  Padding="10,0,10,0" StartDay="Monday" SelectedBorderWidth="4" DisabledBorderColor="Black" />
+                        <StackLayout >
+                        <controls:Calendar x:Name="Calendar" BorderColor="Transparent" SelectedBorderColor="#db95a9" Padding="10,0,10,0" StartDay="Monday" SelectedBorderWidth="4" DisabledBorderColor="Black" />
                         </StackLayout>
                     <!--</ScrollView>-->
 

@@ -80,8 +80,8 @@ namespace LazyRoommate
         public MainPage()
         {
             InitializeComponent();
+            SizeChanged += ChangeCalendarSize;
 
-           
             //var date = DateTime.UtcNow;
             //Day1.Text = date.Day + " " + date.DayOfWeek;
             //Day1.ClassId = date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
@@ -236,6 +236,12 @@ namespace LazyRoommate
 
             // Connecting context of this page to the our View Model class
             //BindingContext = new TasksViewModel();
+        }
+
+        private void ChangeCalendarSize(object sender, EventArgs e)
+        {
+            CalStack.WidthRequest = Math.Min(this.Width, 400);
+            CalStack.HeightRequest = Math.Min(this.Height, 400);
         }
 
         private async void OnMenuItemSelected(object sender, ItemTappedEventArgs e)
