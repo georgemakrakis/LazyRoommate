@@ -50,9 +50,11 @@
             <ContentPage.Content>
                 <StackLayout>
                     <ActivityIndicator x:Name="ActivityIndicator" Color="#db95a9" VerticalOptions="Center" IsRunning="True"/>
-                    <StackLayout x:Name="CalStack">
-                        <controls:Calendar x:Name="Calendar" DateClicked="Calendar_OnDateClicked" BorderColor="Transparent" SelectedBorderColor="#db95a9" Padding="10,0,10,0" StartDay="Monday" SelectedBorderWidth="4" DisabledBorderColor="Black" />
-                    </StackLayout>
+                    <ScrollView>
+                        <StackLayout x:Name="CalStack">
+                            <controls:Calendar x:Name="Calendar" DateClicked="Calendar_OnDateClicked" BorderColor="Transparent" SelectedBorderColor="#db95a9" Padding="10,0,10,0" StartDay="Monday" SelectedBorderWidth="4" DisabledBorderColor="Black" />
+                        </StackLayout>
+                    </ScrollView>
                     <ListView
                     x:Name="timelineListView"
                     ItemTapped="timelineListView_ItemTapped"

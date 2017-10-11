@@ -80,6 +80,7 @@ namespace LazyRoommate
         public MainPage()
         {
             InitializeComponent();
+
             SizeChanged += ChangeCalendarSize;
                     
             NavigationPage.SetHasNavigationBar(this, true);
@@ -220,8 +221,8 @@ namespace LazyRoommate
             //Calendar.WidthRequest = Math.Max(Width, 400);
             //Calendar.HeightRequest = Math.Max(Height, 100);
 
-            Calendar.WidthRequest = Math.Max(Width, 300);
-            CalStack.HeightRequest = Math.Min(Height, 400);
+            Calendar.WidthRequest = 400;
+            Calendar.HeightRequest = 400;
 
         }
 
