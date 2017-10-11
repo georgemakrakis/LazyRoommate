@@ -81,7 +81,7 @@ namespace LazyRoommate
         {
             InitializeComponent();
 
-            SizeChanged += ChangeCalendarSize;
+           
                     
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
@@ -105,7 +105,7 @@ namespace LazyRoommate
                     break;
             }
 
-
+            SizeChanged += ChangeCalendarSize;
 
             //Initializing the Hamburger menu
 
@@ -174,13 +174,13 @@ namespace LazyRoommate
                 {
                     Calendar.SelectedDate = DateTime.UtcNow;
                     var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-
+                    
                     await DataFactory.Init(date);
                     ActivityIndicator.IsRunning = false;
                     ActivityIndicator.IsVisible = false;
                     timelineListView.ItemsSource = DataFactory.UserTasks;
                     //SubHeader.Text = date;
-                    retry.IsVisible = false;
+                    retry.IsVisible = false;                    
                 }
                 catch (HttpRequestException ex)
                 {
@@ -205,11 +205,7 @@ namespace LazyRoommate
                     ActivityIndicator.IsRunning = false;
                     ActivityIndicator.IsVisible = false;
                 }
-
-
-
             });
-
 
 
             // Connecting context of this page to the our View Model class
@@ -221,9 +217,8 @@ namespace LazyRoommate
             //Calendar.WidthRequest = Math.Max(Width, 400);
             //Calendar.HeightRequest = Math.Max(Height, 100);
 
-            Calendar.WidthRequest = 400;
-            Calendar.HeightRequest = 400;
-
+            Calendar.WidthRequest = Math.Max(Width, 400);
+            Calendar.HeightRequest = Math.Min(Height, 330);            
         }
 
 
@@ -678,9 +673,11 @@ namespace LazyRoommate
         //}
         private void Calendar_OnDateClicked(object sender, DateTimeEventArgs e)
         {
+           
             //Get the slected value from calendar
             var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            LoadList(date);              
+            LoadList(date);
+            Calendar.ForceRedraw();
         }
     }
 }
