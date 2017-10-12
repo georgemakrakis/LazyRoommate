@@ -18,16 +18,6 @@ C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\Lazy
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.dll
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.pdb
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.dll
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.pdb
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.csprojResolveAssemblyReference.cache
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.App.xaml.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.CreateTasksPage.xaml.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.LoginPage.xaml.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainPage.xaml.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.dll
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.pdb
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.dll
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.pdb
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.csprojResolveAssemblyReference.cache
@@ -38,3 +28,13 @@ C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\L
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.dll
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.pdb
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.dll
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.pdb
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.csprojResolveAssemblyReference.cache
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.App.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.CreateTasksPage.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.LoginPage.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainPage.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.dll
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.pdb

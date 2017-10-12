@@ -32,7 +32,7 @@ namespace LazyRoommate
                 ActivityIndicator.IsVisible = false;
                 timelineListView.ItemsSource = DataFactory.UserTasks;
                 retry.IsVisible = false;
-
+                Calendar.ForceRedraw();
             }
             catch (HttpRequestException ex)
             {
@@ -81,8 +81,10 @@ namespace LazyRoommate
         {
             InitializeComponent();
 
-           
-                    
+            Calendar.SelectedDate = DateTime.Today;
+            var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+            LoadList(date);
+
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
 
@@ -97,15 +99,14 @@ namespace LazyRoommate
                     break;
                 case Device.Windows:
                     ToolbarItems.Add(new ToolbarItem("Refresh", "refresh.png", () =>
-                    {
-                        var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    {                       
                         LoadList(date);
                         //SubHeader.Text = day_selected;
                     }));
                     break;
             }
 
-            SizeChanged += ChangeCalendarSize;
+            //SizeChanged += ChangeCalendarSize;
 
             //Initializing the Hamburger menu
 
@@ -164,48 +165,7 @@ namespace LazyRoommate
             };
             menu.ItemsSource = masterPageItems;
 
-            //BindingContext = DataFactory.Tasks;
-
-            Device.BeginInvokeOnMainThread(async () =>
-            {
-                //var list = timelineListView.ItemTemplate;
-                //list.Values.
-                try
-                {
-                    Calendar.SelectedDate = DateTime.UtcNow;
-                    var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-                    
-                    await DataFactory.Init(date);
-                    ActivityIndicator.IsRunning = false;
-                    ActivityIndicator.IsVisible = false;
-                    timelineListView.ItemsSource = DataFactory.UserTasks;
-                    //SubHeader.Text = date;
-                    retry.IsVisible = false;                    
-                }
-                catch (HttpRequestException ex)
-                {
-                    retry.IsVisible = true;
-                    retry.Text = "An Network error occured.\nPlease check network connectivity.";
-                    //SubHeader.Text = day_selected;
-                    ActivityIndicator.IsRunning = false;
-                    ActivityIndicator.IsVisible = false;
-                }
-                catch (MobileServiceInvalidOperationException ex)
-                {
-                    retry.IsVisible = true;
-                    retry.Text = "A service related issue occured. Please contact admin.";
-                    //SubHeader.Text = day_selected;
-                    ActivityIndicator.IsRunning = false;
-                    ActivityIndicator.IsVisible = false;
-                }
-                catch (Exception ex)
-                {
-                    retry.IsVisible = true;
-                    retry.Text = "An other error occured please try again.";
-                    ActivityIndicator.IsRunning = false;
-                    ActivityIndicator.IsVisible = false;
-                }
-            });
+            //BindingContext = DataFactory.Tasks;           
 
 
             // Connecting context of this page to the our View Model class
@@ -677,7 +637,7 @@ namespace LazyRoommate
             //Get the slected value from calendar
             var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             LoadList(date);
-            Calendar.ForceRedraw();
+            
         }
     }
 }
