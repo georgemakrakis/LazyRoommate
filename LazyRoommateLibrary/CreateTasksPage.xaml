@@ -7,61 +7,60 @@
              Title="CreateTasksPage">
     <ScrollView>
         <Grid>
-        <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+            <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-        <!--left, top, right, and bottom-->
-        <Label Grid.Row="0" Text="Create Task" TextColor="White" FontSize="50" Margin="0,40,0,40" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+            <!--left, top, right, and bottom-->
+            
+            <StackLayout  Grid.Row="0" Margin="30,10,30,10">
+                <Label Text="Create Task" TextColor="White" FontSize="50" Margin="0,30,0,30" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                <Entry x:Name="TaskName" Placeholder="Task Name" PlaceholderColor="White"/>
+                <Entry x:Name="TaskDesc" Placeholder="Task Description" PlaceholderColor="White"/>
 
-        <StackLayout  Grid.Row="1" Margin="30,10,30,10">
-            <Entry x:Name="TaskName" Placeholder="Task Name" PlaceholderColor="White"/>
-            <Entry x:Name="TaskDesc" Placeholder="Task Description" PlaceholderColor="White"/>
-
-            <!--<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">-->
-            <StackLayout HorizontalOptions="FillAndExpand">
-                <Label Text="Start Date" TextColor="White"/>
-                <DatePicker x:Name="StartDate" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.UtcNow}">
-                    <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
-                    <DatePicker.MinimumDate>
-                        <sys:DateTime x:FactoryMethod="Parse">
-                            <x:Arguments>
-                                <x:String>Jan 1 2000</x:String>
-                            </x:Arguments>
-                        </sys:DateTime>
-                    </DatePicker.MinimumDate>
-                    <DatePicker.MaximumDate>
-                        <sys:DateTime x:FactoryMethod="Parse">
-                            <x:Arguments>
-                                <x:String>Dec 31 2050</x:String>
-                            </x:Arguments>
-                        </sys:DateTime>
-                    </DatePicker.MaximumDate>
-                </DatePicker>
-            <!--</StackLayout>-->
-            <!--<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">-->
-                <Label Text="End Date" TextColor="White"/>
-                <DatePicker x:Name="EndDate" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.UtcNow}">
-                    <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
-                    <DatePicker.MinimumDate>
-                        <sys:DateTime x:FactoryMethod="Parse">
-                            <x:Arguments>
-                                <x:String>Jan 1 2000</x:String>
-                            </x:Arguments>
-                        </sys:DateTime>
-                    </DatePicker.MinimumDate>
-                    <DatePicker.MaximumDate>
-                        <sys:DateTime x:FactoryMethod="Parse">
-                            <x:Arguments>
-                                <x:String>Dec 31 2050</x:String>
-                            </x:Arguments>
-                        </sys:DateTime>
-                    </DatePicker.MaximumDate>
-                </DatePicker>
+                <!--<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">-->
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Label Text="Start Date" TextColor="White"/>
+                    <DatePicker x:Name="StartDate" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Today}">
+                        <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+                        <DatePicker.MinimumDate>
+                            <sys:DateTime x:FactoryMethod="Parse">
+                                <x:Arguments>
+                                    <x:String>Jan 1 2000</x:String>
+                                </x:Arguments>
+                            </sys:DateTime>
+                        </DatePicker.MinimumDate>
+                        <DatePicker.MaximumDate>
+                            <sys:DateTime x:FactoryMethod="Parse">
+                                <x:Arguments>
+                                    <x:String>Dec 31 2050</x:String>
+                                </x:Arguments>
+                            </sys:DateTime>
+                        </DatePicker.MaximumDate>
+                    </DatePicker>
+                    <!--</StackLayout>-->
+                    <!--<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">-->
+                    <Label Text="End Date" TextColor="White"/>
+                    <DatePicker x:Name="EndDate" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Today}">
+                        <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+                        <DatePicker.MinimumDate>
+                            <sys:DateTime x:FactoryMethod="Parse">
+                                <x:Arguments>
+                                    <x:String>Jan 1 2000</x:String>
+                                </x:Arguments>
+                            </sys:DateTime>
+                        </DatePicker.MinimumDate>
+                        <DatePicker.MaximumDate>
+                            <sys:DateTime x:FactoryMethod="Parse">
+                                <x:Arguments>
+                                    <x:String>Dec 31 2050</x:String>
+                                </x:Arguments>
+                            </sys:DateTime>
+                        </DatePicker.MaximumDate>
+                    </DatePicker>
+                </StackLayout>
+                <Button x:Name="AddBtn" Text="Create" IsEnabled="False" Clicked="OkClicked" Margin="0,40,0,40" FontSize="20" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
             </StackLayout>
-        </StackLayout>
-        <Button x:Name="AddBtn"  Grid.Row="2"  Text="Create" IsEnabled="False" Clicked="OkClicked" Margin="0,40,0,40" FontSize="20" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
-    </Grid>
+
+        </Grid>
     </ScrollView>
 </ContentPage>
