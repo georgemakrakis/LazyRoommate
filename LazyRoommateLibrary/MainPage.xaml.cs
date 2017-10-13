@@ -56,14 +56,23 @@ namespace LazyRoommate
                 ActivityIndicator.IsVisible = false;
             }
         }
-        public async void OnRefresh(object sender, EventArgs e)
+        public void OnRefresh(object sender, EventArgs e)
         {
             var list = (ListView)sender;
-            var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
-            //refreshing logic here
-            LoadList(date);
-            //make sure to end the refresh state
-            list.IsRefreshing = false;
+            try
+            {
+                var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+                //refreshing logic here
+                LoadList(date);
+                //make sure to end the refresh state
+                list.IsRefreshing = false;
+            }
+            catch(InvalidOperationException ex)
+            {
+                retry.Text = "Please select a date to see the tasks";
+            }
+            
+           
         }
 
         public void Day_OnCLicked(object sender, EventArgs e)
@@ -579,58 +588,7 @@ namespace LazyRoommate
             }
         }
 
-        private void profile_Clicked(object sender, System.EventArgs e)
-        {
-            Navigation.PushAsync(new ProfilePage(), true);
-        }
-
-        private async void Logout_Clicked(object sender, EventArgs e)
-        {
-            App.Email = string.Empty;
-            App.ProfileImage = string.Empty;
-            App.ProfileName = string.Empty;
-            App.RoomName = string.Empty;
-            await Navigation.PushAsync(new LoginPage(), true);
-
-            //This just came up just for security-reverse engineering reasons i think...
-            //Navigation.RemovePage(this);
-        }
-
-        //private void LoadingList(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        //{
-
-        //}
-
-        //private async void DoneConfirm_OnToggled(object sender, ToggledEventArgs e)
-        //{
-        //    //toogle.ClassId is used to specify the task naem of every list item
-        //    var toogle = (Switch) sender;
-
-        //    //Debug.WriteLine(toogle.ClassId);
-
-
-        //    if (toogle.IsToggled)
-        //    {                
-
-        //    }
-        //    else
-        //    {
-        //        if (task.Done.Equals(App.Email))
-        //        {
-
-        //        }
-        //        else if (task.Done.Equals(string.Empty))
-        //        {
-        //            //do nothing cause task is empty
-        //        }
-        //        else if (!task.Done.Equals(App.Email))
-        //        {
-        //            task.Confirmed = string.Empty;
-
-        //            await TaskTable.UpdateAsync(task);
-        //        }
-        //    }
-        //}
+        
         private void Calendar_OnDateClicked(object sender, DateTimeEventArgs e)
         {
            
