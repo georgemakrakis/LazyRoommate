@@ -67,7 +67,10 @@ namespace LazyRoommate
             }
             catch(InvalidOperationException ex)
             {
+                timelineListView.ItemsSource = null;
+                retry.IsVisible = true;
                 retry.Text = "Please select a date to see the tasks";
+                list.IsRefreshing = false;
             }
             
            
