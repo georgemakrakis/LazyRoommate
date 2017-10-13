@@ -81,13 +81,14 @@ namespace LazyRoommate
         public MainPage()
         {
             InitializeComponent();
-
+           
             Calendar.SelectedDate = DateTime.Today;
             var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             LoadList(date);
 
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
+           
 
             //Lack of having an PullToRefresh Action in windows made use use the toolbar to refresh the list
             switch (Device.RuntimePlatform)
@@ -101,8 +102,7 @@ namespace LazyRoommate
                 case Device.Windows:
                     ToolbarItems.Add(new ToolbarItem("Refresh", "refresh.png", () =>
                     {                       
-                        LoadList(date);
-                        //SubHeader.Text = day_selected;
+                        LoadList(date);                        
                     }));
                     break;
             }
@@ -165,6 +165,7 @@ namespace LazyRoommate
                 }
             };
             menu.ItemsSource = masterPageItems;
+            
 
             //BindingContext = DataFactory.Tasks;           
 
