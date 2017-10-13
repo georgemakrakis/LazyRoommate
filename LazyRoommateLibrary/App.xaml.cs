@@ -16,6 +16,8 @@ namespace LazyRoommate
     }
     public partial class App : Application
     {
+        public static MobileServiceClient client = new MobileServiceClient("https://lazyroommate.azurewebsites.net");
+
         //initializing the interface with a platform-specific implementation
         public static IAuthenticate Authenticator { get; private set; }     
         //public static SystemNavigationManager currentView=null;
@@ -70,9 +72,6 @@ namespace LazyRoommate
             }
           
         }
-       
-
-        public static MobileServiceClient client = new MobileServiceClient("https://lazyroommate.azurewebsites.net");
 
         protected override void OnStart()
         {

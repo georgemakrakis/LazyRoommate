@@ -17,11 +17,9 @@ namespace LazyRoommate
 {
     public partial class MainPage : MasterDetailPage
     {
-        private MobileServiceUser user { get; set; }
         public Task Dialogs { get; private set; }
         private List<Menu> masterPageItems;
 
-        private static string day_selected;
 
         public async void LoadList(string date)
         {
@@ -73,15 +71,6 @@ namespace LazyRoommate
             }
             
            
-        }
-
-        public void Day_OnCLicked(object sender, EventArgs e)
-        {
-            var Button = (Button) sender;
-            day_selected = Button.ClassId;
-            //SubHeader.Text = day_selected;
-            LoadList(day_selected);
-            
         }
 
 
