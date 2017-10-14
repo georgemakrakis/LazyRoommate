@@ -13,11 +13,14 @@ namespace LazyRoommate
 {
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CreateTasksPage 
+    public partial class CreateTasksPage
     {
         public CreateTasksPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, true);
+            NavigationPage.SetHasBackButton(this, true);
+
             //Enabling button only after entry
             TaskName.TextChanged += EnableSaveItemButton;
         }
@@ -55,9 +58,9 @@ namespace LazyRoommate
                             StartDate= StartDate.Date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
                             EndDate = EndDate.Date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
                         });
-                        await DisplayAlert("Task", "New task added!!!", "Ok");               
-                        await Navigation.PushAsync(new MainPage());             
-               
+                        await DisplayAlert("Task", "New task added!!!", "Ok");
+                        Application.Current.MainPage = new MasterDetailPage1 { Master = new MasterDetailPage1Master(), Detail = new NavigationPage(new MasterDetailPage1Detail()) };
+
                     }
                     catch (Exception ex)
                     {
@@ -89,9 +92,6 @@ namespace LazyRoommate
                 t_config.SetTitle("Error");
                 await UserDialogs.Instance.AlertAsync(t_config);
             }
-
-
-
 
         }
     }

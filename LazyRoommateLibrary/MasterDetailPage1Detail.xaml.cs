@@ -22,8 +22,9 @@ namespace LazyRoommate
             var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             LoadList(date);
 
-            NavigationPage.SetHasNavigationBar(this, true);
-            NavigationPage.SetHasBackButton(this, false);
+            //MasterDetailPage1.DetailNavPage
+            //NavigationPage.SetHasNavigationBar(this, true);
+            //NavigationPage.SetHasBackButton(this, false);
 
 
             //Lack of having an PullToRefresh Action in windows made use use the toolbar to refresh the list

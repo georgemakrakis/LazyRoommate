@@ -24,7 +24,7 @@ namespace LazyRoommate
         public MasterDetailPage1Master()
         {
             InitializeComponent();
-
+            Title = "Menu";
             masterPageItems = new List<Menu>
             {
                 new Menu
@@ -90,7 +90,7 @@ namespace LazyRoommate
 
             if (item.Title.Equals("Add Task"))
             {
-                await Navigation.PushAsync(new CreateTasksPage());
+                Application.Current.MainPage = new NavigationPage(new CreateTasksPage());
             }
             else if (item.Title.Equals("Join Room"))
             {
@@ -185,7 +185,7 @@ namespace LazyRoommate
                 App.ProfileImage = string.Empty;
                 App.ProfileName = string.Empty;
                 App.RoomName = string.Empty;
-                await Navigation.PushAsync(new LoginPage(), true);
+                Application.Current.MainPage = new LoginPage();
 
 
                 //This just came up just for security-reverse engineering reasons i think...

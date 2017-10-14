@@ -8,7 +8,7 @@
     <pages:MasterDetailPage1Master x:Name="MasterPage" />
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
-    <NavigationPage>
+    <NavigationPage x:Name="DetailNavPage">
       <x:Arguments>
         <pages:MasterDetailPage1Detail />
       </x:Arguments>
