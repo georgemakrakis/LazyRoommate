@@ -68,7 +68,7 @@ namespace LazyRoommate
                 {
                     BarBackgroundColor = Color.FromHex("#FFA000"),
                     BarTextColor = Color.White
-                };               
+                };                
             }
           
         }

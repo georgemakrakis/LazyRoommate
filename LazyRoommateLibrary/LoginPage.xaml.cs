@@ -47,9 +47,11 @@ namespace LazyRoommate
             if (authenticated)
             {
                 //await DisplayAlert("Alert", "Authentication Successful", "OK");
-                //await Navigation.PushAsync(new MainPage(), true);
-                Navigation.InsertPageBefore(new MainPage(), this);
-                await Navigation.PopToRootAsync();
+                await Navigation.PushAsync(new MainPage(), true);
+                               
+                //Navigation.InsertPageBefore(new MainPage(),this);
+                //await Navigation.PopToRootAsync();
+                
 
             }
         }

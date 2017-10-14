@@ -9,8 +9,10 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 using XamForms.Controls;
 
 namespace LazyRoommate
@@ -288,8 +290,9 @@ namespace LazyRoommate
                 App.Email = string.Empty;
                 App.ProfileImage = string.Empty;
                 App.ProfileName = string.Empty;
-                App.RoomName = string.Empty;
+                App.RoomName = string.Empty;                
                 await Navigation.PushAsync(new LoginPage(), true);
+                
 
                 //This just came up just for security-reverse engineering reasons i think...
                 //Navigation.RemovePage(this);
