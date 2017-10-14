@@ -240,6 +240,9 @@
   <data name="FieldTooBigNumEntries" xml:space="preserve">
     <value>Number of Entries cannot be held in an Int64.</value>
   </data>
+  <data name="UnsupportedCompressionMethod" xml:space="preserve">
+    <value>The archive entry was compressed using {0} and is not supported.</value>
+  </data>
   <data name="ZLibErrorIncorrectInitParameters" xml:space="preserve">
     <value>The underlying compression routine received incorrect initialization parameters.</value>
   </data>

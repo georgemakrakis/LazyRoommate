@@ -54,23 +54,24 @@ namespace LazyRoommate
         {
             // The root page of your application
             InitializeComponent();
-            if (App.Email != string.Empty)
-            {
-                MainPage = new NavigationPage(new MainPage())
-                {
-                    BarBackgroundColor = Color.FromHex("#FFA000"),
-                    BarTextColor = Color.White   
-                };
-            }
-            else
-            {               
-                MainPage = new NavigationPage(new LoginPage())
-                {
-                    BarBackgroundColor = Color.FromHex("#FFA000"),
-                    BarTextColor = Color.White
-                };                
-            }
-          
+            //if (App.Email != string.Empty)
+            //{
+            //    MainPage = new NavigationPage(new MainPage())
+            //    {
+            //        BarBackgroundColor = Color.FromHex("#FFA000"),
+            //        BarTextColor = Color.White   
+            //    };
+            //}
+            //else
+            //{               
+            //    MainPage = new NavigationPage(new LoginPage())
+            //    {
+            //        BarBackgroundColor = Color.FromHex("#FFA000"),
+            //        BarTextColor = Color.White
+            //    };                
+            //}
+            MainPage = new LoginPage();
+
         }
 
         protected override void OnStart()

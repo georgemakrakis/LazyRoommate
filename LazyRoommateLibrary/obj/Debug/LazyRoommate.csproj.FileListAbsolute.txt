@@ -38,3 +38,7 @@ C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainPage.
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.dll
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\bin\Debug\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MasterDetailPage1.xaml.g.cs
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MasterDetailPage1Master.xaml.g.cs
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MasterDetailPage1Detail.xaml.g.cs
