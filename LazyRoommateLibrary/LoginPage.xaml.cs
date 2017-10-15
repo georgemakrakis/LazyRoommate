@@ -50,7 +50,15 @@ namespace LazyRoommate
                 //await Navigation.PushAsync(new MainPage(), true);
 
                 //Application.Current.MainPage = new MasterDetailPage();
-                Application.Current.MainPage = new MasterDetailPage1 { Master = new MasterDetailPage1Master(), Detail = new NavigationPage(new MasterDetailPage1Detail())};
+                Application.Current.MainPage = new MasterDetailPage1
+                {
+                    Master = new MasterDetailPage1Master(),
+                    Detail = new NavigationPage(new MasterDetailPage1Detail())
+                    {
+                        BarBackgroundColor = Color.FromHex("#FFA000"),
+                        BarTextColor = Color.White
+                    }
+                };
                 //Navigation.InsertPageBefore(new MainPage(),this);
                 //await Navigation.PopToRootAsync();
 

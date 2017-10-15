@@ -21,6 +21,21 @@ namespace LazyRoommate
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, true);
 
+            
+            ToolbarItems.Add(new ToolbarItem("Back", "refresh.png", () =>
+            {
+                Application.Current.MainPage = new MasterDetailPage1
+                {
+                    Master = new MasterDetailPage1Master(),
+                    Detail = new NavigationPage(new MasterDetailPage1Detail())
+                    {
+                        BarBackgroundColor = Color.FromHex("#FFA000"),
+                        BarTextColor = Color.White
+                    }
+                };
+            }));
+                   
+            
             //Enabling button only after entry
             TaskName.TextChanged += EnableSaveItemButton;
         }

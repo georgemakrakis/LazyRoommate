@@ -19,7 +19,7 @@ namespace LazyRoommate
         public static MobileServiceClient client = new MobileServiceClient("https://lazyroommate.azurewebsites.net");
 
         //initializing the interface with a platform-specific implementation
-        public static IAuthenticate Authenticator { get; private set; }     
+        public static IAuthenticate Authenticator { get; private set; }
         //public static SystemNavigationManager currentView=null;
         private static ISettings AppSettings =>
             CrossSettings.Current;
@@ -46,7 +46,7 @@ namespace LazyRoommate
         }
 
         public static void Init(IAuthenticate authenticator)
-        {           
+        {
             Authenticator = authenticator;
         }
 
@@ -68,10 +68,12 @@ namespace LazyRoommate
             }
             else
             {
-                MainPage = new LoginPage();
+                MainPage = new NavigationPage(new LoginPage())
+                {
+                    BarBackgroundColor = Color.FromHex("#FFA000"),
+                    BarTextColor = Color.White
+                };
             }
-
-
         }
 
         protected override void OnStart()

@@ -91,6 +91,7 @@ namespace LazyRoommate
             if (item.Title.Equals("Add Task"))
             {
                 Application.Current.MainPage = new NavigationPage(new CreateTasksPage());
+                //await Navigation.PushAsync(new CreateTasksPage(), true);
             }
             else if (item.Title.Equals("Join Room"))
             {
