@@ -117,11 +117,13 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="back_button.png" />
     <Content Include="create_room_32.png" />
     <Content Include="CurvedMask.png" />
     <Content Include="delete_account.png" />
     <Content Include="dot.png" />
     <Content Include="help_32.png" />
+    <Content Include="home.png" />
     <Content Include="join_room_32.png" />
     <Content Include="lazyroomatelogotransparent.png" />
     <Content Include="leave_room_32.png" />

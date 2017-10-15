@@ -19,21 +19,21 @@ namespace LazyRoommate
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, true);
-            NavigationPage.SetHasBackButton(this, true);
+            NavigationPage.SetHasBackButton(this, false);
 
             
-            ToolbarItems.Add(new ToolbarItem("Back", "refresh.png", () =>
-            {
-                Application.Current.MainPage = new MasterDetailPage1
-                {
-                    Master = new MasterDetailPage1Master(),
-                    Detail = new NavigationPage(new MasterDetailPage1Detail())
-                    {
-                        BarBackgroundColor = Color.FromHex("#FFA000"),
-                        BarTextColor = Color.White
-                    }
-                };
-            }));
+            //ToolbarItems.Add(new ToolbarItem("Back", "back_button.png", () =>
+            //{
+            //    Application.Current.MainPage = new MasterDetailPage1
+            //    {
+            //        Master = new MasterDetailPage1Master(),
+            //        Detail = new NavigationPage(new MasterDetailPage1Detail())
+            //        {
+            //            BarBackgroundColor = Color.FromHex("#FFA000"),
+            //            BarTextColor = Color.White
+            //        }
+            //    };
+            //}));
                    
             
             //Enabling button only after entry
@@ -74,7 +74,15 @@ namespace LazyRoommate
                             EndDate = EndDate.Date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)
                         });
                         await DisplayAlert("Task", "New task added!!!", "Ok");
-                        Application.Current.MainPage = new MasterDetailPage1 { Master = new MasterDetailPage1Master(), Detail = new NavigationPage(new MasterDetailPage1Detail()) };
+                        Application.Current.MainPage = new MasterDetailPage1
+                        {
+                            Master = new MasterDetailPage1Master(),
+                            Detail = new NavigationPage(new MasterDetailPage1Detail())
+                            {
+                                BarBackgroundColor = Color.FromHex("#FFA000"),
+                                BarTextColor = Color.White
+                            }
+                        };
 
                     }
                     catch (Exception ex)

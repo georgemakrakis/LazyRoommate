@@ -29,6 +29,12 @@ namespace LazyRoommate
             {
                 new Menu
                 {
+                    Title = "Home",
+                    Icon="home.png",                                       
+                    //TargetType = typeof(UserDialogs)
+                },
+                new Menu
+                {
                     Title = "Add Task",
                     Icon="add_task.png",                                       
                     //TargetType = typeof(UserDialogs)
@@ -87,10 +93,21 @@ namespace LazyRoommate
             //Getting the source of the item selected on menu, so we could use is later
             var item = (Menu)e.Item;
             PromptConfig prmt = null;
-
-            if (item.Title.Equals("Add Task"))
+            if (item.Title.Equals("Home"))
             {
-                Application.Current.MainPage = new NavigationPage(new CreateTasksPage());
+                //Changing the Detail page with the new page we want to present
+                var masterDetailPage = App.Current.MainPage as MasterDetailPage;
+                masterDetailPage.Detail = new MasterDetailPage1Detail();
+            }
+            else if (item.Title.Equals("Add Task"))
+            {
+                //Application.Current.MainPage = new NavigationPage(new CreateTasksPage());
+
+                //This is the right implementation
+                var masterDetailPage = App.Current.MainPage as MasterDetailPage;
+                masterDetailPage.Detail = new CreateTasksPage();
+                //masterDetailPage.Master.
+
                 //await Navigation.PushAsync(new CreateTasksPage(), true);
             }
             else if (item.Title.Equals("Join Room"))
@@ -177,8 +194,10 @@ namespace LazyRoommate
                 prmt.Title = "Enter the email of the user you want to remove:";
             }
             else if (item.Title.Equals("Profile"))
-            {
-                await Navigation.PushAsync(new ProfilePage(), true);
+            {               
+                //Changing the Detail page with the new page we want to present
+                var masterDetailPage = App.Current.MainPage as MasterDetailPage;
+                masterDetailPage.Detail = new ProfilePage();                
             }
             else if (item.Title.Equals("Logout"))
             {
@@ -405,32 +424,6 @@ namespace LazyRoommate
 
         }
 
-        class MasterDetailPage1MasterViewModel : INotifyPropertyChanged
-        {
-            public ObservableCollection<MasterDetailPage1MenuItem> MenuItems { get; set; }
-
-            public MasterDetailPage1MasterViewModel()
-            {
-                MenuItems = new ObservableCollection<MasterDetailPage1MenuItem>(new[]
-                {
-                    new MasterDetailPage1MenuItem { Id = 0, Title = "Page 1" },
-                    new MasterDetailPage1MenuItem { Id = 1, Title = "Page 2" },
-                    new MasterDetailPage1MenuItem { Id = 2, Title = "Page 3" },
-                    new MasterDetailPage1MenuItem { Id = 3, Title = "Page 4" },
-                    new MasterDetailPage1MenuItem { Id = 4, Title = "Page 5" },
-                });
-            }
-
-            #region INotifyPropertyChanged Implementation
-            public event PropertyChangedEventHandler PropertyChanged;
-            void OnPropertyChanged([CallerMemberName] string propertyName = "")
-            {
-                if (PropertyChanged == null)
-                    return;
-
-                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
-            }
-            #endregion
-        }
+        
     }
 }

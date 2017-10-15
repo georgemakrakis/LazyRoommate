@@ -13,7 +13,8 @@ namespace LazyRoommate
         public ProfilePage()
         {
             InitializeComponent();
-           
+            NavigationPage.SetHasNavigationBar(this, true);
+            NavigationPage.SetHasBackButton(this, false);
             LoadInfo();
 
             

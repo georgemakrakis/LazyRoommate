@@ -4,7 +4,7 @@
              xmlns:converter="clr-namespace:LazyRoommate.Converter;assembly=LazyRoommate"
              xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
              x:Class="LazyRoommate.MasterDetailPage1Detail"
-             Title="Detail">
+             Title="Home">
     <ContentPage.Resources>
         <ResourceDictionary>
             <converter:NotBooleanConverter x:Key="NotBooleanConverter" />
