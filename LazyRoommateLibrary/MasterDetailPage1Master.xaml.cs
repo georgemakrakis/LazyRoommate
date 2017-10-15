@@ -98,6 +98,7 @@ namespace LazyRoommate
                 //Changing the Detail page with the new page we want to present
                 var masterDetailPage = App.Current.MainPage as MasterDetailPage;
                 masterDetailPage.Detail = new MasterDetailPage1Detail();
+                masterDetailPage.IsPresented = false;
             }
             else if (item.Title.Equals("Add Task"))
             {
@@ -106,6 +107,7 @@ namespace LazyRoommate
                 //This is the right implementation
                 var masterDetailPage = App.Current.MainPage as MasterDetailPage;
                 masterDetailPage.Detail = new CreateTasksPage();
+                masterDetailPage.IsPresented = false;
                 //masterDetailPage.Master.
 
                 //await Navigation.PushAsync(new CreateTasksPage(), true);
@@ -197,7 +199,8 @@ namespace LazyRoommate
             {               
                 //Changing the Detail page with the new page we want to present
                 var masterDetailPage = App.Current.MainPage as MasterDetailPage;
-                masterDetailPage.Detail = new ProfilePage();                
+                masterDetailPage.Detail = new ProfilePage();
+                masterDetailPage.IsPresented = false;
             }
             else if (item.Title.Equals("Logout"))
             {
