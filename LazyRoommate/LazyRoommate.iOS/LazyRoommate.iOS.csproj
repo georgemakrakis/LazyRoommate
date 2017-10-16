@@ -250,6 +250,12 @@
   <ItemGroup>
     <BundleResource Include="Resources\Icon-Small-40%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lazyroomatelogotransparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\login_scrn.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -12,7 +12,7 @@ namespace LazyRoommate
         public LoginPage()
         {
             InitializeComponent();
-            SizeChanged += ChangeLogo;
+            //SizeChanged += ChangeLogo;
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);        
         }

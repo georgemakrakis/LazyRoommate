@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LazyRoommate.LoginPage"
              BackgroundImage="login_scrn.jpg"
-   Padding="0, 20, 0, 0">
+    Padding="0, 20, 0, 0">
 
 
     <ContentPage.Content >
