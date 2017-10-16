@@ -14,7 +14,7 @@ namespace LazyRoommate
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, true);
-            NavigationPage.SetHasBackButton(this, false);
+            NavigationPage.SetHasBackButton(this, true);
             LoadInfo();
 
             

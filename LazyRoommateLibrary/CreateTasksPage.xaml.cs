@@ -19,7 +19,7 @@ namespace LazyRoommate
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, true);
-            NavigationPage.SetHasBackButton(this, false);
+            NavigationPage.SetHasBackButton(this, true);
 
             
             //ToolbarItems.Add(new ToolbarItem("Back", "back_button.png", () =>

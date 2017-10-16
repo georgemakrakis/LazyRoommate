@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-15T22:00:01.609</Modified>
+      <Modified>2017-10-15T22:11:13.296</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\LazyRoommate.UWP.exe">
       <PackagePath>entrypoint\LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2017-10-15T22:00:00.368</Modified>
+      <Modified>2017-10-15T22:11:10.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs.Interface.dll">
       <PackagePath>Acr.UserDialogs.Interface.dll</PackagePath>
@@ -554,7 +554,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.dll">
       <PackagePath>LazyRoommate.dll</PackagePath>
-      <Modified>2017-10-15T21:59:58.889</Modified>
+      <Modified>2017-10-15T22:08:36.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Xamarin.iOS.dll">
       <PackagePath>Xamarin.iOS.dll</PackagePath>
@@ -566,133 +566,133 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\add_32.png">
       <PackagePath>add_32.png</PackagePath>
-      <Modified>2017-10-03T18:15:20.377</Modified>
+      <Modified>2017-10-15T22:08:34.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\add_task.png">
       <PackagePath>add_task.png</PackagePath>
-      <Modified>2017-10-03T18:15:20.377</Modified>
+      <Modified>2017-10-15T22:08:34.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-10-03T18:15:20.355</Modified>
+      <Modified>2017-10-15T22:08:34.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-03T18:15:20.355</Modified>
+      <Modified>2017-10-15T22:08:34.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-03T18:15:20.371</Modified>
+      <Modified>2017-10-15T22:08:34.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-03T18:15:20.372</Modified>
+      <Modified>2017-10-15T22:08:34.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-03T18:15:20.374</Modified>
+      <Modified>2017-10-15T22:08:34.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-03T18:15:20.375</Modified>
+      <Modified>2017-10-15T22:08:34.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-03T18:15:20.377</Modified>
+      <Modified>2017-10-15T22:08:34.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\back_button.png">
       <PackagePath>back_button.png</PackagePath>
-      <Modified>2017-10-15T12:20:56.815</Modified>
+      <Modified>2017-10-15T22:08:34.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\create_room_32.png">
       <PackagePath>create_room_32.png</PackagePath>
-      <Modified>2017-10-03T18:15:22.459</Modified>
+      <Modified>2017-10-15T22:08:35.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\CurvedMask.png">
       <PackagePath>CurvedMask.png</PackagePath>
-      <Modified>2017-10-03T20:00:07.500</Modified>
+      <Modified>2017-10-15T22:08:34.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\delete_account.png">
       <PackagePath>delete_account.png</PackagePath>
-      <Modified>2017-10-03T19:05:27.690</Modified>
+      <Modified>2017-10-15T22:08:35.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\dot.png">
       <PackagePath>dot.png</PackagePath>
-      <Modified>2017-10-03T18:15:22.459</Modified>
+      <Modified>2017-10-15T22:08:35.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\help_32.png">
       <PackagePath>help_32.png</PackagePath>
-      <Modified>2017-10-03T18:15:22.459</Modified>
+      <Modified>2017-10-15T22:08:35.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\home.png">
       <PackagePath>home.png</PackagePath>
-      <Modified>2017-10-15T21:19:12.168</Modified>
+      <Modified>2017-10-15T22:08:35.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\join_room_32.png">
       <PackagePath>join_room_32.png</PackagePath>
-      <Modified>2017-10-03T18:15:22.459</Modified>
+      <Modified>2017-10-15T22:08:35.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\lazyroomatelogotransparent.png">
       <PackagePath>lazyroomatelogotransparent.png</PackagePath>
-      <Modified>2017-10-08T16:43:05.077</Modified>
+      <Modified>2017-10-15T22:08:35.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\leave_room_32.png">
       <PackagePath>leave_room_32.png</PackagePath>
-      <Modified>2017-10-03T18:15:22.459</Modified>
+      <Modified>2017-10-15T22:08:35.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\login_logo.png">
       <PackagePath>login_logo.png</PackagePath>
-      <Modified>2017-10-03T18:15:22.459</Modified>
+      <Modified>2017-10-15T22:08:35.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\logout_32.png">
       <PackagePath>logout_32.png</PackagePath>
-      <Modified>2017-10-03T18:15:22.459</Modified>
+      <Modified>2017-10-15T22:08:35.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\refresh.png">
       <PackagePath>refresh.png</PackagePath>
-      <Modified>2017-10-03T18:15:23.461</Modified>
+      <Modified>2017-10-15T22:08:35.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\remove_roommate.png">
       <PackagePath>remove_roommate.png</PackagePath>
-      <Modified>2017-10-03T18:15:23.461</Modified>
+      <Modified>2017-10-15T22:08:35.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\settings_32.png">
       <PackagePath>settings_32.png</PackagePath>
-      <Modified>2017-10-03T18:15:23.461</Modified>
+      <Modified>2017-10-15T22:08:35.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\social_connect_facebook.png">
       <PackagePath>social_connect_facebook.png</PackagePath>
-      <Modified>2017-10-03T18:15:23.461</Modified>
+      <Modified>2017-10-15T22:08:35.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\social_connect_google.png">
       <PackagePath>social_connect_google.png</PackagePath>
-      <Modified>2017-10-03T18:15:23.461</Modified>
+      <Modified>2017-10-15T22:08:35.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\social_connect_twitter.png">
       <PackagePath>social_connect_twitter.png</PackagePath>
-      <Modified>2017-10-03T18:15:23.461</Modified>
+      <Modified>2017-10-15T22:08:35.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\user_profile_32.png">
       <PackagePath>user_profile_32.png</PackagePath>
-      <Modified>2017-10-03T18:15:23.461</Modified>
+      <Modified>2017-10-15T22:08:35.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\login_scrn.jpg">
       <PackagePath>login_scrn.jpg</PackagePath>
-      <Modified>2017-10-08T16:43:05.077</Modified>
+      <Modified>2017-10-15T22:08:35.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-10-03T18:15:20.377</Modified>
+      <Modified>2017-10-15T22:08:34.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\LazyRoommate.UWP.xr.xml">
       <PackagePath>LazyRoommate.UWP.xr.xml</PackagePath>
-      <Modified>2017-10-15T21:12:53.018</Modified>
+      <Modified>2017-10-15T22:08:35.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -741,11 +741,11 @@
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-15T21:21:26.991</Modified>
+      <Modified>2017-10-15T22:11:12.521</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\LazyRoommate.UWP.exe">
       <PackagePath>LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2017-10-15T22:00:01.602</Modified>
+      <Modified>2017-10-15T22:11:13.288</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
