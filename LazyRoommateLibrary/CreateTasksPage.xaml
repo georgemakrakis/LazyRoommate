@@ -20,7 +20,7 @@
                 <!--<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">-->
                 <StackLayout HorizontalOptions="FillAndExpand">
                     <Label Text="Start Date" TextColor="White"/>
-                    <DatePicker x:Name="StartDate" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Today}">
+                    <DatePicker x:Name="StartDate" TextColor="White" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Today}">
                         <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
                         <DatePicker.MinimumDate>
                             <sys:DateTime x:FactoryMethod="Parse">
@@ -40,7 +40,7 @@
                     <!--</StackLayout>-->
                     <!--<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">-->
                     <Label Text="End Date" TextColor="White"/>
-                    <DatePicker x:Name="EndDate" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Today}">
+                    <DatePicker x:Name="EndDate" TextColor="White" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Today}">
                         <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
                         <DatePicker.MinimumDate>
                             <sys:DateTime x:FactoryMethod="Parse">

@@ -42,7 +42,7 @@ namespace LazyRoommate
 
         private void EnableSaveItemButton(object sender, TextChangedEventArgs e)
         {
-            AddBtn.IsEnabled = true;
+            AddBtn.IsEnabled = !e.NewTextValue.Equals("");
         }
 
         private async void OkClicked(object sender, System.EventArgs e)
