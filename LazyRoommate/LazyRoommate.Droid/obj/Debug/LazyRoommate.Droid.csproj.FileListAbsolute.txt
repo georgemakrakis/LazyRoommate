@@ -1,8 +1,8 @@
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid-Signed.apk
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.dll.config
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.pdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.apk
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid-Signed.apk
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Acr.Support.Android.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Acr.UserDialogs.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Acr.UserDialogs.Interface.dll

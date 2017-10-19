@@ -96,7 +96,7 @@ namespace LazyRoommate
             if (item.Title.Equals("Home"))
             {
                 //Changing the Detail page with the new page we want to present
-                var masterDetailPage = App.Current.MainPage as MasterDetailPage;
+                var masterDetailPage = Application.Current.MainPage as MasterDetailPage;
                 masterDetailPage.Detail = new NavigationPage(new MasterDetailPage1Detail())
                 {
                     BarBackgroundColor = Color.FromHex("#FFA000"),
@@ -109,7 +109,7 @@ namespace LazyRoommate
                 //Application.Current.MainPage = new NavigationPage(new CreateTasksPage());
 
                 //This is the right implementation
-                var masterDetailPage = App.Current.MainPage as MasterDetailPage;
+                var masterDetailPage = Application.Current.MainPage as MasterDetailPage;
                 masterDetailPage.Detail = new NavigationPage(new CreateTasksPage())
                 {
                     BarBackgroundColor = Color.FromHex("#FFA000"),
@@ -206,7 +206,7 @@ namespace LazyRoommate
             else if (item.Title.Equals("Profile"))
             {               
                 //Changing the Detail page with the new page we want to present
-                var masterDetailPage = App.Current.MainPage as MasterDetailPage;
+                var masterDetailPage = Application.Current.MainPage as MasterDetailPage;
                 masterDetailPage.Detail = new NavigationPage(new ProfilePage())
                 {
                     BarBackgroundColor = Color.FromHex("#FFA000"),
