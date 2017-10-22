@@ -111,3 +111,4 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhoneSimulator\De
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhoneSimulator\Debug\LazyRoommate.iOS.csproj.LazyRoommate.iOS.exe.config
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhoneSimulator\Debug\LazyRoommate.iOS.exe
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhoneSimulator\Debug\LazyRoommate.iOS.pdb
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhoneSimulator\Debug\optimized\lazyroomatelogotransparent.png

@@ -168,6 +168,10 @@ namespace LazyRoommate.iOS
 
             return success;
         }
+        public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
+        {
+            return UsersTableManager.DefaultManager.CurrentClient.ResumeWithURL(url);
+        }
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -180,7 +184,7 @@ namespace LazyRoommate.iOS
             global::Xamarin.Forms.Forms.Init();
             XamForms.Controls.iOS.Calendar.Init();
             LoadApplication(new App());
-
+            App.Init(this);
             return base.FinishedLaunching(app, options);
         }
     }

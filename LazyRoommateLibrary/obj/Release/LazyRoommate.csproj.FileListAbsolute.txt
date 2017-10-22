@@ -1,0 +1,14 @@
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.dll
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.pdb
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Release\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.csprojResolveAssemblyReference.cache
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.App.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.CreateTasksPage.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.LoginPage.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MainPage.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.ProfilePage.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MasterDetailPage1.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MasterDetailPage1Master.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MasterDetailPage1Detail.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.dll
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.pdb
