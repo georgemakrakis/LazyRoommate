@@ -1,0 +1,2 @@
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\LazyRoommate.UWP.csproj;x86
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\LazyRoommate.csproj;neutral

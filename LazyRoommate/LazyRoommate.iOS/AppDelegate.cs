@@ -25,7 +25,7 @@ namespace LazyRoommate.iOS
             try
             {
                 // Sign in with Facebook login using a server-managed flow.
-                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController, MobileServiceAuthenticationProvider.Facebook, "lazyroommate.azurewebsites.net");
+                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController, MobileServiceAuthenticationProvider.Facebook, "lazyroommateservice.azurewebsites.net");
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
@@ -74,7 +74,7 @@ namespace LazyRoommate.iOS
             try
             {
                 // Sign in with Google login using a server-managed flow.
-                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController, MobileServiceAuthenticationProvider.Google, "lazyroommate.azurewebsites.net");
+                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController, MobileServiceAuthenticationProvider.Google, "lazyroommateservice.azurewebsites.net");
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
@@ -125,7 +125,7 @@ namespace LazyRoommate.iOS
             try
             {
                 // Sign in with Twitter login using a server-managed flow.
-                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController, MobileServiceAuthenticationProvider.Twitter, "lazyroommate.azurewebsites.net");
+                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(UIApplication.SharedApplication.KeyWindow.RootViewController, MobileServiceAuthenticationProvider.Twitter, "lazyroommateservice.azurewebsites.net");
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);

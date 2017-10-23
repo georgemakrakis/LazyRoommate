@@ -28,7 +28,7 @@
       </uap:VisualElements>
       <Extensions>
         <uap:Extension Category="windows.protocol">
-          <uap:Protocol Name="lazyroommate.azurewebsites.net">
+          <uap:Protocol Name="lazyroommateservice.azurewebsites.net">
             <uap:DisplayName>LazyRoomate</uap:DisplayName>
           </uap:Protocol>
         </uap:Extension>

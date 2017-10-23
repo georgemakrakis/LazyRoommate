@@ -25,7 +25,7 @@ namespace LazyRoommate.Droid
             try
             {
                 // Sign in with Facebook login using a server-managed flow.
-                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(this, MobileServiceAuthenticationProvider.Facebook, "lazyroommate.azurewebsites.net");
+                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(this, MobileServiceAuthenticationProvider.Facebook, "lazyroommateservice.azurewebsites.net");
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
@@ -81,7 +81,7 @@ namespace LazyRoommate.Droid
             try
             {
                 // Sign in with Google login using a server-managed flow.
-                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(this, MobileServiceAuthenticationProvider.Google, "lazyroommate.azurewebsites.net");
+                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(this, MobileServiceAuthenticationProvider.Google, "lazyroommateservice.azurewebsites.net");
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
@@ -137,7 +137,7 @@ namespace LazyRoommate.Droid
             try
             {
                 // Sign in with Twitter login using a server-managed flow.
-                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(this, MobileServiceAuthenticationProvider.Twitter, "lazyroommate.azurewebsites.net");
+                user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(this, MobileServiceAuthenticationProvider.Twitter, "lazyroommateservice.azurewebsites.net");
                 if (user != null)
                 {
                     var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);

@@ -55,7 +55,7 @@
 			<string>Authentication</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>lazyroommate.azurewebsites.net</string>
+				<string>lazyroommateservice.azurewebsites.net</string>
 			</array>
 		</dict>
 	</array>

@@ -1,0 +1,10 @@
+anim/slide_in_right.xml;anim/slide_in_right.xml
+anim/slide_out_left.xml;anim/slide_out_left.xml
+layout/activity_webview.xml;layout/activity_webview.xml
+Values/strings.xml;values/strings.xml
+drawable-hdpi/ic_arrow_back.png;drawable-hdpi/ic_arrow_back.png
+drawable-mdpi/ic_arrow_back.png;drawable-mdpi/ic_arrow_back.png
+drawable-xhdpi/ic_arrow_back.png;drawable-xhdpi/ic_arrow_back.png
+drawable-xxhdpi/ic_arrow_back.png;drawable-xxhdpi/ic_arrow_back.png
+drawable-xxxhdpi/ic_arrow_back.png;drawable-xxxhdpi/ic_arrow_back.png
+drawable/ic_arrow_back.png;drawable/ic_arrow_back.png
