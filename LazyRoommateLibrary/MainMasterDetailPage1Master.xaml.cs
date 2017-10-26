@@ -167,7 +167,7 @@ namespace LazyRoommate
                 }
                 else
                 {
-                    await DisplayAlert("Create Room", "You alreaby belong to a Room.\n Please leave room an then create another one.", "Ok");
+                    await DisplayAlert("Create Room", "You alreaby belong to a Room.\nPlease leave room an then create another one.", "Ok");
                 }
             }
             else if (item.Title.Equals("Leave Room"))
@@ -362,7 +362,7 @@ namespace LazyRoommate
 
                                 if (admin.Room != null)
                                 {
-                                    await DisplayAlert("Create Room", "Cannot create room because you already own a room /n Leave your room and then create another one", "Ok");
+                                    await DisplayAlert("Create Room", "Cannot create room because you already own a room\nLeave your room and then create another one", "Ok");
 
                                 }
                             }
@@ -387,12 +387,12 @@ namespace LazyRoommate
                                             Room = user.RoomName
                                         });
 
-                                        await DisplayAlert("Create Room", "Room created succesfuly!!", "Ok");
+                                        await DisplayAlert("Create Room", "Room created succesfuly!", "Ok");
 
                                     }
                                     else
                                     {
-                                        await DisplayAlert("Create Room", "Room name already exists!!", "Ok");
+                                        await DisplayAlert("Create Room", "Room name already exists!", "Ok");
                                     }
 
                                 }
@@ -422,7 +422,7 @@ namespace LazyRoommate
                                 await UserTable.UpdateAsync(user);
                                 //promt message successful join
 
-                                await DisplayAlert("Join Room", "Joining Room Succeed!!", "Ok");
+                                await DisplayAlert("Join Room", "Joining Room Succeed!", "Ok");
                             }
                             else
                             {
