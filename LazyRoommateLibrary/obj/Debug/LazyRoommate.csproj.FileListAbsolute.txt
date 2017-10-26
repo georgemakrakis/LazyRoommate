@@ -5,11 +5,7 @@ C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.csprojRes
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.App.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.CreateTasksPage.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.LoginPage.xaml.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainPage.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MasterDetailPage1.xaml.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MasterDetailPage1Master.xaml.g.cs
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MasterDetailPage1Detail.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.dll
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.pdb
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.dll
@@ -26,3 +22,6 @@ C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\Lazy
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MasterDetailPage1.xaml.g.cs
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MasterDetailPage1Master.xaml.g.cs
 C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MasterDetailPage1Detail.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainMasterDetailPage1.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainMasterDetailPage1Master.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainMasterDetailPage1Detail.xaml.g.cs

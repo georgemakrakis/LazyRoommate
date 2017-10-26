@@ -29,8 +29,12 @@ namespace LazyRoommate
             //var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
             var UserTable = App.client.GetTable<UsersTable>();
             var TasksTable = App.client.GetTable<TasksTable>();
-            var roomateItem = await UserTable.Where(x => (x.RoomName == App.RoomName)&&(x.Email!=App.Email)).ToListAsync();
-            
+
+            var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
+            var user = userItem.FirstOrDefault();
+
+            var roomateItem = await UserTable.Where(x => (x.RoomName == App.RoomName)&& (x.RoomName != string.Empty) && (x.Email!=App.Email)).ToListAsync();
+           
 
             var allTasks =await TasksTable.Where(x => (x.RoomName == App.RoomName)).ToListAsync();//This might change to:( x.DoneBy==App.Email)
             var completedTasks =await TasksTable.Where(x => (x.DoneBy==App.Email) && (x.ConfirmedBy!=string.Empty) ).ToListAsync();
@@ -38,7 +42,7 @@ namespace LazyRoommate
             ProfileName.Text = App.ProfileName;
             Email.Text = App.Email;
             ProfileImage.Source = App.ProfileImage;
-            RoomName.Text = App.RoomName;
+            RoomName.Text = user.RoomName;
             AllTasks.Text = allTasks.Count.ToString();
             TasksCompleted.Text = completedTasks.Count.ToString();
 
