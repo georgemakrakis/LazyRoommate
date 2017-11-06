@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LazyRoommate.AboutPage"
+             BackgroundImage="login_scrn.jpg"
+             Title="About">
+    <ContentPage.Content>
+        <ScrollView Padding="20,10,20,10" x:Name="ScrollView">
+            <StackLayout >
+                <Label  TextColor="Black" FontSize="16" HorizontalOptions="Start" FontAttributes="Bold" Text="Using LazyRoommate:"/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="LazyRoommate's purpose is to help you organize and share your household activities with your roommates.App is developed for all major platforms, so feel free to download it in all your devices (Windows 10, Android, iOS(coming soon))."/>
+                <Label  TextColor="Black" FontSize="15" HorizontalOptions="Start" FontAttributes="Bold" Text="Creating Room info:"/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="1) Go to Menu section "/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="2) Tab Create Room button: A dialog will appear asking you for the Room name you want to create When you do that you become Room Admin. This role gives this user some extra permissions for example deleting room,remove other roommates"/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="3) When Room is ready, asks for your roommates to tab Join Room on their app and type your RoomName."/>
+                <Label  TextColor="Black" FontSize="15" HorizontalOptions="Start" FontAttributes="Bold" Text="Add Task:"/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="1) Go to Menu section"/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="2) Tab Add Tasks : fill the field with proper content and press CREATE Your task in now shared with all your roommates."/>
+                <Label  TextColor="Black" FontSize="15" HorizontalOptions="Start" FontAttributes="Bold" Text="Complete/Confirm Task:"/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="Every tasks has two states done and confirmed. So a user can mark a tasks as done (when he completes it) and other roommate can confirm this action."/>
+                <Label  TextColor="Black" FontSize="15" HorizontalOptions="Start" FontAttributes="Bold" Text="Remove Roommate:"/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="(ONLY) Admin user can remove roommate. To do so he should:"/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="1) Go to Menu section"/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="2) Tab Remove Roommate and fill roommate's email to the dialog."/>
+                <Label  TextColor="Black" FontSize="15" HorizontalOptions="Start" FontAttributes="Bold" Text="The Project:"/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="The project is an open source cross-platform solution made with Xamarin.Forms and it's available under GPL 3.0 licence in GitHub."/>
+                <Label  TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="Feel free to leave Feedback, it helps us become better !! :)"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

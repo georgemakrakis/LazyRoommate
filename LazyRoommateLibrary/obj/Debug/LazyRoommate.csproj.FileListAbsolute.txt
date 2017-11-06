@@ -25,3 +25,4 @@ C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\Lazy
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainMasterDetailPage1.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainMasterDetailPage1Master.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainMasterDetailPage1Detail.xaml.g.cs
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.AboutPage.xaml.g.cs

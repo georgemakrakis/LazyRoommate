@@ -80,7 +80,7 @@ namespace LazyRoommate
                 },
                 new Menu
                 {
-                    Title = "Help",
+                    Title = "About",
                     Icon = "help_32.png"
                 }
             };
@@ -333,9 +333,21 @@ namespace LazyRoommate
                     Navigation.RemovePage(this);
                 }
             }
-            else if (item.Title.Equals("Help"))
+            else if (item.Title.Equals("About"))
             {
+                //Application.Current.MainPage = new NavigationPage(new CreateTasksPage());
 
+                //This is the right implementation
+                var masterDetailPage = Application.Current.MainPage as MasterDetailPage;
+                masterDetailPage.Detail = new NavigationPage(new AboutPage())
+                {
+                    BarBackgroundColor = Color.FromHex("#FFA000"),
+                    BarTextColor = Color.White
+                };
+                masterDetailPage.IsPresented = false;
+                //masterDetailPage.Master.
+
+                //await Navigation.PushAsync(new CreateTasksPage(), true);
             }
             if (prmt != null)
             {
