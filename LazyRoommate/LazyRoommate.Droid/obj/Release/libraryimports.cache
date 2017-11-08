@@ -1,24 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
-  <ManifestDocuments>
-    <ManifestDocument>obj\Release\__library_projects__\Xamarin.Android.Support.Compat\library_project_imports\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Release\__library_projects__\Xamarin.Android.Support.Core.UI\library_project_imports\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Release\__library_projects__\Xamarin.Android.Support.Core.Utils\library_project_imports\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Release\__library_projects__\Xamarin.Android.Support.Fragment\library_project_imports\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Release\__library_projects__\Xamarin.Android.Support.Media.Compat\library_project_imports\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Release\__library_projects__\Xamarin.Android.Support.Transition\library_project_imports\AndroidManifest.xml</ManifestDocument>
-    <ManifestDocument>obj\Release\__library_projects__\Xamarin.Android.Support.v7.Palette\library_project_imports\AndroidManifest.xml</ManifestDocument>
-  </ManifestDocuments>
+  <ManifestDocuments />
   <NativeLibraries />
   <Jars>
     <Jar>obj\Release\__library_projects__\FormsViewGroup\library_project_imports\formsviewgroup.jar</Jar>
-    <Jar>obj\Release\__library_projects__\Xamarin.Android.Support.Annotations\library_project_imports\support-annotations.jar</Jar>
-    <Jar>obj\Release\__library_projects__\Xamarin.Android.Support.Compat\library_project_imports\classes.jar</Jar>
-    <Jar>obj\Release\__library_projects__\Xamarin.Android.Support.Core.UI\library_project_imports\classes.jar</Jar>
-    <Jar>obj\Release\__library_projects__\Xamarin.Android.Support.Core.Utils\library_project_imports\classes.jar</Jar>
-    <Jar>obj\Release\__library_projects__\Xamarin.Android.Support.Fragment\library_project_imports\classes.jar</Jar>
-    <Jar>obj\Release\__library_projects__\Xamarin.Android.Support.Media.Compat\library_project_imports\classes.jar</Jar>
-    <Jar>obj\Release\__library_projects__\Xamarin.Android.Support.Transition\library_project_imports\classes.jar</Jar>
-    <Jar>obj\Release\__library_projects__\Xamarin.Android.Support.v7.Palette\library_project_imports\classes.jar</Jar>
   </Jars>
 </Paths>

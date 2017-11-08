@@ -1,8 +1,6 @@
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.dll.config
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.pdb
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.apk
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid-Signed.apk
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.Support.Android.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.UserDialogs.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.UserDialogs.Interface.dll
@@ -36,7 +34,6 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\XamForms.Controls.Calendar.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\XamForms.Controls.Calendar.Droid.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.pdb
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.Support.Android.pdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.Support.Android.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.UserDialogs.pdb
@@ -71,7 +68,6 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\LazyRoommate.Droid.csprojResolveAssemblyReference.cache
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\LazyRoommate.Droid.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\LazyRoommate.Droid.pdb
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\bin\LazyRoommate.Droid.apk
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-hdpi\icon.png
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-xhdpi\icon.png
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-xxhdpi\icon.png
@@ -97,11 +93,16 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\draw
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\login_logo.png
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\delete_account.png
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\curvedmask.png
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-hdpi\lazyroomatelogotransparent.png
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-xxhdpi\lazyroomatelogotransparent.png
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-xhdpi\lazyroomatelogotransparent.png
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\lazyroomatelogotransparent.png
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\back_button.png
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\icon.png
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\home.png
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\R.cs.flag
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\uploadflags.txt
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Acr.Support.Android.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Acr.UserDialogs.dll.mdb
@@ -115,7 +116,6 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-hdpi\lazyroomatelogotransparent.png
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-xxhdpi\lazyroomatelogotransparent.png
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-xhdpi\lazyroomatelogotransparent.png
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\lazyroomatelogotransparent.png
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\com.lazyroommate.LazyRoommate.apk
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\com.lazyroommate.LazyRoommate-Signed.apk
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\bin\com.lazyroommate.LazyRoommate.apk

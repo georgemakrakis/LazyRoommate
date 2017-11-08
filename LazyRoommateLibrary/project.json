@@ -1,10 +1,8 @@
-﻿{
+{
   "supports": {},
   "dependencies": {
     "Acr.UserDialogs": "6.3.10",
     "Microsoft.Azure.Mobile.Client": "4.0.1",
-    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
-    "NETStandard.Library": "1.6.1",
     "Newtonsoft.Json": "10.0.3",
     "Splat": "1.6.2",
     "System.Net.Http": "4.3.3",

@@ -2671,7 +2671,7 @@ containing a value of this type.
         public static int ic_tv_light=0x7f02009c;
         public static int icon=0x7f02009d;
         public static int join_room_32=0x7f02009e;
-        public static int lazy_roomate_logo_transparent=0x7f02009f;
+        public static int lazyroomatelogotransparent=0x7f02009f;
         public static int leave_room_32=0x7f0200a0;
         public static int login_logo=0x7f0200a1;
         public static int login_scrn=0x7f0200a2;
