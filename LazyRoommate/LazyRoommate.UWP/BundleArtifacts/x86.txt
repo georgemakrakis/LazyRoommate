@@ -1,1 +1,0 @@
-MainPackage=C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\LazyRoommate.UWP_1.1.0.0_x86.appx

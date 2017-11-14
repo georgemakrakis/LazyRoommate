@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="41665GeorgeMakrakis.LazyRoommate" version="1.0" primary="true">
+		<Qualifiers>
+			<AlternateForm>UNPLATED</AlternateForm>
+			<Language>EN-US</Language>
+			<Scale>200</Scale>
+			<TargetSize>24</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="add_32.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/add_32.png">
+				<Candidate type="Path">
+					<Value>add_32.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="add_task.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/add_task.png">
+				<Candidate type="Path">
+					<Value>add_task.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="App.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/App.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="back_button.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/back_button.png">
+				<Candidate type="Path">
+					<Value>back_button.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="create_room_32.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/create_room_32.png">
+				<Candidate type="Path">
+					<Value>create_room_32.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CurvedMask.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/CurvedMask.png">
+				<Candidate type="Path">
+					<Value>CurvedMask.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="delete_account.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/delete_account.png">
+				<Candidate type="Path">
+					<Value>delete_account.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="dot.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/dot.png">
+				<Candidate type="Path">
+					<Value>dot.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="help_32.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/help_32.png">
+				<Candidate type="Path">
+					<Value>help_32.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="home.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/home.png">
+				<Candidate type="Path">
+					<Value>home.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="join_room_32.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/join_room_32.png">
+				<Candidate type="Path">
+					<Value>join_room_32.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="lazyroomatelogotransparent.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/lazyroomatelogotransparent.png">
+				<Candidate type="Path">
+					<Value>lazyroomatelogotransparent.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="LazyRoommate.UWP.xr.xml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/LazyRoommate.UWP.xr.xml">
+				<Candidate type="Path">
+					<Value>LazyRoommate.UWP.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="lazy_roomate_logo_transparent.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/lazy_roomate_logo_transparent.png">
+				<Candidate type="Path">
+					<Value>lazy_roomate_logo_transparent.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="leave_room_32.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/leave_room_32.png">
+				<Candidate type="Path">
+					<Value>leave_room_32.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="login_logo.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/login_logo.png">
+				<Candidate type="Path">
+					<Value>login_logo.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="login_scrn.jpg" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/login_scrn.jpg">
+				<Candidate type="Path">
+					<Value>login_scrn.jpg</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="logout_32.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/logout_32.png">
+				<Candidate type="Path">
+					<Value>logout_32.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/MainPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Package.StoreAssociation.xml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Package.StoreAssociation.xml">
+				<Candidate type="Path">
+					<Value>Package.StoreAssociation.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="refresh.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/refresh.png">
+				<Candidate type="Path">
+					<Value>refresh.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="remove_roommate.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/remove_roommate.png">
+				<Candidate type="Path">
+					<Value>remove_roommate.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="settings_32.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/settings_32.png">
+				<Candidate type="Path">
+					<Value>settings_32.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="social_connect_facebook.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/social_connect_facebook.png">
+				<Candidate type="Path">
+					<Value>social_connect_facebook.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="social_connect_google.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/social_connect_google.png">
+				<Candidate type="Path">
+					<Value>social_connect_google.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="social_connect_twitter.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/social_connect_twitter.png">
+				<Candidate type="Path">
+					<Value>social_connect_twitter.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SplashScreen.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/SplashScreen.png">
+				<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+					<Value>SplashScreen.scale-200.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="user_profile_32.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/user_profile_32.png">
+				<Candidate type="Path">
+					<Value>user_profile_32.png</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Acr.UserDialogs">
+				<NamedResource name="Acr.UserDialogs.xr.xml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Acr.UserDialogs/Acr.UserDialogs.xr.xml">
+					<Candidate type="Path">
+						<Value>Acr.UserDialogs\Acr.UserDialogs.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ActionSheetContentDialog.xaml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Acr.UserDialogs/ActionSheetContentDialog.xaml">
+					<Candidate type="Path">
+						<Value>Acr.UserDialogs\ActionSheetContentDialog.xaml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ActionSheetContentDialog.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Acr.UserDialogs/ActionSheetContentDialog.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DatePickerControl.xaml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Acr.UserDialogs/DatePickerControl.xaml">
+					<Candidate type="Path">
+						<Value>Acr.UserDialogs\DatePickerControl.xaml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DatePickerControl.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Acr.UserDialogs/DatePickerControl.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LoginContentDialog.xaml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Acr.UserDialogs/LoginContentDialog.xaml">
+					<Candidate type="Path">
+						<Value>Acr.UserDialogs\LoginContentDialog.xaml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LoginContentDialog.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Acr.UserDialogs/LoginContentDialog.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ProgressContentDialog.xaml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Acr.UserDialogs/ProgressContentDialog.xaml">
+					<Candidate type="Path">
+						<Value>Acr.UserDialogs\ProgressContentDialog.xaml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ProgressContentDialog.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Acr.UserDialogs/ProgressContentDialog.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TimePickerControl.xaml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Acr.UserDialogs/TimePickerControl.xaml">
+					<Candidate type="Path">
+						<Value>Acr.UserDialogs\TimePickerControl.xaml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TimePickerControl.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Acr.UserDialogs/TimePickerControl.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="LockScreenLogo.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Assets/LockScreenLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\LockScreenLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Assets/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square150x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Assets/Square44x44Logo.png">
+					<Candidate qualifiers="TargetSize-24, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Assets/StoreLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\StoreLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Coding4Fun.Toolkit.Controls">
+				<NamedResource name="Coding4Fun.Toolkit.Controls.xr.xml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Coding4Fun.Toolkit.Controls/Coding4Fun.Toolkit.Controls.xr.xml">
+					<Candidate type="Path">
+						<Value>Coding4Fun.Toolkit.Controls\Coding4Fun.Toolkit.Controls.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Coding4Fun.Toolkit.Controls/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>Coding4Fun.Toolkit.Controls\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Properties">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Properties/Default.rd.xml">
+					<Candidate type="Path">
+						<Value>Properties\Default.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Windows.winmd" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/WinMetadata/Windows.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Windows.winmd</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Xamarin.Forms.Platform.UAP">
+				<NamedResource name="AutoSuggestStyle.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormsCommandBarStyle.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FormsTextBoxStyle.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MasterDetailControlStyle.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PageControl.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Xamarin.Forms.Platform.UAP/PageControl.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PageControlStyle.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Resources.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Xamarin.Forms.Platform.UAP/Resources.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TabbedPageStyle.xbf" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Xamarin.Forms.Platform.UAP.xr.xml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml">
+					<Candidate type="Path">
+						<Value>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="Xamarin.Forms.Platform.UAP.rd.xml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Files/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml">
+						<Candidate type="Path">
+							<Value>Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.WindowsAzure.MobileServices.Resources">
+			<NamedResource name="ExpressionUtility_ProjectionNotSupportedOnWindowsPhone75" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ExpressionUtility_ProjectionNotSupportedOnWindowsPhone75">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The Linq IQueryable Select() operation is not supported on the Windows Phone 7.5 platform.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FilterBuildingExpressionVisitor_MemberUnsupported" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/FilterBuildingExpressionVisitor_MemberUnsupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The member '{0}' is not supported in the 'Where' Mobile Services query expression '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FilterBuildingExpressionVisitor_OperatorUnsupported" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/FilterBuildingExpressionVisitor_OperatorUnsupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The operator '{0}' is not supported in the 'Where' Mobile Services query expression '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FilterBuildingExpressionVisitor_UnsupportedInWhereExpression" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/FilterBuildingExpressionVisitor_UnsupportedInWhereExpression">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>'{0}' is not supported in a 'Where' Mobile Services query expression.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HttpMessageHandlerExtensions_WrongHandlerType" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/HttpMessageHandlerExtensions_WrongHandlerType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>All message handlers except the last must be of the type '{0}'</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="IApplicationStorage_NullOrWhitespaceSettingName" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/IApplicationStorage_NullOrWhitespaceSettingName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An application setting name must be provided. Null, empty or whitespace only names are not allowed.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="IAuthenticationBroker_AuthenticationCanceled" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/IAuthenticationBroker_AuthenticationCanceled">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Authentication was cancelled by the user.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="IAuthenticationBroker_AuthenticationFailed" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/IAuthenticationBroker_AuthenticationFailed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Authentication failed with HTTP response code {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="IAuthenticationBroker_InvalidLoginResponse" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/IAuthenticationBroker_InvalidLoginResponse">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid format of the authentication response.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="IAuthenticationBroker_LoginFailed" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/IAuthenticationBroker_LoginFailed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Login failed: {0}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="IAuthenticationBroker_LoginInProgress" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/IAuthenticationBroker_LoginInProgress">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Authentication is already in progress.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="IAuthenticationBroker_NoLoginInProgress" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/IAuthenticationBroker_NoLoginInProgress">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Authentication has not been started.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceClient_EmptyArgument" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceClient_EmptyArgument">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{0} cannot be null, empty or only whitespace.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceClient_ErrorMessage" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceClient_ErrorMessage">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The request could not be completed.  ({0})</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceClient_InnerHandlerMustBeNull" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceClient_InnerHandlerMustBeNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The 'InnerHandler' property of the delegating handler must be null.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceClient_InvalidAlternateLoginHost" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceClient_InvalidAlternateLoginHost">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{0} is invalid.AlternateLoginHost must be a valid https URI with hostname only</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceClient_NoResponseContent" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceClient_NoResponseContent">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The server did not provide a response with the expected content.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceClient_NotAnAbsoluteURI" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceClient_NotAnAbsoluteURI">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{0} is not an absolute URI.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceCollection_IncrementalLoadingFailed" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceCollection_IncrementalLoadingFailed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to incrementally load more items of type '{0}'. See the inner exception for details.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceCollection_LoadInProcess" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceCollection_LoadInProcess">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Loading of more items already in process.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceContractResolver_IntegerIdTypeWithSystemPropertyAttributes" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceContractResolver_IntegerIdTypeWithSystemPropertyAttributes">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The type '{0}' has an integer id member and therefore can not have any members with the system property attribute '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceContractResolver_MemberNotFound" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceContractResolver_MemberNotFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No '{0}' member found on type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceContractResolver_MultipleSystemPropertyAttributes" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceContractResolver_MultipleSystemPropertyAttributes">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A member can only have one system property attribute. The member '{0}' on type '{1}' has system property attributes '{2}' and '{3}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceContractResolver_NumberOutOfRange" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceContractResolver_NumberOutOfRange">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The value {0} for member {1} is outside the valid range for numeric columns.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceContractResolver_SamePropertyName" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceContractResolver_SamePropertyName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Only one member may have the property name '{0}' (regardless of casing) on type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceContractResolver_TypeNoDataContractButBaseWithDataContract" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceContractResolver_TypeNoDataContractButBaseWithDataContract">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The type '{0}' does not have a DataContractAttribute, but the type derives from the type '{1}', which does have a DataContractAttribute. If a type has a DataContractAttribute, any type that derives from that type must also have a DataContractAttribute.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceContractResolver_TypeWithDataMemberButNoDataContract" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceContractResolver_TypeWithDataMemberButNoDataContract">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The type '{0}' has one or members with a DataMemberAttribute, but the type itself does not have a DataContractAttribute. Use the Newtonsoft.Json.JsonPropertyAttribute in place of the DataMemberAttribute and set the PropertyName to the desired name.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceJsonSerializerSettings_NullOrInvalidContractResolver" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceJsonSerializerSettings_NullOrInvalidContractResolver">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The member '{0}.ContractResolver' must be set to an instance of the '{1}' class or a class that inherits from the '{1}' class.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServicePrecisionCheckConverter_ReadNotSupported" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServicePrecisionCheckConverter_ReadNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The {0} does not support reading JSON.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServicesAuthentication_LoginAlreadyInProgress" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServicesAuthentication_LoginAlreadyInProgress">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot start a login operation because login is already in progress.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSerializer_IdCasingIncorrect" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSerializer_IdCasingIncorrect">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The casing of the '{0}' property is invalid.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSerializer_IdNotFound" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSerializer_IdNotFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Expected {0} member not found.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSerializer_IdTypeMismatch" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSerializer_IdTypeMismatch">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>You might be affected by Mobile Services latest changes to support string Ids. For more details: http://go.microsoft.com/fwlink/?LinkId=330396</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSerializer_InvalidIntegerId" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSerializer_InvalidIntegerId">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The integer id '{0}' is not a positive integer value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSerializer_InvalidStringId" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSerializer_InvalidStringId">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The string id '{0}' is invalid. An id must not contain any control characters or the characters ",+,?,\,/,`.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSerializer_LookupInvalidIdType" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSerializer_LookupInvalidIdType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The id parameter type '{0}' is invalid for looking up items of type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSerializer_NullOrEmptyStringId" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSerializer_NullOrEmptyStringId">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The id can not be null or an empty string.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSerializer_StringIdTooLong" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSerializer_StringIdTooLong">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The string id '{0}' is longer than the max string id length of {1} characters.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSyncTable_IdMustBeString" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSyncTable_IdMustBeString">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The id must be of type string.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSyncTable_IncrementalPullWithOrderNotAllowed" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSyncTable_IncrementalPullWithOrderNotAllowed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Incremental pull query must not have orderby clause.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSyncTable_IncrementalPullWithSkipTopNotSupported" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSyncTable_IncrementalPullWithSkipTopNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Incremental pull query must not have skip or top specified.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSyncTable_InvalidQueryId" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSyncTable_InvalidQueryId">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The query id must not contain pipe character and should be less than 50 characters in length.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSyncTable_OrderByNotAllowed" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSyncTable_OrderByNotAllowed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The supported table options does not include orderby.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSyncTable_PullWithSelectNotSupported" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSyncTable_PullWithSelectNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Pull query with select clause is not supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSyncTable_SkipNotAllowed" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSyncTable_SkipNotAllowed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The supported table options does not include skip. </Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceSyncTable_TopNotAllowed" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceSyncTable_TopNotAllowed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The supported table options does not include top.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTableOperation_ItemNotFound" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTableOperation_ItemNotFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Operation must have an item associated with it.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTableOperation_ResultNotJObject" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTableOperation_ResultNotJObject">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Mobile Service table operation returned an unexpected response.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTableQueryDescription_UnrecognizedQueryParameter" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTableQueryDescription_UnrecognizedQueryParameter">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Unrecognized query parameter '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTableQueryTranslator_MembersOnlyInExpression" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTableQueryTranslator_MembersOnlyInExpression">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>'{0}' Mobile Services query expressions must consist of members only, not '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTableQueryTranslator_SingleIntegerOnly" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTableQueryTranslator_SingleIntegerOnly">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>'{0}' Mobile Services query expressions must consist of a single integer, not '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTableQueryTranslator_UnsupportedExpression" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTableQueryTranslator_UnsupportedExpression">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Expression '{1}' is not a supported '{0}' Mobile Services query expression.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTableSerializer_CannotDeserializeValue" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTableSerializer_CannotDeserializeValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot deserialize value {0} into '{1}.{2}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTableSerializer_MissingRequiredMember" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTableSerializer_MissingRequiredMember">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot deserialize type '{0}' because the JSON object did not have required member(s) '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTableSerializer_NeedObject" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTableSerializer_NeedObject">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Expected a JSON object to deserialize, not '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTableSerializer_UnknownType" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTableSerializer_UnknownType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot serialize member '{0}' of type '{1}' declared on type '{2}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTableUrlBuilder_InvalidParameterBeginsWithDollarSign" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTableUrlBuilder_InvalidParameterBeginsWithDollarSign">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{0} is an invalid user-defined query string parameter. User-defined query string parameters must not begin with a \'$\'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTable_DeleteWithoutId" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTable_DeleteWithoutId">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot delete if the {0} member is set to a default value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTable_ExpectedArray" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTable_ExpectedArray">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not get an array from response {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTable_InsertWithExistingId" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTable_InsertWithExistingId">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot insert if the {0} member is already set.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTable_ItemNotFoundInStore" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTable_ItemNotFoundInStore">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Item not found in local store.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTable_NotSingleObject" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTable_NotSingleObject">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Could not get object from response {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTable_QueryUriHostIsDifferent" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTable_QueryUriHostIsDifferent">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The query uri must be on the same host as the Mobile Service.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MobileServiceTable_UpdateWithoutId" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/MobileServiceTable_UpdateWithoutId">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot update if the {0} member is set to a default value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_CloseParenOrCommaExpected" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_CloseParenOrCommaExpected">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>"')' or ',' expected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_CloseParenOrOperatorExpected" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_CloseParenOrOperatorExpected">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>')' or operator expected</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_DigitExpected" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_DigitExpected">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Digit expected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_ExpressionExpected" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_ExpressionExpected">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Expression expected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_FunctionArgsCount" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_FunctionArgsCount">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Function '{0}' requires {1} parameter(s).</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_IdentifierExpected" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_IdentifierExpected">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Expected identifier.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_IntegerLiteralExpected" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_IntegerLiteralExpected">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Expected integer literal.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_InvalidIntegerLiteral" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_InvalidIntegerLiteral">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified odata query has invalid integer literal '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_InvalidRealLiteral" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_InvalidRealLiteral">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified odata query has invalid real literal '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_InvalidTypeCreation" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_InvalidTypeCreation">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified odata query has invalid '{0}' type creation expression.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_OpenParenExpected" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_OpenParenExpected">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>'(' expected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_RealLiteralExpected" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_RealLiteralExpected">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Expected real literal.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_StringLiteralExpected" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_StringLiteralExpected">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Expected string literal.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_SubstringArgsCount" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_SubstringArgsCount">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Function 'substring' requires 2 or 3 parameters.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_SyntaxError" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_SyntaxError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified odata query has syntax errors.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ODataExpressionParser_UnterminatedStringLiteral" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/ODataExpressionParser_UnterminatedStringLiteral">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The specified odata query has unterminated string literal.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Platform_AssemblyNotFound" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/Platform_AssemblyNotFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A Microsoft Azure Mobile Services assembly for the current platform was not found. Ensure that the current project references both {0} and the following platform-specific assembly: {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Platform_InstantiationFailed" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/Platform_InstantiationFailed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to instantiate the platform implementation of {0} from the assembly {1} due to the following error: {2}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Pull_Cannot_Use_Reserved_Key" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/Pull_Cannot_Use_Reserved_Key">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The key '{0}' is reserved and cannot be specified as a query parameter.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Push_BodyTemplateMustBeXml" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/Push_BodyTemplateMustBeXml">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Valid XML is required for any template without a raw header.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Push_BodyTemplateMustContainElement" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/Push_BodyTemplateMustContainElement">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>XML must contain an XML node of Element type.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Push_ConflictWithReservedName" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/Push_ConflictWithReservedName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Template name conflicts with reserved name '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Push_Failure" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/Push_Failure">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Push operation has failed. See the PushResult for details.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Push_InvalidTemplateName" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/Push_InvalidTemplateName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Template name cannot contain ";" or ":".</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Push_NotSupportedXMLFormatAsBodyTemplateWin8" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/Push_NotSupportedXMLFormatAsBodyTemplateWin8">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The bodyTemplate is not in accepted XML format. The first node of the bodyTemplate should be Badge/Tile/Toast, except for the wns/raw template, which needs to be an valid XML.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Push_TagNoCommas" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/Push_TagNoCommas">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Tags must not contain ','.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncContext_DeletePending" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncContext_DeletePending">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A delete operation on the item is already in the queue.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncContext_DuplicateInsert" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncContext_DuplicateInsert">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An insert operation on the item is already in the queue.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncContext_InsertAttempted" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncContext_InsertAttempted">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The item is in inconsistent state in the local store. Please complete the pending sync by calling PushAsync()before deleting the item.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncContext_NotInitialized" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncContext_NotInitialized">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>SyncContext is not yet initialized.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncContext_PurgeOnDirtyTable" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncContext_PurgeOnDirtyTable">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The table cannot be purged because it has pending operations.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncContext_UpdatePending" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncContext_UpdatePending">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An update operation on the item is already in the queue.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncError_OperationUpdated" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncError_OperationUpdated">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The operation has been updated and cannot be cancelled.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncStore_AlreadyInitialized" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncStore_AlreadyInitialized">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The store is already initialized.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncStore_FailedToDeleteError" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncStore_FailedToDeleteError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to delete error from the local store.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncStore_FailedToDeleteOperation" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncStore_FailedToDeleteOperation">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to delete operation from the local store.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncStore_FailedToLoadError" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncStore_FailedToLoadError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to read errors from the local store.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncStore_FailedToReadItem" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncStore_FailedToReadItem">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to read the item from local store.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncStore_FailedToUpdateOperation" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncStore_FailedToUpdateOperation">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to update operation in the local store.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncStore_FailedToUpsertItem" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncStore_FailedToUpsertItem">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to update the item in the local store.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncStore_NotInitialized" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncStore_NotInitialized">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The store must be initialized before it can be used.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SyncStore_OperationFailed" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/SyncStore_OperationFailed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Failed to perform operation on local store.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WP8LoginPage_MustBeCalledFromAuthBroker" uri="ms-resource://41665GeorgeMakrakis.LazyRoommate/Microsoft.WindowsAzure.MobileServices.Resources/WP8LoginPage_MustBeCalledFromAuthBroker">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>This page must be called from the type '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

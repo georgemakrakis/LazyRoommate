@@ -1,0 +1,5 @@
+LazyRoommate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  LazyRoommate.App.xaml
+  LazyRoommate.LoginPage.xaml
+Microsoft.Azure.Mobile.Client, Version=4.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  Microsoft.WindowsAzure.MobileServices.Resources.resources

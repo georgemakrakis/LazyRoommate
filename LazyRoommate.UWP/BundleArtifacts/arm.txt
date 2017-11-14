@@ -1,0 +1,2 @@
+MainPackage=C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\ARM\Release\LazyRoommate.UWP_1.0.0.0_ARM.appx
+SymbolPackage=C:\Users\georg\LazyRoommate\LazyRoommate.UWP\AppPackages\LazyRoommate.UWP_1.0.0.0_Test\LazyRoommate.UWP_1.0.0.0_ARM.appxsym

@@ -1,0 +1,11 @@
+/out:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\intermediate\SgGenerated\\"
+/int:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\intermediate\\"
+/ref:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\intermediate\PreMergeILTransformed\\"
+/ref:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\intermediate\TransformedSRWR\\"
+/ref:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\in\\"
+/ref:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\in\\"
+/ref:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\in\\"
+/ref:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x64\ilc\lib\Private\\"
+/ref:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\in\WinMetadata\\"
+/ca:System.Private.CoreLib
+"@C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\intermediate\PreMergeILTransformed\ComputedSerializationInput.txt"
