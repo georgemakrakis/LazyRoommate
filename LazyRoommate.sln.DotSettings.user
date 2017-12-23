@@ -2,4 +2,4 @@
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="C:\Users\georg\LazyRoommate\packages\Microsoft.Azure.Mobile.Client.4.0.1\lib\monoandroid70\Microsoft.Azure.Mobile.Client.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
-	<s:String x:Key="/Default/Environment/Hierarchy/Build/SolBuilderDuo/UseMsbuildSolutionBuilder/@EntryValue">NewVersion</s:String></wpf:ResourceDictionary>
+	</wpf:ResourceDictionary>

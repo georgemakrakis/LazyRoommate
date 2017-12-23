@@ -14,12 +14,13 @@ namespace LazyRoommate
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MasterDetailPage1Detail : ContentPage
     {
+        private string date;
         public MasterDetailPage1Detail()
         {
             InitializeComponent();
 
             Calendar.SelectedDate = DateTime.Today;
-            var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+            date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             LoadList(date);
 
             //MasterDetailPage1.DetailNavPage
@@ -104,7 +105,7 @@ namespace LazyRoommate
             {
                 var item = (TasksTable)e.Item;
                 var TaskTable = App.client.GetTable<TasksTable>();
-                var taskItem = await TaskTable.Where(x => (x.TaskName == item.TaskName)).ToListAsync();
+                var taskItem = await TaskTable.Where(x => (x.TaskName == item.TaskName) &&  (x.id == item.id)).ToListAsync();
                 var task = taskItem.FirstOrDefault();
                 var answer = false;
 
