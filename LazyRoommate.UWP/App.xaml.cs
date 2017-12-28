@@ -6,6 +6,9 @@ using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using Newtonsoft.Json.Linq;
+using System.Threading.Tasks;
+using Windows.Networking.PushNotifications;
 
 namespace LazyRoommate.UWP
 {
@@ -24,12 +27,34 @@ namespace LazyRoommate.UWP
             this.Suspending += OnSuspending;
         }
 
+        private async Task InitNotificationsAsync()
+        {
+            var channel = await PushNotificationChannelManager
+                .CreatePushNotificationChannelForApplicationAsync();
+
+            const string templateBodyWNS =
+                "<toast><visual><binding template=\"ToastText01\"><text id=\"1\">$(messageParam)</text></binding></visual></toast>";
+
+            JObject headers = new JObject();
+            headers["X-WNS-Type"] = "wns/toast";
+
+            JObject templates = new JObject();
+            templates["genericMessage"] = new JObject
+            {
+                {"body", templateBodyWNS},
+                {"headers", headers} // Needed for WNS.
+            };
+
+            await UsersTableManager.DefaultManager.CurrentClient.GetPush()
+                .RegisterAsync(channel.Uri, templates);
+        }
+
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void OnLaunched(LaunchActivatedEventArgs e)
         {
 
 #if DEBUG
@@ -70,6 +95,8 @@ namespace LazyRoommate.UWP
             }
             // Ensure the current window is active
             Window.Current.Activate();
+
+            await InitNotificationsAsync();
         }
 
         /// <summary>
