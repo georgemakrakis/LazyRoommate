@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1016695394275",
+    "firebase_url": "https://lazyroommate-151719.firebaseio.com",
+    "project_id": "lazyroommate-151719",
+    "storage_bucket": "lazyroommate-151719.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016695394275:android:d4acb0ae1f18c168",
+        "android_client_info": {
+          "package_name": "com.lazyroommate.LazyRoommate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016695394275-dmsnlg1fd4bc2i2efa29gj6q73dpfp4r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lazyroommate.LazyRoommate",
+            "certificate_hash": "682322bf494001321bc30e1db7b776aeff3ff3f9"
+          }
+        },
+        {
+          "client_id": "1016695394275-4oftabp7tosoav2jbngh9p5j9civht78.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1016695394275-osha0ihmpn0pj87qgjmsnlq28osppf8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoqmQ77A0eA-HTrwMagErO-ali0OUYzO0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016695394275-4oftabp7tosoav2jbngh9p5j9civht78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

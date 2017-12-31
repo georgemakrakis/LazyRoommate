@@ -4,6 +4,7 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Acr.UserDialogs.Interface.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\AndHUD.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\FormsViewGroup.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\GCM.Client.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Microsoft.Azure.Mobile.Client.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Newtonsoft.Json.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\PCLCrypto.dll

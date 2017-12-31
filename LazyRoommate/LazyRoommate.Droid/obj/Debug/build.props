@@ -1,5 +1,5 @@
-BundleAssemblies=False
-AotAssemblies=False
+BundleAssemblies=false
+AotAssemblies=false
 AndroidAotMode=
 ExplicitCrunch=False
 EnableProguard=False
@@ -14,7 +14,7 @@ JavaSdkPath=
 AndroidSequencePointsMode=None
 XamarinAndroidVersion=7.3.1-2
 MonoSymbolArchive=False
-AndroidUseLatestPlatformSdk=true
-TargetFrameworkVersion=v7.1
+AndroidUseLatestPlatformSdk=false
+TargetFrameworkVersion=v7.0
 AndroidCreatePackagePerAbi=False
 OS=Windows_NT

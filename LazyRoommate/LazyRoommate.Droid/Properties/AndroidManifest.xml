@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.lazyroommate.LazyRoommate" android:versionCode="1" android:versionName="LazyRoommate Beta">
-	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="24" />
+	<uses-sdk android:minSdkVersion="15" />
 	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
 	<application android:label="LazyRoommate" android:icon="@drawable/icon">
 		<activity android:name="com.microsoft.windowsazure.mobileservices.authentication.RedirectUrlActivity" android:launchMode="singleTop" android:noHistory="true">
 			<intent-filter>

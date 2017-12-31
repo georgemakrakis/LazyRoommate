@@ -1,8 +1,6 @@
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid-Signed.apk
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.dll.config
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.pdb
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\LazyRoommate.Droid.apk
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Acr.Support.Android.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Acr.UserDialogs.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Acr.UserDialogs.Interface.dll
@@ -70,7 +68,6 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\Xamarin.Fo
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\LazyRoommate.Droid.csprojResolveAssemblyReference.cache
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\LazyRoommate.Droid.dll
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\LazyRoommate.Droid.pdb
-C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\bin\LazyRoommate.Droid.apk
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable-hdpi\icon.png
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable-xhdpi\icon.png
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
@@ -119,3 +116,7 @@ C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\as
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\com.lazyroommate.LazyRoommate.apk
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\com.lazyroommate.LazyRoommate-Signed.apk
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Debug\GCM.Client.dll
+C:\Users\georg\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Debug\android\bin\com.lazyroommate.LazyRoommate.apk

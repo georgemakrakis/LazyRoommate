@@ -104,6 +104,7 @@ class MonoPackageManager_Resources {
 		"Acr.UserDialogs.Interface.dll",
 		"AndHUD.dll",
 		"FormsViewGroup.dll",
+		"GCM.Client.dll",
 		"Microsoft.Azure.Mobile.Client.dll",
 		"Newtonsoft.Json.dll",
 		"PCLCrypto.dll",

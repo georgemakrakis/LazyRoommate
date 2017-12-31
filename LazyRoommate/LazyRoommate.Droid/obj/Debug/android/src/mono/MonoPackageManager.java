@@ -104,6 +104,7 @@ class MonoPackageManager_Resources {
 		"Acr.UserDialogs.Interface.dll",
 		"AndHUD.dll",
 		"FormsViewGroup.dll",
+		"GCM.Client.dll",
 		"Microsoft.Azure.Mobile.Client.dll",
 		"Newtonsoft.Json.dll",
 		"PCLCrypto.dll",
@@ -134,5 +135,5 @@ class MonoPackageManager_Resources {
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_25";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_24";
 }

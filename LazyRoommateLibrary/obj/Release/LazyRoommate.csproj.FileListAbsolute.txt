@@ -1,7 +1,6 @@
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.dll
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.pdb
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\bin\Release\Windows.Foundation.UniversalApiContract.winmd
-C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.csprojResolveAssemblyReference.cache
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.App.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.CreateTasksPage.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.LoginPage.xaml.g.cs

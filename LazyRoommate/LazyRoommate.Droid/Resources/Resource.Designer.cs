@@ -63,6 +63,7 @@ namespace LazyRoommate.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::LazyRoommate.Droid.Resource.Styleable.ProgressWheel_ahText;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::LazyRoommate.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::LazyRoommate.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::Gcm.Client.Resource.String.library_name = global::LazyRoommate.Droid.Resource.String.library_name;
 			global::Xamarin.Auth._MobileServices.Resource.Animation.slide_in_right = global::LazyRoommate.Droid.Resource.Animation.slide_in_right;
 			global::Xamarin.Auth._MobileServices.Resource.Animation.slide_out_left = global::LazyRoommate.Droid.Resource.Animation.slide_out_left;
 			global::Xamarin.Auth._MobileServices.Resource.Drawable.ic_arrow_back = global::LazyRoommate.Droid.Resource.Drawable.ic_arrow_back;
