@@ -55,7 +55,8 @@ namespace LazyRoommate.Droid
         {
             try
             {
-                const string templateBodyGCM = "{\"data\":{\"message\":\"$(messageParam)\"}}";
+
+                string templateBodyGCM = "{\"data\":{\"message\":\"$(messageParam)\",\"param\":\"$(userParam)\",\"param2\":\"$(roomParam)\"}}";
 
                 JObject templates = new JObject();
                 templates["genericMessage"] = new JObject
@@ -69,7 +70,7 @@ namespace LazyRoommate.Droid
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
-                Debugger.Break();
+                //Debugger.Break();
             }
         }
         protected override void OnMessage(Context context, Intent intent)
@@ -91,9 +92,12 @@ namespace LazyRoommate.Droid
             edit.Commit();
 
             string message = intent.Extras.GetString("message");
-            if (!string.IsNullOrEmpty(message))
+            string userParam = intent.Extras.GetString("param");
+            string roomParam = intent.Extras.GetString("param2");
+            //We dont want the user whoe aded the task to get notificatio
+            if (!userParam.Equals(App.Email) && roomParam.Equals(App.RoomName) && !string.IsNullOrEmpty(message))
             {
-                createNotification("New todo item!", "Todo item: " + message);
+                createNotification("New task added!", message);
                 return;
             }
 
@@ -104,7 +108,7 @@ namespace LazyRoommate.Droid
                 return;
             }
 
-            createNotification("Unknown message details", msg.ToString());
+            //createNotification("Unknown message details", msg.ToString());
         }
 
         void createNotification(string title, string desc)

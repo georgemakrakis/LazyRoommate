@@ -68,7 +68,8 @@ namespace LazyRoommate
                             TaskName = TaskName.Text,
                             TaskDescription = TaskDesc.Text,
                             RoomName = user.RoomName,
-                            DoneBy = string.Empty,
+                            // DoneBy is not empty for notifications purpose, it empties on serivce
+                            DoneBy = App.Email,
                             ConfirmedBy = string.Empty,
                             StartDate= StartDate.Date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
                             EndDate = EndDate.Date.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)

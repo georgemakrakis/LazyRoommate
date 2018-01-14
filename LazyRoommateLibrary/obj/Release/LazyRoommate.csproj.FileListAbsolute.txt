@@ -11,3 +11,4 @@ C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MainMas
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.AboutPage.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.dll
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.pdb
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.csprojResolveAssemblyReference.cache

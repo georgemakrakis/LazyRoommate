@@ -3,6 +3,7 @@
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="15" />
   <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
   <permission android:name="com.lazyroommate.LazyRoommate.permission.C2D_MESSAGE" />
   <uses-permission android:name="com.lazyroommate.LazyRoommate.permission.C2D_MESSAGE" />
   <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
