@@ -9,6 +9,7 @@ using Windows.UI.Xaml.Navigation;
 using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
 using Windows.Networking.PushNotifications;
+using Windows.UI.Notifications;
 
 namespace LazyRoommate.UWP
 {
@@ -33,7 +34,7 @@ namespace LazyRoommate.UWP
                 .CreatePushNotificationChannelForApplicationAsync();
 
             const string templateBodyWNS =
-                "<toast><visual><binding template=\"ToastText01\"><text id=\"1\">$(messageParam)</text></binding></visual></toast>";
+                "<toast><visual><binding template=\"ToastText01\"><text id=\"message\">$(messageParam)</text><text id=\"param\">$(userParam)</text><text id=\"param2\">$(roomParam)</text></binding></visual></toast>";
 
             JObject headers = new JObject();
             headers["X-WNS-Type"] = "wns/toast";
@@ -47,6 +48,22 @@ namespace LazyRoommate.UWP
 
             await UsersTableManager.DefaultManager.CurrentClient.GetPush()
                 .RegisterAsync(channel.Uri, templates);
+            channel.PushNotificationReceived += Channel_PushNotificationReceived;
+
+
+        }
+        //In this method we handle the notifications for specfifc users and rooms
+        private void Channel_PushNotificationReceived(PushNotificationChannel sender, PushNotificationReceivedEventArgs args)
+        {
+            if (!args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.Email) && args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.RoomName))
+            {
+                
+            }
+            else
+            {
+                //sender.Close();
+                args.Cancel = true;
+            }
         }
 
         /// <summary>
