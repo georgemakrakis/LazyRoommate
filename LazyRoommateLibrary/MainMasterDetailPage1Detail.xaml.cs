@@ -54,6 +54,18 @@ namespace LazyRoommate
                 ActivityIndicator.IsVisible = false;
                 timelineListView.ItemsSource = DataFactory.UserTasks;
                 retry.IsVisible = false;
+                if (DataFactory.UserTasks.Count <= 2)
+                {
+                    Calendar.SelectedBorderColor = Color.Green;
+                }
+                else if (DataFactory.UserTasks.Count > 2 && DataFactory.UserTasks.Count <= 4)
+                {
+                    Calendar.SelectedBorderColor = Color.Orange;
+                }
+                else if (DataFactory.UserTasks.Count >= 5)
+                {
+                    Calendar.SelectedBorderColor = Color.Red;
+                }
                 Calendar.ForceRedraw();
             }
             catch (HttpRequestException ex)
