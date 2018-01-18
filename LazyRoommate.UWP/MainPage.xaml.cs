@@ -4,8 +4,11 @@ using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
+using Windows.Security.Credentials;
 using Windows.UI.Popups;
+using Newtonsoft.Json.Linq;
 
 namespace LazyRoommate.UWP
 {
@@ -13,46 +16,57 @@ namespace LazyRoommate.UWP
     {
         // Define a authenticated user.
         private MobileServiceUser user { get; set; }
+        static bool success = false;
 
         public async Task<bool> AuthenticateFacebook()
         {
-            var success = false;
+            
             var message = string.Empty;
             try
             {
+                // Check if the token is available within the password vault
+                PasswordCredential acct;
+                try
+                {
+                    acct = new PasswordVault().FindAllByResource("facebook").FirstOrDefault();
+                }
+                catch (Exception e)
+                {
+                    acct = null;
+                }
+                
+                if (acct != null)
+                {
+                    var token = new PasswordVault().Retrieve("facebook", acct.UserName).Password;
+                    if (token != null && token.Length > 0 && !IsTokenExpired(token))
+                    {
+                        LazyRoommate.App.client.CurrentUser = new MobileServiceUser(acct.UserName);
+                        LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token;
+
+                        LazyRoommate.App.Token = token;
+                        LazyRoommate.App.AccountUsername = acct.UserName;
+
+                        message = await GetSetLazyData();
+                        // Display the success or failure message.
+                        MessageDialog mg1 = new MessageDialog(message);
+                        await mg1.ShowAsync();
+
+                        return success;
+                    }
+                }
+
+
                 // Sign in with Facebook login using a server-managed flow.
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(MobileServiceAuthenticationProvider.Facebook, "lazyroommateservice.azurewebsites.net");
                 if (user != null)
                 {
-                    var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
-
-                    var table2 = LazyRoommate.App.client.GetTable<UsersTable>();
-                    var userItem = await table2.Where(x => (x.Email == userInfo.Email)).ToListAsync();
-                    var first = userItem.FirstOrDefault();
-
-                    if (first != null)
-                    {
-                        message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.Email = userInfo.Email;
-                        LazyRoommate.App.ProfileName = userInfo.Name;
-                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
-                        LazyRoommate.App.RoomName = first.RoomName;
-                        success = true;
-                    }
-                    else
-                    {
-                        //inserting logged in user into database
-                        var table = LazyRoommate.App.client.GetTable<UsersTable>();
-                        await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
-
-                        message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.Email = userInfo.Email;
-                        LazyRoommate.App.ProfileName = userInfo.Name;
-                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
-                        LazyRoommate.App.RoomName = string.Empty;
-                        success = true;
-                    }
+                    message =await GetSetLazyData();
                 }
+
+                // Store the token in the password vault
+                new PasswordVault().Add(new PasswordCredential("facebook",
+                    LazyRoommate.App.client.CurrentUser.UserId,
+                    LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken));
             }
             catch (Exception ex)
             {
@@ -65,6 +79,40 @@ namespace LazyRoommate.UWP
             await mg.ShowAsync();
 
             return success;
+        }
+
+        public async Task<string> GetSetLazyData()
+        {
+            var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
+
+            var table2 = LazyRoommate.App.client.GetTable<UsersTable>();
+            var userItem = await table2.Where(x => (x.Email == userInfo.Email)).ToListAsync();
+            var first = userItem.FirstOrDefault();
+
+            if (first != null)
+            {
+                
+                LazyRoommate.App.Email = userInfo.Email;
+                LazyRoommate.App.ProfileName = userInfo.Name;
+                LazyRoommate.App.ProfileImage = userInfo.ImageUri;
+                LazyRoommate.App.RoomName = first.RoomName;
+                success = true;
+                return string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+            }
+            else
+            {
+                //inserting logged in user into database
+                var table = LazyRoommate.App.client.GetTable<UsersTable>();
+                await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
+
+               
+                LazyRoommate.App.Email = userInfo.Email;
+                LazyRoommate.App.ProfileName = userInfo.Name;
+                LazyRoommate.App.ProfileImage = userInfo.ImageUri;
+                LazyRoommate.App.RoomName = string.Empty;
+                success = true;
+                return string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
+            }
         }
         public async Task<bool> AuthenticateGoogle()
         {
@@ -169,6 +217,38 @@ namespace LazyRoommate.UWP
             await mg.ShowAsync();
 
             return success;
+        }
+
+        bool IsTokenExpired(string token)
+        {
+            // Get just the JWT part of the token (without the signature).
+            var jwt = token.Split(new Char[] { '.' })[1];
+
+            // Undo the URL encoding.
+            jwt = jwt.Replace('-', '+').Replace('_', '/');
+            switch (jwt.Length % 4)
+            {
+                case 0: break;
+                case 2: jwt += "=="; break;
+                case 3: jwt += "="; break;
+                default:
+                    throw new ArgumentException("The token is not a valid Base64 string.");
+            }
+
+            // Convert to a JSON String
+            var bytes = Convert.FromBase64String(jwt);
+            string jsonString = UTF8Encoding.UTF8.GetString(bytes, 0, bytes.Length);
+
+            // Parse as JSON object and get the exp field value,
+            // which is the expiration date as a JavaScript primative date.
+            JObject jsonObj = JObject.Parse(jsonString);
+            var exp = Convert.ToDouble(jsonObj["exp"].ToString());
+
+            // Calculate the expiration by adding the exp value (in seconds) to the
+            // base date of 1/1/1970.
+            DateTime minTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+            var expire = minTime.AddSeconds(exp);
+            return (expire < DateTime.UtcNow);
         }
 
         public MainPage()

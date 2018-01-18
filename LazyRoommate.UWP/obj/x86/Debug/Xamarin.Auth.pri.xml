@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Xamarin.Auth" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Xamarin.Auth">
+				<NamedResource name="WebAuthenticatorPage.xaml" uri="ms-resource://Xamarin.Auth/Files/Xamarin.Auth/WebAuthenticatorPage.xaml">
+					<Candidate type="Path">
+						<Value>Xamarin.Auth\WebAuthenticatorPage.xaml</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WebAuthenticatorPage.xbf" uri="ms-resource://Xamarin.Auth/Files/Xamarin.Auth/WebAuthenticatorPage.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Xamarin.Auth.xr.xml" uri="ms-resource://Xamarin.Auth/Files/Xamarin.Auth/Xamarin.Auth.xr.xml">
+					<Candidate type="Path">
+						<Value>Xamarin.Auth\Xamarin.Auth.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

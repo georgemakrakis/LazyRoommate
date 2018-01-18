@@ -29,7 +29,6 @@ C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.csprojRes
 C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.dll
 C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.pdb
 C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Debug\Windows.Foundation.UniversalApiContract.winmd
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.csprojResolveAssemblyReference.cache
 C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.App.xaml.g.cs
 C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.CreateTasksPage.xaml.g.cs
 C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.LoginPage.xaml.g.cs

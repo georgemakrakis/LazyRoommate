@@ -45,6 +45,18 @@ namespace LazyRoommate
             set { AppSettings.AddOrUpdateValue(nameof(RoomName), value); }
         }
 
+        public static string Token
+        {
+            get { return AppSettings.GetValueOrDefault(nameof(Token), string.Empty); }
+            set { AppSettings.AddOrUpdateValue(nameof(Token), value); }
+        }
+
+        public static string AccountUsername
+        {
+            get { return AppSettings.GetValueOrDefault(nameof(AccountUsername), string.Empty); }
+            set { AppSettings.AddOrUpdateValue(nameof(AccountUsername), value); }
+        }
+
         public static void Init(IAuthenticate authenticator)
         {
             Authenticator = authenticator;
