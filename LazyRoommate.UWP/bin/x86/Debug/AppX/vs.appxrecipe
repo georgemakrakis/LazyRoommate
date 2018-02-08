@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>964ECBF94241B33D9929C659C2A4F74331FA70C144431B9B11D05B7ECF30E0D3</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>7E32F2D9015137729FB64C0B7A658E94017981687E53B101EECA688843E3FD86</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>41665GeorgeMakrakis.LazyRoommate_1.0.0.0_x86__4x8qxkdc075tc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>41665GeorgeMakrakis.LazyRoommate_4x8qxkdc075tc!App</RegisteredUserModeAppID>
     <RegisteredPackageID>41665GeorgeMakrakis.LazyRoommate</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-08T19:40:08.880</Modified>
+      <Modified>2018-02-08T20:02:47.301</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\LazyRoommate.UWP.exe">
       <PackagePath>entrypoint\LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2018-02-08T19:40:07.662</Modified>
+      <Modified>2018-02-08T20:02:46.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\.nuget\packages\Acr.UserDialogs\6.3.10\lib\uap10.0\Acr.UserDialogs.Interface.dll">
       <PackagePath>Acr.UserDialogs.Interface.dll</PackagePath>
@@ -574,7 +574,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.dll">
       <PackagePath>LazyRoommate.dll</PackagePath>
-      <Modified>2018-02-08T19:40:03.961</Modified>
+      <Modified>2018-02-08T20:02:42.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate.UWP\add_32.png">
       <PackagePath>add_32.png</PackagePath>
@@ -761,11 +761,11 @@
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-08T19:30:29.224</Modified>
+      <Modified>2018-02-08T20:01:33.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Debug\Core\LazyRoommate.UWP.exe">
       <PackagePath>LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2018-02-08T19:40:08.875</Modified>
+      <Modified>2018-02-08T20:02:47.287</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

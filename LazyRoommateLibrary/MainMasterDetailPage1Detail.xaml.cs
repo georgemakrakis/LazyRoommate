@@ -27,6 +27,7 @@ namespace LazyRoommate
             //MasterDetailPage1.DetailNavPage
             //NavigationPage.SetHasNavigationBar(this, true);
             //NavigationPage.SetHasBackButton(this, false);
+            
             CalendarColorsPerDay(DateTime.Today.Month.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
 
             //Lack of having an PullToRefresh Action in windows made use use the toolbar to refresh the list
@@ -46,7 +47,6 @@ namespace LazyRoommate
                     break;
             }
         }
-
         public async void CalendarColorsPerDay(string month)
         {
             var UserTable = App.client.GetTable<UsersTable>();
@@ -89,6 +89,7 @@ namespace LazyRoommate
                 daycell++;
             }
         }
+
 
         public async void LoadList(string date)
         {
