@@ -1,5 +1,6 @@
 ﻿using LazyRoommate.DataFactoryModel;
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Net.Http;
@@ -26,7 +27,7 @@ namespace LazyRoommate
             //MasterDetailPage1.DetailNavPage
             //NavigationPage.SetHasNavigationBar(this, true);
             //NavigationPage.SetHasBackButton(this, false);
-
+            CalendarColorsPerDay(DateTime.Today.Month.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
 
             //Lack of having an PullToRefresh Action in windows made use use the toolbar to refresh the list
             switch (Device.RuntimePlatform)
@@ -45,6 +46,50 @@ namespace LazyRoommate
                     break;
             }
         }
+
+        public async void CalendarColorsPerDay(string month)
+        {
+            var UserTable = App.client.GetTable<UsersTable>();
+            var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
+            var user = userItem.FirstOrDefault();
+            var TaskTable = App.client.GetTable<TasksTable>();
+            // NULL IN MonthTasks we need to fix it 
+            var MonthTasks = await TaskTable.Where(x => (x.RoomName == user.RoomName) && x.StartDate.Contains("/02/")).ToCollectionAsync();// find month foramt later                  
+            HashSet<string> non_duplicateDays = new HashSet<string>();// non duplicate days list          
+            List<string> duplicate_days = new List<string>();//list with all Month's tasks 
+            foreach (var Mtask in MonthTasks)
+            {
+                non_duplicateDays.Add(Mtask.StartDate.ToString());
+                duplicate_days.Add(Mtask.StartDate.ToString());
+            }
+            List<int> daysTaskCount = new List<int>();  //keep the sum of everyday tasks in daysTaskCount list 
+            var group = duplicate_days.GroupBy(i => i);
+            foreach (var item in group)
+            {
+                daysTaskCount.Add(item.Count());
+            }
+
+            int daycell = 0; // for everi cell in  daysTaskCount list
+            foreach (var day in non_duplicateDays)
+            {
+                // find the date from var day in calendar and change the background color
+                if (daysTaskCount[daycell] >= 1)
+                {
+                    Calendar.DatesBackgroundColor = Color.Green;
+                }
+                else if (daysTaskCount[daycell] >= 2)
+                {
+                    Calendar.DatesBackgroundColor = Color.Orange;
+                }
+                else if (daysTaskCount[daycell] >= 3)
+                {
+                    Calendar.DatesBackgroundColor = Color.Red;
+                }
+                Calendar.ForceRedraw();
+                daycell++;
+            }
+        }
+
         public async void LoadList(string date)
         {
             try

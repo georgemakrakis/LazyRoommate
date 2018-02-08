@@ -39,3 +39,17 @@ C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate
 C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.AboutPage.xaml.g.cs
 C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.dll
 C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\bin\Debug\LazyRoommate.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\bin\Debug\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.csprojResolveAssemblyReference.cache
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.App.xaml.g.cs
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.CreateTasksPage.xaml.g.cs
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.LoginPage.xaml.g.cs
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.ProfilePage.xaml.g.cs
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainMasterDetailPage1.xaml.g.cs
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainMasterDetailPage1Master.xaml.g.cs
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.MainMasterDetailPage1Detail.xaml.g.cs
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.AboutPage.xaml.g.cs
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommateLibrary\obj\Debug\LazyRoommate.pdb
