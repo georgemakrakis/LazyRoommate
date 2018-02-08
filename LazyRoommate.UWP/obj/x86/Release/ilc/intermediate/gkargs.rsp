@@ -1,7 +1,7 @@
-/In:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\ilc\in"
-/Lib:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\ilc\in"
+/In:"C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\ilc\in"
+/Lib:"C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\ilc\in"
 /Lib:"C:\Program Files (x86)\MSBuild\15.0\.Net\.NetNative\15.0.24211\x86\ilc\lib\Private"
-/WinMD:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
-/VSTelemetrySessionSettings:{"AppId":1001,"AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","HostName":"Dev14","Id":"e40c543f-1ecb-43c3-8642-42a33e62a00c","IsOptedIn":true,"ProcessStartTime":636536817087867986,"UserId":"d8cc287d-f887-42e2-9f2d-9471487a55b4"}
+/WinMD:"C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:{"AppId":1001,"AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","HostName":"Dev14","Id":"aac59965-1020-4946-8141-e07c9b6a89f9","IsOptedIn":true,"ProcessStartTime":636536897587321567,"UserId":"940ed0a0-d002-4a6a-b4cf-92238fe57590"}
 /RdXmlPath:"C:\Program Files (x86)\MSBuild\15.0\.Net\.NetNative\15.0.24211\LibraryXML"
 /RunOnlyPreDR

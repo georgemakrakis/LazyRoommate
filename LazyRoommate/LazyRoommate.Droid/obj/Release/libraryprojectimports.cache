@@ -1,44 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
-  <Jars></Jars>
+  <Jars>
+    <Jar>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\4\jl\formsviewgroup.jar</Jar>
+  </Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Acr.Support.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Acr.UserDialogs\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\AndHUD\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\GCM.Client\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Microsoft.Azure.Mobile.Client\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\PCLCrypto\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Plugin.Settings\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Splat\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\XamForms.Controls.Calendar.Droid\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\0\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\1\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\3\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\5\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\7\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\9\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\15\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\16\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\35\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\30\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\31\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\34\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>obj\Release\__library_projects__\Acr.Support.Android\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\__library_projects__\Acr.UserDialogs\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\__library_projects__\AndHUD\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\__library_projects__\GCM.Client\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\__library_projects__\Microsoft.Azure.Mobile.Client\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\__library_projects__\PCLCrypto\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\__library_projects__\Plugin.Settings\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\__library_projects__\Splat\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\__library_projects__\XamForms.Controls.Calendar.Droid\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\0\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\1\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\3\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\5\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\7\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\9\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\15\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\16\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\35\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\30\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\31\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\34\jl\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Acr.Support.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Acr.UserDialogs.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\AndHUD.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\GCM.Client.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Microsoft.Azure.Mobile.Client.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\PCLCrypto.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Plugin.Settings.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Splat.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\__library_projects__\XamForms.Controls.Calendar.Droid.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\0.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\1.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\3.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\5.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\7.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\9.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\15.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\16.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\35.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\30.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\31.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\34.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

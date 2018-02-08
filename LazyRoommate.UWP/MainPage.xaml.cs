@@ -118,43 +118,52 @@ namespace LazyRoommate.UWP
         }
         public async Task<bool> AuthenticateGoogle()
         {
-            var success = false;
             var message = string.Empty;
             try
             {
-                // Sign in with Google login using a server-managed flow.
+                // Check if the token is available within the password vault
+                PasswordCredential acct;
+                try
+                {
+                    acct = new PasswordVault().FindAllByResource("google").FirstOrDefault();
+                }
+                catch (Exception e)
+                {
+                    acct = null;
+                }
+
+                if (acct != null)
+                {
+                    var token = new PasswordVault().Retrieve("google", acct.UserName).Password;
+                    if (token != null && token.Length > 0 && !IsTokenExpired(token))
+                    {
+                        LazyRoommate.App.client.CurrentUser = new MobileServiceUser(acct.UserName);
+                        LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token;
+
+                        LazyRoommate.App.Token = token;
+                        LazyRoommate.App.AccountUsername = acct.UserName;
+
+                        message = await GetSetLazyData();
+                        // Display the success or failure message.
+                        MessageDialog mg1 = new MessageDialog(message);
+                        await mg1.ShowAsync();
+
+                        return success;
+                    }
+                }
+
+
+                // Sign in with Facebook login using a server-managed flow.
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(MobileServiceAuthenticationProvider.Google, "lazyroommateservice.azurewebsites.net");
                 if (user != null)
                 {
-                    var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
-
-                    var table2 = LazyRoommate.App.client.GetTable<UsersTable>();
-                    var userItem = await table2.Where(x => (x.Email == userInfo.Email)).ToListAsync();
-                    var first = userItem.FirstOrDefault();
-
-                    if (first != null)
-                    {
-                        message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.Email = userInfo.Email;
-                        LazyRoommate.App.ProfileName = userInfo.Name;
-                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
-                        LazyRoommate.App.RoomName = first.RoomName;
-                        success = true;
-                    }
-                    else
-                    {
-                        //inserting logged in user into database
-                        var table = LazyRoommate.App.client.GetTable<UsersTable>();
-                        await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
-
-                        message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.Email = userInfo.Email;
-                        LazyRoommate.App.ProfileName = userInfo.Name;
-                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
-                        LazyRoommate.App.RoomName = string.Empty;
-                        success = true;
-                    }
+                    message = await GetSetLazyData();
                 }
+
+                // Store the token in the password vault
+                new PasswordVault().Add(new PasswordCredential("google",
+                    LazyRoommate.App.client.CurrentUser.UserId,
+                    LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken));
             }
             catch (Exception ex)
             {
@@ -170,43 +179,52 @@ namespace LazyRoommate.UWP
         }
         public async Task<bool> AuthenticateTwitter()
         {
-            var success = false;
             var message = string.Empty;
             try
             {
-                // Sign in with Twitter login using a server-managed flow.
+                // Check if the token is available within the password vault
+                PasswordCredential acct;
+                try
+                {
+                    acct = new PasswordVault().FindAllByResource("twitter").FirstOrDefault();
+                }
+                catch (Exception e)
+                {
+                    acct = null;
+                }
+
+                if (acct != null)
+                {
+                    var token = new PasswordVault().Retrieve("twitter", acct.UserName).Password;
+                    if (token != null && token.Length > 0 && !IsTokenExpired(token))
+                    {
+                        LazyRoommate.App.client.CurrentUser = new MobileServiceUser(acct.UserName);
+                        LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token;
+
+                        LazyRoommate.App.Token = token;
+                        LazyRoommate.App.AccountUsername = acct.UserName;
+
+                        message = await GetSetLazyData();
+                        // Display the success or failure message.
+                        MessageDialog mg1 = new MessageDialog(message);
+                        await mg1.ShowAsync();
+
+                        return success;
+                    }
+                }
+
+
+                // Sign in with Facebook login using a server-managed flow.
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(MobileServiceAuthenticationProvider.Twitter, "lazyroommateservice.azurewebsites.net");
                 if (user != null)
                 {
-                    var userInfo = await LazyRoommate.App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
-
-                    var table2 = LazyRoommate.App.client.GetTable<UsersTable>();
-                    var userItem = await table2.Where(x => (x.Email == userInfo.Email)).ToListAsync();
-                    var first = userItem.FirstOrDefault();
-
-                    if (first != null)
-                    {
-                        message = string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.Email = userInfo.Email;
-                        LazyRoommate.App.ProfileName = userInfo.Name;
-                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
-                        LazyRoommate.App.RoomName = first.RoomName;
-                        success = true;
-                    }
-                    else
-                    {
-                        //inserting logged in user into database
-                        var table = LazyRoommate.App.client.GetTable<UsersTable>();
-                        await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
-
-                        message = string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-                        LazyRoommate.App.Email = userInfo.Email;
-                        LazyRoommate.App.ProfileName = userInfo.Name;
-                        LazyRoommate.App.ProfileImage = userInfo.ImageUri;
-                        LazyRoommate.App.RoomName = string.Empty;
-                        success = true;
-                    }
+                    message = await GetSetLazyData();
                 }
+
+                // Store the token in the password vault
+                new PasswordVault().Add(new PasswordCredential("twitter",
+                    LazyRoommate.App.client.CurrentUser.UserId,
+                    LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken));
             }
             catch (Exception ex)
             {

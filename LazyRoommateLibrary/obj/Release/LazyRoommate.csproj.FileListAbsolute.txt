@@ -27,3 +27,4 @@ C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoomma
 C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.pdb
 C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Release\Windows.Foundation.UniversalApiContract.winmd
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.csproj.CoreCompileInputs.cache
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.csproj.CoreCompileInputs.cache

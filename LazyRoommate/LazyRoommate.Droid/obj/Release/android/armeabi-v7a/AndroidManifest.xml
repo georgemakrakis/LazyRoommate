@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.lazyroommate.LazyRoommate" android:versionCode="200001" android:versionName="LazyRoommate Beta">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="15" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+  <permission android:name="com.lazyroommate.LazyRoommate.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.lazyroommate.LazyRoommate.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <application android:label="LazyRoommate" android:icon="@drawable/icon" android:name="android.support.multidex.MultiDexApplication" android:allowBackup="true">
+    <activity android:name="com.microsoft.windowsazure.mobileservices.authentication.RedirectUrlActivity" android:launchMode="singleTop" android:noHistory="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="lazyroommateservice.azurewebsites.net" android:host="easyauth.callback" />
+      </intent-filter>
+    </activity>
+    <receiver android:permission="com.google.android.c2dm.permission.SEND" android:name="md53624bdf80fc45c0d57df0dcaba77d6d2.PushHandlerBroadcastReceiver">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <category android:name="com.lazyroommate.LazyRoommate" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <category android:name="com.lazyroommate.LazyRoommate" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.gcm.intent.RETRY" />
+        <category android:name="com.lazyroommate.LazyRoommate" />
+      </intent-filter>
+    </receiver>
+    <service android:name="md53624bdf80fc45c0d57df0dcaba77d6d2.GcmService" />
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="LazyRoommate" android:theme="@style/MainTheme" android:name="md53624bdf80fc45c0d57df0dcaba77d6d2.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="Web Authenticator" android:name="md581ea35436e69ff6296ba639950f061de.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md581ea35436e69ff6296ba639950f061de.WebAuthenticatorActivity" />
+    <receiver android:name="md581ea35436e69ff6296ba639950f061de.CustomTabsActionsBroadcastReceiver" />
+    <activity android:label="@string/title_activity_webview" android:theme="@android:style/Theme.DeviceDefault" android:name="md581ea35436e69ff6296ba639950f061de.WebViewActivity" />
+    <activity android:label="Web Authenticator Native Broswer" android:launchMode="singleTop" android:name="md581ea35436e69ff6296ba639950f061de.WebAuthenticatorNativeBrowserActivity" />
+    <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
+    <activity android:label="Web Authenticator" android:name="md5a104545e4d19c4ffe9ec3d5074a3b979.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md5a104545e4d19c4ffe9ec3d5074a3b979.WebAuthenticatorActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.lazyroommate.LazyRoommate.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>

@@ -3,6 +3,6 @@
   <ManifestDocuments />
   <NativeLibraries />
   <Jars>
-    <Jar>obj\Release\__library_projects__\FormsViewGroup\library_project_imports\formsviewgroup.jar</Jar>
+    <Jar>obj\Release\lp\4\jl\formsviewgroup.jar</Jar>
   </Jars>
 </Paths>

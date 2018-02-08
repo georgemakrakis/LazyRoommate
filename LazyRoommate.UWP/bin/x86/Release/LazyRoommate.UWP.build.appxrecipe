@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-VMMIFAP</Machine>
-    <WindowsUser>georg</WindowsUser>
+    <Machine>DESKTOP-MV07AUN</Machine>
+    <WindowsUser>George Makrakis</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,164 +10,164 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>8f02052b-4750-4004-8b84-676dad6d2131</PackageIdentityName>
     <PackageIdentityPublisher>CN=D060A142-9111-4BFC-B383-1200EF853C59</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\AppX</LayoutDir>
+    <LayoutDir>C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Acr.UserDialogs\ActionSheetContentDialog.xaml">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Acr.UserDialogs\ActionSheetContentDialog.xaml">
       <PackagePath>Acr.UserDialogs\ActionSheetContentDialog.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Acr.UserDialogs\DatePickerControl.xaml">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Acr.UserDialogs\DatePickerControl.xaml">
       <PackagePath>Acr.UserDialogs\DatePickerControl.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Acr.UserDialogs\LoginContentDialog.xaml">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Acr.UserDialogs\LoginContentDialog.xaml">
       <PackagePath>Acr.UserDialogs\LoginContentDialog.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Acr.UserDialogs\ProgressContentDialog.xaml">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Acr.UserDialogs\ProgressContentDialog.xaml">
       <PackagePath>Acr.UserDialogs\ProgressContentDialog.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Acr.UserDialogs\TimePickerControl.xaml">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Acr.UserDialogs\TimePickerControl.xaml">
       <PackagePath>Acr.UserDialogs\TimePickerControl.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\add_32.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\add_32.png">
       <PackagePath>add_32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\add_task.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\add_task.png">
       <PackagePath>add_task.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\back_button.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\back_button.png">
       <PackagePath>back_button.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\clrcompression.dll">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Coding4Fun.Toolkit.Controls\Themes\Generic.xbf">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\Coding4Fun.Toolkit.Controls\Themes\Generic.xbf">
       <PackagePath>Coding4Fun.Toolkit.Controls\Themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\create_room_32.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\create_room_32.png">
       <PackagePath>create_room_32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\CurvedMask.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\CurvedMask.png">
       <PackagePath>CurvedMask.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\delete_account.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\delete_account.png">
       <PackagePath>delete_account.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\dot.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\dot.png">
       <PackagePath>dot.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\help_32.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\help_32.png">
       <PackagePath>help_32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\home.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\home.png">
       <PackagePath>home.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\join_room_32.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\join_room_32.png">
       <PackagePath>join_room_32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\lazyroomatelogotransparent.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\lazyroomatelogotransparent.png">
       <PackagePath>lazyroomatelogotransparent.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.dll">
       <PackagePath>LazyRoommate.UWP.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.exe">
       <PackagePath>LazyRoommate.UWP.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.pdb">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.pdb">
       <PackagePath>LazyRoommate.UWP.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\lazy_roomate_logo_transparent.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\lazy_roomate_logo_transparent.png">
       <PackagePath>lazy_roomate_logo_transparent.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\leave_room_32.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\leave_room_32.png">
       <PackagePath>leave_room_32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\login_logo.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\login_logo.png">
       <PackagePath>login_logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\login_scrn.jpg">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\login_scrn.jpg">
       <PackagePath>login_scrn.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\logout_32.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\logout_32.png">
       <PackagePath>logout_32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\refresh.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\refresh.png">
       <PackagePath>refresh.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\remove_roommate.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\remove_roommate.png">
       <PackagePath>remove_roommate.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\settings_32.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\settings_32.png">
       <PackagePath>settings_32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\social_connect_facebook.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\social_connect_facebook.png">
       <PackagePath>social_connect_facebook.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\social_connect_google.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\social_connect_google.png">
       <PackagePath>social_connect_google.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\social_connect_twitter.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\social_connect_twitter.png">
       <PackagePath>social_connect_twitter.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\SplashScreen.scale-200.png">
       <PackagePath>SplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\user_profile_32.png">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\user_profile_32.png">
       <PackagePath>user_profile_32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\0.rsrc">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\0.rsrc">
       <PackagePath>_Resources\0.rsrc</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\1.rsrc">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\1.rsrc">
       <PackagePath>_Resources\1.rsrc</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\2.rsrc">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\2.rsrc">
       <PackagePath>_Resources\2.rsrc</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\index.txt">
+    <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\index.txt">
       <PackagePath>_Resources\index.txt</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
