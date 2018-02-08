@@ -565,3 +565,4 @@ C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\ilc\intermediate\IL
 C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.ComponentModel.TypeConverter.ildll
 C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.Console.ildll
 C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.Runtime.Serialization.Formatters.ildll
+C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x86\Release\LazyRoommate.UWP.csproj.CoreCompileInputs.cache

@@ -17,10 +17,12 @@ namespace LazyRoommate.UWP
         // Define a authenticated user.
         private MobileServiceUser user { get; set; }
         static bool success = false;
+        // Check if the token is available within the password vault
+        private PasswordCredential acct;
 
         public async Task<bool> AuthenticateFacebook()
         {
-            
+
             var message = string.Empty;
             try
             {
@@ -34,7 +36,7 @@ namespace LazyRoommate.UWP
                 {
                     acct = null;
                 }
-                
+
                 if (acct != null)
                 {
                     var token = new PasswordVault().Retrieve("facebook", acct.UserName).Password;
@@ -60,7 +62,7 @@ namespace LazyRoommate.UWP
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(MobileServiceAuthenticationProvider.Facebook, "lazyroommateservice.azurewebsites.net");
                 if (user != null)
                 {
-                    message =await GetSetLazyData();
+                    message = await GetSetLazyData();
                 }
 
                 // Store the token in the password vault
@@ -91,7 +93,7 @@ namespace LazyRoommate.UWP
 
             if (first != null)
             {
-                
+
                 LazyRoommate.App.Email = userInfo.Email;
                 LazyRoommate.App.ProfileName = userInfo.Name;
                 LazyRoommate.App.ProfileImage = userInfo.ImageUri;
@@ -105,7 +107,7 @@ namespace LazyRoommate.UWP
                 var table = LazyRoommate.App.client.GetTable<UsersTable>();
                 await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
 
-               
+
                 LazyRoommate.App.Email = userInfo.Email;
                 LazyRoommate.App.ProfileName = userInfo.Name;
                 LazyRoommate.App.ProfileImage = userInfo.ImageUri;
@@ -258,6 +260,42 @@ namespace LazyRoommate.UWP
             LazyRoommate.App.Init(this);
             XamForms.Controls.Windows.Calendar.Init();
             LoadApplication(new LazyRoommate.App());
+
+            //LazyRoommate.App.client.CurrentUser = new MobileServiceUser();
+            //LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = LazyRoommate.App.Token;
+            string token = null;
+            string token2 = null;
+            string token3 = null;
+            try
+            {
+                token = new PasswordVault().Retrieve("facebook", LazyRoommate.App.AccountUsername).Password;
+                token2 = new PasswordVault().Retrieve("google", LazyRoommate.App.AccountUsername).Password;
+                token3 = new PasswordVault().Retrieve("twitter", LazyRoommate.App.AccountUsername).Password;
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            if (token != null && token.Length > 0 && !IsTokenExpired(token))
+            {
+                LazyRoommate.App.client.CurrentUser = new MobileServiceUser(LazyRoommate.App.AccountUsername);
+                LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token;
+
+            }
+            else if (token2 != null && token2.Length > 0 && !IsTokenExpired(token2))
+            {
+                LazyRoommate.App.client.CurrentUser = new MobileServiceUser(LazyRoommate.App.AccountUsername);
+                LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token2;
+
+            }
+            else if (token3 != null && token3.Length > 0 && !IsTokenExpired(token3))
+            {
+                LazyRoommate.App.client.CurrentUser = new MobileServiceUser(LazyRoommate.App.AccountUsername);
+                LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token3;
+
+            }
+
 
         }
     }

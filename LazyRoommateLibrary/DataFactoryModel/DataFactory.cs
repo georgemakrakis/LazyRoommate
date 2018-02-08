@@ -64,8 +64,8 @@ namespace LazyRoommate.DataFactoryModel
                 var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
                 var user = userItem.FirstOrDefault();
 
-                LazyRoommate.App.client.CurrentUser = new MobileServiceUser(App.AccountUsername);
-                LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = App.Token;
+                //LazyRoommate.App.client.CurrentUser = new MobileServiceUser(App.AccountUsername);
+                //LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = App.Token;
 
                 var TaskTable = App.client.GetTable<TasksTable>();
                 UserTasks = await TaskTable.Where(x => (x.RoomName == user.RoomName) && (x.StartDate == date)).ToCollectionAsync();

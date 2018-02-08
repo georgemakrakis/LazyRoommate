@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETStandard,Version=v1.4": {
       "Acr.UserDialogs/6.3.10": {
@@ -1245,6 +1245,9 @@
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.dll": {},
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll": {},
           "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll": {}
+        },
+        "build": {
+          "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
       "XamForms.Controls.Calendar/1.1.1": {
@@ -5031,9 +5034,48 @@
     ],
     ".NETStandard,Version=v1.4": []
   },
-  "tools": {},
-  "projectFileToolGroups": {},
   "packageFolders": {
-    "C:\\Users\\George Makrakis\\.nuget\\packages\\": {}
+    "C:\\Users\\georg\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+  },
+  "project": {
+    "restore": {
+      "projectUniqueName": "C:\\Users\\georg\\LazyRoommate\\LazyRoommateLibrary\\LazyRoommate.csproj",
+      "projectName": "LazyRoommate",
+      "projectPath": "C:\\Users\\georg\\LazyRoommate\\LazyRoommateLibrary\\LazyRoommate.csproj",
+      "projectJsonPath": "C:\\Users\\georg\\LazyRoommate\\LazyRoommateLibrary\\project.json",
+      "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\georg\\LazyRoommate\\LazyRoommateLibrary\\obj\\",
+      "projectStyle": "ProjectJson",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      }
+    },
+    "dependencies": {
+      "Acr.UserDialogs": "[6.3.10, )",
+      "Microsoft.Azure.Mobile.Client": "[4.0.1, )",
+      "Newtonsoft.Json": "[10.0.3, )",
+      "Splat": "[1.6.2, )",
+      "System.Net.Http": "[4.3.3, )",
+      "Xam.Plugins.Settings": "[3.0.1, )",
+      "XamForms.Controls.Calendar": "[1.1.1, )",
+      "Xamarin.Forms": "[2.3.4.247, )"
+    },
+    "frameworks": {
+      "netstandard1.4": {
+        "imports": [
+          "portable-net45+win8+wp8+wpa81"
+        ]
+      }
+    }
   }
 }

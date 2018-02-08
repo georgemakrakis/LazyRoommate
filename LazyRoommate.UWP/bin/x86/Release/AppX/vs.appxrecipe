@@ -16,7 +16,10 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>91437CF5C9FB112B44ADB3B0F817A5A922B1177DF4DFCE18E57E12B79359607B</RegisteredManifestChecksum>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>26D8A1FA32F22D160DFF0B3173C75C785EAA84FD3FCE72204AF8BC8F86F51B0A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>41665GeorgeMakrakis.LazyRoommate_1.0.0.0_x86__4x8qxkdc075tc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>41665GeorgeMakrakis.LazyRoommate_4x8qxkdc075tc!App</RegisteredUserModeAppID>
     <RegisteredPackageID>41665GeorgeMakrakis.LazyRoommate</RegisteredPackageID>
@@ -28,7 +31,7 @@
     <AppXManifest Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-28T23:10:54.136</Modified>
+      <Modified>2018-02-08T10:37:33.177</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -140,15 +143,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.dll">
       <PackagePath>LazyRoommate.UWP.dll</PackagePath>
-      <Modified>2017-12-28T23:10:50.523</Modified>
+      <Modified>2018-02-08T10:37:30.620</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.exe">
       <PackagePath>LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2017-12-28T23:10:54.054</Modified>
+      <Modified>2018-02-08T10:37:33.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.pdb">
       <PackagePath>LazyRoommate.UWP.pdb</PackagePath>
-      <Modified>2017-12-28T23:10:54.025</Modified>
+      <Modified>2018-02-08T10:37:33.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\lazy_roomate_logo_transparent.png">
       <PackagePath>lazy_roomate_logo_transparent.png</PackagePath>
@@ -181,7 +184,7 @@
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-13T09:20:39.383</Modified>
+      <Modified>2018-02-08T09:19:25.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\settings_32.png">
       <PackagePath>settings_32.png</PackagePath>
@@ -209,19 +212,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\0.rsrc">
       <PackagePath>_Resources\0.rsrc</PackagePath>
-      <Modified>2017-12-28T23:08:24.432</Modified>
+      <Modified>2018-02-08T10:35:55.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\1.rsrc">
       <PackagePath>_Resources\1.rsrc</PackagePath>
-      <Modified>2017-12-28T23:08:24.449</Modified>
+      <Modified>2018-02-08T10:35:55.893</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\2.rsrc">
       <PackagePath>_Resources\2.rsrc</PackagePath>
-      <Modified>2017-12-28T23:08:24.481</Modified>
+      <Modified>2018-02-08T10:35:55.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\georg\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\index.txt">
       <PackagePath>_Resources\index.txt</PackagePath>
-      <Modified>2017-12-28T23:08:24.493</Modified>
+      <Modified>2018-02-08T10:35:55.920</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
@@ -281,27 +284,27 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00</Name>
-      <Version>14.0.24123.0</Version>
+      <Version>14.0.25426.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.25426.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00</Name>
-      <Version>14.0.24123.0</Version>
+      <Version>14.0.25426.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.25426.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00</Name>
-      <Version>14.0.24123.0</Version>
+      <Version>14.0.25426.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.24123.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.25426.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
