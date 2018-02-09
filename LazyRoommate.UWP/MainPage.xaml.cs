@@ -295,19 +295,19 @@ namespace LazyRoommate.UWP
 
             }
 
-            if (token != null && token.Length > 0 && !IsTokenExpired(token))
+            if (!string.IsNullOrEmpty(token) && !IsTokenExpired(token))
             {
                 LazyRoommate.App.client.CurrentUser = new MobileServiceUser(LazyRoommate.App.AccountUsername);
                 LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token;
 
             }
-            else if (token2 != null && token2.Length > 0 && !IsTokenExpired(token2))
+            else if (!string.IsNullOrEmpty(token2) && !IsTokenExpired(token2))
             {
                 LazyRoommate.App.client.CurrentUser = new MobileServiceUser(LazyRoommate.App.AccountUsername);
                 LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token2;
 
             }
-            else if (token3 != null && token3.Length > 0 && !IsTokenExpired(token3))
+            else if (!string.IsNullOrEmpty(token3) && !IsTokenExpired(token3))
             {
                 LazyRoommate.App.client.CurrentUser = new MobileServiceUser(LazyRoommate.App.AccountUsername);
                 LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token3;

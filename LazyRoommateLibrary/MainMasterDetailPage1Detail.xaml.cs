@@ -28,7 +28,7 @@ namespace LazyRoommate
             //NavigationPage.SetHasNavigationBar(this, true);
             //NavigationPage.SetHasBackButton(this, false);
             
-            CalendarColorsPerDay(DateTime.Today.Month.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
+            //CalendarColorsPerDay(DateTime.Today.Month.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture));
 
             //Lack of having an PullToRefresh Action in windows made use use the toolbar to refresh the list
             switch (Device.RuntimePlatform)
@@ -47,7 +47,7 @@ namespace LazyRoommate
                     break;
             }
         }
-        public async void CalendarColorsPerDay(string month)
+        /*public async void CalendarColorsPerDay(string month)
         {
             var UserTable = App.client.GetTable<UsersTable>();
             var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
@@ -59,8 +59,8 @@ namespace LazyRoommate
             List<string> duplicate_days = new List<string>();//list with all Month's tasks 
             foreach (var Mtask in MonthTasks)
             {
-                non_duplicateDays.Add(Mtask.StartDate.ToString());
-                duplicate_days.Add(Mtask.StartDate.ToString());
+                non_duplicateDays.Add(Mtask.StartDate);
+                duplicate_days.Add(Mtask.StartDate);
             }
             List<int> daysTaskCount = new List<int>();  //keep the sum of everyday tasks in daysTaskCount list 
             var group = duplicate_days.GroupBy(i => i);
@@ -73,22 +73,22 @@ namespace LazyRoommate
             foreach (var day in non_duplicateDays)
             {
                 // find the date from var day in calendar and change the background color
-                if (daysTaskCount[daycell] >= 1)
+                if (daysTaskCount[daycell] <= 2)
                 {
                     Calendar.DatesBackgroundColor = Color.Green;
                 }
-                else if (daysTaskCount[daycell] >= 2)
+                else if (daysTaskCount[daycell] > 2 && daysTaskCount[daycell] <= 4)
                 {
                     Calendar.DatesBackgroundColor = Color.Orange;
                 }
-                else if (daysTaskCount[daycell] >= 3)
+                else if (daysTaskCount[daycell] >= 5)
                 {
                     Calendar.DatesBackgroundColor = Color.Red;
                 }
                 Calendar.ForceRedraw();
                 daycell++;
             }
-        }
+        }*/
 
 
         public async void LoadList(string date)

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
+    <Jar>obj\Release\lp\4\jl\formsviewgroup.jar</Jar>
     <Jar>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\4\jl\formsviewgroup.jar</Jar>
   </Jars>
   <ResolvedResourceDirectories>
@@ -12,10 +13,10 @@
     <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\9\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\15\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\16\jl\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\35\jl\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\30\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\29\jl\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\31\jl\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\34\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\32\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\35\jl\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Release\lp\0\jl\assets</ResolvedAssetDirectory>
@@ -26,10 +27,10 @@
     <ResolvedAssetDirectory>obj\Release\lp\9\jl\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Release\lp\15\jl\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Release\lp\16\jl\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\lp\35\jl\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\lp\30\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\29\jl\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Release\lp\31\jl\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj\Release\lp\34\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\32\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\lp\35\jl\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
@@ -41,9 +42,9 @@
     <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\9.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\15.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\16.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\35.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\30.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\29.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\31.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\34.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\32.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\lp\35.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

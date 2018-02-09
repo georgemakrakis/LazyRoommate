@@ -68,7 +68,16 @@ namespace LazyRoommate.DataFactoryModel
                 //LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = App.Token;
 
                 var TaskTable = App.client.GetTable<TasksTable>();
-                UserTasks = await TaskTable.Where(x => (x.RoomName == user.RoomName) && (x.StartDate == date)).ToCollectionAsync();
+                var usrtaks = await TaskTable.Where(x => (x.RoomName == user.RoomName)).ToCollectionAsync();
+                UserTasks.Clear();
+                foreach (var x in usrtaks)
+                {
+                    if (DateTime.Parse(date) >= DateTime.Parse(x.StartDate) && DateTime.Parse(date) <= DateTime.Parse(x.EndDate))
+                    {
+                       
+                        UserTasks.Add(x);
+                    }
+                }
 
                 //These must be in the query above
                 //foreach (var x in TempTasks)

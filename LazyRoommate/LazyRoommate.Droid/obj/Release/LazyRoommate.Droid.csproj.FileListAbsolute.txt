@@ -107,22 +107,9 @@ C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Releas
 C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\home.png
 C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\R.cs.flag
 C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\uploadflags.txt
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.dll.mdb
 C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Auth.dll
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Acr.Support.Android.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Acr.UserDialogs.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Acr.UserDialogs.Interface.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\FormsViewGroup.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\LazyRoommate.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\LazyRoommate.Droid.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Plugin.Settings.Abstractions.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Plugin.Settings.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Splat.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.dll
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.dll
 bin\Release\LazyRoommate.dll.mdb
 bin\Release\Microsoft.CSharp.pdb
 bin\Release\Mono.Android.pdb

@@ -27,10 +27,10 @@ Xamarin.Android.Support.v7.CardView
 Xamarin.Android.Support.v7.MediaRouter
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
+Xamarin.Auth
 Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 XamForms.Controls.Calendar
 XamForms.Controls.Calendar.Droid
-Xamarin.Auth
