@@ -13,6 +13,7 @@ namespace LazyRoommate
         Task<bool> AuthenticateFacebook();
         Task<bool> AuthenticateGoogle();
         Task<bool> AuthenticateTwitter();
+        Task<bool> LogoutAsync();
     }
     public partial class App : Application
     {

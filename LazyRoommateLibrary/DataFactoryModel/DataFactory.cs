@@ -5,10 +5,13 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Windows.Security.Credentials;
+using Newtonsoft.Json;
 using Xamarin.Forms;
 
 namespace LazyRoommate.DataFactoryModel
@@ -72,12 +75,40 @@ namespace LazyRoommate.DataFactoryModel
                 UserTasks.Clear();
                 foreach (var x in usrtaks)
                 {
-                    if (DateTime.Parse(date) >= DateTime.Parse(x.StartDate) && DateTime.Parse(date) <= DateTime.Parse(x.EndDate))
+                    if (DateTime.ParseExact(date, "dd/MM/yyyy", CultureInfo.InvariantCulture) >= DateTime.ParseExact(x.StartDate, "dd/MM/yyyy", CultureInfo.InvariantCulture) && DateTime.ParseExact(date, "dd/MM/yyyy", CultureInfo.InvariantCulture) <= DateTime.ParseExact(x.EndDate, "dd/MM/yyyy", CultureInfo.InvariantCulture))
                     {
-                       
+                        //These if here are changeing a variable so we can show a message to users for the state of the task
+                        if (x.ConfirmedBy != string.Empty)
+                        {
+                            x.DoneBy = "Confirmed";                            
+                        }
+                        else if (x.DoneBy != string.Empty)
+                        {
+                            x.DoneBy= "Done";
+                        }
                         UserTasks.Add(x);
                     }
                 }
+
+                //HttpClient client = new HttpClient
+                //{
+                //    BaseAddress = new Uri("https://lazyroommateservice.azurewebsites.net")
+                //};
+                //client.DefaultRequestHeaders.Accept.Clear();
+                //client.DefaultRequestHeaders.Accept.Add(
+                //    new MediaTypeWithQualityHeaderValue("application/json"));
+
+                //HttpResponseMessage response = await client.GetAsync(client.BaseAddress + "tables/TasksTables/TasksBetween?roomname=" + App.RoomName + "&date=" + date);
+                //if (response.IsSuccessStatusCode)
+                //{
+                //    List<TasksTable> model;
+                //    var resultJSON = await response.Content.ReadAsStringAsync();
+                //    model = JsonConvert.DeserializeObject<List<TasksTable>>(resultJSON);
+                //}
+
+                //var result = await App.client.InvokeApiAsync<TasksTable>("/tables/TasksTable/TasksBetween", System.Net.Http.HttpMethod.Get, null);
+
+
 
                 //These must be in the query above
                 //foreach (var x in TempTasks)

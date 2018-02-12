@@ -4694,6 +4694,16 @@ namespace Windows.Security.Credentials
 		}
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public void Remove(global::Windows.Security.Credentials.PasswordCredential credential)
+		{
+			global::Windows.Security.Credentials.IPasswordVault__Impl.StubClass.Remove(
+								this, 
+								credential
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		public global::Windows.Security.Credentials.PasswordCredential Retrieve(
 					string resource, 
 					string userName)
@@ -4830,6 +4840,9 @@ namespace Windows.Security.Credentials
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		void Add(global::Windows.Security.Credentials.PasswordCredential credential);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		void Remove(global::Windows.Security.Credentials.PasswordCredential credential);
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		global::Windows.Security.Credentials.PasswordCredential Retrieve(

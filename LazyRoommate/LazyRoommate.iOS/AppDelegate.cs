@@ -168,6 +168,36 @@ namespace LazyRoommate.iOS
 
             return success;
         }
+
+        public async Task<bool> LogoutAsync()
+        {            
+            foreach (var cookie in NSHttpCookieStorage.SharedStorage.Cookies)
+            {
+                NSHttpCookieStorage.SharedStorage.DeleteCookie(cookie);
+            }
+
+            await UsersTableManager.DefaultManager.CurrentClient.LogoutAsync();
+
+            //Deleting the stored tokens           
+            //var account1 = AccountStore.Create().FindAccountsForService("facebook").FirstOrDefault();
+            //var account2 = AccountStore.Create().FindAccountsForService("google").FirstOrDefault();
+            //var account3 = AccountStore.Create().FindAccountsForService("twitter").FirstOrDefault();
+            //if (account1 != null)
+            //{
+            //    AccountStore.Create().Delete(account1, "facebook");
+            //}
+            //else if (account2 != null)
+            //{
+            //    AccountStore.Create().Delete(account2, "google");
+            //}
+            //else if (account3 != null)
+            //{
+            //    AccountStore.Create().Delete(account3, "twitter");
+            //}
+
+            return true;
+        }
+
         public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
         {
             return UsersTableManager.DefaultManager.CurrentClient.ResumeWithURL(url);

@@ -327,7 +327,14 @@ namespace LazyRoommate
                     App.Email = string.Empty;
                     App.ProfileImage = string.Empty;
                     App.ProfileName = string.Empty;
-                    await Navigation.PushAsync(new LoginPage(), true);
+
+                    bool loggedOut = false;
+
+                    if (App.Authenticator != null)
+                    {
+                        loggedOut = await App.Authenticator.LogoutAsync();
+                    }
+                    Application.Current.MainPage = new LoginPage();
 
                     //This just came up just for security-reverse engineering reasons i think...
                     Navigation.RemovePage(this);

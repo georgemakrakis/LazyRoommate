@@ -1,14 +1,15 @@
-﻿using LazyRoommate.Managers;
-using LazyRoommate.Models;
-using Microsoft.WindowsAzure.MobileServices;
-using System;
+﻿using System;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Security.Credentials;
 using Windows.UI.Popups;
+using LazyRoommate.Managers;
+using LazyRoommate.Models;
+using Microsoft.WindowsAzure.MobileServices;
 using Newtonsoft.Json.Linq;
+using XamForms.Controls.Windows;
 
 namespace LazyRoommate.UWP
 {
@@ -16,7 +17,7 @@ namespace LazyRoommate.UWP
     {
         // Define a authenticated user.
         private MobileServiceUser user { get; set; }
-        static bool success = false;
+        static bool success;
         // Check if the token is available within the password vault
         private PasswordCredential acct;
 
@@ -101,20 +102,18 @@ namespace LazyRoommate.UWP
                 success = true;
                 return string.Format("Already signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
             }
-            else
-            {
-                //inserting logged in user into database
-                var table = LazyRoommate.App.client.GetTable<UsersTable>();
-                await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
+
+            //inserting logged in user into database
+            var table = LazyRoommate.App.client.GetTable<UsersTable>();
+            await table.InsertAsync(new UsersTable { id = userInfo.Id, Email = userInfo.Email, Name = userInfo.Name, ImageUri = userInfo.ImageUri });
 
 
-                LazyRoommate.App.Email = userInfo.Email;
-                LazyRoommate.App.ProfileName = userInfo.Name;
-                LazyRoommate.App.ProfileImage = userInfo.ImageUri;
-                LazyRoommate.App.RoomName = string.Empty;
-                success = true;
-                return string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
-            }
+            LazyRoommate.App.Email = userInfo.Email;
+            LazyRoommate.App.ProfileName = userInfo.Name;
+            LazyRoommate.App.ProfileImage = userInfo.ImageUri;
+            LazyRoommate.App.RoomName = string.Empty;
+            success = true;
+            return string.Format("you are now signed-in as {0}. \nEmail {1}. \nId {2}", userInfo.Name, userInfo.Email, userInfo.Id);
         }
         public async Task<bool> AuthenticateGoogle()
         {
@@ -239,10 +238,53 @@ namespace LazyRoommate.UWP
             return success;
         }
 
+        public async Task<bool> LogoutAsync()
+        {
+            await UsersTableManager.DefaultManager.CurrentClient.LogoutAsync();
+
+            //Deleting the stored tokens                      
+            try
+            {
+                var account1 = new PasswordVault().Retrieve("facebook", LazyRoommate.App.AccountUsername);
+                var vault1 = new PasswordVault();
+                vault1.Remove(new PasswordCredential(
+                    "facebook", LazyRoommate.App.AccountUsername, account1.Password));               
+            }
+            catch (Exception e)
+            {                
+                try
+                {
+                    var account2 = new PasswordVault().Retrieve("google", LazyRoommate.App.AccountUsername);
+                    var vault2 = new PasswordVault();
+                    vault2.Remove(new PasswordCredential(
+                        "google", LazyRoommate.App.AccountUsername, account2.Password));                   
+                }
+                catch (Exception exception)
+                {
+                    try
+                    {
+                        var account3 = new PasswordVault().Retrieve("twitter", LazyRoommate.App.AccountUsername);
+                        var vault3 = new PasswordVault();
+                        vault3.Remove(new PasswordCredential(
+                            "twitter", LazyRoommate.App.AccountUsername, account3.Password));
+                    }
+                    catch (Exception e1)
+                    {                        
+                        throw;
+                    }                                                         
+                    throw;
+                }
+
+                throw;
+            }
+
+            return true;
+        }
+
         bool IsTokenExpired(string token)
         {
             // Get just the JWT part of the token (without the signature).
-            var jwt = token.Split(new Char[] { '.' })[1];
+            var jwt = token.Split('.')[1];
 
             // Undo the URL encoding.
             jwt = jwt.Replace('-', '+').Replace('_', '/');
@@ -273,10 +315,10 @@ namespace LazyRoommate.UWP
 
         public MainPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
             // Initialize the authenticator before loading the app.
             LazyRoommate.App.Init(this);
-            XamForms.Controls.Windows.Calendar.Init();
+            Calendar.Init();
             LoadApplication(new LazyRoommate.App());
 
             //LazyRoommate.App.client.CurrentUser = new MobileServiceUser();
