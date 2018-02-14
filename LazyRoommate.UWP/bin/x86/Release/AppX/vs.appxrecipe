@@ -31,7 +31,7 @@
     <AppXManifest Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-12T23:40:47.174</Modified>
+      <Modified>2018-02-14T15:36:03.618</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -143,15 +143,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.dll">
       <PackagePath>LazyRoommate.UWP.dll</PackagePath>
-      <Modified>2018-02-12T23:40:45.568</Modified>
+      <Modified>2018-02-14T15:36:01.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.exe">
       <PackagePath>LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2018-02-12T23:40:47.133</Modified>
+      <Modified>2018-02-14T15:36:03.562</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.pdb">
       <PackagePath>LazyRoommate.UWP.pdb</PackagePath>
-      <Modified>2018-02-12T23:40:47.120</Modified>
+      <Modified>2018-02-14T15:36:03.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\lazy_roomate_logo_transparent.png">
       <PackagePath>lazy_roomate_logo_transparent.png</PackagePath>
@@ -184,7 +184,7 @@
     <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-12T20:16:36.519</Modified>
+      <Modified>2018-02-14T15:13:46.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\settings_32.png">
       <PackagePath>settings_32.png</PackagePath>
@@ -212,19 +212,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\0.rsrc">
       <PackagePath>_Resources\0.rsrc</PackagePath>
-      <Modified>2018-02-12T23:39:34.116</Modified>
+      <Modified>2018-02-14T15:34:38.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\1.rsrc">
       <PackagePath>_Resources\1.rsrc</PackagePath>
-      <Modified>2018-02-12T23:39:34.119</Modified>
+      <Modified>2018-02-14T15:34:38.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\2.rsrc">
       <PackagePath>_Resources\2.rsrc</PackagePath>
-      <Modified>2018-02-12T23:39:34.142</Modified>
+      <Modified>2018-02-14T15:34:39.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\George Makrakis\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\index.txt">
       <PackagePath>_Resources\index.txt</PackagePath>
-      <Modified>2018-02-12T23:39:34.144</Modified>
+      <Modified>2018-02-14T15:34:39.011</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

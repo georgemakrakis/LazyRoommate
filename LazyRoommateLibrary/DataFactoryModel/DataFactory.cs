@@ -80,12 +80,15 @@ namespace LazyRoommate.DataFactoryModel
                         //These if here are changeing a variable so we can show a message to users for the state of the task
                         if (x.ConfirmedBy != string.Empty)
                         {
-                            x.DoneBy = "Confirmed";                            
+                            x.Status = "Confirmed";                            
                         }
                         else if (x.DoneBy != string.Empty)
                         {
-                            x.DoneBy= "Done";
+                            x.Status= "Done";
                         }
+
+                        x.DaysLeft = (DateTime.ParseExact(x.EndDate, "dd/MM/yyyy", CultureInfo.InvariantCulture) -
+                                      DateTime.ParseExact(date, "dd/MM/yyyy", CultureInfo.InvariantCulture)).TotalDays;
                         UserTasks.Add(x);
                     }
                 }
