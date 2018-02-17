@@ -13,6 +13,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
+            
             <!-- header background -->
             <Image Source="login_scrn.jpg" Aspect="AspectFill"/>
             <!--<Image Source="lazyroomatelogotransparent.png" HorizontalOptions="Center" Margin="0, 20, 15, 10"/>-->
