@@ -443,6 +443,8 @@ namespace LazyRoommate
                                 //promt message successful join
 
                                 await DisplayAlert("Join Room", "Joining Room Succeed!", "Ok");
+                                App.RoomName = result.Value;
+
                             }
                             else
                             {

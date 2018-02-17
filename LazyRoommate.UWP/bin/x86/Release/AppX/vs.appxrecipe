@@ -28,7 +28,7 @@
     <AppXManifest Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-17T20:23:37.585</Modified>
+      <Modified>2018-02-17T21:58:45.174</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -140,15 +140,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.dll">
       <PackagePath>LazyRoommate.UWP.dll</PackagePath>
-      <Modified>2018-02-17T20:23:34.874</Modified>
+      <Modified>2018-02-17T21:58:42.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.exe">
       <PackagePath>LazyRoommate.UWP.exe</PackagePath>
-      <Modified>2018-02-17T20:23:37.507</Modified>
+      <Modified>2018-02-17T21:58:45.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\LazyRoommate.UWP.pdb">
       <PackagePath>LazyRoommate.UWP.pdb</PackagePath>
-      <Modified>2018-02-17T20:23:37.472</Modified>
+      <Modified>2018-02-17T21:58:45.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\lazy_roomate_logo_transparent.png">
       <PackagePath>lazy_roomate_logo_transparent.png</PackagePath>
@@ -209,19 +209,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\0.rsrc">
       <PackagePath>_Resources\0.rsrc</PackagePath>
-      <Modified>2018-02-17T20:22:04.242</Modified>
+      <Modified>2018-02-17T21:57:20.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\1.rsrc">
       <PackagePath>_Resources\1.rsrc</PackagePath>
-      <Modified>2018-02-17T20:22:04.254</Modified>
+      <Modified>2018-02-17T21:57:20.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\2.rsrc">
       <PackagePath>_Resources\2.rsrc</PackagePath>
-      <Modified>2018-02-17T20:22:04.290</Modified>
+      <Modified>2018-02-17T21:57:20.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate.UWP\bin\x86\Release\ilc\_Resources\index.txt">
       <PackagePath>_Resources\index.txt</PackagePath>
-      <Modified>2018-02-17T20:22:04.292</Modified>
+      <Modified>2018-02-17T21:57:20.534</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
