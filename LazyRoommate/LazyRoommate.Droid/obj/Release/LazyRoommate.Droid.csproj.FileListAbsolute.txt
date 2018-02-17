@@ -122,47 +122,114 @@ C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Releas
 C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.dll
-bin\Release\LazyRoommate.dll.mdb
-bin\Release\Microsoft.CSharp.pdb
-bin\Release\Mono.Android.pdb
-bin\Release\mscorlib.pdb
-bin\Release\System.Core.pdb
-bin\Release\System.pdb
-bin\Release\System.IO.Compression.pdb
-bin\Release\System.Json.pdb
-bin\Release\System.Net.Http.pdb
-bin\Release\System.Xml.pdb
-bin\Release\System.Xml.Linq.pdb
-bin\Release\System.Runtime.Serialization.pdb
-bin\Release\System.ServiceModel.Internals.pdb
-bin\Release\System.Numerics.pdb
-bin\Release\Mono.Security.pdb
-bin\Release\System.ComponentModel.Composition.pdb
-obj\Release\linksrc\LazyRoommate.Droid.dll.mdb
-obj\Release\linksrc\Acr.Support.Android.dll.mdb
-obj\Release\linksrc\Acr.UserDialogs.dll.mdb
-obj\Release\linksrc\Acr.UserDialogs.Interface.dll.mdb
-obj\Release\linksrc\FormsViewGroup.dll.mdb
-obj\Release\linksrc\LazyRoommate.dll.mdb
-obj\Release\linksrc\Plugin.Settings.Abstractions.dll.mdb
-obj\Release\linksrc\Plugin.Settings.dll.mdb
-obj\Release\linksrc\Splat.dll.mdb
-obj\Release\linksrc\Xamarin.Forms.Core.dll.mdb
-obj\Release\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
-obj\Release\linksrc\Xamarin.Forms.Xaml.dll.mdb
-obj\Release\linksrc\Microsoft.CSharp.pdb
-obj\Release\linksrc\Mono.Android.pdb
-obj\Release\linksrc\mscorlib.pdb
-obj\Release\linksrc\System.Core.pdb
-obj\Release\linksrc\System.pdb
-obj\Release\linksrc\System.IO.Compression.pdb
-obj\Release\linksrc\System.Json.pdb
-obj\Release\linksrc\System.Net.Http.pdb
-obj\Release\linksrc\System.Xml.pdb
-obj\Release\linksrc\System.Xml.Linq.pdb
-obj\Release\linksrc\System.Runtime.Serialization.pdb
-obj\Release\linksrc\System.ServiceModel.Internals.pdb
-obj\Release\linksrc\System.Numerics.pdb
-obj\Release\linksrc\Mono.Security.pdb
-obj\Release\linksrc\System.ComponentModel.Composition.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.dll.config
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\com.lazyroommate.LazyRoommate.apk
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\com.lazyroommate.LazyRoommate-Signed.apk
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.Support.Android.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.UserDialogs.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.UserDialogs.Interface.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\AndHUD.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\FormsViewGroup.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\GCM.Client.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Microsoft.Azure.Mobile.Client.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Newtonsoft.Json.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\PCLCrypto.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\PInvoke.BCrypt.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\PInvoke.Kernel32.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\PInvoke.NCrypt.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\PInvoke.Windows.Core.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Plugin.Settings.Abstractions.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Plugin.Settings.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Splat.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Validation.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Android.Support.CustomTabs.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Android.Support.Design.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Android.Support.v4.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Android.Support.v7.CardView.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Android.Support.v7.MediaRouter.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Auth.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Core.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Platform.Android.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Platform.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Xaml.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\XamForms.Controls.Calendar.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\XamForms.Controls.Calendar.Droid.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.Support.Android.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.Support.Android.dll.mdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.UserDialogs.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.UserDialogs.dll.mdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.UserDialogs.Interface.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Acr.UserDialogs.Interface.dll.mdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\FormsViewGroup.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\FormsViewGroup.dll.mdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Microsoft.Azure.Mobile.Client.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Newtonsoft.Json.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\PCLCrypto.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\PInvoke.BCrypt.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\PInvoke.Kernel32.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\PInvoke.NCrypt.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\PInvoke.Windows.Core.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Plugin.Settings.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Plugin.Settings.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Plugin.Settings.dll.mdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Plugin.Settings.Abstractions.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Plugin.Settings.Abstractions.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Plugin.Settings.Abstractions.dll.mdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Splat.dll.mdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Validation.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Core.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Core.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Core.dll.mdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Platform.Android.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Xaml.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Xaml.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\LazyRoommate.Droid.csprojResolveAssemblyReference.cache
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\LazyRoommate.Droid.dll
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\LazyRoommate.Droid.pdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\bin\com.lazyroommate.LazyRoommate.apk
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-hdpi\icon.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-xhdpi\icon.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-xxhdpi\icon.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\layout\tabbar.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\layout\toolbar.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\values\styles.xml
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\login_scrn.jpg
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\social_connect_facebook.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\social_connect_google.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\social_connect_twitter.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\add_task.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\create_room_32.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\add_32.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\leave_room_32.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\join_room_32.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\settings_32.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\help_32.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\logout_32.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\user_profile_32.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\dot.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\remove_roommate.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\refresh.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\login_logo.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\delete_account.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\curvedmask.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-hdpi\lazyroomatelogotransparent.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-xxhdpi\lazyroomatelogotransparent.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable-xhdpi\lazyroomatelogotransparent.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\lazyroomatelogotransparent.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\back_button.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\icon.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\res\drawable\home.png
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\R.cs.flag
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\uploadflags.txt
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\LazyRoommate.Droid.dll.mdb
+C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.dll.mdb

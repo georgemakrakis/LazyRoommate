@@ -16,7 +16,7 @@ public abstract class GcmServiceBase
 	}
 
 
-	public GcmServiceBase (java.lang.String p0)
+	public GcmServiceBase (java.lang.String p0) throws java.lang.Throwable
 	{
 		super (p0);
 		if (getClass () == GcmServiceBase.class)
@@ -24,14 +24,14 @@ public abstract class GcmServiceBase
 	}
 
 
-	public GcmServiceBase ()
+	public GcmServiceBase () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == GcmServiceBase.class)
 			mono.android.TypeManager.Activate ("Gcm.Client.GcmServiceBase, GCM.Client, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
-	public GcmServiceBase (java.lang.String[] p0)
+	public GcmServiceBase (java.lang.String[] p0) throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == GcmServiceBase.class)

@@ -1,0 +1,142 @@
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.exe.config
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.exe
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\System.Net.Http.Extensions.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\System.Net.Http.Primitives.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.Ext.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Newtonsoft.Json.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\System.Net.Http.Extensions.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\System.Net.Http.Primitives.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll.mdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll.mdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\optimized\
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.csprojResolveAssemblyReference.cache
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.csproj.LazyRoommate.iOS.exe.config
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.exe
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.exe.config
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.exe
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\System.Net.Http.Extensions.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\System.Net.Http.Primitives.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.Ext.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Newtonsoft.Json.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\System.Net.Http.Extensions.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\System.Net.Http.Primitives.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll.mdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll.mdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\optimized\
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.csprojResolveAssemblyReference.cache
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.csproj.LazyRoommate.iOS.exe.config
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.exe
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.pdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.exe.mdb
+C:\Users\georg\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.exe.mdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\obj\iPhone\Debug\LazyRoommate.iOS.exe.mdb
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\LazyRoommate\LazyRoommate\LazyRoommate\LazyRoommate.iOS\bin\iPhone\Debug\LazyRoommate.iOS.exe.mdb

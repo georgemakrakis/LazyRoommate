@@ -20,7 +20,7 @@ public class WebAuthenticatorActivity
 	}
 
 
-	public WebAuthenticatorActivity ()
+	public WebAuthenticatorActivity () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == WebAuthenticatorActivity.class)

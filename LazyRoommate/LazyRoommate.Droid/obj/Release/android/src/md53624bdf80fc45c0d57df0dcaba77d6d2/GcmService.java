@@ -15,7 +15,7 @@ public class GcmService
 	}
 
 
-	public GcmService (java.lang.String p0)
+	public GcmService (java.lang.String p0) throws java.lang.Throwable
 	{
 		super (p0);
 		if (getClass () == GcmService.class)
@@ -23,14 +23,14 @@ public class GcmService
 	}
 
 
-	public GcmService ()
+	public GcmService () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == GcmService.class)
 			mono.android.TypeManager.Activate ("LazyRoommate.Droid.GcmService, LazyRoommate.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
-	public GcmService (java.lang.String[] p0)
+	public GcmService (java.lang.String[] p0) throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == GcmService.class)

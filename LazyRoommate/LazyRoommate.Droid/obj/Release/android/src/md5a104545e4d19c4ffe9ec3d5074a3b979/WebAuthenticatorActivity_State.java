@@ -15,7 +15,7 @@ public class WebAuthenticatorActivity_State
 	}
 
 
-	public WebAuthenticatorActivity_State ()
+	public WebAuthenticatorActivity_State () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == WebAuthenticatorActivity_State.class)

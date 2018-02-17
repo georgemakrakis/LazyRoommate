@@ -192,7 +192,7 @@ namespace LazyRoommate
                         await UserTable.UpdateAsync(user);
 
                         await DisplayAlert("Leave Room", "You left your room", "Ok");
-
+                        App.RoomName = string.Empty;
                         var masterDetailPage = Application.Current.MainPage as MasterDetailPage;
 
                         masterDetailPage.Detail = new NavigationPage(new MasterDetailPage1Detail())
@@ -229,6 +229,7 @@ namespace LazyRoommate
                             //At the end we remove user from admins table
                             await roomsAdmins.DeleteAsync(admin);
                             await DisplayAlert("Leave Room", "You left your room", "Ok");
+                            App.RoomName = string.Empty;
 
                             var masterDetailPage = Application.Current.MainPage as MasterDetailPage;
                             masterDetailPage.Detail = new NavigationPage(new MasterDetailPage1Detail())
@@ -252,7 +253,7 @@ namespace LazyRoommate
                 prmt.Title = "Enter the email of the user you want to remove:";
             }
             else if (item.Title.Equals("Profile"))
-            {               
+            {
                 //Changing the Detail page with the new page we want to present
                 var masterDetailPage = Application.Current.MainPage as MasterDetailPage;
                 masterDetailPage.Detail = new NavigationPage(new ProfilePage())
@@ -434,7 +435,7 @@ namespace LazyRoommate
                             //user.RoomName = result.Value;
 
                             var roomItem = await UserTable.Where(x => (x.RoomName == result.Value)).ToListAsync();
-                            if (roomItem != null)
+                            if (roomItem.Count() != 0)
                             {
                                 user.RoomName = result.Value;
 
@@ -506,6 +507,6 @@ namespace LazyRoommate
 
         }
 
-        
+
     }
 }

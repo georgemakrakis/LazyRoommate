@@ -15,7 +15,7 @@ public class ToolbarImageButton
 	}
 
 
-	public ToolbarImageButton (android.content.Context p0)
+	public ToolbarImageButton (android.content.Context p0) throws java.lang.Throwable
 	{
 		super (p0);
 		if (getClass () == ToolbarImageButton.class)
@@ -23,7 +23,7 @@ public class ToolbarImageButton
 	}
 
 
-	public ToolbarImageButton (android.content.Context p0, android.util.AttributeSet p1)
+	public ToolbarImageButton (android.content.Context p0, android.util.AttributeSet p1) throws java.lang.Throwable
 	{
 		super (p0, p1);
 		if (getClass () == ToolbarImageButton.class)
@@ -31,7 +31,7 @@ public class ToolbarImageButton
 	}
 
 
-	public ToolbarImageButton (android.content.Context p0, android.util.AttributeSet p1, int p2)
+	public ToolbarImageButton (android.content.Context p0, android.util.AttributeSet p1, int p2) throws java.lang.Throwable
 	{
 		super (p0, p1, p2);
 		if (getClass () == ToolbarImageButton.class)

@@ -16,7 +16,7 @@ public class ProgressWheel_SpinHandler
 	}
 
 
-	public ProgressWheel_SpinHandler ()
+	public ProgressWheel_SpinHandler () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == ProgressWheel_SpinHandler.class)
@@ -24,7 +24,7 @@ public class ProgressWheel_SpinHandler
 	}
 
 
-	public ProgressWheel_SpinHandler (android.os.Looper p0)
+	public ProgressWheel_SpinHandler (android.os.Looper p0) throws java.lang.Throwable
 	{
 		super (p0);
 		if (getClass () == ProgressWheel_SpinHandler.class)

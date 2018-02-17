@@ -20,7 +20,7 @@ public class ActionSheetRenderer
 	}
 
 
-	public ActionSheetRenderer (android.content.Context p0)
+	public ActionSheetRenderer (android.content.Context p0) throws java.lang.Throwable
 	{
 		super (p0);
 		if (getClass () == ActionSheetRenderer.class)

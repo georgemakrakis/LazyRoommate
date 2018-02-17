@@ -15,7 +15,7 @@ public class FormAuthenticatorActivity_State
 	}
 
 
-	public FormAuthenticatorActivity_State ()
+	public FormAuthenticatorActivity_State () throws java.lang.Throwable
 	{
 		super ();
 		if (getClass () == FormAuthenticatorActivity_State.class)

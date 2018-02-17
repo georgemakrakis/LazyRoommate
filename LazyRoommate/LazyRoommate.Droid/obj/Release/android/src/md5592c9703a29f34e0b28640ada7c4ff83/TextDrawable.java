@@ -16,7 +16,7 @@ public class TextDrawable
 	}
 
 
-	public TextDrawable (int p0)
+	public TextDrawable (int p0) throws java.lang.Throwable
 	{
 		super (p0);
 		if (getClass () == TextDrawable.class)
