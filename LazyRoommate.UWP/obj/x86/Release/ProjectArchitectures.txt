@@ -1,2 +1,2 @@
-C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommate.UWP\LazyRoommate.UWP.csproj;x86
-C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommateLibrary\LazyRoommate.csproj;neutral
+C:\Users\georg\LazyRoommate\LazyRoommate.UWP\LazyRoommate.UWP.csproj;x86
+C:\Users\georg\LazyRoommate\LazyRoommateLibrary\LazyRoommate.csproj;neutral

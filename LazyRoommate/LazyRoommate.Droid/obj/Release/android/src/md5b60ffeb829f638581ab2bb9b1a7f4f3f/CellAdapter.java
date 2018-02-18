@@ -29,14 +29,14 @@ public abstract class CellAdapter
 	}
 
 
-	public CellAdapter () throws java.lang.Throwable
+	public CellAdapter ()
 	{
 		super ();
 		if (getClass () == CellAdapter.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.CellAdapter, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
-	public CellAdapter (android.content.Context p0) throws java.lang.Throwable
+	public CellAdapter (android.content.Context p0)
 	{
 		super ();
 		if (getClass () == CellAdapter.class)

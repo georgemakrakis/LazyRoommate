@@ -15,7 +15,7 @@ public class ConfirmDialogFragment
 	}
 
 
-	public ConfirmDialogFragment () throws java.lang.Throwable
+	public ConfirmDialogFragment ()
 	{
 		super ();
 		if (getClass () == ConfirmDialogFragment.class)

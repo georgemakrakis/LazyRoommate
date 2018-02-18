@@ -21,7 +21,7 @@ public class FrameRenderer_FrameDrawable
 	}
 
 
-	public FrameRenderer_FrameDrawable () throws java.lang.Throwable
+	public FrameRenderer_FrameDrawable ()
 	{
 		super ();
 		if (getClass () == FrameRenderer_FrameDrawable.class)

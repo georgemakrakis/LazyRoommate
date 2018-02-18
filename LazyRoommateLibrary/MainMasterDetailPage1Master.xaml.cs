@@ -180,65 +180,75 @@ namespace LazyRoommate
                     var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
                     var user = userItem.FirstOrDefault();
 
-                    var roomsAdmins = App.client.GetTable<RoomsAdmins>();
-                    var roomsAdminsItem = await roomsAdmins.Where(x => (x.Admin == user.Email)).ToListAsync();
-                    var admin = roomsAdminsItem.FirstOrDefault();
-
-                    //These are for regular users   
-                    if (admin == null)
+                    try
                     {
-                        user.RoomName = null;
+                        var roomsAdmins = App.client.GetTable<RoomsAdmins>();
+                        var roomsAdminsItem = await roomsAdmins.Where(x => (x.Admin == user.Email)).ToListAsync();
+                        var admin = roomsAdminsItem.FirstOrDefault();
 
-                        await UserTable.UpdateAsync(user);
-
-                        await DisplayAlert("Leave Room", "You left your room", "Ok");
-                        App.RoomName = string.Empty;
-                        var masterDetailPage = Application.Current.MainPage as MasterDetailPage;
-
-                        masterDetailPage.Detail = new NavigationPage(new MasterDetailPage1Detail())
+                        //These are for regular users   
+                        if (admin == null)
                         {
-                            BarBackgroundColor = Color.FromHex("#FFA000"),
-                            BarTextColor = Color.White
-                        };
-                        masterDetailPage.IsPresented = false;
+                            user.RoomName = null;
 
-                    }
-                    //These are for admins
-                    else
-                    {
-                        var answer2 = await DisplayAlert("Leave Room", "You are admin of this room. If you proceed all Tasks will be deleted! \n Do you want to continue?", "Yes", "No");
-                        if (answer2)
-                        {
-                            //First we remove all references from user table that points to the specific room
-                            var roomRemoveItem = await UserTable.Where(x => (x.RoomName == admin.Room)).ToListAsync();
-                            roomRemoveItem.ForEach(async x =>
-                            {
-                                x.RoomName = null;
-                                await UserTable.UpdateAsync(x);
-                            });
+                            await UserTable.UpdateAsync(user);
 
-                            //We delete all tasks related to the room
-                            var TaskTable = App.client.GetTable<TasksTable>();
-                            var tasksItem = await TaskTable.Where(x => (x.RoomName == admin.Room)).ToListAsync();
-                            tasksItem.ForEach(async x =>
-                            {
-                                var taskRemove = tasksItem.FirstOrDefault();
-                                await TaskTable.DeleteAsync(taskRemove);
-                            });
-
-                            //At the end we remove user from admins table
-                            await roomsAdmins.DeleteAsync(admin);
                             await DisplayAlert("Leave Room", "You left your room", "Ok");
                             App.RoomName = string.Empty;
-
                             var masterDetailPage = Application.Current.MainPage as MasterDetailPage;
+
                             masterDetailPage.Detail = new NavigationPage(new MasterDetailPage1Detail())
                             {
                                 BarBackgroundColor = Color.FromHex("#FFA000"),
                                 BarTextColor = Color.White
                             };
                             masterDetailPage.IsPresented = false;
+
                         }
+                        //These are for admins
+                        else
+                        {
+                            var answer2 = await DisplayAlert("Leave Room",
+                                "You are admin of this room. If you proceed all Tasks will be deleted! \n Do you want to continue?",
+                                "Yes", "No");
+                            if (answer2)
+                            {
+                                //First we remove all references from user table that points to the specific room
+                                var roomRemoveItem =
+                                    await UserTable.Where(x => (x.RoomName == admin.Room)).ToListAsync();
+                                roomRemoveItem.ForEach(async x =>
+                                {
+                                    x.RoomName = null;
+                                    await UserTable.UpdateAsync(x);
+                                });
+
+                                //We delete all tasks related to the room
+                                var TaskTable = App.client.GetTable<TasksTable>();
+                                var tasksItem = await TaskTable.Where(x => (x.RoomName == admin.Room)).ToListAsync();
+                                tasksItem.ForEach(async x =>
+                                {
+                                    var taskRemove = tasksItem.FirstOrDefault();
+                                    await TaskTable.DeleteAsync(taskRemove);
+                                });
+
+                                //At the end we remove user from admins table
+                                await roomsAdmins.DeleteAsync(admin);
+                                await DisplayAlert("Leave Room", "You left your room", "Ok");
+                                App.RoomName = string.Empty;
+
+                                var masterDetailPage = Application.Current.MainPage as MasterDetailPage;
+                                masterDetailPage.Detail = new NavigationPage(new MasterDetailPage1Detail())
+                                {
+                                    BarBackgroundColor = Color.FromHex("#FFA000"),
+                                    BarTextColor = Color.White
+                                };
+                                masterDetailPage.IsPresented = false;
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine(ex);
                     }
                 }
             }

@@ -15,7 +15,7 @@ public class PushHandlerBroadcastReceiver
 	}
 
 
-	public PushHandlerBroadcastReceiver () throws java.lang.Throwable
+	public PushHandlerBroadcastReceiver ()
 	{
 		super ();
 		if (getClass () == PushHandlerBroadcastReceiver.class)

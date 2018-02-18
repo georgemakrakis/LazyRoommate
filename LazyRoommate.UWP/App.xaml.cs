@@ -55,7 +55,7 @@ namespace LazyRoommate.UWP
         // In this method we handle the notifications for specfifc users and rooms
         private void Channel_PushNotificationReceived(PushNotificationChannel sender, PushNotificationReceivedEventArgs args)
         {
-            if (!args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.Email) && args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.RoomName))
+            if (!args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.Email) )
             {
                 // Do nothing, Toast will be triggered from itself
             }

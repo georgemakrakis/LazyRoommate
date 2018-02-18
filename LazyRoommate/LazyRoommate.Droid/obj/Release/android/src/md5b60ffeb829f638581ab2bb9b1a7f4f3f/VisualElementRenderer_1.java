@@ -21,7 +21,7 @@ public abstract class VisualElementRenderer_1
 	}
 
 
-	public VisualElementRenderer_1 (android.content.Context p0, android.util.AttributeSet p1, int p2) throws java.lang.Throwable
+	public VisualElementRenderer_1 (android.content.Context p0, android.util.AttributeSet p1, int p2)
 	{
 		super (p0, p1, p2);
 		if (getClass () == VisualElementRenderer_1.class)
@@ -29,7 +29,7 @@ public abstract class VisualElementRenderer_1
 	}
 
 
-	public VisualElementRenderer_1 (android.content.Context p0, android.util.AttributeSet p1) throws java.lang.Throwable
+	public VisualElementRenderer_1 (android.content.Context p0, android.util.AttributeSet p1)
 	{
 		super (p0, p1);
 		if (getClass () == VisualElementRenderer_1.class)
@@ -37,7 +37,7 @@ public abstract class VisualElementRenderer_1
 	}
 
 
-	public VisualElementRenderer_1 (android.content.Context p0) throws java.lang.Throwable
+	public VisualElementRenderer_1 (android.content.Context p0)
 	{
 		super (p0);
 		if (getClass () == VisualElementRenderer_1.class)

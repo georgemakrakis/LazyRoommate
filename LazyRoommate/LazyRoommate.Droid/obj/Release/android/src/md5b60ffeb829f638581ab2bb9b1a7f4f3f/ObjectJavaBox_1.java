@@ -15,7 +15,7 @@ public class ObjectJavaBox_1
 	}
 
 
-	public ObjectJavaBox_1 () throws java.lang.Throwable
+	public ObjectJavaBox_1 ()
 	{
 		super ();
 		if (getClass () == ObjectJavaBox_1.class)

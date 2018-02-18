@@ -16,7 +16,7 @@ public abstract class GcmBroadcastReceiverBase_1
 	}
 
 
-	public GcmBroadcastReceiverBase_1 () throws java.lang.Throwable
+	public GcmBroadcastReceiverBase_1 ()
 	{
 		super ();
 		if (getClass () == GcmBroadcastReceiverBase_1.class)

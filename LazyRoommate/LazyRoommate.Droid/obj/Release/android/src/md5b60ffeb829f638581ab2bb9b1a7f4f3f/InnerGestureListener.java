@@ -26,7 +26,7 @@ public class InnerGestureListener
 	}
 
 
-	public InnerGestureListener () throws java.lang.Throwable
+	public InnerGestureListener ()
 	{
 		super ();
 		if (getClass () == InnerGestureListener.class)

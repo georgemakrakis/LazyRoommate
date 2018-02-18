@@ -24,7 +24,7 @@ public class CarouselPageAdapter
 	}
 
 
-	public CarouselPageAdapter () throws java.lang.Throwable
+	public CarouselPageAdapter ()
 	{
 		super ();
 		if (getClass () == CarouselPageAdapter.class)

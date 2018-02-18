@@ -17,7 +17,7 @@ public class ServiceConnection
 	}
 
 
-	public ServiceConnection () throws java.lang.Throwable
+	public ServiceConnection ()
 	{
 		super ();
 		if (getClass () == ServiceConnection.class)

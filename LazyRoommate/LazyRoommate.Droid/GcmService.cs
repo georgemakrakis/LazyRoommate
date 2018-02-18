@@ -95,7 +95,7 @@ namespace LazyRoommate.Droid
             string userParam = intent.Extras.GetString("param");
             string roomParam = intent.Extras.GetString("param2");
             //We dont want the user whoe aded the task to get notificatio
-            if (!userParam.Equals(App.Email) && roomParam.Equals(App.RoomName) && !string.IsNullOrEmpty(message))
+            if (!userParam.Equals(App.Email) && !string.IsNullOrEmpty(message))
             {
                 createNotification("New task added!", message);
                 return;

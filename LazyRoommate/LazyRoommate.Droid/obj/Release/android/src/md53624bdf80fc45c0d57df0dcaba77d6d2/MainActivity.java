@@ -16,7 +16,7 @@ public class MainActivity
 	}
 
 
-	public MainActivity () throws java.lang.Throwable
+	public MainActivity ()
 	{
 		super ();
 		if (getClass () == MainActivity.class)

@@ -315,14 +315,6 @@ namespace LazyRoommate.UWP
 
         public MainPage()
         {
-            InitializeComponent();
-            // Initialize the authenticator before loading the app.
-            LazyRoommate.App.Init(this);
-            Calendar.Init();
-            LoadApplication(new LazyRoommate.App());
-
-            //LazyRoommate.App.client.CurrentUser = new MobileServiceUser();
-            //LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = LazyRoommate.App.Token;
             string token = null;
             string token2 = null;
             string token3 = null;
@@ -355,6 +347,15 @@ namespace LazyRoommate.UWP
                 LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token3;
 
             }
+            InitializeComponent();
+            // Initialize the authenticator before loading the app.
+            LazyRoommate.App.Init(this);
+            Calendar.Init();
+            LoadApplication(new LazyRoommate.App());
+
+            //LazyRoommate.App.client.CurrentUser = new MobileServiceUser();
+            //LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = LazyRoommate.App.Token;
+           
 
 
         }

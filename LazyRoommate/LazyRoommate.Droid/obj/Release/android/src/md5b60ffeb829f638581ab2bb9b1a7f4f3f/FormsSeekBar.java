@@ -18,7 +18,7 @@ public class FormsSeekBar
 	}
 
 
-	public FormsSeekBar (android.content.Context p0) throws java.lang.Throwable
+	public FormsSeekBar (android.content.Context p0)
 	{
 		super (p0);
 		if (getClass () == FormsSeekBar.class)
@@ -26,7 +26,7 @@ public class FormsSeekBar
 	}
 
 
-	public FormsSeekBar (android.content.Context p0, android.util.AttributeSet p1) throws java.lang.Throwable
+	public FormsSeekBar (android.content.Context p0, android.util.AttributeSet p1)
 	{
 		super (p0, p1);
 		if (getClass () == FormsSeekBar.class)
@@ -34,7 +34,7 @@ public class FormsSeekBar
 	}
 
 
-	public FormsSeekBar (android.content.Context p0, android.util.AttributeSet p1, int p2) throws java.lang.Throwable
+	public FormsSeekBar (android.content.Context p0, android.util.AttributeSet p1, int p2)
 	{
 		super (p0, p1, p2);
 		if (getClass () == FormsSeekBar.class)

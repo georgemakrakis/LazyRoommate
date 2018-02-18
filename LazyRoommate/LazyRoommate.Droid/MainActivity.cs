@@ -350,21 +350,6 @@ namespace LazyRoommate.Droid
 
         protected override void OnCreate(Bundle bundle)
         {
-            // Set the current instance of MainActivity.
-            instance = this;
-
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
-
-            base.OnCreate(bundle);
-
-            Forms.Init(this, bundle);
-            Calendar.Init();
-            UserDialogs.Init(this);
-            // Initialize the authenticator before loading the app.
-            App.Init(this);
-            LoadApplication(new App());
-
             string token = null;
             string token2 = null;
             string token3 = null;
@@ -397,6 +382,20 @@ namespace LazyRoommate.Droid
                 App.client.CurrentUser.MobileServiceAuthenticationToken = token3;
 
             }
+            // Set the current instance of MainActivity.
+            instance = this;
+
+            TabLayoutResource = Resource.Layout.Tabbar;
+            ToolbarResource = Resource.Layout.Toolbar;
+
+            base.OnCreate(bundle);
+
+            Forms.Init(this, bundle);
+            Calendar.Init();
+            UserDialogs.Init(this);
+            // Initialize the authenticator before loading the app.
+            App.Init(this);
+            LoadApplication(new App());
 
             //Push notifications section
             try

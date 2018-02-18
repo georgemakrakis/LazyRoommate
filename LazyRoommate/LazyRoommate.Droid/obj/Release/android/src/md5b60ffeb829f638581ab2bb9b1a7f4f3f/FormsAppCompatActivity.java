@@ -28,7 +28,7 @@ public class FormsAppCompatActivity
 	}
 
 
-	public FormsAppCompatActivity () throws java.lang.Throwable
+	public FormsAppCompatActivity ()
 	{
 		super ();
 		if (getClass () == FormsAppCompatActivity.class)

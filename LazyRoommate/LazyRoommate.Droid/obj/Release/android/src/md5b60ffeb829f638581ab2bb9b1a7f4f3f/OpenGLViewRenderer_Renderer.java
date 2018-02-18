@@ -19,7 +19,7 @@ public class OpenGLViewRenderer_Renderer
 	}
 
 
-	public OpenGLViewRenderer_Renderer () throws java.lang.Throwable
+	public OpenGLViewRenderer_Renderer ()
 	{
 		super ();
 		if (getClass () == OpenGLViewRenderer_Renderer.class)

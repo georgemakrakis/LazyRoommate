@@ -27,7 +27,7 @@ public class FormsApplicationActivity
 	}
 
 
-	public FormsApplicationActivity () throws java.lang.Throwable
+	public FormsApplicationActivity ()
 	{
 		super ();
 		if (getClass () == FormsApplicationActivity.class)

@@ -38,6 +38,13 @@ public class MonoPackageManager {
 				String cacheDir     = context.getCacheDir ().getAbsolutePath ();
 				String dataDir      = getNativeLibraryPath (context);
 				ClassLoader loader  = context.getClassLoader ();
+				java.io.File external0 = android.os.Environment.getExternalStorageDirectory ();
+				String externalDir = new java.io.File (
+							external0,
+							"Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath ();
+				String externalLegacyDir = new java.io.File (
+							external0,
+							"../legacy/Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath ();
 
 				Runtime.init (
 						language,
@@ -49,9 +56,10 @@ public class MonoPackageManager {
 							dataDir,
 						},
 						loader,
-						new java.io.File (
-							android.os.Environment.getExternalStorageDirectory (),
-							"Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath (),
+						new String[] {
+							externalDir,
+							externalLegacyDir
+						},
 						MonoPackageManager_Resources.Assemblies,
 						context.getPackageName ());
 				
@@ -105,6 +113,7 @@ class MonoPackageManager_Resources {
 		"AndHUD.dll",
 		"FormsViewGroup.dll",
 		"GCM.Client.dll",
+		"LazyRoommate.dll",
 		"Microsoft.Azure.Mobile.Client.dll",
 		"Newtonsoft.Json.dll",
 		"PCLCrypto.dll",
@@ -132,7 +141,6 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Xaml.dll",
 		"XamForms.Controls.Calendar.dll",
 		"XamForms.Controls.Calendar.Droid.dll",
-		"LazyRoommate.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

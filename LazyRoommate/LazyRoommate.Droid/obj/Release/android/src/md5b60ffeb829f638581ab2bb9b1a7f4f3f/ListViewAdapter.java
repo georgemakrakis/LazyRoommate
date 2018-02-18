@@ -24,14 +24,14 @@ public class ListViewAdapter
 	}
 
 
-	public ListViewAdapter () throws java.lang.Throwable
+	public ListViewAdapter ()
 	{
 		super ();
 		if (getClass () == ListViewAdapter.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.ListViewAdapter, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
-	public ListViewAdapter (android.content.Context p0) throws java.lang.Throwable
+	public ListViewAdapter (android.content.Context p0)
 	{
 		super ();
 		if (getClass () == ListViewAdapter.class)

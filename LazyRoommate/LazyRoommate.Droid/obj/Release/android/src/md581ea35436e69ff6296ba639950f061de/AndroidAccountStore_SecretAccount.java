@@ -21,7 +21,7 @@ public class AndroidAccountStore_SecretAccount
 	}
 
 
-	public AndroidAccountStore_SecretAccount () throws java.lang.Throwable
+	public AndroidAccountStore_SecretAccount ()
 	{
 		super ();
 		if (getClass () == AndroidAccountStore_SecretAccount.class)

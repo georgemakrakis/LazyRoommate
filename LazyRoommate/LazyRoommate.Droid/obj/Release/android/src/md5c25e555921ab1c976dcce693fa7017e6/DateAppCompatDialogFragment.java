@@ -15,7 +15,7 @@ public class DateAppCompatDialogFragment
 	}
 
 
-	public DateAppCompatDialogFragment () throws java.lang.Throwable
+	public DateAppCompatDialogFragment ()
 	{
 		super ();
 		if (getClass () == DateAppCompatDialogFragment.class)

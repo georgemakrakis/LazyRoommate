@@ -18,7 +18,7 @@ public abstract class AbstractAppCompatDialogFragment_1
 	}
 
 
-	public AbstractAppCompatDialogFragment_1 () throws java.lang.Throwable
+	public AbstractAppCompatDialogFragment_1 ()
 	{
 		super ();
 		if (getClass () == AbstractAppCompatDialogFragment_1.class)

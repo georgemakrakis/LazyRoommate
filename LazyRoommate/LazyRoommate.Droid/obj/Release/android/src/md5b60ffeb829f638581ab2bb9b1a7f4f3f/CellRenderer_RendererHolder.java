@@ -15,7 +15,7 @@ public class CellRenderer_RendererHolder
 	}
 
 
-	public CellRenderer_RendererHolder () throws java.lang.Throwable
+	public CellRenderer_RendererHolder ()
 	{
 		super ();
 		if (getClass () == CellRenderer_RendererHolder.class)

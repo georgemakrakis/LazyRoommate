@@ -15,7 +15,7 @@ public class WebAuthenticatorNativeBrowserActivity_State
 	}
 
 
-	public WebAuthenticatorNativeBrowserActivity_State () throws java.lang.Throwable
+	public WebAuthenticatorNativeBrowserActivity_State ()
 	{
 		super ();
 		if (getClass () == WebAuthenticatorNativeBrowserActivity_State.class)

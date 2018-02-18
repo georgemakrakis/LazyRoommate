@@ -18,7 +18,7 @@ public class InnerScaleListener
 	}
 
 
-	public InnerScaleListener () throws java.lang.Throwable
+	public InnerScaleListener ()
 	{
 		super ();
 		if (getClass () == InnerScaleListener.class)

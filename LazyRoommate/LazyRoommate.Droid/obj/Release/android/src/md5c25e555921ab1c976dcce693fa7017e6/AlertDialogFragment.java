@@ -15,7 +15,7 @@ public class AlertDialogFragment
 	}
 
 
-	public AlertDialogFragment () throws java.lang.Throwable
+	public AlertDialogFragment ()
 	{
 		super ();
 		if (getClass () == AlertDialogFragment.class)

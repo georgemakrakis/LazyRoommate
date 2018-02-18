@@ -18,7 +18,7 @@ public class PageRenderer
 	}
 
 
-	public PageRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2) throws java.lang.Throwable
+	public PageRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
 	{
 		super (p0, p1, p2);
 		if (getClass () == PageRenderer.class)
@@ -26,7 +26,7 @@ public class PageRenderer
 	}
 
 
-	public PageRenderer (android.content.Context p0, android.util.AttributeSet p1) throws java.lang.Throwable
+	public PageRenderer (android.content.Context p0, android.util.AttributeSet p1)
 	{
 		super (p0, p1);
 		if (getClass () == PageRenderer.class)
@@ -34,7 +34,7 @@ public class PageRenderer
 	}
 
 
-	public PageRenderer (android.content.Context p0) throws java.lang.Throwable
+	public PageRenderer (android.content.Context p0)
 	{
 		super (p0);
 		if (getClass () == PageRenderer.class)
