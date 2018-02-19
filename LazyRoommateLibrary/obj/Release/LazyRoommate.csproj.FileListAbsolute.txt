@@ -1,18 +1,3 @@
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.csprojResolveAssemblyReference.cache
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.App.xaml.g.cs
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.CreateTasksPage.xaml.g.cs
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.LoginPage.xaml.g.cs
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.ProfilePage.xaml.g.cs
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MainMasterDetailPage1.xaml.g.cs
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MainMasterDetailPage1Master.xaml.g.cs
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MainMasterDetailPage1Detail.xaml.g.cs
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.AboutPage.xaml.g.cs
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.dll
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.pdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.dll
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.pdb
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Release\Windows.Foundation.UniversalApiContract.winmd
-C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.csproj.CoreCompileInputs.cache
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.dll
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.pdb
 C:\Users\Argiris Mouratidis\Documents\Visual Studio 2017\Projects\LazyRoommate\LazyRoommateLibrary\bin\Release\Windows.Foundation.UniversalApiContract.winmd
@@ -42,3 +27,17 @@ C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MainMas
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.AboutPage.xaml.g.cs
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.dll
 C:\Users\georg\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.pdb
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.dll
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Release\LazyRoommate.pdb
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\bin\Release\Windows.Foundation.UniversalApiContract.winmd
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.csproj.CoreCompileInputs.cache
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.App.xaml.g.cs
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.CreateTasksPage.xaml.g.cs
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.LoginPage.xaml.g.cs
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.ProfilePage.xaml.g.cs
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MainMasterDetailPage1.xaml.g.cs
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MainMasterDetailPage1Master.xaml.g.cs
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.MainMasterDetailPage1Detail.xaml.g.cs
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.AboutPage.xaml.g.cs
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.dll
+C:\Users\George Makrakis\LazyRoommate\LazyRoommateLibrary\obj\Release\LazyRoommate.pdb

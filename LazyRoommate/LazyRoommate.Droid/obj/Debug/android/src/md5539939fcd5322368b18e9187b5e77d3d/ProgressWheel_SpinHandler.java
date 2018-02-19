@@ -16,7 +16,7 @@ public class ProgressWheel_SpinHandler
 	}
 
 
-	public ProgressWheel_SpinHandler () throws java.lang.Throwable
+	public ProgressWheel_SpinHandler ()
 	{
 		super ();
 		if (getClass () == ProgressWheel_SpinHandler.class)
@@ -24,7 +24,7 @@ public class ProgressWheel_SpinHandler
 	}
 
 
-	public ProgressWheel_SpinHandler (android.os.Handler.Callback p0) throws java.lang.Throwable
+	public ProgressWheel_SpinHandler (android.os.Handler.Callback p0)
 	{
 		super (p0);
 		if (getClass () == ProgressWheel_SpinHandler.class)
@@ -32,7 +32,7 @@ public class ProgressWheel_SpinHandler
 	}
 
 
-	public ProgressWheel_SpinHandler (android.os.Looper p0) throws java.lang.Throwable
+	public ProgressWheel_SpinHandler (android.os.Looper p0)
 	{
 		super (p0);
 		if (getClass () == ProgressWheel_SpinHandler.class)
@@ -40,7 +40,7 @@ public class ProgressWheel_SpinHandler
 	}
 
 
-	public ProgressWheel_SpinHandler (android.os.Looper p0, android.os.Handler.Callback p1) throws java.lang.Throwable
+	public ProgressWheel_SpinHandler (android.os.Looper p0, android.os.Handler.Callback p1)
 	{
 		super (p0, p1);
 		if (getClass () == ProgressWheel_SpinHandler.class)

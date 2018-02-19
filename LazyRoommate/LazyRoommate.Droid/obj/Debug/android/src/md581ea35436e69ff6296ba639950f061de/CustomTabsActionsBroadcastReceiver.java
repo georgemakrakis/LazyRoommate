@@ -16,7 +16,7 @@ public class CustomTabsActionsBroadcastReceiver
 	}
 
 
-	public CustomTabsActionsBroadcastReceiver () throws java.lang.Throwable
+	public CustomTabsActionsBroadcastReceiver ()
 	{
 		super ();
 		if (getClass () == CustomTabsActionsBroadcastReceiver.class)

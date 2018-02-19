@@ -20,7 +20,7 @@ public class ActionSheetRenderer
 	}
 
 
-	public ActionSheetRenderer (android.content.Context p0) throws java.lang.Throwable
+	public ActionSheetRenderer (android.content.Context p0)
 	{
 		super (p0);
 		if (getClass () == ActionSheetRenderer.class)
@@ -28,7 +28,7 @@ public class ActionSheetRenderer
 	}
 
 
-	public ActionSheetRenderer (android.content.Context p0, boolean p1, android.content.DialogInterface.OnCancelListener p2) throws java.lang.Throwable
+	public ActionSheetRenderer (android.content.Context p0, boolean p1, android.content.DialogInterface.OnCancelListener p2)
 	{
 		super (p0, p1, p2);
 		if (getClass () == ActionSheetRenderer.class)
@@ -36,7 +36,7 @@ public class ActionSheetRenderer
 	}
 
 
-	public ActionSheetRenderer (android.content.Context p0, int p1) throws java.lang.Throwable
+	public ActionSheetRenderer (android.content.Context p0, int p1)
 	{
 		super (p0, p1);
 		if (getClass () == ActionSheetRenderer.class)

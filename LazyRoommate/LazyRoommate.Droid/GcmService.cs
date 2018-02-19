@@ -56,7 +56,7 @@ namespace LazyRoommate.Droid
             try
             {
 
-                string templateBodyGCM = "{\"data\":{\"message\":\"$(messageParam)\",\"param\":\"$(userParam)\",\"param2\":\"$(roomParam)\"}}";
+                string templateBodyGCM = "{\"data\":{\"message\":\"$(messageParam)\",\"param\":\"$(userParam)\",\"param2\":\"$(roomParam)\",\"param3\":\"$(typeParam)\"}}";                
 
                 JObject templates = new JObject();
                 templates["genericMessage"] = new JObject
@@ -65,7 +65,7 @@ namespace LazyRoommate.Droid
                 };
 
                 await push.RegisterAsync(RegistrationID, templates);
-                Log.Info("Push Installation Id", push.InstallationId.ToString());
+                Log.Info("Push Installation Id", push.InstallationId.ToString());                
             }
             catch (Exception ex)
             {
@@ -82,9 +82,13 @@ namespace LazyRoommate.Droid
             if (intent != null && intent.Extras != null)
             {
                 foreach (var key in intent.Extras.KeySet())
+                {
                     msg.AppendLine(key + "=" + intent.Extras.Get(key).ToString());
-            }
+                    Log.Info("NOOOOOTTTT",key + "=" + intent.Extras.Get(key));
+                }
 
+            }
+            
             //Store the message
             var prefs = GetSharedPreferences(context.PackageName, FileCreationMode.Private);
             var edit = prefs.Edit();
@@ -94,12 +98,26 @@ namespace LazyRoommate.Droid
             string message = intent.Extras.GetString("message");
             string userParam = intent.Extras.GetString("param");
             string roomParam = intent.Extras.GetString("param2");
-            //We dont want the user whoe aded the task to get notificatio
-            if (!userParam.Equals(App.Email) && !string.IsNullOrEmpty(message))
-            {
-                createNotification("New task added!", message);
-                return;
+            string type = intent.Extras.GetString("param3");
+            Log.Info("PushHandlerBroadcastReceiver", "GCM Message Received!333333333333333333333"+type+"44444");
+            //We dont want the user who added the task to get notifications
+            if (type.Equals("NewTask"))
+            {                
+                if (!userParam.Equals(App.Email) && roomParam.Equals(App.RoomName) && !string.IsNullOrEmpty(message))
+                {
+                    createNotification("New task added!", message);
+                    return;
+                }
             }
+            else if (type.Equals("UserChanges"))
+            {
+                if (!userParam.Equals(App.Email) && roomParam.Equals(App.RoomName) && !string.IsNullOrEmpty(message))
+                {
+                    createNotification("Room Changes", message);                    
+                    return;                    
+                }
+            }
+
 
             string msg2 = intent.Extras.GetString("msg");
             if (!string.IsNullOrEmpty(msg2))

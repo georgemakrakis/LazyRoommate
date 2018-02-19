@@ -15,7 +15,7 @@ public class PromptDialogFragment
 	}
 
 
-	public PromptDialogFragment () throws java.lang.Throwable
+	public PromptDialogFragment ()
 	{
 		super ();
 		if (getClass () == PromptDialogFragment.class)

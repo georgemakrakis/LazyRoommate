@@ -17,7 +17,7 @@ public class NavigationPageRenderer_ClickListener
 	}
 
 
-	public NavigationPageRenderer_ClickListener () throws java.lang.Throwable
+	public NavigationPageRenderer_ClickListener ()
 	{
 		super ();
 		if (getClass () == NavigationPageRenderer_ClickListener.class)

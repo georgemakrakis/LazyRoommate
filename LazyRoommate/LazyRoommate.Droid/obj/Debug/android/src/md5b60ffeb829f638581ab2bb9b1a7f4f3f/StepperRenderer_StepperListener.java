@@ -17,7 +17,7 @@ public class StepperRenderer_StepperListener
 	}
 
 
-	public StepperRenderer_StepperListener () throws java.lang.Throwable
+	public StepperRenderer_StepperListener ()
 	{
 		super ();
 		if (getClass () == StepperRenderer_StepperListener.class)

@@ -19,14 +19,14 @@ public class WebViewRenderer_WebClient
 	}
 
 
-	public WebViewRenderer_WebClient () throws java.lang.Throwable
+	public WebViewRenderer_WebClient ()
 	{
 		super ();
 		if (getClass () == WebViewRenderer_WebClient.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.WebViewRenderer+WebClient, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
-	public WebViewRenderer_WebClient (md5b60ffeb829f638581ab2bb9b1a7f4f3f.WebViewRenderer p0) throws java.lang.Throwable
+	public WebViewRenderer_WebClient (md5b60ffeb829f638581ab2bb9b1a7f4f3f.WebViewRenderer p0)
 	{
 		super ();
 		if (getClass () == WebViewRenderer_WebClient.class)

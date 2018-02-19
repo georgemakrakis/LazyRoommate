@@ -16,18 +16,24 @@ using Xamarin.Forms;
 
 namespace LazyRoommate.DataFactoryModel
 {
+    public class TasksTableCopy
+    {
+        public string id { get; set; }
+        public string TaskName { get; set; }
+        public string TaskDescription { get; set; }
+        public string RoomName { get; set; }
+        public string DoneBy { get; set; }
+        public string ConfirmedBy { get; set; }
+
+        public string StartDate { get; set; }
+        public string EndDate { get; set; }
+        public string Status { get; set; }
+        public double DaysLeft { get; set; }
+    }
     public static class DataFactory
     {
         public static IList<TasksTable> Tasks { get; private set; }
-        public static ICollection<TasksTable> UserTasks = new ObservableCollection<TasksTable>();
-
-        private static DateTime TodayAt(int hour, int minute)
-        {
-            return new DateTime(DateTime.Now.Year,
-                DateTime.Now.Month,
-                DateTime.Now.Day,
-                hour, minute, 0);
-        }        
+        public static ICollection<TasksTableCopy> UserTasks = new ObservableCollection<TasksTableCopy>();
         static DataFactory()
         {
 
@@ -41,7 +47,7 @@ namespace LazyRoommate.DataFactoryModel
                 //    RoomName="George's",
                 //    DoneBy="",
                 //    ConfirmedBy="",
-                    
+
                 //},
                 //new TasksTable
                 //{
@@ -51,11 +57,11 @@ namespace LazyRoommate.DataFactoryModel
                 //    RoomName="Argyris",
                 //    DoneBy="",
                 //    ConfirmedBy="",
-                   
+
                 //}
             };
         }
-        public static async Task Init(string date) 
+        public static async Task Init(string date)
         {
 
             //var userInfo = await App.client.InvokeApiAsync<UserInfo>("UserInfo", HttpMethod.Get, null);
@@ -75,21 +81,32 @@ namespace LazyRoommate.DataFactoryModel
                 UserTasks.Clear();
                 foreach (var x in usrtaks)
                 {
+                    TasksTableCopy taskCopy = new TasksTableCopy()
+                    {
+                        id = x.id,
+                        TaskName = x.TaskName,
+                        TaskDescription = x.TaskDescription,
+                        RoomName = x.RoomName,
+                        DoneBy = x.DoneBy,
+                        ConfirmedBy = x.ConfirmedBy,
+                        StartDate = x.StartDate,
+                        EndDate = x.EndDate
+                    };
                     if (DateTime.ParseExact(date, "dd/MM/yyyy", CultureInfo.InvariantCulture) >= DateTime.ParseExact(x.StartDate, "dd/MM/yyyy", CultureInfo.InvariantCulture) && DateTime.ParseExact(date, "dd/MM/yyyy", CultureInfo.InvariantCulture) <= DateTime.ParseExact(x.EndDate, "dd/MM/yyyy", CultureInfo.InvariantCulture))
                     {
                         //These if here are changeing a variable so we can show a message to users for the state of the task
                         if (x.ConfirmedBy != string.Empty)
                         {
-                            x.Status = "Confirmed";                            
+                            taskCopy.Status = "Confirmed";
                         }
                         else if (x.DoneBy != string.Empty)
                         {
-                            x.Status= "Done";
+                            taskCopy.Status = "Done";
                         }
 
-                        x.DaysLeft = (DateTime.ParseExact(x.EndDate, "dd/MM/yyyy", CultureInfo.InvariantCulture) -
+                        taskCopy.DaysLeft = (DateTime.ParseExact(x.EndDate, "dd/MM/yyyy", CultureInfo.InvariantCulture) -
                                       DateTime.ParseExact(date, "dd/MM/yyyy", CultureInfo.InvariantCulture)).TotalDays;
-                        UserTasks.Add(x);
+                        UserTasks.Add(taskCopy);
                     }
                 }
 

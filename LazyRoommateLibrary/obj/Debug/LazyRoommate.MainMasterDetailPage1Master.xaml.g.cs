@@ -11,8 +11,8 @@
 namespace LazyRoommate {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Argiris Mouratidis\\Documents\\Visual Studio 2015\\Projects\\LazyRoommate\\La" +
-        "zyRoommateLibrary\\MainMasterDetailPage1Master.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\George Makrakis\\LazyRoommate\\LazyRoommateLibrary\\MainMasterDetailPage1Ma" +
+        "ster.xaml")]
     public partial class MasterDetailPage1Master : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

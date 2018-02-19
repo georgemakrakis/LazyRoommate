@@ -21,7 +21,7 @@ public class FormsFragmentPagerAdapter_1
 	}
 
 
-	public FormsFragmentPagerAdapter_1 (android.support.v4.app.FragmentManager p0) throws java.lang.Throwable
+	public FormsFragmentPagerAdapter_1 (android.support.v4.app.FragmentManager p0)
 	{
 		super (p0);
 		if (getClass () == FormsFragmentPagerAdapter_1.class)

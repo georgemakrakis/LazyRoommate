@@ -34,7 +34,7 @@ namespace LazyRoommate.UWP
                 .CreatePushNotificationChannelForApplicationAsync();
 
             const string templateBodyWNS =
-                "<toast><visual><binding template=\"ToastText01\"><text id=\"message\">$(messageParam)</text><text id=\"param\">$(userParam)</text><text id=\"param2\">$(roomParam)</text></binding></visual></toast>";
+                "<toast><visual><binding template=\"ToastText01\"><text id=\"message\">$(messageParam)</text><text id=\"param\">$(userParam)</text><text id=\"param2\">$(roomParam)</text><text id=\"type\">$(typeParam)</text></binding></visual></toast>";
 
             JObject headers = new JObject();
             headers["X-WNS-Type"] = "wns/toast";
@@ -55,14 +55,33 @@ namespace LazyRoommate.UWP
         // In this method we handle the notifications for specfifc users and rooms
         private void Channel_PushNotificationReceived(PushNotificationChannel sender, PushNotificationReceivedEventArgs args)
         {
-            if (!args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.Email) )
+            //For Create Task Notifications
+            if (args.ToastNotification.Content.InnerText.Contains("NewTask"))
             {
-                // Do nothing, Toast will be triggered from itself
+                if (!args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.Email) &&
+                    args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.RoomName))
+                {
+                    // Do nothing, Toast will be triggered from itself
+                }
+                else
+                {
+                    // Dont show the notificaiton at all
+                    args.Cancel = true;
+                }
             }
-            else
-            {               
-                // Dont show the notificaiton at all
-                args.Cancel = true;
+            //For Join-Leave Room Notifications
+            else if(args.ToastNotification.Content.InnerText.Contains("UserChanges"))
+            {
+                if (!args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.Email) &&
+                    args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.RoomName))
+                {
+                    // Do nothing, Toast will be triggered from itself
+                }
+                else
+                {
+                    // Dont show the notificaiton at all
+                    args.Cancel = true;
+                }
             }
         }
 

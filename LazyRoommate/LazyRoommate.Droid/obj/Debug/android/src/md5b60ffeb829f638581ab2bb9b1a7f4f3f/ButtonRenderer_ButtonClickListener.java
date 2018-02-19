@@ -17,7 +17,7 @@ public class ButtonRenderer_ButtonClickListener
 	}
 
 
-	public ButtonRenderer_ButtonClickListener () throws java.lang.Throwable
+	public ButtonRenderer_ButtonClickListener ()
 	{
 		super ();
 		if (getClass () == ButtonRenderer_ButtonClickListener.class)

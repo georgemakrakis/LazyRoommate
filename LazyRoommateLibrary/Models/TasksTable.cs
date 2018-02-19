@@ -13,7 +13,7 @@ namespace LazyRoommate.Models
 
         public string StartDate { get; set; }
         public string EndDate { get; set; }
-        public string Status { get; set; }
-        public double DaysLeft { get; set; }
+        //public string Status { get; set; }
+        //public double DaysLeft { get; set; }
     }
 }

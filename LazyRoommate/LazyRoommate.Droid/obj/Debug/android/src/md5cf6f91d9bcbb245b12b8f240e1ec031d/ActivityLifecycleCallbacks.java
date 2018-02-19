@@ -23,7 +23,7 @@ public class ActivityLifecycleCallbacks
 	}
 
 
-	public ActivityLifecycleCallbacks () throws java.lang.Throwable
+	public ActivityLifecycleCallbacks ()
 	{
 		super ();
 		if (getClass () == ActivityLifecycleCallbacks.class)

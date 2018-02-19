@@ -18275,7 +18275,7 @@
       ]
     },
     "Microsoft.NETCore.UniversalWindowsPlatform/5.2.3": {
-      "sha512": "j9TvGPvxH42R7hZ4AzhSO7WdWWbDxtw69RbM2YzV2wAOnUf8MHRv3DTRT1oV0amPW779/HLr7YJuRF6QByaOAA==",
+      "sha512": "xsOO1wxNtqhPdYoNfI96fTG9xrECOqBmqwVbarRuQinQ+sZKSI604Bi2S2cPHHAogHwbs3Lzgooi5KYffvOlpQ==",
       "type": "package",
       "path": "microsoft.netcore.universalwindowsplatform/5.2.3",
       "files": [
@@ -24954,23 +24954,23 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\georg\\.nuget\\packages\\": {},
+    "C:\\Users\\George Makrakis\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\georg\\LazyRoommate\\LazyRoommate.UWP\\LazyRoommate.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\George Makrakis\\LazyRoommate\\LazyRoommate.UWP\\LazyRoommate.UWP.csproj",
       "projectName": "LazyRoommate.UWP",
-      "projectPath": "C:\\Users\\georg\\LazyRoommate\\LazyRoommate.UWP\\LazyRoommate.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\georg\\LazyRoommate\\LazyRoommate.UWP\\project.json",
-      "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\georg\\LazyRoommate\\LazyRoommate.UWP\\obj\\",
+      "projectPath": "C:\\Users\\George Makrakis\\LazyRoommate\\LazyRoommate.UWP\\LazyRoommate.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\George Makrakis\\LazyRoommate\\LazyRoommate.UWP\\project.json",
+      "packagesPath": "C:\\Users\\George Makrakis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\George Makrakis\\LazyRoommate\\LazyRoommate.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\George Makrakis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -24981,8 +24981,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\georg\\LazyRoommate\\LazyRoommateLibrary\\LazyRoommate.csproj": {
-              "projectPath": "C:\\Users\\georg\\LazyRoommate\\LazyRoommateLibrary\\LazyRoommate.csproj"
+            "C:\\Users\\George Makrakis\\LazyRoommate\\LazyRoommateLibrary\\LazyRoommate.csproj": {
+              "projectPath": "C:\\Users\\George Makrakis\\LazyRoommate\\LazyRoommateLibrary\\LazyRoommate.csproj"
             }
           }
         }
