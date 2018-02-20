@@ -46,8 +46,8 @@ namespace LazyRoommate.UWP
                         LazyRoommate.App.client.CurrentUser = new MobileServiceUser(acct.UserName);
                         LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token;
 
-                        LazyRoommate.App.Token = token;
-                        LazyRoommate.App.AccountUsername = acct.UserName;
+                        //LazyRoommate.App.Token = token;
+                        //LazyRoommate.App.AccountUsername = acct.UserName;
 
                         message = await GetSetLazyData();
                         // Display the success or failure message.
@@ -139,8 +139,8 @@ namespace LazyRoommate.UWP
                         LazyRoommate.App.client.CurrentUser = new MobileServiceUser(acct.UserName);
                         LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token;
 
-                        LazyRoommate.App.Token = token;
-                        LazyRoommate.App.AccountUsername = acct.UserName;
+                        //LazyRoommate.App.Token = token;
+                        //LazyRoommate.App.AccountUsername = acct.UserName;
 
                         message = await GetSetLazyData();
                         // Display the success or failure message.
@@ -200,8 +200,8 @@ namespace LazyRoommate.UWP
                         LazyRoommate.App.client.CurrentUser = new MobileServiceUser(acct.UserName);
                         LazyRoommate.App.client.CurrentUser.MobileServiceAuthenticationToken = token;
 
-                        LazyRoommate.App.Token = token;
-                        LazyRoommate.App.AccountUsername = acct.UserName;
+                        //LazyRoommate.App.Token = token;
+                        //LazyRoommate.App.AccountUsername = acct.UserName;
 
                         message = await GetSetLazyData();
                         // Display the success or failure message.

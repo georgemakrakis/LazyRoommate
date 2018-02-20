@@ -8,6 +8,7 @@ using Android.App;
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
+using Android.Util;
 using Gcm.Client;
 using Java.Net;
 using LazyRoommate.Managers;
@@ -90,8 +91,8 @@ namespace LazyRoommate.Droid
                         App.client.CurrentUser = new MobileServiceUser(acct.Username);
                         App.client.CurrentUser.MobileServiceAuthenticationToken = token;
 
-                        App.Token = token;
-                        App.AccountUsername = acct.Username;
+                        //App.Token = token;
+                        //App.AccountUsername = acct.Username;
 
                         message = await GetSetLazyData();
                         // Display the success or failure message.
@@ -163,8 +164,8 @@ namespace LazyRoommate.Droid
                         App.client.CurrentUser = new MobileServiceUser(acct.Username);
                         App.client.CurrentUser.MobileServiceAuthenticationToken = token;
 
-                        App.Token = token;
-                        App.AccountUsername = acct.Username;
+                        //App.Token = token;
+                        //App.AccountUsername = acct.Username;
 
                         message = await GetSetLazyData();
                         // Display the success or failure message.
@@ -179,7 +180,7 @@ namespace LazyRoommate.Droid
                 }
 
 
-                // Sign in with Facebook login using a server-managed flow.
+                // Sign in with Google login using a server-managed flow.
                 user = await UsersTableManager.DefaultManager.CurrentClient.LoginAsync(this, MobileServiceAuthenticationProvider.Google, "lazyroommateservice.azurewebsites.net");
                 if (user != null)
                 {
@@ -350,9 +351,9 @@ namespace LazyRoommate.Droid
 
         protected override void OnCreate(Bundle bundle)
         {
-            string token = null;
-            string token2 = null;
-            string token3 = null;
+            string token = string.Empty;
+            string token2 = string.Empty;
+            string token3 = string.Empty;            
             try
             {
                 token = AccountStore.Create().FindAccountsForService("facebook").FirstOrDefault().Properties["Password"];
@@ -382,6 +383,10 @@ namespace LazyRoommate.Droid
                 App.client.CurrentUser.MobileServiceAuthenticationToken = token3;
 
             }
+            else if (string.IsNullOrEmpty(token) && string.IsNullOrEmpty(token2) && string.IsNullOrEmpty(token3))
+            {
+
+            }
             // Set the current instance of MainActivity.
             instance = this;
 
@@ -397,6 +402,7 @@ namespace LazyRoommate.Droid
             App.Init(this);
             LoadApplication(new App());
 
+            
             //Push notifications section
             try
             {
