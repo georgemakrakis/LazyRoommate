@@ -357,6 +357,7 @@ C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Releas
 C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\George Makrakis\LazyRoommate\LazyRoommate\LazyRoommate.Droid\bin\Release\LazyRoommate.Droid.dll
 bin\Release\LazyRoommate.dll.mdb
 obj\Release\linksrc\LazyRoommate.Droid.dll.mdb
 obj\Release\linksrc\Acr.Support.Android.dll.mdb

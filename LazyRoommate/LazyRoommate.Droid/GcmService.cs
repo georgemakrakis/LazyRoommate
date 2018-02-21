@@ -98,20 +98,25 @@ namespace LazyRoommate.Droid
             string message = intent.Extras.GetString("message");
             string userParam = intent.Extras.GetString("param");
             string roomParam = intent.Extras.GetString("param2");
-            string type = intent.Extras.GetString("param3");
-            Log.Info("PushHandlerBroadcastReceiver", "GCM Message Received!333333333333333333333"+type+"44444");
+            //string type = intent.Extras.GetString("param3");
+            //Log.Info("PushHandlerBroadcastReceiver", "GCM Message Received!333333333333333333333"+type+"44444");
+
             //We dont want the user who added the task to get notifications
-            if (type.Equals("NewTask"))
-            {                
-                if (!userParam.Equals(App.Email) && roomParam.Equals(App.RoomName) && !string.IsNullOrEmpty(message))
+            if (roomParam.Contains("NewTask"))
+            {
+                
+                if (!userParam.Equals(App.Email) && roomParam.Contains(App.RoomName) &&  !string.IsNullOrEmpty(message))
                 {
+                    Log.Info("PushHandlerBroadcastReceiver", "GCM Message Received!333333333333333333333");
                     createNotification("New task added!", message);
                     return;
                 }
             }
-            else if (type.Equals("UserChanges"))
+            else if (roomParam.Contains("UserChanges"))
             {
-                if (!userParam.Equals(App.Email) && roomParam.Equals(App.RoomName) && !string.IsNullOrEmpty(message))
+                Log.Info("ROOOOMMM", App.RoomName);
+                Log.Info("MAAAILLL", App.Email);
+                if (!userParam.Equals(App.Email) && roomParam.Contains(App.RoomName) && !string.IsNullOrEmpty(message))
                 {
                     createNotification("Room Changes", message);                    
                     return;                    
