@@ -356,9 +356,9 @@ namespace LazyRoommate.Droid
             string token3 = string.Empty;            
             try
             {
-                token = AccountStore.Create().FindAccountsForService("facebook").FirstOrDefault().Properties["Password"];
-                token2 = AccountStore.Create().FindAccountsForService("google").FirstOrDefault().Properties["Password"];
-                token3 = AccountStore.Create().FindAccountsForService("twitter").FirstOrDefault().Properties["Password"];
+                token = AccountStore.Create().FindAccountsForService("facebook").FirstOrDefault()?.Properties["Password"];
+                token2 = AccountStore.Create().FindAccountsForService("google").FirstOrDefault()?.Properties["Password"];
+                token3 = AccountStore.Create().FindAccountsForService("twitter").FirstOrDefault()?.Properties["Password"];
             }
             catch (Exception ex)
             {
