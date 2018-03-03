@@ -1,6 +1,7 @@
 ﻿using LazyRoommate.DataFactoryModel;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Net.Http;
@@ -161,11 +162,12 @@ namespace LazyRoommate
         {
             try
             {
-                var item = (TasksTable)e.Item;
+                var item = (TasksTableCopy)e.Item;
                 var TaskTable = App.client.GetTable<TasksTable>();
                 var taskItem = await TaskTable.Where(x => (x.TaskName == item.TaskName) &&  (x.id == item.id)).ToListAsync();
                 var task = taskItem.FirstOrDefault();
                 var answer = false;
+
 
                 // code for user's role and alert message's attributes                
                 int role = 0;// (1) done, (2) undone, (3) conf, (4) unconf
@@ -216,7 +218,7 @@ namespace LazyRoommate
                             break;
 
                     }
-                    // refres list with updated tasks 
+                    // refresh list with updated tasks 
                     var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
                     await DataFactory.Init(date);
                     timelineListView.ItemsSource = DataFactory.UserTasks;
@@ -227,6 +229,7 @@ namespace LazyRoommate
             }
             catch (Exception ex)
             {
+                Debug.WriteLine(ex);
                 retry.IsVisible = true;
                 retry.Text = "Changes can not be applied cause of network releated issue.";
             }
@@ -238,6 +241,21 @@ namespace LazyRoommate
             var date = Calendar.SelectedDate.Value.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
             LoadList(date);
 
+        }
+        private TasksTable CopyTask2Update(TasksTableCopy task)
+        {
+            var taskUpdated = new TasksTable
+            {
+                TaskName = task.TaskName,
+                TaskDescription = task.TaskDescription,
+                RoomName = task.RoomName,
+                ConfirmedBy = task.ConfirmedBy,
+                DoneBy = task.DoneBy,
+                EndDate = task.EndDate,
+                StartDate = task.StartDate,
+                id = task.id
+            };
+            return taskUpdated;
         }
     }
 }

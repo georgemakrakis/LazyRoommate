@@ -107,19 +107,27 @@ namespace LazyRoommate.Droid
                 
                 if (!userParam.Equals(App.Email) && roomParam.Contains(App.RoomName) &&  !string.IsNullOrEmpty(message))
                 {
-                    Log.Info("PushHandlerBroadcastReceiver", "GCM Message Received!333333333333333333333");
-                    createNotification("New task added!", message);
+                    //Log.Info("PushHandlerBroadcastReceiver", "GCM Message Received!333333333333333333333");
+                    createNotification("New task added", message);
                     return;
                 }
             }
             else if (roomParam.Contains("UserChanges"))
             {
-                Log.Info("ROOOOMMM", App.RoomName);
-                Log.Info("MAAAILLL", App.Email);
+                //Log.Info("ROOOOMMM", App.RoomName);
+                //Log.Info("MAAAILLL", App.Email);
                 if (!userParam.Equals(App.Email) && roomParam.Contains(App.RoomName) && !string.IsNullOrEmpty(message))
                 {
                     createNotification("Room Changes", message);                    
                     return;                    
+                }
+            }
+            if (roomParam.Contains("DoneTask"))
+            {            
+                if (!userParam.Equals(App.Email) && roomParam.Contains(App.RoomName) && !string.IsNullOrEmpty(message))
+                {                    
+                    createNotification("Task notification", message);
+                    return;
                 }
             }
 

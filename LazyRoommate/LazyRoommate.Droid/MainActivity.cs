@@ -385,7 +385,7 @@ namespace LazyRoommate.Droid
             }
             else if (string.IsNullOrEmpty(token) && string.IsNullOrEmpty(token2) && string.IsNullOrEmpty(token3))
             {
-
+                App.Email = string.Empty;
             }
             // Set the current instance of MainActivity.
             instance = this;

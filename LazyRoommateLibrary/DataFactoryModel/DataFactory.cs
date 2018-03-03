@@ -78,6 +78,10 @@ namespace LazyRoommate.DataFactoryModel
 
                 var TaskTable = App.client.GetTable<TasksTable>();
                 var usrtaks = await TaskTable.Where(x => (x.RoomName == user.RoomName)).ToCollectionAsync();
+
+                //Changing local room variable to fetch correct data for profile page
+                App.RoomName = user.RoomName;
+
                 UserTasks.Clear();
                 foreach (var x in usrtaks)
                 {

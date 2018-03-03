@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using LazyRoommate.Models;
 using Microsoft.WindowsAzure.MobileServices;
@@ -16,10 +17,6 @@ namespace LazyRoommate
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, true);
             LoadInfo();
-
-            
-
-            //ProfileName.Text = App.client.CurrentUser;           
         }
 
 
@@ -33,11 +30,9 @@ namespace LazyRoommate
             var userItem = await UserTable.Where(x => (x.Email == App.Email)).ToListAsync();
             var user = userItem.FirstOrDefault();
 
-            var roomateItem = await UserTable.Where(x => (x.RoomName == App.RoomName)&& (x.RoomName != string.Empty) && (x.Email!=App.Email)).ToListAsync();
-           
 
-            var allTasks =await TasksTable.Where(x => (x.RoomName == App.RoomName)).ToListAsync();//This might change to:( x.DoneBy==App.Email)
-            var completedTasks =await TasksTable.Where(x => (x.DoneBy==App.Email) && (x.ConfirmedBy!=string.Empty) ).ToListAsync();
+            var allTasks = await TasksTable.Where(x => (x.RoomName == App.RoomName)).ToListAsync();//This might change to:( x.DoneBy==App.Email)
+            var completedTasks = await TasksTable.Where(x => (x.DoneBy == App.Email) && (x.ConfirmedBy != string.Empty)).ToListAsync();
 
             ProfileName.Text = App.ProfileName;
             Email.Text = App.Email;
@@ -46,19 +41,19 @@ namespace LazyRoommate
             AllTasks.Text = allTasks.Count.ToString();
             TasksCompleted.Text = completedTasks.Count.ToString();
 
+            Debug.WriteLine(user.RoomName+"+++++++++++++++++++");
 
-
-            roomateItem.ForEach(x =>
+            if (!string.IsNullOrEmpty(user.RoomName))
             {
-                if (x.Email != App.Email)
-                    Roomates.Text += "\n" + "Name: " + x.Name + "\nEmail: " + x.Email + "\n";
-            });
-            //These will be added later
+                var roomateItem = await UserTable.Where(x => (x.RoomName == user.RoomName) && (x.Email != App.Email))
+                    .ToListAsync();
 
-            /*TasksDone.Text = null;
-            AllTasks.Text = null;
-            RoomID.Text = userInfo.RoomName;
-            Roomates.Text = null;*/
+                roomateItem.ForEach(x =>
+                {
+                    if (x.Email != App.Email)
+                        Roomates.Text += "\n" + "Name: " + x.Name + "\nEmail: " + x.Email + "\n";
+                });
+            }            
         }
     }
 }

@@ -83,6 +83,19 @@ namespace LazyRoommate.UWP
                     args.Cancel = true;
                 }
             }
+            else if (args.ToastNotification.Content.InnerText.Contains("DoneTask"))
+            {
+                if (!args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.Email) &&
+                    args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.RoomName))
+                {
+                    // Do nothing, Toast will be triggered from itself
+                }
+                else
+                {
+                    // Dont show the notificaiton at all
+                    args.Cancel = true;
+                }
+            }
         }
 
         /// <summary>
