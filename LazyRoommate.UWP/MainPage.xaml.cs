@@ -130,7 +130,6 @@ namespace LazyRoommate.UWP
                 {
                     acct = null;
                 }
-
                 if (acct != null)
                 {
                     var token = new PasswordVault().Retrieve("google", acct.UserName).Password;
