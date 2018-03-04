@@ -28,7 +28,7 @@ namespace LazyRoommate.DataFactoryModel
         public string StartDate { get; set; }
         public string EndDate { get; set; }
         public string Status { get; set; }
-        public double DaysLeft { get; set; }
+        public string DaysLeft { get; set; }
     }
     public static class DataFactory
     {
@@ -108,8 +108,11 @@ namespace LazyRoommate.DataFactoryModel
                             taskCopy.Status = "Done";
                         }
 
-                        taskCopy.DaysLeft = (DateTime.ParseExact(x.EndDate, "dd/MM/yyyy", CultureInfo.InvariantCulture) -
-                                      DateTime.ParseExact(date, "dd/MM/yyyy", CultureInfo.InvariantCulture)).TotalDays;
+                        taskCopy.DaysLeft = "Days left: " +
+                                            (DateTime.ParseExact(x.EndDate, "dd/MM/yyyy",
+                                                 CultureInfo.InvariantCulture) -
+                                             DateTime.ParseExact(date, "dd/MM/yyyy", CultureInfo.InvariantCulture))
+                                            .TotalDays;
                         UserTasks.Add(taskCopy);
                     }
                 }

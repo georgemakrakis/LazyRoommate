@@ -88,6 +88,7 @@ namespace LazyRoommate.UWP
                 if (!args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.Email) &&
                     args.ToastNotification.Content.InnerText.Contains(LazyRoommate.App.RoomName))
                 {
+                    //args.ToastNotification.Content.InnerText = args.ToastNotification.Content.ChildNodes.Item(1).NodeValue.ToString();
                     // Do nothing, Toast will be triggered from itself
                 }
                 else
