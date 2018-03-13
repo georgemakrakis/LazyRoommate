@@ -63,22 +63,30 @@
                                 <!--<Switch x:Name="DoneConfirm" ClassId="{Binding TaskName}" Grid.Column="3" IsToggled="{Binding Done}" VerticalOptions="Center" HorizontalOptions="End" Toggled="DoneConfirm_OnToggled"></Switch>-->
                                 <Label HorizontalOptions="Center" Style="{StaticResource ClassTimeLabel}" Text="{Binding StartDate}" Grid.Column="0" />
                                 <Label HorizontalOptions="Center" Style="{StaticResource ClassTimeLabel}" Text="{Binding EndDate}" Grid.Row="1" Grid.Column="0" />
-                                <Label HorizontalOptions="Center" Style="{StaticResource ClassNameLabel}" Text="{Binding Status}" Grid.Row="0" Grid.Column="2" />
-                                <Label HorizontalOptions="Center" Style="{StaticResource ClassInstructorLabel}" Text="{Binding DaysLeft}" Grid.Row="1" Grid.Column="2" />
+                                <!--<Label HorizontalOptions="Center" Style="{StaticResource ClassNameLabel}" Text="{Binding TaskDescription}" Grid.Row="0" Grid.Column="2" />-->
+                                
+                                <Grid Grid.Row="1" Grid.Column="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label
+                                          
+                                          Grid.Column="0"
+                                          Margin="20,0"
+                                          Style="{StaticResource ClassInstructorLabel}"
+                                          Text="{Binding DaysLeft}" />
 
+                                    <Label HorizontalOptions="Center" Style="{StaticResource ClassInstructorLabel}" Text="{Binding Status}" Grid.Column="1" />
+                                </Grid>
                                 <Label
+                                          Grid.Row="0"
                                           Grid.Column="2"
                                           Margin="20,0"
                                           Style="{StaticResource ClassNameLabel}"
                                           Text="{Binding TaskName}" />
 
-                                <Label x:Name="TaskDesc"
-                                          Grid.Row="1"
-                                          Grid.Column="2"
-                                          Margin="20,0"
-                                          Style="{StaticResource ClassInstructorLabel}"
-                                          Text="{Binding TaskDescription}" />
-
+                                
                                 <BoxView
                                           Grid.RowSpan="2"
                                           Grid.Column="1"

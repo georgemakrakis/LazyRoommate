@@ -491,9 +491,9 @@ namespace LazyRoommate
 
                                         userRemove.RoomName = null;
 
-                                        await UserTable.UpdateAsync(user);
+                                        await UserTable.UpdateAsync(userRemove);
 
-                                        await DisplayAlert("Leave Room", "User: " + result.Text + " has been removed", "Ok");
+                                        await DisplayAlert("Remove Room", "User: " + result.Text + " has been removed", "Ok");
                                     }
                                 }
                                 catch (Exception ex)

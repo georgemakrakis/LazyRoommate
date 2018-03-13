@@ -21,7 +21,8 @@ namespace LazyRoommate
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, true);
 
-            
+            StartDate.MinimumDate = DateTime.Today;
+
             //ToolbarItems.Add(new ToolbarItem("Back", "back_button.png", () =>
             //{
             //    Application.Current.MainPage = new MasterDetailPage1
@@ -34,8 +35,8 @@ namespace LazyRoommate
             //        }
             //    };
             //}));
-                   
-            
+
+
             //Enabling button only after entry
             TaskName.TextChanged += EnableSaveItemButton;
         }

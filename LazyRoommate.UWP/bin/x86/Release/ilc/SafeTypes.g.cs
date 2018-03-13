@@ -1656,31 +1656,12 @@ namespace Windows.ApplicationModel.Resources.Core
 namespace Windows.Data.Xml.Dom
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Data.Xml.Dom.IXmlDocument))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Data.Xml.Dom.IXmlNode))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Data.Xml.Dom.IXmlNodeSerializer))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class XmlDocument : global::System.__ComObject, global::Windows.Data.Xml.Dom.IXmlDocument, global::Windows.Data.Xml.Dom.IXmlNode, global::Windows.Data.Xml.Dom.IXmlNodeSerializer, global::Windows.Data.Xml.Dom.IXmlNodeSelector, global::Windows.Data.Xml.Dom.IXmlDocumentIO, global::Windows.Data.Xml.Dom.IXmlDocumentIO2
 	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "NodeValue")]
-		public object get_NodeValue()
-		{
-			object __retVal = global::Windows.Data.Xml.Dom.IXmlNode__Impl.StubClass.get_NodeValue(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ChildNodes")]
-		public global::Windows.Data.Xml.Dom.XmlNodeList get_ChildNodes()
-		{
-			global::Windows.Data.Xml.Dom.XmlNodeList __retVal = global::Windows.Data.Xml.Dom.IXmlNode__Impl.StubClass.get_ChildNodes(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "InnerText")]
 		public string get_InnerText()
@@ -1690,80 +1671,7 @@ namespace Windows.Data.Xml.Dom
 			return __retVal;
 		}
 
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "InnerText")]
-		public void put_InnerText(string value)
-		{
-			global::Windows.Data.Xml.Dom.IXmlNodeSerializer__Impl.StubClass.put_InnerText(
-								this, 
-								value
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-		}
-
 		public XmlDocument(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Data.Xml.Dom.IXmlNodeList))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Data.Xml.Dom.IXmlNode>))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Data.Xml.Dom.IXmlNode>))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class XmlNodeList : global::System.__ComObject, global::Windows.Data.Xml.Dom.IXmlNodeList, global::System.Collections.Generic.IReadOnlyList<global::Windows.Data.Xml.Dom.IXmlNode>, global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Data.Xml.Dom.IXmlNode>, global::System.Collections.Generic.IEnumerable<global::Windows.Data.Xml.Dom.IXmlNode>
-	{
-		global::System.Collections.Generic.IEnumerator<global::Windows.Data.Xml.Dom.IXmlNode> global::System.Collections.Generic.IEnumerable<global::Windows.Data.Xml.Dom.IXmlNode>.GetEnumerator()
-		{
-			return (global::System.Collections.Generic.IEnumerator<global::Windows.Data.Xml.Dom.IXmlNode>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-								this, 
-								typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Data.Xml.Dom.IXmlNode>).TypeHandle
-							);
-		}
-
-		global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-		{
-			return global::McgInterop.McgHelpers.GetNonGenericEnumerator(
-								this, 
-								typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Data.Xml.Dom.IXmlNode>).TypeHandle
-							);
-		}
-
-		int global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Data.Xml.Dom.IXmlNode>.Count
-		{
-			get
-			{
-				return global::McgInterop.McgHelpers.GetReadOnlyCollectionCount(
-									this, 
-									typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Data.Xml.Dom.IXmlNode>).TypeHandle
-								);
-			}
-		}
-
-		global::Windows.Data.Xml.Dom.IXmlNode global::System.Collections.Generic.IReadOnlyList<global::Windows.Data.Xml.Dom.IXmlNode>.this[int index]
-		{
-			get
-			{
-				return global::System.Runtime.InteropServices.McgMarshal.FastCast<global::System.Runtime.InteropServices.WindowsRuntime.IReadOnlyListAdapter<global::Windows.Data.Xml.Dom.IXmlNode>>(global::System.Runtime.InteropServices.McgModuleManager.GetDynamicAdapter(
-										this, 
-										typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Data.Xml.Dom.IXmlNode>).TypeHandle
-									))[index];
-			}
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Data.Xml.Dom.IXmlNode Item(uint index)
-		{
-			global::Windows.Data.Xml.Dom.IXmlNode __retVal = global::Windows.Data.Xml.Dom.IXmlNodeList__Impl.StubClass.Item(
-								this, 
-								index
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		public XmlNodeList(global::System.IntPtr dummy)
 		{
 		}
 	}
@@ -1778,13 +1686,6 @@ namespace Windows.Data.Xml.Dom
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IXmlNode : global::Windows.Data.Xml.Dom.IXmlNodeSelector, global::Windows.Data.Xml.Dom.IXmlNodeSerializer
 	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "NodeValue")]
-		object get_NodeValue();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ChildNodes")]
-		global::Windows.Data.Xml.Dom.XmlNodeList get_ChildNodes();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -1800,18 +1701,6 @@ namespace Windows.Data.Xml.Dom
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "InnerText")]
 		string get_InnerText();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "InnerText")]
-		void put_InnerText(string value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IXmlNodeList : global::System.Collections.Generic.IReadOnlyList<global::Windows.Data.Xml.Dom.IXmlNode>, global::System.Collections.Generic.IEnumerable<global::Windows.Data.Xml.Dom.IXmlNode>
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Data.Xml.Dom.IXmlNode Item(uint index);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -3069,32 +2958,6 @@ namespace Windows.Foundation.Metadata
 		{
 			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.DeprecatedAttribute\'.  Windows Runtime attribute types are no" +
 					"t constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
-				| global::System.AttributeTargets.Class 
-				| global::System.AttributeTargets.Struct 
-				| global::System.AttributeTargets.Enum 
-				| global::System.AttributeTargets.Constructor 
-				| global::System.AttributeTargets.Method 
-				| global::System.AttributeTargets.Property 
-				| global::System.AttributeTargets.Field 
-				| global::System.AttributeTargets.Event 
-				| global::System.AttributeTargets.Interface 
-				| global::System.AttributeTargets.Parameter 
-				| global::System.AttributeTargets.Delegate 
-				| global::System.AttributeTargets.ReturnValue 
-				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class VariantAttribute : global::System.Attribute
-	{
-		public VariantAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.VariantAttribute\'.  Windows Runtime attribute types are not c" +
-					"onstructable.");
 		}
 	}
 

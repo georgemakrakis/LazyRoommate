@@ -22,13 +22,13 @@
                     <Label Text="Start Date" TextColor="White"/>
                     <DatePicker x:Name="StartDate" TextColor="White" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Today}">
                         <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
-                        <DatePicker.MinimumDate>
+                        <!--<DatePicker.MinimumDate>
                             <sys:DateTime x:FactoryMethod="Parse">
                                 <x:Arguments>
                                     <x:String>Jan 1 2000</x:String>
                                 </x:Arguments>
                             </sys:DateTime>
-                        </DatePicker.MinimumDate>
+                        </DatePicker.MinimumDate>-->
                         <DatePicker.MaximumDate>
                             <sys:DateTime x:FactoryMethod="Parse">
                                 <x:Arguments>
