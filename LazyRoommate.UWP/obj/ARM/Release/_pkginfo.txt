@@ -1,1 +1,1 @@
-C:\Users\georg\LazyRoommate\LazyRoommate.UWP\AppPackages\LazyRoommate.UWP_1.0.0.0_Test\LazyRoommate.UWP_1.0.0.0_x86_x64_arm.appxbundle
+C:\Users\georg\LazyRoommate\LazyRoommate.UWP\AppPackages\LazyRoommate.UWP_1.1.0.0_Test\LazyRoommate.UWP_1.1.0.0_x86_x64_arm.appxbundle

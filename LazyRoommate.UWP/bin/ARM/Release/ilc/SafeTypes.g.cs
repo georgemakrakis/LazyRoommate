@@ -1653,6 +1653,69 @@ namespace Windows.ApplicationModel.Resources.Core
 	}
 }
 
+namespace Windows.Data.Xml.Dom
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Data.Xml.Dom.IXmlDocument))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Data.Xml.Dom.IXmlNodeSerializer))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class XmlDocument : global::System.__ComObject, global::Windows.Data.Xml.Dom.IXmlDocument, global::Windows.Data.Xml.Dom.IXmlNode, global::Windows.Data.Xml.Dom.IXmlNodeSerializer, global::Windows.Data.Xml.Dom.IXmlNodeSelector, global::Windows.Data.Xml.Dom.IXmlDocumentIO, global::Windows.Data.Xml.Dom.IXmlDocumentIO2
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "InnerText")]
+		public string get_InnerText()
+		{
+			string __retVal = global::Windows.Data.Xml.Dom.IXmlNodeSerializer__Impl.StubClass.get_InnerText(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		public XmlDocument(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IXmlDocument : global::Windows.Data.Xml.Dom.IXmlNode, global::Windows.Data.Xml.Dom.IXmlNodeSelector, global::Windows.Data.Xml.Dom.IXmlNodeSerializer
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IXmlNode : global::Windows.Data.Xml.Dom.IXmlNodeSelector, global::Windows.Data.Xml.Dom.IXmlNodeSerializer
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IXmlNodeSelector
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IXmlNodeSerializer
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "InnerText")]
+		string get_InnerText();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IXmlDocumentIO
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IXmlDocumentIO2
+	{
+	}
+}
+
 namespace Windows.Devices.Input
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Devices.Input.IPointerDevice))]
@@ -4230,6 +4293,165 @@ namespace Windows.Networking.Connectivity
 	}
 }
 
+namespace Windows.Networking.PushNotifications
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.PushNotifications.IPushNotificationChannel))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class PushNotificationChannel : global::System.__ComObject, global::Windows.Networking.PushNotifications.IPushNotificationChannel
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Uri")]
+		public string get_Uri()
+		{
+			string __retVal = global::Windows.Networking.PushNotifications.IPushNotificationChannel__Impl.StubClass.get_Uri(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "PushNotificationReceived")]
+		public global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_PushNotificationReceived(global::Windows.Foundation.TypedEventHandler<global::Windows.Networking.PushNotifications.PushNotificationChannel, global::Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs> handler)
+		{
+			global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken __retVal = global::Windows.Networking.PushNotifications.IPushNotificationChannel__Impl.StubClass.add_PushNotificationReceived(
+								this, 
+								handler
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "PushNotificationReceived")]
+		public void remove_PushNotificationReceived(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token)
+		{
+			global::Windows.Networking.PushNotifications.IPushNotificationChannel__Impl.StubClass.remove_PushNotificationReceived(
+								this, 
+								token
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		public PushNotificationChannel(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Networking.PushNotifications.IPushNotificationReceivedEventArgs))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class PushNotificationReceivedEventArgs : global::System.__ComObject, global::Windows.Networking.PushNotifications.IPushNotificationReceivedEventArgs
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Cancel")]
+		public void put_Cancel(bool value)
+		{
+			global::Windows.Networking.PushNotifications.IPushNotificationReceivedEventArgs__Impl.StubClass.put_Cancel(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Cancel")]
+		public bool get_Cancel()
+		{
+			bool __retVal = global::Windows.Networking.PushNotifications.IPushNotificationReceivedEventArgs__Impl.StubClass.get_Cancel(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ToastNotification")]
+		public global::Windows.UI.Notifications.ToastNotification get_ToastNotification()
+		{
+			global::Windows.UI.Notifications.ToastNotification __retVal = global::Windows.Networking.PushNotifications.IPushNotificationReceivedEventArgs__Impl.StubClass.get_ToastNotification(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		public PushNotificationReceivedEventArgs(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class PushNotificationChannelManager : global::System.__ComObject
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public static global::Windows.Foundation.IAsyncOperation<global::Windows.Networking.PushNotifications.PushNotificationChannel> CreatePushNotificationChannelForApplicationAsync()
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Networking.PushNotifications.PushNotificationChannel> retval;
+			retval = __Factory_Windows_Networking_PushNotifications__IPushNotificationChannelManagerStatics_CreatePushNotificationChannelForApplicationAsync("Windows.Networking.PushNotifications.PushNotificationChannelManager");
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return retval;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		static global::Windows.Foundation.IAsyncOperation<global::Windows.Networking.PushNotifications.PushNotificationChannel> __Factory_Windows_Networking_PushNotifications__IPushNotificationChannelManagerStatics_CreatePushNotificationChannelForApplicationAsync(string typeName)
+		{
+			global::Windows.Foundation.IAsyncOperation<global::Windows.Networking.PushNotifications.PushNotificationChannel> __pRetVal;
+			__pRetVal = global::Windows.Networking.PushNotifications.IPushNotificationChannelManagerStatics__Impl.StubClass.CreatePushNotificationChannelForApplicationAsync(global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.Networking.PushNotifications.IPushNotificationChannelManagerStatics).TypeHandle
+								));
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __pRetVal;
+		}
+
+		public PushNotificationChannelManager(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IPushNotificationChannel
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Uri")]
+		string get_Uri();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "PushNotificationReceived")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_PushNotificationReceived(global::Windows.Foundation.TypedEventHandler<global::Windows.Networking.PushNotifications.PushNotificationChannel, global::Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs> handler);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "PushNotificationReceived")]
+		void remove_PushNotificationReceived(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IPushNotificationReceivedEventArgs
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Cancel")]
+		void put_Cancel(bool value);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Cancel")]
+		bool get_Cancel();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ToastNotification")]
+		global::Windows.UI.Notifications.ToastNotification get_ToastNotification();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IPushNotificationChannelManagerStatics
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.Foundation.IAsyncOperation<global::Windows.Networking.PushNotifications.PushNotificationChannel> CreatePushNotificationChannelForApplicationAsync();
+	}
+}
+
 namespace Windows.Phone
 {
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
@@ -4445,12 +4667,118 @@ namespace Windows.Security.Authentication.Web
 
 namespace Windows.Security.Credentials
 {
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Security.Credentials.IPasswordVault))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class PasswordVault : global::System.__ComObject, global::Windows.Security.Credentials.IPasswordVault
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public PasswordVault()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgModuleManager.ActivateInstance("Windows.Security.Credentials.PasswordVault");
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public void Add(global::Windows.Security.Credentials.PasswordCredential credential)
+		{
+			global::Windows.Security.Credentials.IPasswordVault__Impl.StubClass.Add(
+								this, 
+								credential
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public void Remove(global::Windows.Security.Credentials.PasswordCredential credential)
+		{
+			global::Windows.Security.Credentials.IPasswordVault__Impl.StubClass.Remove(
+								this, 
+								credential
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public global::Windows.Security.Credentials.PasswordCredential Retrieve(
+					string resource, 
+					string userName)
+		{
+			global::Windows.Security.Credentials.PasswordCredential __retVal = global::Windows.Security.Credentials.IPasswordVault__Impl.StubClass.Retrieve(
+								this, 
+								resource, 
+								userName
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Credentials.PasswordCredential> FindAllByResource(string resource)
+		{
+			global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Credentials.PasswordCredential> __retVal = global::Windows.Security.Credentials.IPasswordVault__Impl.StubClass.FindAllByResource(
+								this, 
+								resource
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		public PasswordVault(global::System.IntPtr dummy)
+		{
+		}
+	}
+
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Security.Credentials.IPasswordCredential))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe sealed class PasswordCredential : global::System.__ComObject, global::Windows.Security.Credentials.IPasswordCredential
 	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public PasswordCredential(
+					string resource, 
+					string userName, 
+					string password)
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_Security_Credentials__ICredentialFactory_CreatePasswordCredential(
+								"Windows.Security.Credentials.PasswordCredential", 
+								resource, 
+								userName, 
+								password
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::System.IntPtr __Factory_Windows_Security_Credentials__ICredentialFactory_CreatePasswordCredential(
+					string typeName, 
+					string resource, 
+					string userName, 
+					string password)
+		{
+			global::System.IntPtr __pRetVal;
+			__pRetVal = global::Windows.Security.Credentials.ICredentialFactory__Impl.StubClass.CreatePasswordCredential(
+								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.Security.Credentials.ICredentialFactory).TypeHandle
+												), 
+								resource, 
+								userName, 
+								password
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			global::McgInterop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
+			return __pRetVal;
+		}
+
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
 		public PasswordCredential()
@@ -4504,6 +4832,36 @@ namespace Windows.Security.Credentials
 		public PasswordCredential(global::System.IntPtr dummy)
 		{
 		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IPasswordVault
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		void Add(global::Windows.Security.Credentials.PasswordCredential credential);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		void Remove(global::Windows.Security.Credentials.PasswordCredential credential);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.Security.Credentials.PasswordCredential Retrieve(
+					string resource, 
+					string userName);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Credentials.PasswordCredential> FindAllByResource(string resource);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ICredentialFactory
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::System.IntPtr CreatePasswordCredential(
+					string resource, 
+					string userName, 
+					string password);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -7124,6 +7482,50 @@ namespace Windows.UI.Input
 		public global::Windows.Foundation.Point Linear;
 		public float Angular;
 		public float Expansion;
+	}
+}
+
+namespace Windows.UI.Notifications
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Notifications.IToastNotification))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class ToastNotification : global::System.__ComObject, global::Windows.UI.Notifications.IToastNotification, global::Windows.UI.Notifications.IToastNotification2, global::Windows.UI.Notifications.IToastNotification3
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Content")]
+		public global::Windows.Data.Xml.Dom.XmlDocument get_Content()
+		{
+			global::Windows.Data.Xml.Dom.XmlDocument __retVal = global::Windows.UI.Notifications.IToastNotification__Impl.StubClass.get_Content(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		public ToastNotification(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IToastNotification
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Content")]
+		global::Windows.Data.Xml.Dom.XmlDocument get_Content();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IToastNotification2
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IToastNotification3
+	{
 	}
 }
 

@@ -5,7 +5,7 @@
 /ref:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\ARM\Release\ilc\in\\"
 /ref:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\ARM\Release\ilc\in\\"
 /ref:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\ARM\Release\ilc\in\\"
-/ref:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\ARM\ilc\lib\Private\\"
+/ref:"C:\Program Files (x86)\MSBuild\15.0\.Net\.NetNative\15.0.24211\ARM\ilc\lib\Private\\"
 /ref:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\ARM\Release\ilc\in\WinMetadata\\"
 /ca:System.Private.CoreLib
 "@C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\ARM\Release\ilc\intermediate\PreMergeILTransformed\ComputedSerializationInput.txt"

@@ -565,3 +565,4 @@ C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\ARM\Release\ilc\intermediate\Sg
 C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\ARM\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll
 C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\ARM\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll.ILTransformTask.repro
 C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\ARM\Release\LazyRoommate.UWP.csprojResolveAssemblyReference.cache
+C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\ARM\Release\LazyRoommate.UWP.csproj.CoreCompileInputs.cache

@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="41665GeorgeMakrakis.LazyRoommate" Publisher="CN=D060A142-9111-4BFC-B383-1200EF853C59" Version="1.0.0.0" ProcessorArchitecture="x64" />
+  <Identity Name="41665GeorgeMakrakis.LazyRoommate" Publisher="CN=D060A142-9111-4BFC-B383-1200EF853C59" Version="1.1.0.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="8f02052b-4750-4004-8b84-676dad6d2131" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>LazyRoommate</DisplayName>
@@ -44,16 +44,16 @@
   </Capabilities>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
-    <build:Item Name="VisualStudio" Version="14.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
+    <build:Item Name="VisualStudio" Version="15.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2017" />
     <build:Item Name="OperatingSystem" Version="10.0.16299.15 (WinBuild.160101.0800)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25431.1" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.27128.1" />
     <build:Item Name="ProjectGUID" Value="{7CDCCCA1-2A08-47F9-9129-B4AE11C7B3E2}" />
-    <build:Item Name="ilc.exe" Version="1.4.24208.01 built by: PROJECTNGDR2" />
+    <build:Item Name="ilc.exe" Version="1.4.24211.00 built by: PROJECTNGDR2" />
     <build:Item Name="OptimizingToolset" Value="ilc.exe" />
     <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="True" />
     <build:Item Name="UniversalGenericsOptOut" Value="false" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.25527.1" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.27128.1" />
     <build:Item Name="MakePri.exe" Version="10.0.14393.795 (rs1_release_sec.170105-1850)" />
   </build:Metadata>
 </Package>

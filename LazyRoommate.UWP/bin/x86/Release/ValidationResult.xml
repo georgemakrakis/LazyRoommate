@@ -1,137 +1,137 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT xml:lang="en-US" OVERALL_RESULT="PASS" VERSION="10.0.16299.15" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=D060A142-9111-4BFC-B383-1200EF853C59" APP_NAME="" APP_VERSION="" OSVERSION="10.0.16299.0" OS="Microsoft Windows 10 Home" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="UI" ReportGenerationTime="11/13/2017 11:36:46 AM" ID="93055487a039603054f1e461ad214b62">
+<REPORT xml:lang="en-US" OVERALL_RESULT="PASS" VERSION="10.0.16299.15" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=D060A142-9111-4BFC-B383-1200EF853C59" APP_NAME="" APP_VERSION="" OSVERSION="10.0.16299.0" OS="Microsoft Windows 10 Home" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="UI" ReportGenerationTime="3/13/2018 11:32:25 PM" ID="886874022631c8c1ae3ac70c48cdacbd">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="10" TITLE="Deployment and launch tests" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
-      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:01s.52ms" OPTIONAL="FALSE">
+      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:01s.75ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="79" NAME="Background tasks cancelation handler" DESCRIPTION="App should implement event handler to handle background task cancelation request." EXECUTIONTIME="00h:00m:22s.48ms" OPTIONAL="FALSE">
+      <TEST INDEX="79" NAME="Background tasks cancelation handler" DESCRIPTION="App should implement event handler to handle background task cancelation request." EXECUTIONTIME="00h:00m:23s.57ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="81" NAME="Platform version launch" DESCRIPTION="App should not mis-use OSVersionInfo API to provide users functionality that is specific to the OS." EXECUTIONTIME="00h:00m:21s.45ms" OPTIONAL="FALSE">
+      <TEST INDEX="81" NAME="Platform version launch" DESCRIPTION="App should not mis-use OSVersionInfo API to provide users functionality that is specific to the OS." EXECUTIONTIME="00h:00m:19s.90ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="47" NAME="App launch" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:19s.06ms" OPTIONAL="FALSE">
+      <TEST INDEX="47" NAME="App launch" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:19s.05ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:04s.39ms" OPTIONAL="FALSE">
+      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:05s.50ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
-      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.47ms" OPTIONAL="FALSE">
+      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.58ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.25ms" OPTIONAL="FALSE">
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.14ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="74" NAME="Bundle manifest" DESCRIPTION="Bundle manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.23ms" OPTIONAL="FALSE">
+      <TEST INDEX="74" NAME="Bundle manifest" DESCRIPTION="Bundle manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:05s.74ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="75" NAME="Package size" DESCRIPTION="Package file size should not be greater than 4 gigabytes." EXECUTIONTIME="00h:00m:02s.62ms" OPTIONAL="FALSE">
+      <TEST INDEX="75" NAME="Package size" DESCRIPTION="Package file size should not be greater than 4 gigabytes." EXECUTIONTIME="00h:00m:04s.31ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="83" NAME="Restricted namespace" DESCRIPTION="Check if any restricted namespace is referenced in the appx manifest." EXECUTIONTIME="00h:00m:01s.50ms" OPTIONAL="FALSE">
+      <TEST INDEX="83" NAME="Restricted namespace" DESCRIPTION="Check if any restricted namespace is referenced in the appx manifest." EXECUTIONTIME="00h:00m:01s.69ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
-      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.66ms" OPTIONAL="FALSE">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.73ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:02s.14ms" OPTIONAL="FALSE">
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:03s.63ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:02s.01ms" OPTIONAL="FALSE">
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:02s.19ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
-      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:04s.40ms" OPTIONAL="FALSE">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:04s.47ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="19" TITLE="App manifest resources tests" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
-      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.76ms" OPTIONAL="FALSE">
+      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.79ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:02s.98ms" OPTIONAL="FALSE">
+      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:02s.83ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
-      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.47ms" OPTIONAL="FALSE">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.41ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="21" TITLE="File encoding test" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
-      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:01s.68ms" OPTIONAL="FALSE">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:01s.83ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
-      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.50ms" OPTIONAL="FALSE">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.75ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
-      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:14s.23ms" OPTIONAL="FALSE">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:12s.37ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.84ms" OPTIONAL="FALSE">
+      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:01s.38ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.75ms" OPTIONAL="FALSE">
+      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:01s.09ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.74ms" OPTIONAL="FALSE">
+      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:01s.09ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="58" NAME="General metadata correctness" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:12s.99ms" OPTIONAL="FALSE">
+      <TEST INDEX="58" NAME="General metadata correctness" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:11s.47ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="53" NAME="Properties" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.76ms" OPTIONAL="FALSE">
+      <TEST INDEX="53" NAME="Properties" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:01s.09ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
-      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:01s.89ms" OPTIONAL="FALSE">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:02s.06ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:01s.37ms" OPTIONAL="FALSE">
+      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:02s.56ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="27" TITLE="Resource Usage Test" RATIONALE="WinJS background tasks need to call close() to free resource.">
-      <TEST INDEX="68" NAME="WinJS background task" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:04s.09ms" OPTIONAL="FALSE">
+      <TEST INDEX="68" NAME="WinJS background task" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:07s.01ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -139,12 +139,12 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="41665GeorgeMakrakis.LazyRoommate" Type="Application" Source="AppxPackage" Publisher="CN=D060A142-9111-4BFC-B383-1200EF853C59" Version="1.0.0.0" Language="1033" InstallDate="" OSVersionAtInstallTime="10.0.0.16299" RootDirPath="C:\Program Files\windowsapps\41665georgemakrakis.lazyroommate_1.0.0.0_x64__4x8qxkdc075tc" Id="0000e0f9b32ea84dcb53031eb0235685778800000904" HiddenArp="false">
+      <Program Name="41665GeorgeMakrakis.LazyRoommate" Type="Application" Source="AppxPackage" Publisher="CN=D060A142-9111-4BFC-B383-1200EF853C59" Version="1.1.0.0" Language="1033" InstallDate="" OSVersionAtInstallTime="10.0.0.16299" RootDirPath="C:\Program Files\windowsapps\41665georgemakrakis.lazyroommate_1.1.0.0_x64__4x8qxkdc075tc" Id="0000348834de72e5e83135a21a17855b120200000904" HiddenArp="false">
         <Indicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="41665GeorgeMakrakis.LazyRoommate_1.0.0.0_x64__4x8qxkdc075tc">
+            <PackageManifest PackageFullName="41665GeorgeMakrakis.LazyRoommate_1.1.0.0_x64__4x8qxkdc075tc">
               <Package>
-                <Identity Name="41665GeorgeMakrakis.LazyRoommate" Publisher="CN=D060A142-9111-4BFC-B383-1200EF853C59" Version="1.0.0.0" ProcessorArchitecture="x64" />
+                <Identity Name="41665GeorgeMakrakis.LazyRoommate" Publisher="CN=D060A142-9111-4BFC-B383-1200EF853C59" Version="1.1.0.0" ProcessorArchitecture="x64" />
                 <PhoneIdentity PhoneProductId="8f02052b-4750-4004-8b84-676dad6d2131" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
                 <Properties>
                   <DisplayName>LazyRoommate</DisplayName>
@@ -183,21 +183,21 @@
             </PackageManifest>
             <BundleManifest PackageFamilyName="41665GeorgeMakrakis.LazyRoommate_4x8qxkdc075tc">
               <Bundle SchemaVersion="2.0">
-                <Identity Name="41665GeorgeMakrakis.LazyRoommate" Publisher="CN=D060A142-9111-4BFC-B383-1200EF853C59" Version="1.0.0.0" />
+                <Identity Name="41665GeorgeMakrakis.LazyRoommate" Publisher="CN=D060A142-9111-4BFC-B383-1200EF853C59" Version="1.1.0.0" />
                 <Packages>
-                  <Package Type="application" Version="1.0.0.0" Architecture="x86" FileName="LazyRoommate.UWP_1.0.0.0_x86.appx" Offset="12207391" Size="5764118">
+                  <Package Type="application" Version="1.1.0.0" Architecture="x86" FileName="LazyRoommate.UWP_1.1.0.0_x86.appx" Offset="12234218" Size="5775079">
                     <Resources>
                       <Resource Language="EN-US" />
                       <Resource Scale="200" />
                     </Resources>
                   </Package>
-                  <Package Type="application" Version="1.0.0.0" Architecture="x64" FileName="LazyRoommate.UWP_1.0.0.0_x64.appx" Offset="5962409" Size="6244895">
+                  <Package Type="application" Version="1.1.0.0" Architecture="x64" FileName="LazyRoommate.UWP_1.1.0.0_x64.appx" Offset="5972715" Size="6261416">
                     <Resources>
                       <Resource Language="EN-US" />
                       <Resource Scale="200" />
                     </Resources>
                   </Package>
-                  <Package Type="application" Version="1.0.0.0" Architecture="arm" FileName="LazyRoommate.UWP_1.0.0.0_ARM.appx" Offset="63" Size="5962259">
+                  <Package Type="application" Version="1.1.0.0" Architecture="arm" FileName="LazyRoommate.UWP_1.1.0.0_ARM.appx" Offset="63" Size="5972565">
                     <Resources>
                       <Resource Language="EN-US" />
                       <Resource Scale="200" />
@@ -210,19 +210,18 @@
         </Indicators>
         <StaticProperties>
           <Files Id="0000da39a3ee5e6b4b0d3255bfef95601890afd80709">
-            <File Id="0000d3a784a0b601ab8905ec06f7c8f1e00f131425c2" Name="clrcompression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="1.0.24214.00 built by: projectkrel" VerLanguage="1033" SwitchBackContext="0" FileVersion="1.0.24214.00 built by: projectkrel" Size="69632" SizeOfImage="69632" PeHeaderHash="01017c90ae133bd09e28a4d27f7f6b651b82da84e020" PeChecksum="104676" CrcChecksum="-369591944" BinProductVersion="1.0.24214.00 built by: projectkrel" BinFileVersion="1.0.24214.0" FileDescription="clrcompression" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="06/14/2016 03:31:30" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\41665georgemakrakis.lazyroommate_1.0.0.0_x64__4x8qxkdc075tc\clrcompression.dll" />
-            <File Id="000086b9eebe1b9594bb751251d514059266a1ce4aab" Name="LazyRoommate.UWP.dll" ProductName="lazyroommate.uwp" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="14041088" SizeOfImage="14041088" PeHeaderHash="010140e14b76992dea5a0cf0a276b27a4b9ce6718c57" PeChecksum="0" CrcChecksum="-599022204" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="lazyroommate.uwp" LegalCopyright="copyright ©  2017" LinkDate="11/13/2017 09:28:11" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\41665georgemakrakis.lazyroommate_1.0.0.0_x64__4x8qxkdc075tc\lazyroommate.uwp.dll" />
-            <File Id="00006ef1dbf5bbc0f1d42aaa802096fa1876f3b5dbc5" Name="LazyRoommate.UWP.exe" ProductName="lazyroommate.uwp" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="32768" SizeOfImage="32768" PeHeaderHash="010147d6950ab900273ac2c3970a4bfec13efc8538e2" PeChecksum="0" CrcChecksum="2019297214" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="lazyroommate.uwp" LegalCopyright="copyright ©  2017" LinkDate="11/13/2017 09:28:11" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\41665georgemakrakis.lazyroommate_1.0.0.0_x64__4x8qxkdc075tc\lazyroommate.uwp.exe" />
-            <File Id="0000969c281d15b4a6b2cb2e084a9ad83478eaedc8aa" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-282440366" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="C:\Program Files\windowsapps\41665georgemakrakis.lazyroommate_1.0.0.0_x64__4x8qxkdc075tc\resources.pri" />
+            <File Id="0000d3a784a0b601ab8905ec06f7c8f1e00f131425c2" Name="clrcompression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="1.0.24214.00 built by: projectkrel" VerLanguage="1033" SwitchBackContext="0" FileVersion="1.0.24214.00 built by: projectkrel" Size="69632" SizeOfImage="69632" PeHeaderHash="01017c90ae133bd09e28a4d27f7f6b651b82da84e020" PeChecksum="104676" CrcChecksum="-369591944" BinProductVersion="1.0.24214.00 built by: projectkrel" BinFileVersion="1.0.24214.0" FileDescription="clrcompression" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="06/14/2016 03:31:30" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\41665georgemakrakis.lazyroommate_1.1.0.0_x64__4x8qxkdc075tc\clrcompression.dll" />
+            <File Id="0000394c8f43d5965364869af73b29df3c71ae4ece69" Name="LazyRoommate.UWP.dll" ProductName="lazyroommate.uwp" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="14094336" SizeOfImage="14094336" PeHeaderHash="0101ae8ad99d383cb3e6c37ca73c35a810f94d6c655d" PeChecksum="0" CrcChecksum="598910359" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="lazyroommate.uwp" LegalCopyright="copyright ©  2017" LinkDate="03/13/2018 21:21:38" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\41665georgemakrakis.lazyroommate_1.1.0.0_x64__4x8qxkdc075tc\lazyroommate.uwp.dll" />
+            <File Id="0000dfddea5996f80041a6227b7e25a1da5a51055cf4" Name="LazyRoommate.UWP.exe" ProductName="lazyroommate.uwp" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="32768" SizeOfImage="32768" PeHeaderHash="010141ae67c601cf5ea425f068d0139d05294e36ad8e" PeChecksum="0" CrcChecksum="-1434441935" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="lazyroommate.uwp" LegalCopyright="copyright ©  2017" LinkDate="03/13/2018 21:21:38" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\41665georgemakrakis.lazyroommate_1.1.0.0_x64__4x8qxkdc075tc\lazyroommate.uwp.exe" />
+            <File Id="0000969c281d15b4a6b2cb2e084a9ad83478eaedc8aa" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-282440366" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="C:\Program Files\windowsapps\41665georgemakrakis.lazyroommate_1.1.0.0_x64__4x8qxkdc075tc\resources.pri" />
           </Files>
         </StaticProperties>
       </Program>
     </Installed_Programs>
   </APPLICATIONS>
   <DEPENDENCY_INFORMATION>
-    <AitStaticAnalysis ProgramId="0000e0f9b32ea84dcb53031eb0235685778800000904" AnalysisVersion="1.60" DictionaryVersion="3.2" Type="Package" Id="41665GeorgeMakrakis.LazyRoommate_1.0.0.0_x64__4x8qxkdc075tc">
-      <AitFile ErrorCode="0" Name="LazyRoommate.UWP.exe" Id="00005553508711cddeac40a8a7a52ce82a9a4f5cab49" />
-      <AitFile ErrorCode="0" Name="LazyRoommate.UWP.dll" Id="000086b9eebe1b9594bb751251d514059266a1ce4aab">
+    <AitStaticAnalysis ProgramId="0000348834de72e5e83135a21a17855b120200000904" AnalysisVersion="1.60" DictionaryVersion="3.2" Type="Package" Id="41665GeorgeMakrakis.LazyRoommate_1.1.0.0_x64__4x8qxkdc075tc">
+      <AitFile ErrorCode="0" Name="LazyRoommate.UWP.dll" Id="0000394c8f43d5965364869af73b29df3c71ae4ece69">
         <AitCategory Id="Com">
           <AitFeature Name="{00000003-0000-0000-c000-000000000046}" />
           <AitFeature Name="{00020401-0000-0000-c000-000000000046}" />
@@ -277,6 +276,7 @@
           <AitFeature Name="{0c92712d-1bc9-4931-8cb1-1aeadf1cc685}" />
           <AitFeature Name="{0ce21ee7-4f76-4dd9-bf91-163beccf84bc}" />
           <AitFeature Name="{0d140f56-1dce-4fcd-85bc-5a5572273b9c}" />
+          <AitFeature Name="{0d224a66-bad5-5ad5-9ade-1e9f5a60fe73}" />
           <AitFeature Name="{0d81405a-9bd3-5e87-82f4-9b4128a887eb}" />
           <AitFeature Name="{0d82bd8d-fe62-5d67-a7b9-7886dd75bc4e}" />
           <AitFeature Name="{0db89161-20d7-45df-9122-ba89576703ba}" />
@@ -334,10 +334,12 @@
           <AitFeature Name="{1b61baeb-e196-4b3b-a5f9-1ed636f3f79b}" />
           <AitFeature Name="{1b8e9594-588e-5a07-9e65-0731a4c9a2db}" />
           <AitFeature Name="{1c157d0f-5efe-5cec-bbd6-0c6ce9af07a5}" />
+          <AitFeature Name="{1c741d59-2122-47d5-a856-83f3d4214875}" />
           <AitFeature Name="{1c781b6b-37bf-4ddc-a1a8-1b77db3cf0ea}" />
           <AitFeature Name="{1c98c219-0b13-4240-89a5-d495dc189a00}" />
           <AitFeature Name="{1cc0fdfc-69ee-4e43-9901-47f12687baf7}" />
           <AitFeature Name="{1cf09b9e-9962-4936-80ff-afc8e8ae5c8c}" />
+          <AitFeature Name="{1d0e801c-b8b4-5c03-a32c-45dcf65cc978}" />
           <AitFeature Name="{1d1a8b8b-fa66-414f-9cbd-b65fc99d17fa}" />
           <AitFeature Name="{1d1f9d60-d53b-57f7-b144-8f7c487846e8}" />
           <AitFeature Name="{1d37147f-97df-4226-92ca-ddf453d7fd5a}" />
@@ -389,6 +391,7 @@
           <AitFeature Name="{2a8a81ef-f351-50a7-bcdc-8368df215280}" />
           <AitFeature Name="{2ab1a205-1e73-4bcf-aabc-57b97e21961d}" />
           <AitFeature Name="{2ad3fb0c-0656-5302-b504-3153be845161}" />
+          <AitFeature Name="{2b28102e-ef0b-4f39-9b8a-a3c194de7081}" />
           <AitFeature Name="{2bc468e3-e1f8-4b54-95e8-32919551ce62}" />
           <AitFeature Name="{2bf27008-2eb4-5675-b1cd-e9906cc5ce64}" />
           <AitFeature Name="{2c3893cc-f81a-4e7a-b857-76a80887e185}" />
@@ -410,6 +413,7 @@
           <AitFeature Name="{31af3271-e3b4-442d-a341-4c0226b2725b}" />
           <AitFeature Name="{31b71470-feff-4654-af48-9b398ab5772b}" />
           <AitFeature Name="{31e55e8a-0f05-52fd-90d3-b04aa331aaa4}" />
+          <AitFeature Name="{31e8aed8-8141-4f99-bc0a-c4ed21297d77}" />
           <AitFeature Name="{320b7e22-3cb0-4cdf-8663-1d28910065eb}" />
           <AitFeature Name="{3276167d-c9f6-462d-9de2-ae4c1fd8c2e5}" />
           <AitFeature Name="{32c20dd8-faef-4375-a2ab-32640e4815c7}" />
@@ -527,6 +531,7 @@
           <AitFeature Name="{4e4cdf99-9826-4e56-847c-ca055f162905}" />
           <AitFeature Name="{4e534bdf-2960-4878-97a4-9624deb72f2d}" />
           <AitFeature Name="{4e5db9dd-7141-46c4-8be3-e9dc9e27275c}" />
+          <AitFeature Name="{4e6185ad-a6df-5428-aff5-17e45f3f476f}" />
           <AitFeature Name="{4e6a4b75-43dd-4e33-acbe-2d8796a17927}" />
           <AitFeature Name="{4f016541-bcfe-4a22-8932-c914981c2240}" />
           <AitFeature Name="{4f121083-24cf-4524-90ad-8a42b1c12783}" />
@@ -550,10 +555,12 @@
           <AitFeature Name="{5407b704-8147-4343-838f-dd1ee908c137}" />
           <AitFeature Name="{541af22b-280b-5276-bfcb-3e60a157d62c}" />
           <AitFeature Name="{541c8d6c-0283-4581-b945-2a64c28a0646}" />
+          <AitFeature Name="{54ef13a1-bf26-47b5-97dd-de779b7cad58}" />
           <AitFeature Name="{553fe413-6cd7-46a9-a97b-a18bdc4b4ca3}" />
           <AitFeature Name="{5563ebb1-3ef2-42c5-9c6d-1cf5dcc041ff}" />
           <AitFeature Name="{557bf83c-a428-5dbd-a0fe-05f6ee543d45}" />
           <AitFeature Name="{55c5905e-2bc7-400d-aaa4-1a2981491ee0}" />
+          <AitFeature Name="{55fa217d-1fc3-5863-b980-7094d4379694}" />
           <AitFeature Name="{5612147b-e843-45e3-94d8-06169e3c8e17}" />
           <AitFeature Name="{56196565-ce2b-4bda-a36b-82a2b8b0d4c0}" />
           <AitFeature Name="{56c71483-64e1-477c-8a0b-cb2f3334b9b0}" />
@@ -584,6 +591,8 @@
           <AitFeature Name="{5c21c742-2ced-4fd9-ba38-7118d40e966b}" />
           <AitFeature Name="{5c526665-f60e-4912-af59-5fe0680f089d}" />
           <AitFeature Name="{5c985ac6-d802-4b38-a223-bf070c43fedf}" />
+          <AitFeature Name="{5cc5b382-e6dd-4991-abef-06d8d2e7bd0c}" />
+          <AitFeature Name="{5d034661-7bd8-4ad5-9ebf-81e6347263b1}" />
           <AitFeature Name="{5d144364-77d7-5eca-8b09-936a69446652}" />
           <AitFeature Name="{5d9ab411-e991-55b0-b16c-a400a50a93df}" />
           <AitFeature Name="{5db1aa05-9f80-48b6-ae6c-4f119de8ff13}" />
@@ -612,6 +621,7 @@
           <AitFeature Name="{614708d1-8e65-43cb-92d7-8eee17515f8d}" />
           <AitFeature Name="{6155d919-1c6c-4950-8794-231ef0914d94}" />
           <AitFeature Name="{61c8f92c-05aa-414a-a2ae-482c5a46c08e}" />
+          <AitFeature Name="{61fd2c0b-c8d4-48c1-a54f-bc5a64205af2}" />
           <AitFeature Name="{62225981-7a0d-5d38-8088-7c6bb6d959be}" />
           <AitFeature Name="{62418240-e6d3-4705-a1dc-39156456ee29}" />
           <AitFeature Name="{62d7bbc1-71f5-5611-a984-e571c2de7baa}" />
@@ -619,6 +629,7 @@
           <AitFeature Name="{63418ccc-8d2d-4737-b951-2afce1ddc4c4}" />
           <AitFeature Name="{638bb2db-451d-4661-b099-414f34ffb9f1}" />
           <AitFeature Name="{63d8248a-8b34-445a-808f-b6ecd62a27d9}" />
+          <AitFeature Name="{63dbba8b-d0db-4fe1-b745-f9433afdc25b}" />
           <AitFeature Name="{64002b4b-ede9-470a-a5cd-0323faf6e262}" />
           <AitFeature Name="{644533ab-bbb9-499b-9ff3-30d40e2c56d8}" />
           <AitFeature Name="{648a2b4d-53ca-4b5a-aa8e-3cc7440f4a67}" />
@@ -668,6 +679,7 @@
           <AitFeature Name="{6becaa6a-63f8-47ff-b6ac-76e7da247d67}" />
           <AitFeature Name="{6c3fb5fc-8e84-4c91-ac15-04a1d885500f}" />
           <AitFeature Name="{6c4fc188-95bc-4261-9ec5-21cab677b734}" />
+          <AitFeature Name="{6cd0e74e-ee65-4489-9ebf-ca43e87ba637}" />
           <AitFeature Name="{6d05fb29-7885-544e-9382-a1ad391a3fa4}" />
           <AitFeature Name="{6d0ded27-0d19-4091-8917-ce7c85c1e630}" />
           <AitFeature Name="{6dda119e-9a74-478f-a339-5bb52de6c51e}" />
@@ -681,6 +693,7 @@
           <AitFeature Name="{703fe123-d766-562f-b210-1980bb2a0d33}" />
           <AitFeature Name="{704b4ec9-0373-506c-8af3-57e9245f1c4e}" />
           <AitFeature Name="{70572aba-8ad1-4085-9350-deee359294e3}" />
+          <AitFeature Name="{70945a09-331a-5e40-b854-66b7a3233bab}" />
           <AitFeature Name="{70e05ac4-d38d-4bab-831f-4a22ef52ac86}" />
           <AitFeature Name="{710e4278-8529-47d3-8d8e-307e34cff081}" />
           <AitFeature Name="{712e1447-a302-58ca-8cf7-c3b9b4ba67ec}" />
@@ -771,6 +784,7 @@
           <AitFeature Name="{8a946458-83b0-4c32-9450-5169a5838b55}" />
           <AitFeature Name="{8b463fdf-422f-4561-8806-fb1289cadfb7}" />
           <AitFeature Name="{8b8a8660-1a55-411c-a82d-18991c3f0d6f}" />
+          <AitFeature Name="{8baf9b65-77a1-4588-bd19-861529a9dcf0}" />
           <AitFeature Name="{8be8bfe4-dbef-44df-8126-a31a89121ddc}" />
           <AitFeature Name="{8c2dfeb0-6c22-5863-88d8-85c1fbc75697}" />
           <AitFeature Name="{8c510401-67be-49ae-9509-671c1e54a389}" />
@@ -830,6 +844,7 @@
           <AitFeature Name="{9910aec7-8ab5-4118-9bc6-09f45a35073d}" />
           <AitFeature Name="{997439fe-f681-4a11-b416-c13a47e8ba36}" />
           <AitFeature Name="{997b1b17-3bf8-432b-8fd9-68c7bab21f9d}" />
+          <AitFeature Name="{997e2675-059e-4e60-8b06-1760917c8b80}" />
           <AitFeature Name="{9a03af92-7d8a-4937-884f-ecf34fe02acb}" />
           <AitFeature Name="{9a16e097-f2e7-5bdc-b9f6-5a3f96ad3b59}" />
           <AitFeature Name="{9abc1b42-9b12-5178-a898-bb33f04ece9d}" />
@@ -846,6 +861,7 @@
           <AitFeature Name="{9d66fe6c-a4d7-4c23-9e85-675f304c252d}" />
           <AitFeature Name="{9d850850-66f3-48df-9a8f-824bd5e070af}" />
           <AitFeature Name="{9da4ca41-20e1-4e9b-9f65-a9f435340c3a}" />
+          <AitFeature Name="{9dfb9fd1-143a-490e-90bf-b9fba7132de7}" />
           <AitFeature Name="{9e365e57-48b2-4160-956f-c7385120bbfc}" />
           <AitFeature Name="{9e5f3ed0-cf1c-5d38-832c-acea6164bf5c}" />
           <AitFeature Name="{9e65cd69-0ba3-4e32-be29-b02de6607638}" />
@@ -860,6 +876,7 @@
           <AitFeature Name="{a1582f68-3d7d-4d3b-b71d-488eed1e3493}" />
           <AitFeature Name="{a1921777-d5c1-4f9c-a7b0-0401b7e6dc5c}" />
           <AitFeature Name="{a19f7ba8-d8cd-5df2-ab44-fefd26644484}" />
+          <AitFeature Name="{a1ac5012-3c00-5b22-adc1-095f7e86ca11}" />
           <AitFeature Name="{a1e254d8-a446-4a27-9a9d-a0f59e1258a5}" />
           <AitFeature Name="{a21a8189-26b0-4676-ae94-54041bc125e8}" />
           <AitFeature Name="{a25a1f58-c575-4196-91cf-9fdfb10445c3}" />
@@ -928,6 +945,7 @@
           <AitFeature Name="{af7586a8-6b21-5f61-bff1-1b682293ad96}" />
           <AitFeature Name="{afcbbe9b-582b-4133-9648-e44ca46ee491}" />
           <AitFeature Name="{afe17b9b-9c63-4583-88e4-c59019b7f49d}" />
+          <AitFeature Name="{b01093d8-4f52-50f0-9aa4-e22639111162}" />
           <AitFeature Name="{b014f270-9808-4adc-b452-60cda54100c1}" />
           <AitFeature Name="{b01c8a21-de6f-5edd-8796-300e3fe66382}" />
           <AitFeature Name="{b038876a-9c4d-4402-ac56-a223487dc6c8}" />
@@ -1059,6 +1077,7 @@
           <AitFeature Name="{cdb5efb3-5788-509d-9be1-71ccb8a3362a}" />
           <AitFeature Name="{cddb0380-e9d7-5264-ab5c-d72b642874c9}" />
           <AitFeature Name="{cf651713-cd08-4fd8-b697-a281b6544e2e}" />
+          <AitFeature Name="{cf7c902f-0f0d-5b22-90b1-85141b5816cd}" />
           <AitFeature Name="{cfe9cd97-c718-4091-b7dd-adf1c072b1e1}" />
           <AitFeature Name="{cff52e04-cca6-4614-a17e-754910c84a99}" />
           <AitFeature Name="{d01fb083-5e61-5c12-a18f-62947158faa8}" />
@@ -1066,6 +1085,7 @@
           <AitFeature Name="{d05d55db-785e-4a66-be02-9beec58aea81}" />
           <AitFeature Name="{d06eb1c7-3805-4ecb-b757-6cf15e26fef3}" />
           <AitFeature Name="{d075852d-b09a-4fd1-b005-db2ba01206fb}" />
+          <AitFeature Name="{d1065e0c-36cd-484c-b935-0a99b753cf00}" />
           <AitFeature Name="{d1113f67-d8c1-4ae4-98f0-d8504502f08b}" />
           <AitFeature Name="{d11739e6-2995-5d33-bfff-51b6041f68c1}" />
           <AitFeature Name="{d160ce46-cd22-4f5f-8c97-40e61da3e2dc}" />
@@ -1229,6 +1249,7 @@
           <AitFeature Name="{f7bbc359-f8fd-471c-bcb2-2c74be8ebf8c}" />
           <AitFeature Name="{f7f1b229-f024-467f-970a-7e705615db7b}" />
           <AitFeature Name="{f7f1c37b-b4df-5128-a476-fc8399bc10af}" />
+          <AitFeature Name="{f7f3a506-1e87-42d6-bcfb-b8c809fa5494}" />
           <AitFeature Name="{f7fb7559-892a-5b61-b251-e21928ebf067}" />
           <AitFeature Name="{f80dc964-2542-5c6a-ba65-b04824b5ed75}" />
           <AitFeature Name="{f82b435e-65b3-41c6-a9e2-77b67bc4c00c}" />
@@ -1433,6 +1454,7 @@
           <AitFeature Name="Windows.Security.Cryptography.CryptographicBuffer" />
           <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceManager" />
           <AitFeature Name="Windows.UI.Xaml.VisualStateManager" />
+          <AitFeature Name="Windows.Networking.PushNotifications.PushNotificationChannelManager" />
           <AitFeature Name="Windows.UI.Core.SystemNavigationManager" />
           <AitFeature Name="Windows.System.Launcher" />
           <AitFeature Name="Windows.UI.Xaml.Controls.TimePicker" />
@@ -1456,6 +1478,7 @@
           <AitFeature Name="Windows.UI.Xaml.Thickness" />
           <AitFeature Name="Windows.UI.Text.FontWeights" />
           <AitFeature Name="Windows.UI.Xaml.DependencyObject" />
+          <AitFeature Name="Windows.Security.Credentials.PasswordVault" />
           <AitFeature Name="Windows.UI.Xaml.FrameworkElement" />
           <AitFeature Name="Windows.Web.Http.HttpStreamContent" />
           <AitFeature Name="Windows.Web.Http.HttpBufferContent" />
@@ -1493,6 +1516,7 @@
           <AitFeature Name="api-ms-win-core-processthreads-l1-1-0.dll!GetCurrentThreadId" />
         </AitCategory>
       </AitFile>
+      <AitFile ErrorCode="0" Name="LazyRoommate.UWP.exe" Id="0000dfddea5996f80041a6227b7e25a1da5a51055cf4" />
     </AitStaticAnalysis>
   </DEPENDENCY_INFORMATION>
 </REPORT>

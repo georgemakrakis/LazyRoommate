@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="41665GeorgeMakrakis.LazyRoommate" Publisher="CN=D060A142-9111-4BFC-B383-1200EF853C59" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="41665GeorgeMakrakis.LazyRoommate" Publisher="CN=D060A142-9111-4BFC-B383-1200EF853C59" Version="1.1.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="8f02052b-4750-4004-8b84-676dad6d2131" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>LazyRoommate</DisplayName>

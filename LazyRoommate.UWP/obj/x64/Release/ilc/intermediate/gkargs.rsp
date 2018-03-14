@@ -1,6 +1,7 @@
 /In:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\in"
 /Lib:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\in"
-/Lib:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x64\ilc\lib\Private"
+/Lib:"C:\Program Files (x86)\MSBuild\15.0\.Net\.NetNative\15.0.24211\x64\ilc\lib\Private"
 /WinMD:"C:\Users\georg\LazyRoommate\LazyRoommate.UWP\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
-/RdXmlPath:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\LibraryXML"
+/VSTelemetrySessionSettings:{"AppId":1001,"AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","HostName":"Dev14","Id":"7752d0b4-1651-443e-ad53-9214cd9fe0fd","IsOptedIn":true,"ProcessStartTime":636565539799869636,"UserId":"d8cc287d-f887-42e2-9f2d-9471487a55b4"}
+/RdXmlPath:"C:\Program Files (x86)\MSBuild\15.0\.Net\.NetNative\15.0.24211\LibraryXML"
 /RunOnlyPreDR
